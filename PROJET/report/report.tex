@@ -12,8 +12,41 @@
 
 \input{titlepage_report.tex}
 
+% ==================================================================================================================================
+% ABSTRACT (RÉSUMÉ)
+
+\newpage
+\thispagestyle{plain}
+\vspace*{\fill}
+
+\begin{abstract}
+    \centering
+    \itshape
+    \justify
+    
+    resumé
+    
+    \vspace{0.5cm}
+    \noindent \textbf{Mots-clés :} Mathématiques, Informatique, ..
+\end{abstract}
+
+\vspace*{\fill}
+
+% ==================================================================================================================================
+% TABLES ET LISTES
+
+\newpage
+
+% Table des matières
 \tableofcontents
 
+% \begin{figure}...\caption{}...\end{figure})
+\listoffigures
+
+% \begin{table}...\caption{}...\end{table})
+\listoftables
+
+\vspace{1cm}
 \noindent\rule{\textwidth}{1pt}
 
 % ==================================================================================================================================
@@ -21,6 +54,7 @@
 
 \newpage
 \section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 
 intro
 
