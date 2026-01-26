@@ -1,12 +1,8 @@
-
-
 \usepackage[top=3cm, bottom=3cm, left=3.5cm, right=3.5cm]{geometry}
-
-
 \setlength{\parindent}{0cm}
 
 \usepackage{csquotes}
-\usepackage[french]{babel}
+\usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{ragged2e}
 \usepackage{amsfonts}
@@ -51,7 +47,6 @@
 \cellspacetoplimit=5pt
 \cellspacebottomlimit=5pt
 
-
 % MATHS SHORTHANDS
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\R}{\mathbb{R}}
@@ -70,40 +65,39 @@
 % MOD NOTATION
 \theorembodyfont{\upshape}
 
-% Définir un environnement pour encadrer les définitions avec un titre
+% ENVIRONNEMENT DEFINITION (TRADUIT EN ANGLAIS)
 \NewDocumentEnvironment{definition}{O{}}
 {
   \begin{mdframed}[linewidth=0pt,linecolor=gray,backgroundcolor=gray!10,roundcorner=5pt]
-  \textbf{Définition}%
-  \IfNoValueTF{#1}{}{~(\textbf{#1})} % Affiche le titre entre parenthèses et en gras s'il est fourni
-  . % Point à la fin
+  \textbf{Definition}%
+  \IfNoValueTF{#1}{}{~(\textbf{#1})} 
+  . 
 }
 {
   \end{mdframed}
 }
 
-% Définir un environnement pour encadrer les théorèmes avec un titre
+% ENVIRONNEMENT THEOREME (TRADUIT EN ANGLAIS)
 \NewDocumentEnvironment{theorem}{O{}}
 {
   \begin{mdframed}[linewidth=1pt,linecolor=darkgray,backgroundcolor=darkgray!10,roundcorner=5pt]
-  \textbf{Théorème}%
-  \IfNoValueTF{#1}{}{~(\textbf{#1})} % Affiche le titre entre parenthèses et en gras s'il est fourni
-  . % Point à la fin
+  \textbf{Theorem}%
+  \IfNoValueTF{#1}{}{~(\textbf{#1})} 
+  . 
 }
 {
   \end{mdframed}
 }
 
-
+% TRADUCTION DES THEOREMES ET PREUVES
 \theoremstyle{plain}
-\newtheorem*{remark}{Remarque}
+\newtheorem*{remark}{Remark}
 \newtheorem*{proposition}{Proposition}
-\newtheorem*{lemma}{Lemme}
-\newtheorem*{prop}{Propriété}
-\newtheorem*{corollary}{Corollaire}
-\newtheorem*{proof}{Démonstration}
-\newtheorem*{example}{Exemple}
-
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{prop}{Property}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{proof}{Proof}
+\newtheorem*{example}{Example}
 
 % OTHERS 
 \newlength\tindent
@@ -122,32 +116,19 @@
 \usepackage{listings} % Importation du package listings
 \usepackage{xcolor} % Pour ajouter de la couleur
 
-\setlength{\columnsep}{1cm} % Espace entre les colonnes
+\setlength{\columnsep}{1cm} 
 
-
-% Définition du style de l'en-tête
+% EN-TETE / PIED DE PAGE
 \pagestyle{fancy}
-\fancyhf{} % Nettoyer les en-têtes et pieds de page
-
-% Gauche : Nom de la section
+\fancyhf{} 
 \fancyhead[L]{\nouppercase{\leftmark}}
-
-% Droite : Logo
-\fancyhead[R]{\includegraphics[width=2cm]{./images/logo_UT.png}}
-
-% Ligne sous l'en-tête
+\fancyhead[R]{\includegraphics[width=2cm]{./images/logo_UT.png}} % Logo en haut à droite
 \renewcommand{\headrulewidth}{0.4pt}
-
-% Numéro de page centré en bas
 \fancyfoot[C]{\thepage}
-
-% Ligne au-dessus du pied de page (optionnel, mettre à 0pt pour supprimer)
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{1.5cm} 
 
-
-\setlength{\headheight}{1.5cm} % Ajuste la hauteur de l'en-tête
-
-
+% CONFIG CODE LISTING
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -171,42 +152,34 @@
     showtabs=false,                  
     tabsize=2
 }
-
-\lstset{
-    style=mystyle
-}
+\lstset{style=mystyle}
 
 
-% Define colorbox
-\newtcolorbox{remarkBox}[1][]{%
+\newtcolorbox{remarkBox}[1][]{
   colback=yellow!10!white,
   colframe=yellow!60!black,
   arc=4mm,
   boxrule=0.8pt,
   left=6pt, right=6pt, top=6pt, bottom=6pt,
   enhanced,
-  title=Remarque~\thetcbcounter,
+  title=Remark~\thetcbcounter,
   #1
 }
 
-% Define exampleBox
 \newtcolorbox{exampleBox}[1][]{%
-  colback=blue!10!white,     % fond bleu clair
-  colframe=blue!50!black,    % bordure un peu foncée
-  colbacktitle=blue!30,      % fond de l'en-tête
-  coltitle=white,            % texte de l'en-tête en blanc
+  colback=blue!10!white,    
+  colframe=blue!50!black,    
+  colbacktitle=blue!30,      
+  coltitle=white,            
   arc=4mm,
   boxrule=0.8pt,
   left=6pt, right=6pt, top=6pt, bottom=6pt,
   enhanced,
-  title=Exemple~\thetcbcounter,
+  title=Example~\thetcbcounter,
   #1
 }
 
-
-% Background color 
 \definecolor{mydarkblue}{HTML}{252A70}
 
-% Bib 
 \usepackage{biblatex}
-\addbibresource{biblio.bib} % file of reference info
+\addbibresource{biblio.bib}

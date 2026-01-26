@@ -1,2 +1,2 @@
-\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {section}{Introduction}{3}{section*.4}%
