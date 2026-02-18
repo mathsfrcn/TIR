@@ -16,5 +16,83 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{cooper_soft_2010}{article}{}
+      \name{author}{6}{}{%
+        {{hash=faa4d6e46f6fe7f42aa6e63f4ab78b77}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=06a1c6f281fb4f32a8bb22afa5a1637b}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=f04fda200d4291aab2d9b65d23ec7402}{%
+           family={Sanchez},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cb4d67e11e3fc0cd88cbb0147bc0724a}{%
+           family={Schiex},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2a8c98dbc07cbee0085a2bf2262f2edc}{%
+           family={Zytnicki},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d14bd4805cde27131c6f7f7ac95c1178}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c550c991a8e00ad8f17e9904dd3ede0}
+      \strng{fullhash}{2da4245dbeef2d9652f3ae2409ba8bc5}
+      \strng{bibnamehash}{2c550c991a8e00ad8f17e9904dd3ede0}
+      \strng{authorbibnamehash}{2c550c991a8e00ad8f17e9904dd3ede0}
+      \strng{authornamehash}{2c550c991a8e00ad8f17e9904dd3ede0}
+      \strng{authorfullhash}{2da4245dbeef2d9652f3ae2409ba8bc5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Valued Constraint Satisfaction Problem (VCSP) is a generic optimization problem defined by a network of local cost functions defined over discrete variables. It has applications in Artificial Intelligence, Operations Research, Bioinformatics and has been used to tackle optimization problems in other graphical models (including discrete Markov Random Fields and Bayesian Networks). The incremental lower bounds produced by local consistency filtering are used for pruning inside Branch and Bound search. In this paper, we extend the notion of arc consistency by allowing fractional weights and by allowing several arc consistency operations to be applied simultaneously. Over the rationals and allowing simultaneous operations, we show that an optimal arc consistency closure can theoretically be determined in polynomial time by reduction to linear programming. This defines Optimal Soft Arc Consistency (OSAC). To reach a more practical algorithm, we show that the existence of a sequence of arc consistency operations which increases the lower bound can be detected by establishing arc consistency in a classical Constraint Satisfaction Problem (CSP) derived from the original cost function network. This leads to a new soft arc consistency method, called, Virtual Arc Consistency which produces improved lower bounds compared with previous techniques and which can solve submodular cost functions. These algorithms have been implemented and evaluated on a variety of problems, including two difficult frequency assignment problems which are solved to optimality for the first time. Our implementation is available in the open source toulbar2 platform.}
+      \field{issn}{0004-3702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{month}{5}
+      \field{number}{7}
+      \field{title}{Soft arc consistency revisited}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{174}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{449\bibrangedash 478}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1016/j.artint.2010.02.001
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\FYKSCX5Z\\Cooper et al. - 2010 - Soft arc consistency revisited.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\phili\\Zotero\\storage\\P7PKM3ZZ\\S0004370210000147.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0004370210000147
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0004370210000147
+      \endverb
+      \keyw{Constraint optimization,Graphical model,Local consistency,Soft arc consistency,Soft constraints,Submodularity,Valued constraint satisfaction problem,Weighted constraint satisfaction problem}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
