@@ -1,15 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'report.blg'
-[187] biber-MSWIN64:340> INFO - === 
-[238] Biber.pm:419> INFO - Reading 'report.bcf'
-[353] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
-[366] Biber.pm:4419> INFO - Processing section 0
-[380] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[437] bibtex.pm:1713> INFO - LaTeX decoding ...
-[558] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[613] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[614] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[620] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[622] bbl.pm:763> INFO - Output to report.bbl
+[140] biber-MSWIN64:340> INFO - === 
+[187] Biber.pm:419> INFO - Reading 'report.bcf'
+[328] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[343] Biber.pm:4419> INFO - Processing section 0
+[358] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[450] bibtex.pm:1713> INFO - LaTeX decoding ...
+[557] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[610] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[610] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[611] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[611] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[617] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[620] bbl.pm:763> INFO - Output to report.bbl
+[621] Biber.pm:131> WARN - Duplicate entry key: 'allouche_computational_2014' in file 'biblio.bib', skipping ...
+[621] Biber.pm:131> WARN - Duplicate entry key: 'defresne_scaling_2026' in file 'biblio.bib', skipping ...
+[621] Biber.pm:133> INFO - WARNINGS: 2
