@@ -19,59 +19,67 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Cohen_2004}{article}{}
-      \name{author}{4}{}{%
-        {{hash=9aec753e2a52411648a8c416b435466b}{%
-           family={Cohen},
-           familyi={C\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=ea40a747e7a44f7c4807b3dafb9bb8dd}{%
-           family={Cooper},
-           familyi={C\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ac5a3e972bb3c5ddf4bdbf4a8c955c69}{%
-           family={Jeavons},
-           familyi={J\bibinitperiod},
-           given={P.},
+    \entry{montalbano_multiple-choice_2022}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=54a76691e24ff38690aa01e0572d4a84}{%
+           family={Montalbano},
+           familyi={M\bibinitperiod},
+           given={Pierre},
            giveni={P\bibinitperiod}}}%
-        {{hash=e037ed15750107e6100c4363be38e6d5}{%
-           family={Krokhin},
+        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=02053fef5a82223abac1996e33d71e79}{%
+           family={Katsirelos},
            familyi={K\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=04b25dbc630118068c55c54cd179207d}{%
+           family={Schaus},
+           familyi={S\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cham}%
       }
       \list{publisher}{1}{%
-        {AI Access Foundation}%
+        {Springer International Publishing}%
       }
-      \strng{namehash}{9585fa8d5b15e5347e437ae85593842f}
-      \strng{fullhash}{eb83007decd43e3bed722acbe6581b2a}
-      \strng{bibnamehash}{9585fa8d5b15e5347e437ae85593842f}
-      \strng{authorbibnamehash}{9585fa8d5b15e5347e437ae85593842f}
-      \strng{authornamehash}{9585fa8d5b15e5347e437ae85593842f}
-      \strng{authorfullhash}{eb83007decd43e3bed722acbe6581b2a}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{fullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{bibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authorbibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authornamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authorfullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{editorbibnamehash}{04b25dbc630118068c55c54cd179207d}
+      \strng{editornamehash}{04b25dbc630118068c55c54cd179207d}
+      \strng{editorfullhash}{04b25dbc630118068c55c54cd179207d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1076-9757}
-      \field{journaltitle}{Journal of Artificial Intelligence Research}
-      \field{month}{7}
-      \field{title}{A Maximal Tractable Class of Soft Constraints}
-      \field{volume}{22}
-      \field{year}{2004}
-      \field{pages}{1\bibrangedash 22}
-      \range{pages}{22}
+      \field{abstract}{Graphical models, such as cost function networks (CFNs), can compactly express large decomposable functions, which leads to efficient inference algorithms. Most methods for computing lower bounds in Branch-and-Bound minimization compute feasible dual solutions of a specific linear relaxation. These methods are more effective than solving the linear relaxation exactly, with better worst-case time complexity and better performance in practice. However, these algorithms are specialized to the structure of the linear relaxation of a CFN and cannot, for example, deal with constraints that cannot be expressed in extension, such as linear constraints of large arity.}
+      \field{annotation}{Overview: The paper introduces a method to integrate linear constraints, specifically the Multiple-Choice Knapsack Constraint (MCKC), into Cost Function Networks (CFNs). This algorithm is implemented within toulbar2 and allows toulbar2 to solve problems that combine traditional graphical model costs with global linear constraints more efficiently than before. The algorithm is competitive for solving problems such as the knapsack problem with conflict graph and protein design problem. Review: The paper demonstrates that toulbar2 can now compete with or outperform Integer Linear Programming (ILP) solvers on knapsack problems with conflict graphs. This expansion broadens the scope of toulbar2 to domains like resource allocation and image analysis where linear budget or distance constraints are common.}
+      \field{booktitle}{Integration of {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations} {Research}}
+      \field{isbn}{978-3-031-08011-1}
+      \field{title}{Multiple-choice {Knapsack} {Constraint} in {Graphical} {Models}}
+      \field{year}{2022}
+      \field{pages}{282\bibrangedash 299}
+      \range{pages}{18}
       \verb{doi}
-      \verb 10.1613/jair.1400
+      \verb 10.1007/978-3-031-08011-1_19
       \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1613/jair.1400
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1613/jair.1400
-      \endverb
+      \keyw{cost function network,graphical model,knapsack problem}
     \endentry
   \enddatalist
 \endrefsection
