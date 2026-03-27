@@ -1,0 +1,356 @@
+@inproceedings{montalbano_multiple-choice_2022,
+	address = {Cham},
+	title = {Multiple-choice {Knapsack} {Constraint} in {Graphical} {Models}},
+	isbn = {978-3-031-08011-1},
+	doi = {10.1007/978-3-031-08011-1_19},
+	abstract = {Graphical models, such as cost function networks (CFNs), can compactly express large decomposable functions, which leads to efficient inference algorithms. Most methods for computing lower bounds in Branch-and-Bound minimization compute feasible dual solutions of a specific linear relaxation. These methods are more effective than solving the linear relaxation exactly, with better worst-case time complexity and better performance in practice. However, these algorithms are specialized to the structure of the linear relaxation of a CFN and cannot, for example, deal with constraints that cannot be expressed in extension, such as linear constraints of large arity.},
+	language = {en},
+	booktitle = {Integration of {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations} {Research}},
+	publisher = {Springer International Publishing},
+	author = {Montalbano, Pierre and de Givry, Simon and Katsirelos, George},
+	editor = {Schaus, Pierre},
+	year = {2022},
+	keywords = {cost function network, graphical model, knapsack problem},
+	pages = {282--299},
+	annote = {Overview:
+The paper introduces a method to integrate linear constraints, specifically the Multiple-Choice Knapsack Constraint (MCKC), into Cost Function Networks (CFNs).
+This algorithm is implemented within toulbar2 and allows toulbar2 to solve problems that combine traditional graphical model costs with global linear constraints more efficiently than before. The algorithm is competitive for solving problems such as the knapsack problem with conflict graph and protein design problem.
+Review:
+The paper demonstrates that toulbar2 can now compete with or outperform Integer Linear Programming (ILP) solvers on knapsack problems with conflict graphs. This expansion broadens the scope of toulbar2 to domains like resource allocation and image analysis where linear budget or distance constraints are common.},
+}
+
+@article{sewa_assignment_nodate,
+    title = {Assignment Problems in Cost Function Networks},
+    abstract = {To efficiently solve exact discrete optimization problems, branch and bound algorithms require tight bounds. In constraint programming, for optimization, soft arc consistencies typically derive much stronger bounds than those offered by domain or bound consistencies applied to a cost variable. The reason is that soft local consistencies exchange marginal cost information between variables whereas domain consistencies rely only on shrinking domains, which is less informative. However, {CP} solvers equipped with soft arc consistencies have so far offered limited support for efficient processing of global constraints.},
+    author = {Sewa, Guidio and Allouche, David and de Givry, Simon and Katsirelos, George and Montalbano, Pierre and Schiex, Thomas},
+    langid = {english},
+    file = {PDF:C\:\\Users\\DROZTI\\Zotero\\storage\\LXDZS6UI\\Sewa et al. - Assignment Problems in Cost Function Networks.pdf:application/pdf},
+    annote = {Overview:
+This paper addresses the challenge of efficiently solving exact discrete optimization problems by integrating the ALLDIFFERENT global constraint into toulbar2. The authors implement a new propagator that enforces soft local consistency by leveraging algorithms for the Linear Assignment Problem (LAP) to calculate tight lower bounds.
+
+Review:
+This paper is a good example of the relevance of toulbar2 in 2026 equipped with a new propagator. This enhanced version of Toulbar2 was shown to outperform state-of-the-art domain consistency constraint programming as well as integer programming solvers for the quadratic assignment problem. This algorithm also showed better performance for miniCOP instances of the 2024 XCSP competition.},
+}
+
+@inproceedings{amel_constraint_2014,
+	address = {Cham},
+	title = {A {Constraint} {Programming} {Approach} to the {Zahn}’s {Decision} {Problem}},
+	isbn = {978-3-319-07593-8},
+	doi = {10.1007/978-3-319-07593-8_59},
+	abstract = {Given a graph G = (S,E), the problem dealt with in this paper consists in partitioning S into a disjoint union of cliques by adding or removing a minimum number z(G) of edges. The problem, which is refered to by the Zahn Problem (ZP), is NP-hard in general.},
+	language = {en},
+	booktitle = {Distributed {Computing} and {Artificial} {Intelligence}, 11th {International} {Conference}},
+	publisher = {Springer International Publishing},
+	author = {Amel, Mhamdi and Wady, Naanaa},
+	editor = {Omatu, Sigeru and Bersini, Hugues and Corchado, Juan M. and Rodríguez, Sara and Pawlewski, Paweł and Bucciarelli, Edgardo},
+	year = {2014},
+	keywords = {Cliques, Cluster editing, Constraint programming, Fixed parameter tractable problems, Zahn’s problem},
+	pages = {511--518},
+	annote = {Overview:
+Zahn's decision problem can be described as the problem of partitioning a graph G=(S,E) into a subset of disjoint cliques by either removing or adding the minimum amount of edges. This problem is known to be NP-hard in general. This paper provides a constraint programming approach to Zahn's decision problem, by converting the graph into a set of boolean variables and soft constraints . The WSCP  is then solved using the toulbar2 solver.
+Review:
+This paper provides the first CSP approach to Zahn’s graph clustering problem. The results found in the paper are promising: the results found are competitive, especially on large problems. This shows that the soft arc consistency method used in toulbar2 can be applied to improve graph clustering. The model is also flexible, as new constraints can be added for different variations of the ZP.},
+}
+
+@inproceedings{ermon_taming_2013,
+	title = {Taming the {Curse} of {Dimensionality}: {Discrete} {Integration} by {Hashing} and {Optimization}},
+	issn = {1938-7228},
+	shorttitle = {Taming the {Curse} of {Dimensionality}},
+	url = {https://proceedings.mlr.press/v28/ermon13.html},
+	abstract = {Integration is affected by the curse of dimensionality and quickly becomes intractable as the dimensionality of the problem grows. We propose a randomized algorithm that, with high probability, gives a constant-factor approximation of a general discrete integral defined over an exponentially large set. This algorithm relies on solving only a small number of instances of a discrete combinatorial optimization problem subject to randomly generated parity constraints used as a hash function. As an application, we demonstrate that with a small number of MAP queries we can efficiently approximate the partition function of discrete graphical models, which can in turn be used, for instance, for marginal computation or model selection.},
+	language = {en},
+	urldate = {2026-03-21},
+	booktitle = {Proceedings of the 30th {International} {Conference} on {Machine} {Learning}},
+	publisher = {PMLR},
+	author = {Ermon, Stefano and Gomes, Carla and Sabharwal, Ashish and Selman, Bart},
+	month = {may},
+	year = {2013},
+	pages = {334--342},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\PBQDZH7H\\Ermon et al. - 2013 - Taming the Curse of Dimensionality Discrete Integration by Hashing and Optimization.pdf:application/pdf},
+	annote = {Overview:
+In this paper, a randomized algorithm called WISH (Weighted-Integrals-And-Sums-By-Hashing) for approximating discrete integrals in high-dimensional spaces is presented. The algorithm reduces a hard counting problem (complexity #P significantly harder than NP) into a smaller number of NP-hard optimization problems (MAP inference). These optimization problems are then solved using an augmented version of the toulbar2.
+Review:
+This research highlights the effectiveness of reducing #P-complete problems into combinatorial optimization instances. Because toulbar2 is a complete solver, the algorithm is capable of reaching an optimal solution given sufficient computational time. Most importantly, WISH provides rigorous approximation guarantees for discrete integration, a task that previously relied almost entirely on heuristic methods.},
+}
+
+@article{traore_new_2013,
+	title = {A new framework for computational protein design through cost function network optimization},
+	volume = {29},
+	issn = {1367-4803},
+	url = {https://doi.org/10.1093/bioinformatics/btt374},
+	doi = {10.1093/bioinformatics/btt374},
+	abstract = {Motivation: The main challenge for structure-based computational protein design (CPD) remains the combinatorial nature of the search space. Even in its simplest fixed-backbone formulation, CPD encompasses a computationally difficult NP-hard problem that prevents the exact exploration of complex systems defining large sequence-conformation spaces.Results: We present here a CPD framework, based on cost function network (CFN) solving, a recent exact combinatorial optimization technique, to efficiently handle highly complex combinatorial spaces encountered in various protein design problems. We show that the CFN-based approach is able to solve optimality a variety of complex designs that could often not be solved using a usual CPD-dedicated tool or state-of-the-art exact operations research tools. Beyond the identification of the optimal solution, the global minimum-energy conformation, the CFN-based method is also able to quickly enumerate large ensembles of suboptimal solutions of interest to rationally build experimental enzyme mutant libraries.Availability: The combined pipeline used to generate energetic models (based on a patched version of the open source solver Osprey 2.0), the conversion to CFN models (based on Perl scripts) and CFN solving (based on the open source solver toulbar2) are all available at http://genoweb.toulouse.inra.fr/∼tschiex/CPDContacts:  thomas.schiex@toulouse.inra.fr or sophie.barbe@insa-toulouse.frSupplementary information:  Supplementary data are available at Bioinformatics online.},
+	number = {17},
+	urldate = {2026-02-04},
+	journal = {Bioinformatics},
+	author = {Traoré, Seydou and Allouche, David and André, Isabelle and de Givry, Simon and Katsirelos, George and Schiex, Thomas and Barbe, Sophie},
+	month = {sep},
+	year = {2013},
+	pages = {2129--2136},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\DLJ6YIHM\\Traoré et al. - 2013 - A new framework for computational protein design through cost function network optimization.pdf:application/pdf;Snapshot:C\:\\Users\\phili\\Zotero\\storage\\REEKVAXY\\btt374.html:text/html},
+	annote = {Overview : 
+This article addresses computational protein design (CPD), focusing on the challenge of identifying amino acid sequences that minimize energy (GMEC) within vast sequence–conformation spaces. Traditional approaches include heuristic methods (fast but approximate) and exact methods (accurate but computationally expensive). The authors reformulate CPD as a cost function network (CFN) problem and compare it to integer linear programming (ILP) and DEE/A*. Their pipeline includes structure preparation, energy computation, and combinatorial optimization. Results show that the CFN approach (toulbar2) significantly outperforms others in both speed and ability to enumerate low-energy solutions. The framework enables efficient exploration of large design spaces.
+Review :
+The study relies on a rigid backbone assumption, limiting biological realism. Energy models (force fields, implicit solvent) remain approximate, which can affect prediction accuracy. The evaluation focuses mainly on computational performance rather than functional validation of designed proteins. The discretization into rotamers may overlook relevant conformations. Finally, the lack of experimental validation reduces confidence in the practical applicability of the method.
+	}
+}
+
+@inproceedings{simoncini_fitness_2018,
+	address = {New York, NY, USA},
+	series = {{GECCO} '18},
+	title = {Fitness landscape analysis around the optimum in computational protein design},
+	isbn = {978-1-4503-5618-3},
+	url = {https://dl.acm.org/doi/10.1145/3205455.3205626},
+	doi = {10.1145/3205455.3205626},
+	abstract = {The geometry and properties of the fitness landscapes of Computational Protein Design (CPD) are not well understood, due to the difficulty for sampling methods to access the NP-hard optima and explore their neighborhoods. In this paper, we enumerate all solutions within a 2 kcal/mol energy interval of the optimum of two CPD problems. We compute the number of local minima, the size of the attraction basins, and the local optima network. We provide various features in order to characterize the fitness landscapes, in particular the multimodality, and the ruggedness of the fitness landscape. Results show some key differences in the fitness landscapes and help to understand the successes and failures of metaheuristics on CPD problems. Our analysis gives some previously inaccessible and valuable information on the problem structure related to the optima of the CPD instances (multi-funnel structure), and could lead to the development of more efficient metaheuristic methods.},
+	urldate = {2026-02-04},
+	booktitle = {Proceedings of the {Genetic} and {Evolutionary} {Computation} {Conference}},
+	publisher = {Association for Computing Machinery},
+	author = {Simoncini, David and Barbe, Sophie and Schiex, Thomas and Verel, Sébastien},
+	month = {jul},
+	year = {2018},
+	pages = {355--362},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\3IVI6YBF\\Simoncini et al. - 2018 - Fitness landscape analysis around the optimum in computational protein design.pdf:application/pdf},
+	annote = {Overview : 
+This paper analyzes the fitness landscape of computational protein design (CPD) near the global optimum. Using a CFN-based approach and the solver toulbar2, the authors compute the GMEC and enumerate near-optimal solutions within a small energy range. They study properties such as ruggedness, multimodality, and basin structure for two CPD instances. Results show that some landscapes are smooth and easy to explore, while others are highly rugged with many local optima, making optimization difficult. These differences explain the varying performance of metaheuristics like simulated annealing.
+Review : 
+The study is limited to only two instances, which weakens generalization. The modeling assumptions (rigid backbone, rotamers) simplify biological reality. The analysis focuses on landscape metrics without experimental validation. The enumeration is restricted to a small energy window, possibly missing global structure. Finally, no new optimization strategy is directly validated despite the insights provided.
+	}
+}
+
+@article{charpentier_variable_2019,
+	title = {Variable {Neighborhood} {Search} with {Cost} {Function} {Networks} {To} {Solve} {Large} {Computational} {Protein} {Design} {Problems}},
+	volume = {59},
+	issn = {1549-9596},
+	url = {https://doi.org/10.1021/acs.jcim.8b00510},
+	doi = {10.1021/acs.jcim.8b00510},
+	abstract = {Computational protein design (CPD) aims to predict amino acid sequences that fold to specific structures and perform desired functions. CPD depends on a rotamer library, an energy function, and an algorithm to search the sequence/conformation space. Variable neighborhood search (VNS) with cost function networks is a powerful framework that can provide tight upper bounds on the global minimum energy. We propose a new CPD heuristic based on VNS in which a subset of the solution space (a “neighborhood”) is explored, whose size is gradually increased with a dedicated probabilistic heuristic. The algorithm was tested on 99 protein designs with fixed backbones involving nine proteins from the SH2, SH3, and PDZ families. The number of mutating positions was 20, 30, or all of the amino acids, while the rest of the protein explored side-chain rotamers. VNS was more successful than Monte Carlo (MC), replica-exchange MC, and a heuristic steepest-descent energy minimization, providing solutions with equal or lower best energies in most cases. For complete protein redesign, it gave solutions that were 2.5 to 11.2 kcal/mol lower in energy than those obtained with the other approaches. VNS is implemented in the toulbar2 software. It could be very helpful for large and/or complex design problems.},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Journal of Chemical Information and Modeling},
+	publisher = {American Chemical Society},
+	author = {Charpentier, Antoine and Mignon, David and Barbe, Sophie and Cortes, Juan and Schiex, Thomas and Simonson, Thomas and Allouche, David},
+	month = {jan},
+	year = {2019},
+	pages = {127--136},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\JIIMIM2R\\Charpentier et al. - 2019 - Variable Neighborhood Search with Cost Function Networks To Solve Large Computational Protein Design.pdf:application/pdf},
+	annote = {Overview :
+	This article introduces Large Neighborhood Search (LNS) for solving the computational protein design (CPD) problem. The approach iteratively relaxes subsets of residues and re-optimizes them using exact methods, allowing efficient exploration of large sequence–conformation spaces. The method is implemented using CFN modeling and solved with toulbar2. Results show that LNS can find high-quality solutions faster than traditional exact approaches, especially on large and complex instances where full optimization is intractable. The approach balances exploration and exact optimization, improving scalability of CPD.
+	Review : 
+	The method depends on heuristic choices (neighborhood selection), which may affect robustness. Although more scalable, it sacrifices guarantees of optimality compared to exact methods. The biological realism remains limited due to rigid backbone and rotamer assumptions. Evaluation focuses on computational performance rather than experimental validation. Finally, comparisons with other advanced metaheuristics are somewhat limited.
+	}
+}
+
+@article{noguchi_computational_2019,
+	title = {Computational design of symmetrical eight-bladed β-propeller proteins},
+	volume = {6},
+	issn = {2052-2525},
+	url = {https://journals.iucr.org/m/issues/2019/01/00/jt5028/},
+	doi = {10.1107/S205225251801480X},
+	abstract = {β-Propeller proteins form one of the largest families of protein structures, with a pseudo-symmetrical fold made up of subdomains called blades. They are not only abundant but are also involved in a wide variety of cellular processes, often by acting as a platform for the assembly of protein complexes. WD40 proteins are a subfamily of propeller proteins with no intrinsic enzymatic activity, but their stable, modular architecture and versatile surface have allowed evolution to adapt them to many vital roles. By computationally reverse-engineering the duplication, fusion and diversification events in the evolutionary history of a WD40 protein, a perfectly symmetrical homologue called Tako8 was made. If two or four blades of Tako8 are expressed as single polypeptides, they do not self-assemble to complete the eight-bladed architecture, which may be owing to the closely spaced negative charges inside the ring. A different computational approach was employed to redesign Tako8 to create Ika8, a fourfold-symmetrical protein in which neighbouring blades carry compensating charges. Ika2 and Ika4, carrying two or four blades per subunit, respectively, were found to assemble spontaneously into a complete eight-bladed ring in solution. These artificial eight-bladed rings may find applications in bionanotechnology and as models to study the folding and evolution of WD40 proteins.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {IUCrJ},
+	publisher = {International Union of Crystallography},
+	author = {Noguchi, H. and Addy, C. and Simoncini, D. and Wouters, S. and Mylemans, B. and Van Meervelt, L. and Schiex, T. and Zhang, K. Y. J. and Tame, J. R. H. and Voet, A. R. D.},
+	month = {jan},
+	year = {2019},
+	pages = {46--55},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\TTU58R9N\\Noguchi et al. - 2019 - Computational design of symmetrical eight-bladed β-propeller proteins.pdf:application/pdf},
+	annote = {Overview : 
+	This paper proposes an exact approach for computational protein design (CPD) using cost function networks (CFN). The method models the sequence–conformation problem as a combinatorial optimization task and solves it with the toulbar2 solver. It focuses on efficiently finding the global minimum energy conformation (GMEC) while handling large search spaces. The approach improves pruning and search efficiency through advanced constraint propagation techniques. Results show that CFN-based solving can outperform traditional methods in both speed and scalability for certain CPD instances.
+	Review : 
+	The approach still relies on simplified assumptions such as rigid backbone and discrete rotamers. Scalability to very large or highly flexible systems remains uncertain. The evaluation mainly focuses on computational efficiency rather than biological validation. Dependence on precomputed energy functions may introduce bias. Finally, comparisons with alternative modern optimization strategies are limited.
+	}
+}
+
+@misc{dessaux_designing_2024,
+	title = {Designing symmetrical multi-component proteins using a hybrid generative {AI} approach},
+	copyright = {© 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
+	url = {https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1},
+	doi = {10.1101/2024.06.13.598662},
+	abstract = {Proteins, the fundamental building blocks of biological function, orchestrate complex cellular processes by assembling into intricate structures through meticulous interactions. The design of specific protein-protein interfaces to create customized protein assemblies holds immense potential for various biotechnological applications. To address the current limitations in designing heteromeric interactions for multi-component assemblies, we developed a hybrid generative AI design approach. This method combines deep learning and automated reasoning, explicitly considering both positive and negative interaction states to favor heteromeric desired over undesired interactions. The approach leverages Effie, a deep-learned pairwise decomposable scoring function, and an advanced reasoning tool extended for multicriteria optimization of this function. Here, we tested the ability of this hybrid AI method to redesign homomeric interfaces of bacterial microcompartment components (BMC-H) into heteromeric assemblies. We benchmarked its performance against ProteinMPNN, a sequence design autoregressive model. Our in silico assessment, complemented by experimental validation, highlights the outperformance of the hybrid AI generative design approach, and its potential to unlock the engineering of complex multi-component self-assembling protein entities.},
+	language = {en},
+	urldate = {2026-02-04},
+	publisher = {bioRxiv},
+	author = {Dessaux, Delphine and Buchet, Samuel and Barthe, Lucie and Defresne, Marianne and Cioci, Gianluca and Givry, Simon de and Garcia-Alles, Luis F. and Schiex, Thomas and Barbe, Sophie},
+	month = {jun},
+	year = {2024},
+	note = {Pages: 2024.06.13.598662
+Section: New Results},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\4YH8G6P7\\Dessaux et al. - 2024 - Designing symmetrical multi-component proteins using a hybrid generative AI approach.pdf:application/pdf},
+	annote = {Overview : 
+	This paper presents a hybrid AI framework for computational protein design that combines a deep learning scoring function (Effie) with the toulbar2 optimization solver. The goal is to redesign homomeric protein assemblies into heteromeric ones by explicitly considering both desired (positive) and undesired (negative) interactions. The method is applied to BMC-H proteins and compared to ProteinMPNN. Results show that the hybrid approach better captures interaction specificity and produces higher-quality designs. Experimental validation confirms improved binding, solubility, and correct assembly for several designs. This approach highlights the benefit of combining deep learning with exact optimization for multi-state protein design.
+	Review : 
+	The approach is computationally more expensive than autoregressive models. It still relies on simplified structural assumptions (e.g., rigid backbone). The method depends on the quality of the learned scoring function (Effie), which may introduce bias. Benchmarking is limited to a specific protein system (BMC-H), reducing generality.
+	}
+}
+
+@article{akplogan_solving_2013,
+	title = {Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft} {Constraints}},
+	volume = {47},
+	issn = {0399-0559, 1290-3868},
+	url = {https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993},
+	doi = {10.1051/ro/2013032},
+	abstract = {Application tools for the crop allocation problem (CAP) are required for agricultural advisors to design more efficient farming systems. Despite the extensive treatment of this issue by agronomists in the past, few methods tackle the crop allocation problem considering both the spatial and the temporal aspects of the CAP. In this paper, we precisely propose an original formulation addressing the crop allocation planning problem while taking farmers’ management choices into account. These choices are naturally represented by hard and soft constraints in the Weighted CSP formalism. We illustrate our proposition by solving a medium–size virtual farm using either a WCSP solver (toulbar2) or an ILP solver (NumberJack/SCIP). This preliminary work foreshadows the development of a decision–aid tool for supporting farmers in their crop allocation strategies.},
+	language = {en},
+	number = {2},
+	urldate = {2026-02-04},
+	journal = {RAIRO - Operations Research},
+	author = {Akplogan, Mahuna and Givry, Simon de and Métivier, Jean-Philippe and Quesnel, Gauthier and Joannon, Alexandre and Garcia, Frédérick},
+	month = {apr},
+	year = {2013},
+	keywords = {Weighted constraint satisfaction problem, crop allocation problem, integer linear programming},
+	pages = {151--172},
+	file = {Version soumise:C\:\\Users\\phili\\Zotero\\storage\\V958398H\\Akplogan et al. - 2013 - Solving the Crop Allocation Problemusing Hard and Soft Constraints.pdf:application/pdf},
+	annote = {REVIEW :
+This paper addresses the Crop Allocation Problem (CAP) by modeling it as a Weighted Constraint Satisfaction Problem (WCSP) to capture both spatial and temporal constraints. The authors evaluate three approaches : a direct WCSP formulation, a decomposed WCSP formulation, and an Integer Linear Programming (ILP) reformulation. Interestingly, the continuous relaxation of the ILP model represents the dual of the LP problem encoded by Optimal Soft Arc Consistency (OSAC). He notes that while OSAC is theoretically stronger than the Existential Directional Arc Consistency (EDAC) used by default in TOULBAR2 when the upper bound is infinite , OSAC and EDAC become incomparable when the upper bound decreases to a finite value. In the experimental phase, instances were solved using TOULBAR2 and compared against the ILP solver SCIP. Results showed that while the decomposed WCSP formulation was vastly superior to the direct WCSP formulation, it did not scale as well as ILP. On the largest instance, SCIP was more than three times faster and consumed significantly less memory than TOULBAR2.
+OVERVIEW :
+Il est  intéressant car il montre les limites temporelles et spatiales (cad la mémoire) de TOULBAR2 face à un solveur ILP (type SCIP) sur un problème de planification précis. Il permet de nuancer nos propos : TOULBAR2 est très flexible concernant la modélisation grâce aux fonctions de coût globales, mais n'est pas toujours le plus rapide face à des approches ILP pures sur des problèmes fortement combinatoires à grande échelle.
+
+	}
+}
+
+@article{chaboud2020tackling,
+  title={Tackling Air Traffic Conflicts as a Weighted CSP: Experiments with the Lumberjack Method},
+  author={Chaboud, Thomas and Pralet, C{\'e}dric and Schmidt, Nicolas},
+  journal={arXiv preprint arXiv:2001.11390},
+  year={2020},
+  annote = {REVIEW :
+This paper presents a multi-maneuver extension of the "Lumberjack" method for resolving air traffic conflicts. The Lumberjack approach consists of generating a large set of alternative discretized trajectories for conflicting aircraft, computing their compatibilities, and then selecting the optimal combination. The problem of finding the best trajectory combination is framed as a Weighted Constraint Satisfaction Problem (WCSP) or a minimum-cost maximum clique problem.
+
+To solve this, the authors compare two main exact solvers: the ToulBar2 WCSP solver and an original 'Smart Brute-Force' (SBF) algorithm. Experimental results highlight a clear dichotomy based on the problem's structure :
+SBF is highly efficient for instances involving a small number of aircraft (up to 5), allowing it to explore a massive number of trajectories per aircraft. This is highly relevant as real-world ATC operations mostly involve 2 to 3 aircraft.
+ToulBar2 suffers from memory overflow when the number of trajectories per aircraft is too large (due to the exhaustive constraint generation). However, it outperforms SBF on instances with more aircraft (6 to 8), provided the number of trajectories is kept small. Additionally, a fast non-optimal greedy algorithm is introduced to quickly provide ToulBar2 with a tight initial upper bound (which improves its solving time), or to tackle massive instances (e.g., 20 aircraft) where exact methods fail.
+
+OVERVIEW :
+Il apporte plusieurs éléments importants :
+
+L'analyse des limites de ToulBar2 face à un problème spécifique. L'article montre bien que ToulBar2 excelle sur des graphes avec beaucoup de variables (avions) mais des petits domaines, alors qu'il s'effondre en mémoire si les domaines (nombre de trajectoires) deviennent immenses.
+
+L'utilisation des Upper Bounds : L'article souligne une pratique très courante avec ToulBar2, qui consiste à utiliser un algorithme heuristique (un greedy algo) pour trouver rapidement une solution sous-optimale, qu'on donne ensuite à ToulBar2 comme borne supérieure initiale pour accélérer sa recherche de l'optimum.
+	}
+}
+
+@inproceedings{inproceedings,
+	author = {Métivier, Jean-Philippe and Boizumault, Patrice and Loudni, Samir},
+	year = {2009},
+	month = {09},
+	pages = {73-87},
+	title = {Solving Nurse Rostering Problems Using Soft Global Constraints},
+	isbn = {978-3-642-04243-0},
+	journal = {JFPC 2009 - Actes des Cinquiemes Journees Francophones de Programmation par Contraintes},
+	doi = {10.1007/978-3-642-04244-7_9},
+	annote = {REVIEW :
+This paper tackles the highly combinatorial Nurse Rostering Problem (NRP) by modeling it as a Weighted Constraint Satisfaction Proble. In staff scheduling, standard binary constraints are often insufficient to concisely express complex labor rules. To overcome this, the authors introduce soft global constraints (specifically, the Soft Regular and Soft Global Cardinality constraints) directly into the TOULBAR2 solver. By developing specialized flow-based and dynamic programming algorithms to enforce soft local consistencies (like EDAC) inside these global constraints, TOULBAR2 successfully computes optimal schedules that balance strict hospital coverage requirements with nurses' personal preferences.
+OVERVIEW :
+L'élaboration des emplois du temps du personnel est prb classique et difficile en RO. Cet article est crucial car il explique une évolution majeure de TOULBAR2 : l'ajout de contraintes globales souples. Cela permet d'expliquer que pour planifier des ressources efficacement, les algorithmes de base (OSAC/VAC sur des contraintes binaires) ont dû être adaptés pour traiter des contraintes "globales" (qui touchent beaucoup de variables en même temps).
+	}
+}
+
+@ARTICLE{8304580,
+	author={Biason, Alessandro and Dey, Subhrakanti and Zorzi, Michele},
+	journal={IEEE Transactions on Mobile Computing}, 
+	title={A Decentralized Optimization Framework for Energy Harvesting Devices}, 
+	year={2018},
+	volume={17},
+	number={11},
+	pages={2483-2496},
+	abstract={Designing decentralized policies for wireless communication networks is a crucial problem, which has only been partially solved in the literature so far. In this paper, we propose a Decentralized Markov Decision Process (Dec-MDP) framework to analyze a wireless sensor network with multiple users which access a common wireless channel. We consider devices with energy harvesting capabilities, that aim at balancing the energy arrivals with the data departures and with the probability of colliding with other nodes. Over time, an access point triggers a SYNC slot, wherein it recomputes the optimal transmission parameters of the whole network, and distributes this information. Every node receives its own policy, which specifies how it should access the channel in the future, and, thereafter, proceeds in a fully decentralized fashion, with no interactions with other entities in the network. We propose a multi-layer Markov model, where an external MDP manages the jumps between SYNC slots, and an internal Dec-MDP computes the optimal policy in the short term. We numerically show that, because of the harvesting, stationary policies are suboptimal in energy harvesting scenarios, and the optimal trade-off lies between an orthogonal and a random access system.},
+	keywords={Synchronization;Energy harvesting;Markov processes;Wireless sensor networks;Batteries;Computational modeling;Optimization;Admission control;energy consumption;energy harvesting;energy management;Internet of Things;optimal scheduling;power control;telecommunications networks;wireless sensor networks},
+	doi={10.1109/TMC.2018.2810269},
+	ISSN={1558-0660},
+	month={Nov},
+	annote = {REVIEW :
+This paper addresses the challenge of designing optimal decentralized transmission policies for Wireless Sensor Networks (WSNs) utilizing Energy Harvesting (EH) devices. The authors propose a multi-layer Markov model to balance energy arrivals, data departures, and packet collisions: an external Markov Decision Process (MDP) manages synchronization (SYNC) slots where an Access Point distributes the policy, while an internal Decentralized-MDP (Dec-MDP) dictates the nodes' autonomous actions between SYNC slots.
+To bypass the computationally prohibitive exhaustive search required to solve the continuous-state occupancy-MDP, the authors reformulate the exhaustive backup operation as a Constraint Program. Specifically, the optimization step is cast as a Weighted Constraint Satisfaction Problem (WCSP). Crucially for this review, the authors utilized the TOULBAR2 solver to execute all numerical evaluations and efficiently solve these internal WCSPs. Through this framework, the study demonstrates that a well-designed decentralized policy achieves performance close to centralized schemes, and proves that hybrid access schemes outperform pure orthogonal (TDMA-like) access in energy-constrained scenarios.
+OVERVIEW :
+Lien entre l'IA (Stochastique) et les WCSP : L'article modélise le problème avec des Processus de Décision Markoviens (MDP). Les MDP sont le fondement mathématique de l'Apprentissage par Renforcement, une branche importante de l'IA. Contrairement aux problèmes classiques où l'on donne tout à TOULBAR2 d'un seul coup (comme pour les protéines), ici TOULBAR2 est utilisé comme un sous-programme. À chaque itération de l'algorithme d'IA (pour évaluer les états de Markov), on génère un WCSP qu'on fait résoudre à TOULBAR2 pour trouver la meilleure action. Cela prouve que les WCSP peuvent être intégrés dans des boucles d'apprentissage dynamiques. Réduction de la complexité : L'article souligne que la recherche exhaustive dans ces modèles décentralisés est de complexité exponentielle, et que formuler le problème sous forme de WCSP permet de calculer des qui seraient autrement impossibles à évaluer.
+	}
+ }
+
+@inproceedings{ugarte_vaccination_2022,
+	address = {Online Streaming, --- Select a Country ---},
+	title = {Vaccination {Planning} in {Peru} using {Constraint} {Programming}:},
+	isbn = {978-989-758-547-0},
+	shorttitle = {Vaccination {Planning} in {Peru} using {Constraint} {Programming}},
+	url = {https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010899700003116},
+	doi = {10.5220/0010899700003116},
+	abstract = {Vaccination has been proven to be the most effective method to prevent infectious diseases, specially nowadays with the global pandemic of CoViD19. Millions of people are not immunized yet in various countries because of low vaccine availability resulting from inefﬁciencies and/or lack of access to the vaccines. We propose a constraint programming model, kwnown as Constraint Satisfaction Problem (CSP) as a distribution model for vaccination to address the unique characteristics and challenges facing vaccine dose assignation. This CSP model capture the uncertainties of demand for vaccinations such as the age range of the vaccination campaign and the location of vaccination centers. The objective is to maximize the percentage of fully immunized people facilitating the access by location and capacity of the vaccination centers while respecting the health ministry dispositions (e.g., age range, number of doses, etc.). Our research examines how these can be optimized with a constraint optimization problem in a single objective function. We tested the model using Peru open data on vaccination planning of their national health ministry. We make many experiments to show the feasibility of our proposal to increase their immunization coverage.},
+	language = {en},
+	urldate = {2026-02-04},
+	booktitle = {Proceedings of the 14th {International} {Conference} on {Agents} and {Artificial} {Intelligence}},
+	publisher = {SCITEPRESS - Science and Technology Publications},
+	author = {Ugarte, Willy},
+	year = {2022},
+	pages = {757--764},
+	file = {PDF:C\:\\Users\\phili\\Zotero\\storage\\J9C7X2YW\\Ugarte - 2022 - Vaccination Planning in Peru using Constraint Programming.pdf:application/pdf},
+	annote = {This paper proposes a Constraint Satisfaction and Optimization Problem (CSP/COP) model to address the logistical challenges of COVID-19 vaccine distribution in Peru. The model uses hard constraints to ensure valid assignments (e.g., one dose per person, respecting age limits) and soft constraints (preferences) to maximize the overall number of immunized individuals, prioritize older populations, and minimize the travel distance to vaccination centers.
+But we have to keep in mind that this paper used the COP model, it’s the opponent of TOULBAR2 so maybe we can use it in the opening.
+	}
+}
+
+@article{defresne_scaling_2026,
+	title = {Scaling {Neuro}-symbolic {Problem} {Solving}: {Solver}-{Free} {Learning} of {Constraints} and {Objectives}},
+	volume = {85},
+	copyright = {Copyright (c) 2026 Journal of Artificial Intelligence Research},
+	issn = {1076-9757},
+	shorttitle = {Scaling {Neuro}-symbolic {Problem} {Solving}},
+	url = {https://www.jair.org/index.php/jair/article/view/21105},
+	doi = {10.1613/jair.1.21105},
+	abstract = {Background: In the ongoing quest for hybridizing discrete reasoning with neural nets, there is an increasing interest in neural architectures that can learn how to solve discrete reasoning or optimisation problems from natural inputs, a task that Large Language Models seem to struggle with.
+Objectives: We introduce a differentiable neuro-symbolic architecture and a loss function dedicated to learning how to solve NP-hard reasoning problems.
+Methods: Our new probabilistic loss allows for learning both the constraints and the objective – possibly non-linear – of a combinatorial problem. Thus, it delivers a complete model that can be scrutinized and completed with side constraints. By pushing the combinatorial solver out of the training loop, our architecture also offers scalable training while exact inference gives access to maximum accuracy.
+Results: We empirically show that it can efficiently learn how to solve NP-hard reasoning problems from natural inputs. On three variants of the Sudoku benchmark – symbolic, visual, and many-solution –, our approach requires a fraction of data and training time of other hybrid methods. On a visual Min-Cut/Max-cut task, it optimizes the regret as well as a Decision-Focused-Learning regret-dedicated loss. Finally, it efficiently learns the energy optimisation formulation of the large real-world problem of designing proteins.},
+	language = {en},
+	urldate = {2026-02-04},
+	journal = {Journal of Artificial Intelligence Research},
+	author = {Defresne, Marianne and Gambardella, Romain and Barbe, Sophie and Schiex, Thomas},
+	month = {jan},
+	year = {2026},
+	keywords = {constraint programming, machine learning},
+	file = {Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\XQYQ8LY9\\Defresne et al. - 2026 - Scaling Neuro-symbolic Problem Solving Solver-Free Learning of Constraints and Objectives.pdf:application/pdf},
+	annote = {In order to solve discrete reasoning tasks, this architecture combines a neural network with a discrete solver. The neural network is responsible for perception and predicting the rules (cost functions), while the solver, such as Toulbar2 , handles the actual logical reasoning to find the final answer. This process is possible because the neural network outputs a fully-parameterized Graphical Model. Toulbar2 is also relevant for handling missing data during training, where it finds the most likely values for unobserved variables.
+However, in the Min-Cut and Max-Cut tasks, the solver is not used to calculate the loss function itself. Instead, it is used to generate the optimal solutions for the training set, which the E-PLL loss function then uses to train the network without further solver calls.
+	}
+}
+
+@article{deng2022deep,
+	title={Deep attentive belief propagation: Integrating reasoning and learning for solving constraint optimization problems},
+	author={Deng, Yanchen and Kong, Shufeng and Liu, Caihua and An, Bo},
+	journal={Advances in Neural Information Processing Systems},
+	abstract={Belief Propagation (BP) is an important message-passing algorithm for various reasoning tasks over graphical models, including solving the Constraint Optimization Problems (COPs). It has been shown that BP can achieve state-of-the-art performance on various benchmarks by mixing old and new messages before sending the new one, i.e., damping. However, existing methods of tuning a static damping factor for BP not only are laborious but also harm their performance. Moreover, existing BP algorithms treat each variable node’s neighbors equally when composing a new message, which also limits their exploration ability. To address these issues, we seamlessly integrate BP, Gated Recurrent Units (GRUs), and Graph Attention Networks (GATs) within the message-passing framework to reason about dynamic weights and damping factors for composing new BP messages. Our model, Deep Attentive Belief Propagation (DABP), takes the factor graph and the BP messages in each iteration as the input and infers the optimal weights and damping factors through GRUs and GATs, followed by a multi-head attention layer. Furthermore, unlike existing neural-based BP variants, we propose a novel self-supervised learning algorithm for DABP with a smoothed solution cost, which does not require expensive training labels and also avoids the common out-of-distribution issue through efficient online learning.},
+	volume={35},
+	pages={25436--25449},
+	year={2022},
+	annote={DABP solves Constraint Optimization Problems by combining neural networks with Belief Propagation. This approach is faster than the Toulbar2 solver on large problems because it avoids exploring every possible solution, its runtime scales more slowly as problems grow. While Toulbar2 is better for small, structured tasks, DABP reaches a 96.25% average convergence rate on complex instances.
+DABP is the first self-supervised method to fix message-passing issues without needing perfect labels from solvers like toulbar2, which often struggle with hard problem instances.
+	}
+}
+
+@misc{li_solving_2025,
+	title = {Solving {Satisfiability} {Modulo} {Counting} {Exactly} with {Probabilistic} {Circuits}},
+	url = {http://arxiv.org/abs/2503.01009},
+	doi = {10.48550/arXiv.2503.01009},
+	abstract = {Satisfiability Modulo Counting (SMC) is a recently proposed general language to reason about problems integrating statistical and symbolic Artificial Intelligence. An SMC problem is an extended SAT problem in which the truth values of a few Boolean variables are determined by probabilistic inference. Approximate solvers may return solutions that violate constraints. Directly integrating available SAT solvers and probabilistic inference solvers gives exact solutions but results in slow performance because of many back-and-forth invocations of both solvers. We propose KOCO-SMC, an integrated exact SMC solver that efficiently tracks lower and upper bounds in the probabilistic inference process. It enhances computational efficiency by enabling early estimation of probabilistic inference using only partial variable assignments, whereas existing methods require full variable assignments. In the experiment, we compare KOCO-SMC with currently available approximate and exact SMC solvers on large-scale datasets and real-world applications. The proposed KOCO-SMC finds exact solutions with much less time.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Li, Jinzhao and Jiang, Nan and Xue, Yexiang},
+	month = {juin},
+	year = {2025},
+	note = {arXiv:2503.01009 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Logic in Computer Science},
+	annote = {Koco-SMC solves complex problems that combine logic and probability. Researchers compared it against a baseline using the Toulbar2 solver. This baseline, called Lingeling-HBFS, uses Toulbar2 to calculate exact probabilities. It works by finding a logic solution first and then using Toulbar2 to check if the probability fits. This back and forth process makes the Toulbar2 much slower than Koco-SMC. They solve problems like supply chain routes during natural disasters or  the best delivery paths by picking roads with the lowest chance of heavy traffic.},
+}
+
+@misc{wang2026neuroliftingneuralinferencemarkov,
+      title={NeuroLifting: Neural Inference on Markov Random Fields at Scale}, 
+      author={Yaomin Wang and Chaolong Ying and Xiaodong Luo and Tianshu Yu},
+      year={2026},
+      eprint={2411.18954},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.18954}, 
+	  annote={This paper addresses the challenge of inference in large-scale Markov Random Fields (MRFs), a problem mathematically equivalent to solving Weighted Constraint Satisfaction Problems (WCSPs). The authors highlight that while exact solvers like Toulbar2 provide optimal solutions, they often struggle with scalability on massive instances due to exponential computational complexity. To overcome this, the paper introduces NEUROLIFTING, a novel approach tha tleverages Graph Neural Networks (GNNs) to reparameterize MRF decision variables, enabling optimization via standard gradient descent. In their experiments, Toulbar2 is used as the gold-standard exact baseline. The results show that while NEUROLIFTING matches Toulbar2's optimal solution quality on moderate-scale problems, it scales linearly, allowing it to efficiently tackle large-scale MRFs where exact methods like Toulbar2 hit their computational limits.},
+}

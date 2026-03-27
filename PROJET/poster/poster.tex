@@ -1,0 +1,177 @@
+% Format A0, orientation paysage (landscape), taille de police de base 25pt
+\documentclass[25pt, a0paper, landscape]{tikzposter}
+
+% ==============================================================================
+% PACKAGES
+% ==============================================================================
+\usepackage[english]{babel} % Pour avoir l'anglais
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{lipsum} % Pour générer du faux texte (à retirer plus tard)
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{biblatex}
+\addbibresource{biblio.bib}
+
+\renewcommand*{\bibfont}{\small} % ou \footnotesize si tu as vraiment beaucoup de sources
+
+% ==============================================================================
+% THEME ET COULEURS (C'est ici que tu rends le poster "joli")
+% ==============================================================================
+% Tikzposter propose plusieurs thèmes de base : 
+% Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
+\usetheme{Rays}
+
+% Tu peux aussi changer la palette de couleurs indépendamment du thème :
+% Default, Australia, Britain, Sweden, Spain, Russia, Denmark, Germany
+\usecolorstyle{Britain}
+
+% Pour personnaliser la couleur globale du fond si le thème ne te plaît pas
+% \colorlet{backgroundcolor}{blue!10!white}
+
+% ==============================================================================
+% EN-TÊTE (TITRE, AUTEURS, LOGOS)
+% ==============================================================================
+\title{State of the Art: [Your Research Topic]}
+
+\author{
+    Hugo Garcia, Philippe Gauthier, Marco Sanfilippo, Mathis Francine-Habas\\
+    \Large Supervisor : Martin Cooper
+}
+
+\institute{University of Toulouse \& IRIT Laboratory}
+
+\titlegraphic{
+    \begin{tabular}{@{}c@{\hspace{15cm}}c@{}}
+        \includegraphics[height=5cm]{./images/logo_UT.png} & 
+        \includegraphics[height=5cm]{./images/logo_irit.png}
+    \end{tabular}
+}
+
+% ==============================================================================
+% DÉBUT DU POSTER
+% ==============================================================================
+\begin{document}
+
+\maketitle
+
+\begin{columns}
+
+    % --------------------------------------------------------------------------
+    % COLONNE 1 (Gauche) : Intro & Contexte
+    % --------------------------------------------------------------------------
+    \column{0.33} % Prend 33% de la largeur
+    
+    \block{Abstract / Introduction}{
+        This section introduces the\cite{montalbano_multiple-choice_2022} context of your research.
+        Keep it brief. Use bullet points for readability:
+        \begin{itemize}
+            \item First important point of context.
+            \item The main problem you are addressing.
+            \item The goal of this state-of-the-art review.
+        \end{itemize}
+    }
+    
+    \block{Mathematical / Theoretical Background}{
+        Define the core concepts here. 
+        For example, a formal definition:
+        
+        \vspace{1cm}
+        Let $X$ be a topological space and $f: X \rightarrow \mathbb{R}$ a function. We define...
+        
+        \vspace{1cm}
+        You can include an image to illustrate the concept:
+        \begin{center}
+            % \includegraphics[width=0.8\linewidth]{./images/concept.png}
+            \textit{[Place a schematic or diagram here]}
+        \end{center}
+    }
+
+    % --------------------------------------------------------------------------
+    % COLONNE 2 (Milieu) : L'État de l'art (Le cœur)
+    % --------------------------------------------------------------------------
+    \column{0.34} % Légèrement plus large pour le cœur du sujet
+    
+    % Tu peux forcer une couleur spécifique pour UN bloc important
+    \colorlet{blocktitlebgcolor}{blue!80!black} % Change la couleur du titre du bloc
+    \block{State of the Art: Main Approaches}{
+        This is the core of your poster. Compare the existing methods.
+        
+        \vspace{1cm}
+        \textbf{1. Classical Methods (e.g., 1990s-2010s)}
+        \begin{itemize}
+            \item \textbf{Method A:} Brief description of pros and cons.
+            \item \textbf{Method B:} Mathematical formulation of Method B.
+        \end{itemize}
+        
+        \vspace{1cm}
+        \textbf{2. Modern Approaches (e.g., Deep Learning / Modern Heuristics)}
+        \begin{itemize}
+            \item \textbf{Method C:} How it outperforms classical methods.
+            \item Limitations still present today.
+        \end{itemize}
+    }
+    
+    % Remettre la couleur par défaut pour les blocs suivants
+    \colorlet{blocktitlebgcolor}{black!80} 
+    \block{Comparative Analysis}{
+        A table is highly recommended in a state-of-the-art poster to compare literature!
+        
+        \vspace{1cm}
+        \begin{center}
+        \begin{tabularx}{0.9\linewidth}{l X c c}
+            \toprule
+            \textbf{Reference} & \textbf{Methodology} & \textbf{Accuracy} & \textbf{Speed} \\
+            \midrule
+            Smith et al. (2020) & Graph Neural Networks & High & Slow \\
+            Doe et al. (2021) & Linear Programming & Exact & V. Slow \\
+            Cooper et al. (2023) & Novel Heuristic & Good & Fast \\
+            \bottomrule
+        \end{tabularx}
+        \end{center}
+    }
+
+    % --------------------------------------------------------------------------
+    % COLONNE 3 (Droite) : Limites, Futures pistes & Biblio
+    % --------------------------------------------------------------------------
+    \column{0.33}
+    
+    \block{Identified Limitations \& Open Problems}{
+        Based on your review, what is missing in the current literature?
+        \begin{itemize}
+            \item Scalability issues for large datasets.
+            \item Lack of theoretical bounds for algorithm $Y$.
+        \end{itemize}
+    }
+    
+    \block{Conclusion}{
+        Brief summary of the main takeaway from your literature review.
+        What is the logical next step for your introductory research project?
+    }
+    % Ouverture d'un "groupe" avec une accolade pour limiter le changement de couleur à ce bloc
+    {
+        \colorlet{blocktitlebgcolor}{black!80}       % Fond du titre (gris très foncé)
+        \colorlet{blocktitlefgcolor}{white}          % Texte du titre (blanc)
+        \colorlet{blockbodybgcolor}{yellow!10!white} % Fond du bloc (jaune très pâle)
+        \colorlet{blockbodyfgcolor}{black}           % Texte du bloc (noir)
+
+        \block{References}{
+            \vspace{-1cm}            
+            \printbibliography[heading=none] 
+        }
+    }
+
+    %% Un bloc plus discret pour les références
+    %\note[targetoffsetx=0cm, targetoffsety=-5cm, width=0.3\textwidth]{
+    %    \textbf{Key References:} \\
+    %    \small
+    %    [1] A. Smith, \textit{Journal of Math}, 2020. \\
+    %    [2] J. Doe, \textit{Computer Science Review}, 2021. \\
+    %    [3] M. Cooper, \textit{IRIT Proceedings}, 2023.
+    %}
+
+\end{columns}
+
+\end{document}
