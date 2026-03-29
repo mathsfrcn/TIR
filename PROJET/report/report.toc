@@ -1,2 +1,17 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{Introduction}{3}{section*.4}%
+\contentsline {section}{List of Acronyms}{5}{section*.5}%
+\contentsline {section}{\numberline {1}Algorithmic Foundations \& Solver Development}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}An application to graph theory and the cluster editing problem}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Constraint programming for discrete integration in high dimensions}{7}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Resource Management \& Planning}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Preamble}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spatio-temporal allocation and conflict management}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Human resources and global constraints}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Routing and networks}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Conclusion}{11}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Artificial Intelligence \& Machine Learning}{11}{section.3}%
+\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}%
+\contentsline {section}{\numberline {5}Appendix}{12}{section.5}%
+\contentsline {section}{\numberline {A}Algorithms and Code Snippets}{12}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Main Heuristic Pseudo-code}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Exemple Python Implementation}{12}{subsection.A.2}%

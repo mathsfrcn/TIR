@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  21 MAR 2026 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  29 MAR 2026 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1121,71 +1121,121 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tkz@gr@n=\count402
 \c@tkz@gr@ta=\count403
 \c@tkz@gr@tb=\count404
+) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
+Package: acronym 2025/01/17 v1.50 Support for acronyms (Tobias Oetiker)
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+\AC@clearlist=\toks71
+) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count405
+\algocf@hangindent=\skip168
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip169
+\skiplinenumber=\skip170
+\skiprule=\skip171
+\skiphlne=\skip172
+\skiptext=\skip173
+\skiplength=\skip174
+\algomargin=\skip175
+\skipalgocfslide=\skip176
+\algowidth=\dimen358
+\inoutsize=\dimen359
+\inoutindent=\dimen360
+\interspacetitleruled=\dimen361
+\interspacealgoruled=\dimen362
+\interspacetitleboxruled=\dimen363
+\algocf@ruledwidth=\skip177
+\algocf@inoutbox=\box149
+\algocf@inputbox=\box150
+\AlCapSkip=\skip178
+\AlCapHSkip=\skip179
+\algoskipindent=\skip180
+\algocf@nlbox=\box151
+\algocf@hangingbox=\box152
+\algocf@untilbox=\box153
+\algocf@skipuntil=\skip181
+\algocf@capbox=\box154
+\algocf@lcaptionbox=\skip182
+\algoheightruledefault=\skip183
+\algoheightrule=\skip184
+\algotitleheightruledefault=\skip185
+\algotitleheightrule=\skip186
+\c@algocfline=\count406
+\c@algocfproc=\count407
+\c@algocf=\count408
+\algocf@algoframe=\box155
+\algocf@algobox=\box156
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count405
+\lrq@indent=\count409
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count406
-\c@listtotal=\count407
-\c@listcount=\count408
-\c@liststart=\count409
-\c@liststop=\count410
-\c@citecount=\count411
-\c@citetotal=\count412
-\c@multicitecount=\count413
-\c@multicitetotal=\count414
-\c@instcount=\count415
-\c@maxnames=\count416
-\c@minnames=\count417
-\c@maxitems=\count418
-\c@minitems=\count419
-\c@citecounter=\count420
-\c@maxcitecounter=\count421
-\c@savedcitecounter=\count422
-\c@uniquelist=\count423
-\c@uniquename=\count424
-\c@refsection=\count425
-\c@refsegment=\count426
-\c@maxextratitle=\count427
-\c@maxextratitleyear=\count428
-\c@maxextraname=\count429
-\c@maxextradate=\count430
-\c@maxextraalpha=\count431
-\c@abbrvpenalty=\count432
-\c@highnamepenalty=\count433
-\c@lownamepenalty=\count434
-\c@maxparens=\count435
-\c@parenlevel=\count436
-\blx@tempcnta=\count437
-\blx@tempcntb=\count438
-\blx@tempcntc=\count439
-\c@blx@maxsection=\count440
-\blx@maxsegment@0=\count441
-\blx@notetype=\count442
-\blx@parenlevel@text=\count443
-\blx@parenlevel@foot=\count444
-\blx@sectionciteorder@0=\count445
-\blx@sectionciteorderinternal@0=\count446
-\blx@entrysetcounter=\count447
-\blx@biblioinstance=\count448
-\labelnumberwidth=\skip168
-\labelalphawidth=\skip169
-\biblabelsep=\skip170
-\bibitemsep=\skip171
-\bibnamesep=\skip172
-\bibinitsep=\skip173
-\bibparsep=\skip174
-\bibhang=\skip175
+\c@tabx@nest=\count410
+\c@listtotal=\count411
+\c@listcount=\count412
+\c@liststart=\count413
+\c@liststop=\count414
+\c@citecount=\count415
+\c@citetotal=\count416
+\c@multicitecount=\count417
+\c@multicitetotal=\count418
+\c@instcount=\count419
+\c@maxnames=\count420
+\c@minnames=\count421
+\c@maxitems=\count422
+\c@minitems=\count423
+\c@citecounter=\count424
+\c@maxcitecounter=\count425
+\c@savedcitecounter=\count426
+\c@uniquelist=\count427
+\c@uniquename=\count428
+\c@refsection=\count429
+\c@refsegment=\count430
+\c@maxextratitle=\count431
+\c@maxextratitleyear=\count432
+\c@maxextraname=\count433
+\c@maxextradate=\count434
+\c@maxextraalpha=\count435
+\c@abbrvpenalty=\count436
+\c@highnamepenalty=\count437
+\c@lownamepenalty=\count438
+\c@maxparens=\count439
+\c@parenlevel=\count440
+\blx@tempcnta=\count441
+\blx@tempcntb=\count442
+\blx@tempcntc=\count443
+\c@blx@maxsection=\count444
+\blx@maxsegment@0=\count445
+\blx@notetype=\count446
+\blx@parenlevel@text=\count447
+\blx@parenlevel@foot=\count448
+\blx@sectionciteorder@0=\count449
+\blx@sectionciteorderinternal@0=\count450
+\blx@entrysetcounter=\count451
+\blx@biblioinstance=\count452
+\labelnumberwidth=\skip187
+\labelalphawidth=\skip188
+\biblabelsep=\skip189
+\bibitemsep=\skip190
+\bibnamesep=\skip191
+\bibinitsep=\skip192
+\bibparsep=\skip193
+\bibhang=\skip194
 \blx@bcfin=\read6
 \blx@bcfout=\write6
 \blx@langwohyphens=\language80
-\c@mincomprange=\count449
-\c@maxcomprange=\count450
-\c@mincompwidth=\count451
+\c@mincomprange=\count453
+\c@maxcomprange=\count454
+\c@mincompwidth=\count455
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -1193,88 +1243,88 @@ File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count452
-\c@savedafterword=\count453
-\c@annotator=\count454
-\c@savedannotator=\count455
-\c@author=\count456
-\c@savedauthor=\count457
-\c@bookauthor=\count458
-\c@savedbookauthor=\count459
-\c@commentator=\count460
-\c@savedcommentator=\count461
-\c@editor=\count462
-\c@savededitor=\count463
-\c@editora=\count464
-\c@savededitora=\count465
-\c@editorb=\count466
-\c@savededitorb=\count467
-\c@editorc=\count468
-\c@savededitorc=\count469
-\c@foreword=\count470
-\c@savedforeword=\count471
-\c@holder=\count472
-\c@savedholder=\count473
-\c@introduction=\count474
-\c@savedintroduction=\count475
-\c@namea=\count476
-\c@savednamea=\count477
-\c@nameb=\count478
-\c@savednameb=\count479
-\c@namec=\count480
-\c@savednamec=\count481
-\c@translator=\count482
-\c@savedtranslator=\count483
-\c@shortauthor=\count484
-\c@savedshortauthor=\count485
-\c@shorteditor=\count486
-\c@savedshorteditor=\count487
-\c@labelname=\count488
-\c@savedlabelname=\count489
-\c@institution=\count490
-\c@savedinstitution=\count491
-\c@lista=\count492
-\c@savedlista=\count493
-\c@listb=\count494
-\c@savedlistb=\count495
-\c@listc=\count496
-\c@savedlistc=\count497
-\c@listd=\count498
-\c@savedlistd=\count499
-\c@liste=\count500
-\c@savedliste=\count501
-\c@listf=\count502
-\c@savedlistf=\count503
-\c@location=\count504
-\c@savedlocation=\count505
-\c@organization=\count506
-\c@savedorganization=\count507
-\c@origlocation=\count508
-\c@savedoriglocation=\count509
-\c@origpublisher=\count510
-\c@savedorigpublisher=\count511
-\c@publisher=\count512
-\c@savedpublisher=\count513
-\c@language=\count514
-\c@savedlanguage=\count515
-\c@origlanguage=\count516
-\c@savedoriglanguage=\count517
-\c@pageref=\count518
-\c@savedpageref=\count519
-\shorthandwidth=\skip176
-\shortjournalwidth=\skip177
-\shortserieswidth=\skip178
-\shorttitlewidth=\skip179
-\shortauthorwidth=\skip180
-\shorteditorwidth=\skip181
-\locallabelnumberwidth=\skip182
-\locallabelalphawidth=\skip183
-\localshorthandwidth=\skip184
-\localshortjournalwidth=\skip185
-\localshortserieswidth=\skip186
-\localshorttitlewidth=\skip187
-\localshortauthorwidth=\skip188
-\localshorteditorwidth=\skip189
+\c@afterword=\count456
+\c@savedafterword=\count457
+\c@annotator=\count458
+\c@savedannotator=\count459
+\c@author=\count460
+\c@savedauthor=\count461
+\c@bookauthor=\count462
+\c@savedbookauthor=\count463
+\c@commentator=\count464
+\c@savedcommentator=\count465
+\c@editor=\count466
+\c@savededitor=\count467
+\c@editora=\count468
+\c@savededitora=\count469
+\c@editorb=\count470
+\c@savededitorb=\count471
+\c@editorc=\count472
+\c@savededitorc=\count473
+\c@foreword=\count474
+\c@savedforeword=\count475
+\c@holder=\count476
+\c@savedholder=\count477
+\c@introduction=\count478
+\c@savedintroduction=\count479
+\c@namea=\count480
+\c@savednamea=\count481
+\c@nameb=\count482
+\c@savednameb=\count483
+\c@namec=\count484
+\c@savednamec=\count485
+\c@translator=\count486
+\c@savedtranslator=\count487
+\c@shortauthor=\count488
+\c@savedshortauthor=\count489
+\c@shorteditor=\count490
+\c@savedshorteditor=\count491
+\c@labelname=\count492
+\c@savedlabelname=\count493
+\c@institution=\count494
+\c@savedinstitution=\count495
+\c@lista=\count496
+\c@savedlista=\count497
+\c@listb=\count498
+\c@savedlistb=\count499
+\c@listc=\count500
+\c@savedlistc=\count501
+\c@listd=\count502
+\c@savedlistd=\count503
+\c@liste=\count504
+\c@savedliste=\count505
+\c@listf=\count506
+\c@savedlistf=\count507
+\c@location=\count508
+\c@savedlocation=\count509
+\c@organization=\count510
+\c@savedorganization=\count511
+\c@origlocation=\count512
+\c@savedoriglocation=\count513
+\c@origpublisher=\count514
+\c@savedorigpublisher=\count515
+\c@publisher=\count516
+\c@savedpublisher=\count517
+\c@language=\count518
+\c@savedlanguage=\count519
+\c@origlanguage=\count520
+\c@savedoriglanguage=\count521
+\c@pageref=\count522
+\c@savedpageref=\count523
+\shorthandwidth=\skip195
+\shortjournalwidth=\skip196
+\shortserieswidth=\skip197
+\shorttitlewidth=\skip198
+\shortauthorwidth=\skip199
+\shorteditorwidth=\skip256
+\locallabelnumberwidth=\skip257
+\locallabelalphawidth=\skip258
+\localshorthandwidth=\skip259
+\localshortjournalwidth=\skip260
+\localshortserieswidth=\skip261
+\localshorttitlewidth=\skip262
+\localshortauthorwidth=\skip263
+\localshorteditorwidth=\skip264
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
@@ -1284,19 +1334,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count520
-\c@textcitetotal=\count521
-\c@textcitemaxnames=\count522
-\c@biburlbigbreakpenalty=\count523
-\c@biburlbreakpenalty=\count524
-\c@biburlnumpenalty=\count525
-\c@biburlucpenalty=\count526
-\c@biburllcpenalty=\count527
+\c@textcitecount=\count524
+\c@textcitetotal=\count525
+\c@textcitemaxnames=\count526
+\c@biburlbigbreakpenalty=\count527
+\c@biburlbreakpenalty=\count528
+\c@biburlnumpenalty=\count529
+\c@biburlucpenalty=\count530
+\c@biburllcpenalty=\count531
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count528
+\c@smartand=\count532
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1306,8 +1356,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count529
-\c@bbx:relatedtotal=\count530
+\c@bbx:relatedcount=\count533
+\c@bbx:relatedtotal=\count534
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1401,17 +1451,17 @@ LaTeX Font Info:    ... okay on input line 8.
 
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count531
-\scratchdimen=\dimen358
-\scratchbox=\box149
-\nofMPsegments=\count532
-\nofMParguments=\count533
-\everyMPshowfont=\toks71
-\MPscratchCnt=\count534
-\MPscratchDim=\dimen359
-\MPnumerator=\count535
-\makeMPintoPDFobject=\count536
-\everyMPtoPDFconversion=\toks72
+\scratchcounter=\count535
+\scratchdimen=\dimen364
+\scratchbox=\box157
+\nofMPsegments=\count536
+\nofMParguments=\count537
+\everyMPshowfont=\toks72
+\MPscratchCnt=\count538
+\MPscratchDim=\dimen365
+\MPnumerator=\count539
+\makeMPintoPDFobject=\count540
+\everyMPtoPDFconversion=\toks73
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1428,7 +1478,7 @@ Package hyperref Info: Link coloring OFF on input line 8.
 \@outlinefile=\write7
 \openout7 = `report.out'.
 
-\c@lstlisting=\count537
+\c@lstlisting=\count541
 
 
 Package siunitx Warning: Tabular column type "S" overwritten with siunitx
@@ -1482,12 +1532,12 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<./images/logo_UT.png, id=10, 1563.8425pt x 501.875pt>
+<./images/logo_UT.png, id=70, 1563.8425pt x 501.875pt>
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 11.
 (pdftex.def)             Requested size: 221.63289pt x 71.13188pt.
-<./images/logo_irit.png, id=11, 289.08pt x 175.65625pt>
+<./images/logo_irit.png, id=71, 289.08pt x 175.65625pt>
 File: ./images/logo_irit.png Graphic file (type png)
 <use ./images/logo_irit.png>
 Package pdftex.def Info: ./images/logo_irit.png  used on input line 12.
@@ -1508,58 +1558,265 @@ l.38 \newpage
 \tf@toc=\write8
 \openout8 = `report.toc'.
 
- (report.lof)
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 42.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [2] (report.lof
+Package acronym Info: Label `acro:SBF' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+)
 \tf@lof=\write9
 \openout9 = `report.lof'.
 
- (report.lot)
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 46.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [3{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] (report.lot)
 \tf@lot=\write10
 \openout10 = `report.lot'.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 55.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 50.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [2]
+ [4]
+
+LaTeX Warning: Hyper reference `acro:CSP' on page 5 undefined on input line 58.
+
+
+LaTeX Warning: Hyper reference `acro:CSP' on page 5 undefined on input line 58.
+
+
+LaTeX Warning: Hyper reference `acro:VCSP' on page 5 undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:VCSP' on page 5 undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:EPT' on page 5 undefined on input line 61.
+
+
+LaTeX Warning: Hyper reference `acro:EPT' on page 5 undefined on input line 61.
+
+
+LaTeX Warning: Hyper reference `acro:SAC' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Hyper reference `acro:SAC' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Hyper reference `acro:FDAC' on page 5 undefined on input line 63.
+
+
+LaTeX Warning: Hyper reference `acro:FDAC' on page 5 undefined on input line 63.
+
+
+LaTeX Warning: Hyper reference `acro:VAC' on page 5 undefined on input line 65.
+
+
+LaTeX Warning: Hyper reference `acro:VAC' on page 5 undefined on input line 65.
+
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 64.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 81.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [3]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 65.
+[5]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 91.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [6]
+Package acronym Info: Label `acro:OSAC' newly defined as it shall be overridden
+although it is yet undefined on input line 123.
+Package acronym Info: Label `acro:EDAC' newly defined as it shall be overridden
+although it is yet undefined on input line 123.
+Package acronym Info: Label `acro:MILP' newly defined as it shall be overridden
+although it is yet undefined on input line 125.
+Package acronym Info: Label `acro:WCSP' newly defined as it shall be overridden
+although it is yet undefined on input line 134.
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 145.
+(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<images/crop_allocation_explication.png, id=218, 755.82375pt x 421.575pt>
+File: images/crop_allocation_explication.png Graphic file (type png)
+<use images/crop_allocation_explication.png>
+Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 151.
+(pdftex.def)             Requested size: 398.3386pt x 222.17929pt.
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 154.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [7{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 157.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 157.
+Package acronym Info: Label `acro:MIP' newly defined as it shall be overridden
+although it is yet undefined on input line 157.
+Package acronym Info: Label `acro:MINLP' newly defined as it shall be overridden
+although it is yet undefined on input line 157.
+Package acronym Info: Label `acro:LP' newly defined as it shall be overridden
+although it is yet undefined on input line 159.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+<images/lumberjack_algo.png, id=239, 785.18344pt x 157.33781pt>
+File: images/lumberjack_algo.png Graphic file (type png)
+<use images/lumberjack_algo.png>
+Package pdftex.def Info: images/lumberjack_algo.png  used on input line 177.
+(pdftex.def)             Requested size: 284.52756pt x 57.01608pt.
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 182.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[8 <./images/crop_allocation_explication.png> <./images/lumberjack_algo.png>]
+<images/ex_alternative_fligth.png, id=252, 377.91188pt x 265.74281pt>
+File: images/ex_alternative_fligth.png Graphic file (type png)
+<use images/ex_alternative_fligth.png>
+Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 185.
+(pdftex.def)             Requested size: 199.16928pt x 140.0523pt.
+Package acronym Info: Label `acro:CFN' newly defined as it shall be overridden
+although it is yet undefined on input line 189.
+<images/performance1_SBF_TB2.png, id=258, 517.18219pt x 344.78813pt>
+File: images/performance1_SBF_TB2.png Graphic file (type png)
+<use images/performance1_SBF_TB2.png>
+Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 198.
+(pdftex.def)             Requested size: 227.62204pt x 151.74933pt.
+<images/performance2_SBF_TB2.png, id=264, 513.41812pt x 321.45094pt>
+File: images/performance2_SBF_TB2.png Graphic file (type png)
+<use images/performance2_SBF_TB2.png>
+Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 210.
+(pdftex.def)             Requested size: 227.62204pt x 142.51303pt.
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 216.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [9 <./images/ex_alternative_fligth.png> <./images/performance1_SBF_TB2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--238
+
+ []
+
+Package acronym Info: Label `acro:CP' newly defined as it shall be overridden
+although it is yet undefined on input line 240.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 246.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[10 <./images/performance2_SBF_TB2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--255
+
+ []
+
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 301.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[11]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 320--321
+[][]|[]$[]$  
+ []
+
+(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 351.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 351.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 369.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [12]
+Overfull \hbox (55.21567pt too wide) in paragraph at lines 371--371
+\T1/lmtt/m/n/10 allocation -[] problemusing -[] hard -[] and -[] soft -[] constraints / 928250B2BF7802F29B31EE47D2FD9993$[]
+ []
+
 \tf@thm=\write11
 \openout11 = `report.thm'.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 67.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 372.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [4] (report.aux)
+[13] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 473696E9BD2266273D0101838766F247;104.
+(rerunfilecheck)             Checksum: 82C91BB5E1AB58CAF15AAD05BDA5C128;3407.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47692 strings out of 474486
- 990263 string characters out of 5743282
- 1933542 words of memory out of 5000000
- 69223 multiletter control sequences out of 15000+600000
- 612547 words of font info for 74 fonts, out of 8000000 for 9000
+ 49743 strings out of 474486
+ 1021658 string characters out of 5743282
+ 2005542 words of memory out of 5000000
+ 71138 multiletter control sequences out of 15000+600000
+ 651469 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,15n,120p,1221b,1787s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (5 pages, 278417 bytes).
+ 93i,18n,120p,2365b,3105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
+Output written on report.pdf (14 pages, 716868 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
