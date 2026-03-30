@@ -267,6 +267,59 @@ This need to hybridize exact constraint optimization with models that handle unc
 
 \section{Artificial Intelligence \& Machine Learning}
 
+\section{Artificial Intelligence \& Machine Learning}
+
+\subsection{Preamble}
+
+We have seen that Toulbar2 is a leading exact solver for Cost Function Networks. We will examine how AI integrates with Toulbar2 by combining neural network perception with exact structural constraints. We will also explore research where machine learning improves upon or outperforms Toulbar2.
+
+\subsection{AI in the service of Toulbar2}
+
+There are instances where we have to face NP-hard combinatorial reasoning problems directly from natural inputs like images or unmapped protein structures. Traditional exact solvers cannot process raw sensory data and pure deep learning models struggle to perform exact logical reasoning. To resolve, a neural network processes the natural inputs and predicts pairwise cost matrices, the architecture presented on the paper trains using a dedicated loss function called the Emmental Pseudo-LogLikelihood, gaining time since this approach pushes the combinatorial solver out of the training loop entirely unlike other predecessors. 
+
+At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. Toulbar2 enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
+    \caption{Scaling Neuro-symbolic Problem Solving: Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026).}
+\end{figure}
+
+\begin{itemize}
+    \item Raw inputs enter the neural network.
+    \item The network predicts all pairwise cost functions.
+    \item Toulbar2 computes the exact discrete output.
+\end{itemize}
+
+This effectively isolates perception from reasoning. It allows Toulbar2 to focus exclusively on the exact discrete optimization tasks where it dominates.
+
+\subsection{Yet New Ways Open}
+
+As established, Toulbar2 explores the whole solution space. This exploration makes it computationally infeasible for large scale constraint optimization problems. The application of modern artificial intelligence methods to directly address these specific limitations presents an interesting alternative.
+
+Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
+
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for Satisfiability Modulo Counting ($SMC^{2}$). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO $SMC^{8}$, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/smc_example.png}
+    \caption{Example of SMC: Robust Supply Chain with Different Network Size (Li et al., 2025).}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/KOCO.png}
+    \caption{Performance of each algorithm}
+\end{figure}
+
+This algorithm is a significant improvement over previous systems like Lingeling-HBFS that rely on Toulbar2.
+
+Artificial intelligence can additionally be utilized to match exact quality with linear scaling instead of exponential scaling Toulbar2 has. NeuroLifting addresses the limitations of Toulbar2 by using Graph Neural Networks to reparameterize decision variables. This transformation allows the optimization of models through standard gradient descent. This method matches the solution quality of Toulbar2 on moderate scales and outperforms it on large problems due to linear computational growth.
+
+\subsection{Conclusion}
+
+The integration of artificial intelligence resolves the scaling limitations of the Toulbar2 in some problems. Neural networks can also process the perception of the data to let the solver focus on discrete optimization tasks. Emerging algorithms bypass exhaustive search through the application of gradient descent and dynamic probabilistic tracking. This transition mandates that future solving methods rely on hybrid architectures rather than exact solvers.
 
 \section{Conclusion}
 
