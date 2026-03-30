@@ -53,7 +53,7 @@
 
 % Le mot entre crochets [PLNE] sert à aligner le texte. 
 % Mets ici l'acronyme le plus long de ta liste pour que l'espacement soit parfait.
-\begin{acronym}[EDAC]
+\begin{acronym}[MINLP]
     \acro{WCSP}{Weighted Constraint Satisfaction Problem}
     \acro{CSP}{Constraint Satisfaction Problem}
     \acro{VCSP}{Valued Constraint Satisfaction Problem}
@@ -65,12 +65,15 @@
     \acro{VAC}{Virtual Arc Consistency}
     \acro{OSAC}{Optimal Soft Arc Consistency}
     \acro{MILP}{Mixed-Integer Linear Programming}
+    \acro{ILP}{Integer Linear Programming}
     \acro{CP}{Constraint Programming}
     \acro{LP}{Linear Programming}
     \acro{MIP}{Mixed Integer Programming}
     \acro{MINLP}{Mixed Integer Non-Linear Programming}
+    \acro{KPCG}{knapsack problem with a conflict graph}
     \acro{SBF}{Smart Brute-force}
     \acro{ZP}{Zahn's problem}
+    \acro{BnB}{Branch-And-Bound}
 \end{acronym}
 
 \vspace{1cm}
@@ -82,40 +85,39 @@
 \newpage
 \section*{Introduction}
 %\addcontentsline{toc}{section}{Introduction}
-The constraint satisfaction problem (CSP) involves finding an assignment for a set of variables over a finite domain that respects a set of given hard constraints. 
-To find a solution to a CSP problem, backtracking search is used. This strategy will create a new subtree every time a value is assigned to a variable. Once the current instance is infeasible, the algorithm will backtrack and continue with a different assignment until a solution to the original problem is found. However, many real-world problems require optimization rather than mere satisfaction.
+The \ac{CSP} involves finding an assignment for a set of variables over a finite domain that respects a set of given hard constraints. 
+To find a solution to a \ac{CSP} problem, backtracking search is used. This strategy will create a new subtree every time a value is assigned to a variable. Once the current instance is infeasible, the algorithm will backtrack and continue with a different assignment until a solution to the original problem is found. However, many real-world problems require optimization rather than mere satisfaction.
 \newline
 
-The valued constraint satisfaction problem (VCSP) or weighted constraint satisfaction problem (WCSP) is considered a generalization of the classic CSP. 
-In a VCSP, a cost function network (CFN) framework is used. A CFN is a tuplet consisting of a finite set of discrete variables X, a finite domain D, a finite set of soft constraint C, and a maximum cost k. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the VCSP is to find the instantiation of minimal cost. 
+The \ac{VCSP} or \ac{WCSP} is considered a generalization of the classic \ac{CSP}. 
+In a \ac{VCSP}, a \ac{CFN} framework is used. A \ac{CFN} is a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft constraint $C$, and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
 \newline
 
-To solve a VCSP, the branch-and-bound algorithm (BnB) is used. BnB explores the solution space by ‘branching’: it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
+To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ‘\textit{branching}’ : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/bnb.png}
-    \caption{Example of BnB: Mobile Robot Localisation and Mapping in Extensive Outdoor Environments \cite{Bailey, T. (2002)}.}
+    \caption{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}%\cite
 \end{figure}
 
 The efficacy of the branch-and-bound depends on the lower bound we have access to. 
 In a Cost Function Network, functions are categorized by their arity: unary functions (arity 1) assign costs to individual variable assignments, binary functions (arity 2) assign costs to pairs of variables, and the nullary constant (arity 0), denoted as $c_{\emptyset}$, represents a global lower bound on the cost of any complete assignment.
 \newline
 
-Equivalence preserving transformations (EPT) transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different EPTs are presented for an example with three variables (x, y, z) with two possible assignments (a, b). A line joining two values represents a cost of 1 for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
+\ac{EPT} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPT} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/ept.jpg}
     \caption{Basic Equivalence Preserving Transformations\cite{METTRE WIKIPEDIA}.}
 \end{figure}
 
-By successive EPT, the cost can be shifted and concentrated into the nullary constraint c, thus giving a better lower bound for the VCSP and allowing to quickly prune subtrees.
+By successive \ac{EPT}, the cost can be shifted and concentrated into the nullary constraint $c$, thus giving a better lower bound for the \ac{VCSP} and allowing to quickly prune subtrees.
 \newline
 
-This process of applying successive EPTs to obtain a better lower bound is known as soft arc consistency (SAC). Different inference techniques to obtain a good lower bound exist, and those include the following: full directional arc consistency (FDAC), existential directional arc consistency (EDAC), virtual arc consistency (VAC) and optimal soft arc consistency (OSAC). Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. OSAC provides the best lower bound, followed by VAC, then EDAC and finally FDAC.
+This process of applying successive \acp{EPT} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
 \newline
 
-These theoretical findings are used in the solver Toulbar2. Toulbar2 is an open-source C++ solver for discrete optimization problems within the cost function network framework. The solver integrates SAC operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classical operations research and finally discuss their recent integration into neuro-symbolic Artificial Intelligence networks.
-
+These theoretical findings are used in the solver Toulbar2. It is an open-source \textit{C++} solver for discrete optimization problems within the cost function network framework. The solver integrates \ac{SAC} operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classical operations research and finally discuss their recent integration into neuro-symbolic Artificial Intelligence networks.
 
 % ==================================================================================================================================
 % PARTIE 1 : Algorithmic Foundations & Solver Development
@@ -124,30 +126,31 @@ These theoretical findings are used in the solver Toulbar2. Toulbar2 is an open-
 \section{Algorithmic Foundations \& Solver Development}
 
 \subsection{An application to graph theory and the cluster editing problem}
-Zahn's decision problem (ZP) can be described as the cluster editing problem. Given a graph, what is the minimal number of operations (adding edges, removing edges) needed to create a disjoint union of cliques. The ZP is generally an NP-hard problem.
-In a paper titled 'A constraint programming approach to the
-Zahn’s decision problem' , the ZP was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
+Zahn's decision problem can be described as the cluster editing problem. Given a graph, what is the minimal number of operations (adding edges, removing edges) needed to create a disjoint union of cliques. The \ac{ZP} is generally an NP-hard problem.
+In a paper titled \underline{A constraint programming approach to the
+Zahn’s decision problem}\cite{noguchi_computational_2019} , the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
 \begin{itemize}
     \item A boolean variable is added for each pair of vertices. When a variable is set to true by the solver, then the decision is to keep or add the edge between the vertices. Else, the decision is to remove or not add an edge between the two vertices.
-    \item A unary soft constraint is added for each variable. The cost of assigning 0 to a variable x is 1 if the edge exists in the original graph, and 0 otherwise.
-    \item A ternary hard constraint is added for each pair of 3 edges which together creates the subgraph P3 described in the figure below. These ternary hard constraints are added to ensure that the resulting graph is a disjoint union of cliques. This result comes from the fact that a disjoint union of cliques cannot contain a subgraph isomorphic to P3, as explained in the paper.
+    \item A unary soft constraint is added for each variable. The cost of assigning $0$ to a variable $x$ is $1$ if the edge exists in the original graph, and 0 otherwise.
+    \item A ternary hard constraint is added for each pair of $3$ edges which together creates the subgraph $P3$ described in the figure below. These ternary hard constraints are added to ensure that the resulting graph is a disjoint union of cliques. This result comes from the fact that a disjoint union of cliques cannot contain a subgraph isomorphic to $P3$, as explained in the paper.
 \end{itemize}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/ZP.png}
-    \caption{P3 Graph and insertion/deletion possibilities.}
+    \caption{$P3$ Graph and insertion/deletion possibilities.}
 \end{figure}
-Using Toulbar2 to solve the VCSP, the results found were much better than the fixed parameter algorithm for cluster editing presented before. The VCSP algorithm performed better on both sparse and dense graphs. These results show the efficacy and utility of the constraint programming paradigm for general graph related problems.
 
+Using Toulbar2 to solve the \ac{VCSP}, the results found were much better than the fixed parameter algorithm for cluster editing presented before. The \ac{VCSP} algorithm performed better on both sparse and dense graphs. These results show the efficacy and utility of the constraint programming paradigm for general graph related problems.
 
 \subsection{Constraint programming for discrete integration in high dimensions}
-Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization (Ermon, Gomez, Sabharwal, Selman), transform the original problem in set of combinatorial problems solved by Toulbar2
+
+Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper \underline{Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization}\cite{ermon_taming_2013}, transform the original problem in set of combinatorial problems solved by Toulbar2.
 \newline
 
-The problem at hand is described as follows: calculate the total sum over a large set of elements of a partition function w(). This problem is considered to be intractable, as the sum of elements over an exponential number of different configurations. By changing the #P complete counting problem into a series of NP-Hard MAP queries (Maximum a posteriori) optimization queries, the WISH algorithm bypasses the need for exhaustive summations.
+The problem at hand is described as follows : calculate the total sum over a large set of elements of a partition function $w()$. This problem is considered to be intractable, as the sum of elements over an exponential number of different configurations. By changing the $\#P$ complete counting problem into a series of NP-Hard MAP queries (Maximum a posteriori) optimization queries, the WISH algorithm bypasses the need for exhaustive summations.
 \newline
 
-Instead of attempting to enumerate an exponential number of configurations, the authors use randomized parity constraints linear equations over the field F2 to act as a hash function that "thins out" the configuration space. By solving a small, polynomial number of these constrained optimization instances, the solver Toulbar2 identifies the heaviest surviving configuration (the mode) at different levels of hashing. These specific maximum weights act as statistical proxies for the quantiles of the original weight distribution, allowing the total partition function to be reconstructed as a weighted sum of these median values with high-probability approximation guarantees (À VOIR)
+Instead of attempting to enumerate an exponential number of configurations, the authors use randomized parity constraints linear equations over the field $F2$ to act as a hash function that ``thins out'' the configuration space. By solving a small, polynomial number of these constrained optimization instances, the solver Toulbar2 identifies the heaviest surviving configuration (the mode) at different levels of hashing. These specific maximum weights act as statistical proxies for the quantiles of the original weight distribution, allowing the total partition function to be reconstructed as a weighted sum of these median values with high-probability approximation guarantees (À VOIR)
 \newline
 
 Using Toulbar2, a state-of-the-art combinatorial optimization tool, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically.
@@ -155,9 +158,10 @@ Using Toulbar2, a state-of-the-art combinatorial optimization tool, WISH provide
 
 \subsection{Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}
 
-The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows: given a maximum weight capacity C, a set of objects each an assigned weight and value, what is the set of objects that maximize the value while respecting the weight capacity.
-The knapsack problem with a conflict graph (KPCG) is a variant of the knapsack problem where conflict between objects is added. For a given graph G, each object is assigned to a vertex and an edge between vertex i and j implies that object i and j cannot be in a solution together. The KPCG is difficult to solve with constraint programming as CFN do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
-So and so developed a way to model pseudo boolean linear constraints with CNF allowing more problems to be solved using VSCP. When toulbar2 was compared with the state-of-the-art ILP solver CPLEX 20.1 for solving the knapsack problem with conflict graph. 6 classes with 720 instances each of the problem were tested with different weights, capacities and cost. The results found that Toulbar2 was more efficient than CPLEX in 4 out 6 classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows : given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
+The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex and an edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFN} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
+So and so developed a way to model pseudo boolean linear constraints with \ac{CNF} allowing more problems to be solved using \ac{VSCP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. $6$ classes with $720$ instances each of the problem were tested with different $weights$, $capacities$ and $cost$. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+
 % ==================================================================================================================================
 % PARTIE 2 : Proteine
 
@@ -287,13 +291,13 @@ The value of this document for our analysis lies in demonstrating the historical
 However, this type of constraint is poorly suited for modeling human rules. It would require creating an exponentially large constraint network. This makes the solution inefficient.
 \newline
 
-To overcome this issue, research around toulbar2 focused on implementing soft global constraints. Unlike a binary constraint, a global constraint simultaneously evaluates a large sequence of assignments. 
+To overcome this issue, research around Toulbar2 focused on implementing soft global constraints. Unlike a binary constraint, a global constraint simultaneously evaluates a large sequence of assignments. 
 For example, it can encompass a nurse's entire week or month in a single evaluation.
 Métivier et al. (2009) explain how specific algorithms, based on dynamic programming or flow networks, were integrated directly into Toulbar2. This integration allows the application of local consistencies (such as \ac{EDAC}).
 \newline
 
 This article demonstrates a significant evolution. The \ac{WCSP} paradigm is often associated with structural or biological problems. However, it has now achieved a much richer expressivity.
-Integrating soft global constraints into toulbar2 proves its true capability. It can now successfully compete with traditional \ac{CP} solvers in the field of human scheduling.
+Integrating soft global constraints into Toulbar2 proves its true capability. It can now successfully compete with traditional \ac{CP} solvers in the field of human scheduling.
 
 \subsection{Routing and networks}
 
@@ -323,22 +327,18 @@ This need to hybridize exact constraint optimization with models that handle unc
 
 \section{Artificial Intelligence \& Machine Learning}
 
-\section{Artificial Intelligence \& Machine Learning}
-
-\subsection{Preamble}
-
 We have seen that Toulbar2 is a leading exact solver for Cost Function Networks. We will examine how AI integrates with Toulbar2 by combining neural network perception with exact structural constraints. We will also explore research where machine learning improves upon or outperforms Toulbar2.
 
 \subsection{AI in the service of Toulbar2}
 
 There are instances where we have to face NP-hard combinatorial reasoning problems directly from natural inputs like images or unmapped protein structures. Traditional exact solvers cannot process raw sensory data and pure deep learning models struggle to perform exact logical reasoning. To resolve, a neural network processes the natural inputs and predicts pairwise cost matrices, the architecture presented on the paper trains using a dedicated loss function called the Emmental Pseudo-LogLikelihood, gaining time since this approach pushes the combinatorial solver out of the training loop entirely unlike other predecessors. 
 
-At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. Toulbar2 enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages:
+At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. It enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages :
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
-    \caption{Scaling Neuro-symbolic Problem Solving: Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026).}
+    \caption{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026)\cite{defresne_scaling_2026}.}
 \end{figure}
 
 \begin{itemize}
@@ -355,12 +355,12 @@ As established, Toulbar2 explores the whole solution space. This exploration mak
 
 Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
 
-We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for Satisfiability Modulo Counting ($SMC^{2}$). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO $SMC^{8}$, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} ($SMC^{2}$). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like $\text{KOCO SMC}^{8}$, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/smc_example.png}
-    \caption{Example of SMC: Robust Supply Chain with Different Network Size (Li et al., 2025).}
+    \caption{Example of SMC : Robust Supply Chain with Different Network Size (Li et al., 2025)\cite{li_solving_2025}.}
 \end{figure}
 
 \begin{figure}[H]
@@ -453,24 +453,6 @@ The integration of artificial intelligence resolves the scaling limitations of t
 \end{algorithm}
 
 \vspace{1cm}
-
-% --- OPTION 2 : DU VRAI CODE (Python, C++, etc.) ---
-\subsection{Exemple Python Implementation}
-
-\begin{lstlisting}[language=Python, caption=Python implementation of the heuristic, label=code:python]
-def iterative_local_search(S0, I_max):
-    best_S = S0
-    i = 0
-    while i < I_max:
-        S_prime = perturbate(best_S)
-        S_second = local_search(S_prime)
-        
-        if cost(S_second) < cost(best_S):
-            best_S = S_second
-            
-        i += 1
-    return best_S
-\end{lstlisting}
 
 % ==================================================================================================================================
 % Biblio
