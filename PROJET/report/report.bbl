@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{akplogan_solving_2013}{article}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{akplogan_solving_2013}{article}{}{}
       \name{author}{6}{}{%
         {{hash=dd7cce7def0a190a86fde6ff1c103371}{%
            family={Akplogan},
@@ -57,10 +57,12 @@
       }
       \strng{namehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{fullhash}{fc321b4bcb7cba1d576a3f2d8feeb04a}
+      \strng{fullhashraw}{fc321b4bcb7cba1d576a3f2d8feeb04a}
       \strng{bibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{authorbibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{authornamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{authorfullhash}{fc321b4bcb7cba1d576a3f2d8feeb04a}
+      \strng{authorfullhashraw}{fc321b4bcb7cba1d576a3f2d8feeb04a}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -94,7 +96,7 @@
       \endverb
       \keyw{Weighted constraint satisfaction problem,crop allocation problem,integer linear programming}
     \endentry
-    \entry{ieee_transactions_on_mobile_computing}{article}{}
+    \entry{ieee_transactions_on_mobile_computing}{article}{}{}
       \name{author}{3}{}{%
         {{hash=bab6f50e8018a37e48fd722489f2af88}{%
            family={Biason},
@@ -114,10 +116,12 @@
       }
       \strng{namehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{fullhash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
+      \strng{fullhashraw}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{bibnamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authorbibnamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authornamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authorfullhash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
+      \strng{authorfullhashraw}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -138,7 +142,7 @@
       \endverb
       \keyw{Synchronization;Energy harvesting;Markov processes;Wireless sensor networks;Batteries;Computational modeling;Optimization;Admission control;energy consumption;energy harvesting;energy management;Internet of Things;optimal scheduling;power control;telecommunications networks;wireless sensor networks}
     \endentry
-    \entry{chaboud2020tackling}{article}{}
+    \entry{chaboud2020tackling}{article}{}{}
       \name{author}{3}{}{%
         {{hash=29f8c43bfc0a09188105852fac0c3146}{%
            family={Chaboud},
@@ -158,10 +162,12 @@
       }
       \strng{namehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{fullhash}{0ac8c7ad6effbd06f7b4c1fffc174553}
+      \strng{fullhashraw}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{bibnamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authorbibnamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authornamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authorfullhash}{0ac8c7ad6effbd06f7b4c1fffc174553}
+      \strng{authorfullhashraw}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -171,7 +177,7 @@
       \field{title}{Tackling Air Traffic Conflicts as a Weighted CSP: Experiments with the Lumberjack Method}
       \field{year}{2020}
     \endentry
-    \entry{lesaint2014developing}{article}{}
+    \entry{lesaint2014developing}{article}{}{}
       \name{author}{5}{}{%
         {{hash=71b4a9237683e521fe98f95cab8dfd29}{%
            family={Lesaint},
@@ -201,10 +207,12 @@
       }
       \strng{namehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{fullhash}{d2570ec20d975e9349348c52056df7f5}
+      \strng{fullhashraw}{d2570ec20d975e9349348c52056df7f5}
       \strng{bibnamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authorbibnamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authornamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authorfullhash}{d2570ec20d975e9349348c52056df7f5}
+      \strng{authorfullhashraw}{d2570ec20d975e9349348c52056df7f5}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -215,7 +223,7 @@
       \field{pages}{arXiv\bibrangedash 1401}
       \range{pages}{-1}
     \endentry
-    \entry{nurse_rostering_problems}{inproceedings}{}
+    \entry{nurse_rostering_problems}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=d6d78fe0f86f977c49ae2e562894d5b7}{%
            family={Métivier},
@@ -235,10 +243,12 @@
       }
       \strng{namehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{fullhash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
+      \strng{fullhashraw}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{bibnamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authorbibnamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authornamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authorfullhash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
+      \strng{authorfullhashraw}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -255,69 +265,12 @@
       \verb 10.1007/978-3-642-04244-7_9
       \endverb
     \endentry
-    \entry{montalbano_multiple-choice_2022}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=54a76691e24ff38690aa01e0572d4a84}{%
-           family={Montalbano},
-           familyi={M\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod}}}%
-        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
-           family={Givry},
-           familyi={G\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=02053fef5a82223abac1996e33d71e79}{%
-           family={Katsirelos},
-           familyi={K\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=04b25dbc630118068c55c54cd179207d}{%
-           family={Schaus},
-           familyi={S\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{fullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{bibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorbibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authornamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorfullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{editorbibnamehash}{04b25dbc630118068c55c54cd179207d}
-      \strng{editornamehash}{04b25dbc630118068c55c54cd179207d}
-      \strng{editorfullhash}{04b25dbc630118068c55c54cd179207d}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Graphical models, such as cost function networks (CFNs), can compactly express large decomposable functions, which leads to efficient inference algorithms. Most methods for computing lower bounds in Branch-and-Bound minimization compute feasible dual solutions of a specific linear relaxation. These methods are more effective than solving the linear relaxation exactly, with better worst-case time complexity and better performance in practice. However, these algorithms are specialized to the structure of the linear relaxation of a CFN and cannot, for example, deal with constraints that cannot be expressed in extension, such as linear constraints of large arity.}
-      \field{annotation}{Overview: The paper introduces a method to integrate linear constraints, specifically the Multiple-Choice Knapsack Constraint (MCKC), into Cost Function Networks (CFNs). This algorithm is implemented within toulbar2 and allows toulbar2 to solve problems that combine traditional graphical model costs with global linear constraints more efficiently than before. The algorithm is competitive for solving problems such as the knapsack problem with conflict graph and protein design problem. Review: The paper demonstrates that toulbar2 can now compete with or outperform Integer Linear Programming (ILP) solvers on knapsack problems with conflict graphs. This expansion broadens the scope of toulbar2 to domains like resource allocation and image analysis where linear budget or distance constraints are common.}
-      \field{booktitle}{Integration of {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations} {Research}}
-      \field{isbn}{978-3-031-08011-1}
-      \field{title}{Multiple-choice {Knapsack} {Constraint} in {Graphical} {Models}}
-      \field{year}{2022}
-      \field{pages}{282\bibrangedash 299}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1007/978-3-031-08011-1_19
-      \endverb
-      \keyw{cost function network,graphical model,knapsack problem}
-    \endentry
   \enddatalist
+  \missing{2026}
+  \missing{Amel & Wady}
+  \missing{Bailey}
+  \missing{METTRE WIKIPEDIA}
+  \missing{T. (2002)}
 \endrefsection
 \endinput
 
