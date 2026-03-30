@@ -1,5 +1,4 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{List of Acronyms}{5}{section*.5}%
 \contentsline {section}{\numberline {1}Algorithmic Foundations \& Solver Development}{7}{section.1}%
 \contentsline {subsection}{\numberline {1.1}An application to graph theory and the cluster editing problem}{7}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Constraint programming for discrete integration in high dimensions}{7}{subsection.1.2}%
@@ -13,5 +12,5 @@
 \contentsline {section}{\numberline {4}Conclusion}{11}{section.4}%
 \contentsline {section}{\numberline {5}Appendix}{12}{section.5}%
 \contentsline {section}{\numberline {A}Algorithms and Code Snippets}{12}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Main Heuristic Pseudo-code}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.1}MinCostMaxClique algorithm}{12}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Exemple Python Implementation}{12}{subsection.A.2}%
