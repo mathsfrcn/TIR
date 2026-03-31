@@ -1,13 +1,14 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Example of \ac {BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Basic Equivalence Preserving Transformations}}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {3}{\ignorespaces $P3$ Graph and insertion/deletion possibilities.}}{7}{figure.caption.19}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Example of a solution for the $N$-queen problem}}{8}{figure.caption.21}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Schematic representation of the spatial and temporal aspects of the decision–making problem}}{13}{figure.caption.26}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Lumberjack method steps.}}{14}{figure.caption.30}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Potential trajectories going from upper left to lower right.}}{14}{figure.caption.31}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Performance of the two solvers on trajectory generation without greedy algorithms.}}{14}{figure.caption.33}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Performance of the two solvers on trajectory generation with greedy algorithms.}}{15}{figure.caption.34}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Scaling Neuro-symbolic Problem Solving}}{17}{figure.caption.36}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Example of SMC : Robust Supply Chain with Different Network Size}}{18}{figure.caption.37}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Performance of each algorithm.}}{18}{figure.caption.38}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Example of \ac {BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}}{5}{figure.caption.11}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Basic Equivalence Preserving Transformations}}{6}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces $P3$ Graph and insertion/deletion possibilities.}}{7}{figure.caption.20}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Example of a solution for the $N$-queen problem}}{8}{figure.caption.22}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac {KPCG}.}}{9}{figure.caption.24}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Schematic representation of the spatial and temporal aspects of the decision–making problem}}{11}{figure.caption.26}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Lumberjack method steps.}}{12}{figure.caption.30}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Potential trajectories going from upper left to lower right.}}{12}{figure.caption.31}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Performance of the two solvers on trajectory generation without greedy algorithms.}}{13}{figure.caption.33}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Performance of the two solvers on trajectory generation with greedy algorithms.}}{13}{figure.caption.34}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Scaling Neuro-symbolic Problem Solving}}{16}{figure.caption.36}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Example of SMC : Robust Supply Chain with Different Network Size}}{17}{figure.caption.37}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Performance of each algorithm.}}{17}{figure.caption.38}%

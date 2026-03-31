@@ -99,10 +99,10 @@ The \ac{VCSP} or \ac{WCSP} is considered a generalization of the classic \ac{CSP
 In a \ac{VCSP}, a \ac{CFNs} framework is used. \ac{CFNs} are a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft constraint $C$, and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
 \newline
 
-To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ‘\textit{branching}’ : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
+To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ``\textit{branching}'' : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/bnb.png}
+    \includegraphics[width=10cm]{images/bnb.png}
     \caption[Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
 \end{figure}
 
@@ -113,7 +113,7 @@ In a Cost Function Network, functions are categorized by their arity: unary func
 \ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/ept.jpg}
+    \includegraphics[width=12cm]{images/ept.jpg}
     \caption[Basic Equivalence Preserving Transformations]{\textbf{Basic Equivalence Preserving Transformations.}\cite{npariscril_ept_2012}}
 \end{figure}
 
@@ -188,7 +188,7 @@ The $N$-Queen problem is a non-trivial mathematical problem that looks for a pla
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/nqueens.png}
+    \includegraphics[width=4cm]{images/nqueens.png}
     \caption[Example of a solution for the $N$-queen problem]{\textbf{Example of a solution for the $N$-queen problem with $n=8$} \cite{nquennsproblem}}
 \end{figure}
 
@@ -213,13 +213,13 @@ The \ac{KPCG} is a variant of the knapsack problem where conflict between object
 Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \ac{CFNs} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
 \newline
 
-\begin{table}[H]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/resultat_knapsack.png}
     \caption[Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac{KPCG}.]
         {\textbf{Number of solved instances (left) and number of times a solver found the
         best solution within the time limit (right) for six different classes of \ac{KPCG}.} Cplex was tested with two different encodings: tuples ($t$) and direct ($d$).\cite{montalbano_multiple-choice_2022}}
-\end{table}
+\end{figure}
 
 This new technique also helped model the protein design problem, which is one of the main applications of the Toulbar2 solver, as it will be shown in the following section.
 % ==================================================================================================================================
@@ -282,7 +282,7 @@ The model integrates two types of constraints:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/crop_allocation_explication.png}
+    \includegraphics[width=9cm]{images/crop_allocation_explication.png}
     \caption[Schematic representation of the spatial and temporal aspects of the decision–making problem]{\textbf{Schematic representation of the spatial and temporal aspects of the decision–making problem} ($t_i$ : year, $b$ : block, $p_j$ : plot, $k_p$ : preceding effect).\cite{akplogan_solving_2013}}
 \end{figure}
 
@@ -316,7 +316,7 @@ In this model, each aircraft represents a variable of the problem, and the set o
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=7cm]{images/ex_alternative_fligth.png}
+    \includegraphics[width=6cm]{images/ex_alternative_fligth.png}
     \caption[Potential trajectories going from upper left to lower right.]{\textbf{Potential trajectories going from upper left to lower right.}\cite{chaboud2020tackling}}
 \end{figure}
 
@@ -437,13 +437,13 @@ We can also reduce communication overhead when integrating Toulbar2 with SAT sol
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/smc_example.png}
+    \includegraphics[width=12cm]{images/smc_example.png}
     \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size}.\cite{li_solving_2025}}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/KOCO.png}
+    \includegraphics[width=12cm]{images/KOCO.png}
     \caption[Performance of each algorithm.]{\textbf{Performance of each algorithm.}\cite{li_solving_2025}}
 \end{figure}
 
