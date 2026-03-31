@@ -78,6 +78,7 @@
     \acro{KPCG}{knapsack problem with a conflict graph}
     
     \acro{SBF}{Smart Brute-force}
+    \acro{MAP}{Maximum a Posteriori}
     \acro{ZP}{Zahn's problem}
     \acro{BnB}{Branch-And-Bound}
 \end{acronym}
@@ -153,45 +154,57 @@ Using Toulbar2 to solve the \ac{VCSP}, the results found were much better than t
 
 \subsection{Constraint programming for calculating partition functions and discrete integration in high dimensions}
 
-Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem, is typically \#P-Hard and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization``\cite{ermon_taming_2013}, reduces the task of discrete integration into a collection of Maximum a Posteriori (MAP) sub-problems, which are NP-Hard instead.
+Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem, is typically \#P-Hard and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization``\cite{ermon_taming_2013}, reduces the task of discrete integration into a collection of \ac{MAP} sub-problems, which are NP-Hard instead.
 \newline
 
-The main challenge involves calculating the partition function. A partition function is a sum of all possible configurations of a set X where $w(x)$ is a weight function assigning a weight to a configuration.
+The main challenge involves calculating the partition function. A partition function is a sum of all possible configurations of a set $X$ where $w(x)$ is a weight function assigning a weight to a configuration.
+
 \begin{equation}
 Z = \sum_{x \in \mathcal{X}} w(x)
 \end{equation}
-A commonly known example in physics is the Boltzmann distribution, a probability distribution that describes the likelihood of a system being in a specific configuration. The corresponding partition is as follows:
+
+A commonly known example in physics is the Boltzmann distribution, a probability distribution that describes the likelihood of a system being in a specific configuration. The corresponding partition is as follows :
+
 \begin{equation}
     w(x) = e^{-\frac{E(x)}{k_B T}} 
     \qquad \text{and} \qquad 
     Z = \sum_{x \in \mathcal{X}} e^{-\frac{E(x)}{k_B T}}
 \end{equation}
+
 \begin{itemize}
-    \item $E(x)$: The total energy of the configuration $x$.
-    \item $k_B$: The Boltzmann constant.
-    \item $T$: The absolute temperature.
+    \item $E(x)$ : The total energy of the configuration $x$.
+    \item $k_B$ : The Boltzmann constant.
+    \item $T$ : The absolute temperature.
 \end{itemize}
+
 A partition function can also be understood as a discrete integral, and is a computational task that is intractable due to the exponential number of configurations. WISH is a randomized algorithm which bypasses this challenging problem by solving, like said above, a collection of NP-Hard problems instead.
 \newline
 
-Using the state-of-the-art combinatorial tool Toulbar2 to solve the MAP queries, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically. Another significant advantage of this approach is that these independent optimization instances can be solved in parallel. 
+Using the state-of-the-art combinatorial tool Toulbar2 to solve the \ac{MAP} queries, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically. Another significant advantage of this approach is that these independent optimization instances can be solved in parallel. 
 \newline
 
 These results show the impact of Toulbar2 when a difficult \#P problem is reduced to a combinatorial problem that can be solved with constraint programming. The wide applications of discrete integrations demonstrate the utility of the VCSP solver.
-\subsection{Toulbar2 for the weighted N-queen and quadratic assignment problems}
-The N-Queen problem is a non-trivial mathematical problem that looks for a placement of N queens on board of chess of size N by N where no two queens are threatening each other. The figure below shows an example of a solution where n = 8.
+\subsection{Toulbar2 for the weighted $N$-queen and quadratic assignment problems}
+The $N$-Queen problem is a non-trivial mathematical problem that looks for a placement of $N$ queens on board of chess of size $N$ by $N$ where no two queens are threatening each other. The figure below shows an example of a solution where $n = 8$.
+
 \begin{figure}[H]
     \centering
+<<<<<<< HEAD
     \includegraphics[width=0.4\textwidth]{images/nqueens.png}
     \caption[]{Example of a solution for the N-queen problem with n=8 \cite{nquennsproblem}}
+=======
+    \includegraphics[width=0.45\textwidth]{images/nqueens.png}
+    \caption[Example of a solution for the $N$-queen problem]{\textbf{Example of a solution for the $N$-queen problem with $n=8$} \cite{nquennsproblem}}
+>>>>>>> 05bf6dddb5b94eb7fcbc8321039123b67179168c
 \end{figure}
-The weighted N-Queen problem is a difficult optimization problem where every queen placement incurs a cost, and the goal is to find the lowest cost solution. 
+
+The weighted $N$-Queen problem is a difficult optimization problem where every queen placement incurs a cost, and the goal is to find the lowest cost solution. 
 \newline
 
-A key advancement by Sewa et al. (2022)\cite{traore_new_2013} improved the Toulbar2 performance by integrating a more powerful way to propagate ALLDIFFERENT constraints for SAC. An ALLDIFFERENT constraint is a constraint where no two variables can have the same value. By modeling the cost as a unary constraint and using three ALLDIFFERENT constraints for the column, diagonal and anti-diagonal uniqueness, the upgraded version of Toulbar2 significantly outperformed other state-of-the-art solvers for the N-Queen problem.
+A key advancement by Sewa et al. (2022)\cite{traore_new_2013} improved the Toulbar2 performance by integrating a more powerful way to propagate ALLDIFFERENT constraints for SAC. An ALLDIFFERENT constraint is a constraint where no two variables can have the same value. By modeling the cost as a unary constraint and using three ALLDIFFERENT constraints for the column, diagonal and anti-diagonal uniqueness, the upgraded version of Toulbar2 significantly outperformed other state-of-the-art solvers for the $N$-Queen problem.
 \newline
 
-Furthermore, with this new improved version of Toulbar2, the authors also tested its performance for the quadratic assignment problem (QAP). The QAP is a difficult NP-Hard problem where we seek to assign n facilities to n locations so as to minimize the total cost which is determined by the flow between facilities and the distance between locations. The results found that toulbar2 returned the highest quality solution with a gap of 3.9% to the best known decision.
+Furthermore, with this new improved version of Toulbar2, the authors also tested its performance for the quadratic assignment problem (QAP). The QAP is a difficult NP-Hard problem where we seek to assign $n$ facilities to $n$ locations so as to minimize the total cost which is determined by the flow between facilities and the distance between locations. The results found that toulbar2 returned the highest quality solution with a gap of $3.9\%$ to the best known decision.
 \newline
 
 These examples show the relevance of Toulbar2 when paired with a new propagator against state-of-the-art solvers for difficult NP-Hard combinatorial problems.
@@ -205,12 +218,15 @@ The \ac{KPCG} is a variant of the knapsack problem where conflict between object
 
 Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \ac{CFNs} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
 \newline
+
 \begin{table}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/resultat_knapsack.png}
-    \caption[]{\textbf{Number of solved instances (left) and number of times a solver found the
-best solution within the time limit (right) for six different classes of KPCG.} Cplex was tested with two different encodings: tuples (t) and direct (d).\cite{montalbano_multiple-choice_2022}}
+    \caption[Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac{KPCG}.]
+        {\textbf{Number of solved instances (left) and number of times a solver found the
+        best solution within the time limit (right) for six different classes of \ac{KPCG}.} Cplex was tested with two different encodings: tuples ($t$) and direct ($d$).\cite{montalbano_multiple-choice_2022}}
 \end{table}
+
 This new technique also helped model the protein design problem, which is one of the main applications of the Toulbar2 solver, as it will be shown in the following section.
 % ==================================================================================================================================
 % PARTIE 2 : Proteine
@@ -406,7 +422,7 @@ At inference, the neural network feeds the predicted Graphical Model directly in
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
-    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026)}.\cite{defresne_scaling_2026}}
+    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives}.\cite{defresne_scaling_2026}}
 \end{figure}
 
 \begin{itemize}
@@ -423,12 +439,12 @@ As established, Toulbar2 explores the whole solution space. This exploration mak
 
 Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
 
-We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like $\text{KOCO SMC}^{8}$\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO SMC\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/smc_example.png}
-    \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size (Li et al., 2025)}.\cite{li_solving_2025}}
+    \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size}.\cite{li_solving_2025}}
 \end{figure}
 
 \begin{figure}[H]
@@ -439,16 +455,15 @@ We can also reduce communication overhead when integrating Toulbar2 with SAT sol
 
 This algorithm is a significant improvement over previous systems like Lingeling-HBFS that rely on Toulbar2.
 
-Artificial intelligence can additionally be utilized to match exact quality with linear scaling instead of exponential scaling Toulbar2 has. 
-NeuroLifting addresses the limitations of Toulbar2 by using Graph Neural Networks to reparameterize decision variables. 
-This transformation allows the optimization of models through standard gradient descent. 
+Artificial intelligence can additionally be utilized to match exact quality with linear scaling instead of exponential scaling Toulbar2 has. NeuroLifting addresses the limitations of Toulbar2 by using Graph Neural Networks to reparameterize decision variables. 
+This transformation allows the optimization of models through standard gradient descent.
 This method matches the solution quality of Toulbar2 on moderate scales and outperforms it on large problems due to linear computational growth.
 
 \subsection{Conclusion}
 
-The integration of artificial intelligence resolves the scaling limitations of the Toulbar2 in some problems. 
-Neural networks can also process the perception of the data to let the solver focus on discrete optimization tasks. 
-Emerging algorithms bypass exhaustive search through the application of gradient descent and dynamic probabilistic tracking. 
+The integration of artificial intelligence resolves the scaling limitations of the Toulbar2 in some problems.
+Neural networks can also process the perception of the data to let the solver focus on discrete optimization tasks.
+Emerging algorithms bypass exhaustive search through the application of gradient descent and dynamic probabilistic tracking.
 This transition mandates that future solving methods rely on hybrid architectures rather than exact solvers.
 
 \clearpage

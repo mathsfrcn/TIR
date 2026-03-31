@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1}Combinatorial problem solving}{7}{section.1}%
 \contentsline {subsection}{\numberline {1.1}An application to graph theory and the cluster editing problem}{7}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Constraint programming for calculating partition functions and discrete integration in high dimensions}{7}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Toulbar2 for the weighted N-queen and quadratic assignment problems}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Toulbar2 for the weighted $N$-queen and quadratic assignment problems}{8}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}{9}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Bioinformatics \& Life Sciences}{11}{section.2}%
 \contentsline {subsection}{\numberline {2.1}nom}{11}{subsection.2.1}%
