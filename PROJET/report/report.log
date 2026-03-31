@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  31 MAR 2026 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  31 MAR 2026 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1503,49 +1503,70 @@ Package biblatex Info: ... file 'report.bbl' found.
  (report.bbl)
 Package biblatex Info: Reference section=0 on input line 10.
 Package biblatex Info: Reference segment=0 on input line 10.
- [1
-
-
-{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (report.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+ (titlepage_report.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <10> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 3.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 3.
+(Font)              <5> on input line 10.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+)
+<./images/logo_UT.png, id=86, 1563.8425pt x 501.875pt>
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 11.
+(pdftex.def)             Requested size: 221.63289pt x 71.13188pt.
+<./images/logo_irit.png, id=87, 289.08pt x 175.65625pt>
+File: ./images/logo_irit.png Graphic file (type png)
+<use ./images/logo_irit.png>
+Package pdftex.def Info: ./images/logo_irit.png  used on input line 12.
+(pdftex.def)             Requested size: 140.4771pt x 85.35826pt.
+
+Overfull \hbox (20.6769pt too wide) in paragraph at lines 10--14
+ [] 
+ []
+
+[1
+
+{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./images/logo_UT.png (PNG copy)> <./images/logo_irit.png>])
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \clearpage
+                [1
+
+] (report.toc)
 \tf@toc=\write8
 \openout8 = `report.toc'.
 
-<./images/logo_UT.png, id=115, 1563.8425pt x 501.875pt>
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 43.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
  [2
 
-{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./images/logo_UT.png (PNG copy)>] (report.lof
+{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] (report.lof
 Package acronym Info: Label `acro:BnB' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
 Package acronym Info: Label `acro:KPCG' newly defined as it shall be overridden
@@ -1588,7 +1609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
-<images/bnb.png, id=297, 453.19313pt x 167.62625pt>
+<images/bnb.png, id=308, 453.19313pt x 167.62625pt>
 File: images/bnb.png Graphic file (type png)
 <use images/bnb.png>
 Package pdftex.def Info: images/bnb.png  used on input line 112.
@@ -1600,7 +1621,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
 Package acronym Info: Label `acro:EPTs' newly defined as it shall be overridden
 although it is yet undefined on input line 120.
-<images/ept.jpg, id=305, 1284.8pt x 391.4625pt>
+<images/ept.jpg, id=316, 1284.8pt x 391.4625pt>
 File: images/ept.jpg Graphic file (type jpg)
 <use images/ept.jpg>
 Package pdftex.def Info: images/ept.jpg  used on input line 123.
@@ -1642,7 +1663,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/ZP.png, id=339, 299.61937pt x 179.67125pt>
+<images/ZP.png, id=351, 299.61937pt x 179.67125pt>
 File: images/ZP.png Graphic file (type png)
 <use images/ZP.png>
 Package pdftex.def Info: images/ZP.png  used on input line 156.
@@ -1684,7 +1705,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 194.
 
-<images/nqueens.png, id=356, 181.17688pt x 185.69376pt>
+<images/nqueens.png, id=367, 181.17688pt x 185.69376pt>
 File: images/nqueens.png Graphic file (type png)
 <use images/nqueens.png>
 Package pdftex.def Info: images/nqueens.png  used on input line 199.
@@ -1725,7 +1746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
-<images/resultat_knapsack.png, id=381, 260.975pt x 75.28125pt>
+<images/resultat_knapsack.png, id=392, 260.975pt x 75.28125pt>
 File: images/resultat_knapsack.png Graphic file (type png)
 <use images/resultat_knapsack.png>
 Package pdftex.def Info: images/resultat_knapsack.png  used on input line 226.
@@ -1751,7 +1772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
 Package acronym Info: Label `acro:GMEC' newly defined as it shall be overridden
 although it is yet undefined on input line 259.
-<images/schema_framework-CPD_partie1.png, id=399, 519.44063pt x 393.72093pt>
+<images/schema_framework-CPD_partie1.png, id=410, 519.44063pt x 393.72093pt>
 File: images/schema_framework-CPD_partie1.png Graphic file (type png)
 <use images/schema_framework-CPD_partie1.png>
 Package pdftex.def Info: images/schema_framework-CPD_partie1.png  used on input line 264.
@@ -1797,7 +1818,7 @@ File: ./images/logo_UT.png Graphic file (type png)
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 322.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
 [11]
-<images/schema_soft_rought_landscapee_partie2.png, id=423, 804.75656pt x 225.84375pt>
+<images/schema_soft_rought_landscapee_partie2.png, id=434, 804.75656pt x 225.84375pt>
 File: images/schema_soft_rought_landscapee_partie2.png Graphic file (type png)
 <use images/schema_soft_rought_landscapee_partie2.png>
 Package pdftex.def Info: images/schema_soft_rought_landscapee_partie2.png  used on input line 330.
@@ -1809,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
 Package acronym Info: Label `acro:LNS' newly defined as it shall be overridden
 although it is yet undefined on input line 340.
-<images/schema_positive_negativestate_partie3.png, id=428, 192.72pt x 158.09062pt>
+<images/schema_positive_negativestate_partie3.png, id=439, 192.72pt x 158.09062pt>
 File: images/schema_positive_negativestate_partie3.png Graphic file (type png)
 <use images/schema_positive_negativestate_partie3.png>
 Package pdftex.def Info: images/schema_positive_negativestate_partie3.png  used on input line 369.
@@ -1819,7 +1840,7 @@ File: ./images/logo_UT.png Graphic file (type png)
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 374.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
 [12 <./images/schema_soft_rought_landscapee_partie2.png>]
-<images/schema_bmc_partie3.png, id=437, 389.95688pt x 222.07968pt>
+<images/schema_bmc_partie3.png, id=449, 389.95688pt x 222.07968pt>
 File: images/schema_bmc_partie3.png Graphic file (type png)
 <use images/schema_bmc_partie3.png>
 Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 386.
@@ -1856,7 +1877,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--454
 
  []
 
-<images/crop_allocation_explication.png, id=457, 755.82375pt x 421.575pt>
+<images/crop_allocation_explication.png, id=468, 755.82375pt x 421.575pt>
 File: images/crop_allocation_explication.png Graphic file (type png)
 <use images/crop_allocation_explication.png>
 Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 464.
@@ -1888,12 +1909,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 479--483
 
  []
 
-<images/lumberjack_algo.png, id=479, 785.18344pt x 157.33781pt>
+<images/lumberjack_algo.png, id=490, 785.18344pt x 157.33781pt>
 File: images/lumberjack_algo.png Graphic file (type png)
 <use images/lumberjack_algo.png>
 Package pdftex.def Info: images/lumberjack_algo.png  used on input line 490.
 (pdftex.def)             Requested size: 284.52756pt x 57.01608pt.
-<images/ex_alternative_fligth.png, id=482, 377.91188pt x 265.74281pt>
+<images/ex_alternative_fligth.png, id=493, 377.91188pt x 265.74281pt>
 File: images/ex_alternative_fligth.png Graphic file (type png)
 <use images/ex_alternative_fligth.png>
 Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 498.
@@ -1905,12 +1926,12 @@ File: ./images/logo_UT.png Graphic file (type png)
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 508.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
 [16 <./images/lumberjack_algo.png> <./images/ex_alternative_fligth.png>]
-<images/performance1_SBF_TB2.png, id=495, 517.18219pt x 344.78813pt>
+<images/performance1_SBF_TB2.png, id=506, 517.18219pt x 344.78813pt>
 File: images/performance1_SBF_TB2.png Graphic file (type png)
 <use images/performance1_SBF_TB2.png>
 Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 511.
 (pdftex.def)             Requested size: 227.62204pt x 151.74933pt.
-<images/performance2_SBF_TB2.png, id=501, 513.41812pt x 321.45094pt>
+<images/performance2_SBF_TB2.png, id=512, 513.41812pt x 321.45094pt>
 File: images/performance2_SBF_TB2.png Graphic file (type png)
 <use images/performance2_SBF_TB2.png>
 Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 523.
@@ -1976,7 +1997,7 @@ File: ./images/logo_UT.png Graphic file (type png)
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 584.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
  [19]
-<images/neuro_symbolic_architecture.png, id=544, 749.04843pt x 182.18062pt>
+<images/neuro_symbolic_architecture.png, id=555, 749.04843pt x 182.18062pt>
 File: images/neuro_symbolic_architecture.png Graphic file (type png)
 <use images/neuro_symbolic_architecture.png>
 Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 597.
@@ -1988,12 +2009,12 @@ Package pdftex.def Info: ./images/logo_UT.png  used on input line 616.
  [20
 
  <./images/neuro_symbolic_architecture.png>]
-<images/smc_example.png, id=556, 1090.0725pt x 331.2375pt>
+<images/smc_example.png, id=567, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
 Package pdftex.def Info: images/smc_example.png  used on input line 619.
 (pdftex.def)             Requested size: 341.43306pt x 103.74901pt.
-<images/KOCO.png, id=559, 642.90187pt x 250.68657pt>
+<images/KOCO.png, id=570, 642.90187pt x 250.68657pt>
 File: images/KOCO.png Graphic file (type png)
 <use images/KOCO.png>
 Package pdftex.def Info: images/KOCO.png  used on input line 625.
@@ -2084,17 +2105,17 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49559 strings out of 474486
- 1023782 string characters out of 5743282
+ 49579 strings out of 474486
+ 1024356 string characters out of 5743282
  1947542 words of memory out of 5000000
- 70905 multiletter control sequences out of 15000+600000
- 649521 words of font info for 103 fonts, out of 8000000 for 9000
+ 70921 multiletter control sequences out of 15000+600000
+ 655534 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,18n,120p,2365b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (25 pages, 2005633 bytes).
+<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on report.pdf (26 pages, 2045269 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
+ 797 PDF objects out of 1000 (max. 8388607)
  161 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
