@@ -404,7 +404,7 @@ At inference, the neural network feeds the predicted Graphical Model directly in
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
-    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026)}.\cite{defresne_scaling_2026}}
+    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives}.\cite{defresne_scaling_2026}}
 \end{figure}
 
 \begin{itemize}
@@ -421,7 +421,7 @@ As established, Toulbar2 explores the whole solution space. This exploration mak
 
 Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
 
-We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like $\text{KOCO SMC}^{8}$\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO SMC\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
 
 \begin{figure}[H]
     \centering
