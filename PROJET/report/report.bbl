@@ -138,6 +138,38 @@
       \endverb
       \keyw{Synchronization;Energy harvesting;Markov processes;Wireless sensor networks;Batteries;Computational modeling;Optimization;Admission control;energy consumption;energy harvesting;energy management;Internet of Things;optimal scheduling;power control;telecommunications networks;wireless sensor networks}
     \endentry
+    \entry{mobile_robot_localisation_mapping_extensive_outdoor_environments}{article}{}
+      \name{author}{3}{}{%
+        {{hash=65fb5efcf6d04f136d84c39f1d3e2374}{%
+           family={Centre},
+           familyi={C\bibinitperiod},
+           given={Australian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=012d9d962c4e48e3c5a62172a4fa90e6}{%
+           family={Robotics},
+           familyi={R\bibinitperiod},
+           given={Field},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a37c63e1fc8eaedec4ea9e27569c27d3}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{fullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{bibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authorbibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authornamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authorfullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Mobile Robot Localisation and Mapping in Extensive Outdoor Environments}
+      \field{year}{2003}
+    \endentry
     \entry{chaboud2020tackling}{article}{}
       \name{author}{3}{}{%
         {{hash=29f8c43bfc0a09188105852fac0c3146}{%
@@ -529,8 +561,40 @@
       \verb https://journals.iucr.org/m/issues/2019/01/00/jt5028/
       \endverb
     \endentry
+    \entry{npariscril_ept_2012}{online}{}
+      \name{author}{1}{}{%
+        {{hash=110b8ed6da8e2e8c0752a665f1998d85}{%
+           family={NparisCRIL},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Wikimedia Commons}%
+      }
+      \strng{namehash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{fullhash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{bibnamehash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{authorbibnamehash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{authornamehash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{authorfullhash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Wikipedia, The Free Encyclopedia}
+      \field{title}{Basic Equivalence Preserving Transformations}
+      \field{urlday}{31}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/File:TransfertsWCSP.pdf
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/File:TransfertsWCSP.pdf
+      \endverb
+    \endentry
   \enddatalist
-  \missing{METTRE WIKIPEDIA}
 \endrefsection
 \endinput
 

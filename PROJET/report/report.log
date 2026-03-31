@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  31 MAR 2026 00:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  31 MAR 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1396,24 +1396,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1473,7 +1473,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 8.
+Package hyperref Info: Link coloring OFF on input line 10.
  (report.out) (report.out)
 \@outlinefile=\write7
 \openout7 = `report.out'.
@@ -1487,7 +1487,7 @@ Package siunitx Warning: Tabular column type "S" overwritten with siunitx
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 8.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 10.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -1500,17 +1500,9 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
- (report.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                METTRE WIKIPEDIA
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 8.
-Package biblatex Info: Reference segment=0 on input line 8.
+ (report.bbl)
+Package biblatex Info: Reference section=0 on input line 10.
+Package biblatex Info: Reference segment=0 on input line 10.
  (titlepage_report.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
@@ -1540,12 +1532,12 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<./images/logo_UT.png, id=82, 1563.8425pt x 501.875pt>
+<./images/logo_UT.png, id=98, 1563.8425pt x 501.875pt>
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
 Package pdftex.def Info: ./images/logo_UT.png  used on input line 11.
 (pdftex.def)             Requested size: 221.63289pt x 71.13188pt.
-<./images/logo_irit.png, id=83, 289.08pt x 175.65625pt>
+<./images/logo_irit.png, id=99, 289.08pt x 175.65625pt>
 File: ./images/logo_irit.png Graphic file (type png)
 <use ./images/logo_irit.png>
 Package pdftex.def Info: ./images/logo_irit.png  used on input line 12.
@@ -1561,375 +1553,376 @@ Overfull \hbox (20.6769pt too wide) in paragraph at lines 10--14
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \newpage
-              [1] (report.toc)
+l.40 \clearpage
+                [1
+
+] (report.toc)
 \tf@toc=\write8
 \openout8 = `report.toc'.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 42.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 44.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [2] (report.lof
+ [2
+
+] (report.lof
 Package acronym Info: Label `acro:BnB' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
-Package acronym Info: Label `acro:SBF' newly defined as it shall be overridden
-although it is yet undefined on input line 8.
-
-Overfull \hbox (0.63332pt too wide) in paragraph at lines 10--10
- [][] [][]\T1/lmr/m/n/10 Scaling Neuro-symbolic Prob-lem Solv-ing : Solver-Free Learn-ing of Con-straints 
- []
-
 )
 \tf@lof=\write9
 \openout9 = `report.lof'.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 46.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 52.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [3{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] (report.lot)
-\tf@lot=\write10
-\openout10 = `report.lot'.
+ [3
 
+{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 50.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 91.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [4]
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 85.
-(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [5]
+ [4
+
+]
 Package acronym Info: Label `acro:CSP' newly defined as it shall be overridden
-although it is yet undefined on input line 88.
+although it is yet undefined on input line 94.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 Package acronym Info: Label `acro:VCSP' newly defined as it shall be overridden
-although it is yet undefined on input line 92.
+although it is yet undefined on input line 98.
 Package acronym Info: Label `acro:WCSP' newly defined as it shall be overridden
-although it is yet undefined on input line 92.
+although it is yet undefined on input line 98.
 Package acronym Info: Label `acro:CFN' newly defined as it shall be overridden
-although it is yet undefined on input line 93.
+although it is yet undefined on input line 99.
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
 
  []
 
-<images/bnb.png, id=289, 453.19313pt x 167.62625pt>
+<images/bnb.png, id=281, 453.19313pt x 167.62625pt>
 File: images/bnb.png Graphic file (type png)
 <use images/bnb.png>
-Package pdftex.def Info: images/bnb.png  used on input line 99.
+Package pdftex.def Info: images/bnb.png  used on input line 105.
 (pdftex.def)             Requested size: 398.3386pt x 147.3376pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
  []
 
 Package acronym Info: Label `acro:EPT' newly defined as it shall be overridden
-although it is yet undefined on input line 107.
-<images/ept.jpg, id=295, 1284.8pt x 391.4625pt>
+although it is yet undefined on input line 113.
+<images/ept.jpg, id=289, 1284.8pt x 391.4625pt>
 File: images/ept.jpg Graphic file (type jpg)
 <use images/ept.jpg>
-Package pdftex.def Info: images/ept.jpg  used on input line 110.
+Package pdftex.def Info: images/ept.jpg  used on input line 116.
 (pdftex.def)             Requested size: 398.3386pt x 121.37003pt.
-
-LaTeX Warning: Citation 'METTRE WIKIPEDIA' on page 6 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'METTRE WIKIPEDIA' on page 6 undefined on input line 111.
-
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 113.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 119.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[6 <./images/bnb.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+[5
+
+{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./images/bnb.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
 Package acronym Info: Label `acro:SAC' newly defined as it shall be overridden
-although it is yet undefined on input line 117.
+although it is yet undefined on input line 123.
 Package acronym Info: Label `acro:FDAC' newly defined as it shall be overridden
-although it is yet undefined on input line 117.
+although it is yet undefined on input line 123.
 Package acronym Info: Label `acro:EDAC' newly defined as it shall be overridden
-although it is yet undefined on input line 117.
+although it is yet undefined on input line 123.
 Package acronym Info: Label `acro:VAC' newly defined as it shall be overridden
-although it is yet undefined on input line 117.
+although it is yet undefined on input line 123.
 Package acronym Info: Label `acro:OSAC' newly defined as it shall be overridden
-although it is yet undefined on input line 117.
+although it is yet undefined on input line 123.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 125.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 131.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[7 <./images/ept.jpg>]
+[6 <./images/ept.jpg>]
 Package acronym Info: Label `acro:ZP' newly defined as it shall be overridden
-although it is yet undefined on input line 129.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 133.
+although it is yet undefined on input line 135.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 139.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/ZP.png, id=324, 299.61937pt x 179.67125pt>
+<images/ZP.png, id=323, 299.61937pt x 179.67125pt>
 File: images/ZP.png Graphic file (type png)
 <use images/ZP.png>
-Package pdftex.def Info: images/ZP.png  used on input line 139.
+Package pdftex.def Info: images/ZP.png  used on input line 146.
 (pdftex.def)             Requested size: 278.83578pt x 167.22136pt.
 
-Overfull \hbox (262.9286pt too wide) in paragraph at lines 147--149
-\T1/lmr/m/n/10 nomenon known as the curse of di-men-sion-al-ity. In the pa-per $[]$[[]5[]],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 152.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 159.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[8{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./images/ZP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
+[7
+
+{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./images/ZP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
 
-Overfull \hbox (6.54901pt too wide) in paragraph at lines 156--157
+Overfull \hbox (6.54901pt too wide) in paragraph at lines 163--164
 []\T1/lmr/m/n/10 Using Toul-bar2, a state-of-the-art com-bi-na-to-rial op-ti-miza-tion tool, WISH pro-vided a constant-
  []
 
 Package acronym Info: Label `acro:KPCG' newly defined as it shall be overridden
-although it is yet undefined on input line 162.
-Package acronym Info: Label `acro:CNF' newly defined as it shall be overridden
-although it is yet undefined on input line 163.
-
-Package acronym Warning: Acronym CNF is not defined on input line 163.
-
-
-Package acronym Warning: Acronym CNF is not defined on input line 163.
-
-Package acronym Info: Label `acro:VSCP' newly defined as it shall be overridden
-although it is yet undefined on input line 163.
-
-Package acronym Warning: Acronym VSCP is not defined on input line 163.
-
-
-Package acronym Warning: Acronym VSCP is not defined on input line 163.
-
+although it is yet undefined on input line 169.
 Package acronym Info: Label `acro:ILP' newly defined as it shall be overridden
-although it is yet undefined on input line 163.
-Package acronym Info: Label `acro:MILP' newly defined as it shall be overridden
-although it is yet undefined on input line 185.
+although it is yet undefined on input line 170.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 193.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 175.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+[8]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 198.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [9
+
+]
+Package acronym Info: Label `acro:MILP' newly defined as it shall be overridden
+although it is yet undefined on input line 207.
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
-<images/crop_allocation_explication.png, id=352, 755.82375pt x 421.575pt>
+<images/crop_allocation_explication.png, id=355, 755.82375pt x 421.575pt>
 File: images/crop_allocation_explication.png Graphic file (type png)
 <use images/crop_allocation_explication.png>
-Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 211.
+Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 232.
 (pdftex.def)             Requested size: 398.3386pt x 222.17929pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 217.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 217.
-Package acronym Info: Label `acro:MIP' newly defined as it shall be overridden
-although it is yet undefined on input line 217.
-Package acronym Info: Label `acro:MINLP' newly defined as it shall be overridden
-although it is yet undefined on input line 217.
-Package acronym Info: Label `acro:LP' newly defined as it shall be overridden
-although it is yet undefined on input line 219.
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
-
- []
-
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 225.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 235.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[10 <./images/crop_allocation_explication.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 226--230
+[10
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 238.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 238.
+Package acronym Info: Label `acro:MIP' newly defined as it shall be overridden
+although it is yet undefined on input line 238.
+Package acronym Info: Label `acro:MINLP' newly defined as it shall be overridden
+although it is yet undefined on input line 238.
+Package acronym Info: Label `acro:LP' newly defined as it shall be overridden
+although it is yet undefined on input line 240.
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--230
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
 
  []
 
-<images/lumberjack_algo.png, id=376, 785.18344pt x 157.33781pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+
+ []
+
+<images/lumberjack_algo.png, id=375, 785.18344pt x 157.33781pt>
 File: images/lumberjack_algo.png Graphic file (type png)
 <use images/lumberjack_algo.png>
-Package pdftex.def Info: images/lumberjack_algo.png  used on input line 237.
+Package pdftex.def Info: images/lumberjack_algo.png  used on input line 258.
 (pdftex.def)             Requested size: 284.52756pt x 57.01608pt.
-<images/ex_alternative_fligth.png, id=379, 377.91188pt x 265.74281pt>
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 261.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[11 <./images/crop_allocation_explication.png>]
+<images/ex_alternative_fligth.png, id=389, 377.91188pt x 265.74281pt>
 File: images/ex_alternative_fligth.png Graphic file (type png)
 <use images/ex_alternative_fligth.png>
-Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 245.
+Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 266.
 (pdftex.def)             Requested size: 199.16928pt x 140.0523pt.
-<images/performance1_SBF_TB2.png, id=385, 517.18219pt x 344.78813pt>
+Package acronym Info: Label `acro:SBF' newly defined as it shall be overridden
+although it is yet undefined on input line 270.
+<images/performance1_SBF_TB2.png, id=395, 517.18219pt x 344.78813pt>
 File: images/performance1_SBF_TB2.png Graphic file (type png)
 <use images/performance1_SBF_TB2.png>
-Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 258.
+Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 151.74933pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 263.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 288.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[11 <./images/lumberjack_algo.png> <./images/ex_alternative_fligth.png>]
-<images/performance2_SBF_TB2.png, id=397, 513.41812pt x 321.45094pt>
+ [12 <./images/lumberjack_algo.png> <./images/ex_alternative_fligth.png> <./images/performance1_SBF_TB2.png>]
+<images/performance2_SBF_TB2.png, id=409, 513.41812pt x 321.45094pt>
 File: images/performance2_SBF_TB2.png Graphic file (type png)
 <use images/performance2_SBF_TB2.png>
-Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 270.
+Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 291.
 (pdftex.def)             Requested size: 227.62204pt x 142.51303pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--285
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--289
-
- []
-
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 289.
-(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[12 <./images/performance1_SBF_TB2.png> <./images/performance2_SBF_TB2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
+Underfull \hbox (badness 10000) in paragraph at lines 307--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
+Underfull \hbox (badness 10000) in paragraph at lines 311--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--319
 
  []
 
 Package acronym Info: Label `acro:CP' newly defined as it shall be overridden
-although it is yet undefined on input line 300.
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--306
+although it is yet undefined on input line 321.
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 322.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[13 <./images/performance2_SBF_TB2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--311
+Underfull \hbox (badness 10000) in paragraph at lines 328--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 326.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 352.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[13]
-<images/neuro_symbolic_architecture.png, id=436, 749.04843pt x 182.18062pt>
+[14]
+<images/neuro_symbolic_architecture.png, id=446, 749.04843pt x 182.18062pt>
 File: images/neuro_symbolic_architecture.png Graphic file (type png)
 <use images/neuro_symbolic_architecture.png>
-Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 340.
+Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 365.
 (pdftex.def)             Requested size: 398.3386pt x 96.88327pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 359.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 384.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [14 <./images/neuro_symbolic_architecture.png>]
-<images/smc_example.png, id=444, 1090.0725pt x 331.2375pt>
+ [15
+
+ <./images/neuro_symbolic_architecture.png>]
+<images/smc_example.png, id=458, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
-Package pdftex.def Info: images/smc_example.png  used on input line 362.
+Package pdftex.def Info: images/smc_example.png  used on input line 387.
 (pdftex.def)             Requested size: 398.3386pt x 121.03966pt.
-<images/KOCO.png, id=447, 642.90187pt x 250.68657pt>
+<images/KOCO.png, id=461, 642.90187pt x 250.68657pt>
 File: images/KOCO.png Graphic file (type png)
 <use images/KOCO.png>
-Package pdftex.def Info: images/KOCO.png  used on input line 368.
+Package pdftex.def Info: images/KOCO.png  used on input line 393.
 (pdftex.def)             Requested size: 398.3386pt x 155.32843pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 410.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 411.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [15 <./images/smc_example.png> <./images/KOCO.png>]
+ [16 <./images/smc_example.png> <./images/KOCO.png>]
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 410.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 442.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [16]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 429--430
+ [17
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 459--460
 [][]|[]$[]$  
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 460.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 490.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[17]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 461.
+[18
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 491.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (55.21567pt too wide) in paragraph at lines 462--462
-\T1/lmtt/m/n/10 allocation -[] problemusing -[] hard -[] and -[] soft -[] constraints / 928250B2BF7802F29B31EE47D2FD9993$[]
+Overfull \hbox (5.13766pt too wide) in paragraph at lines 492--492
+\T1/lmr/m/sc/10 issn\T1/lmr/m/n/10 : 0399-0559, 1290-3868. \T1/lmr/m/sc/10 doi\T1/lmr/m/n/10 : []$\T1/lmtt/m/n/10 10 . 1051 / ro / 2013032$[]\T1/lmr/m/n/10 . \T1/lmr/m/sc/10 url\T1/lmr/m/n/10 : []$\T1/lmtt/m/n/10 https : / / www . cambridge .
  []
 
-\tf@thm=\write11
-\openout11 = `report.thm'.
+
+Overfull \hbox (86.96559pt too wide) in paragraph at lines 492--492
+\T1/lmtt/m/n/10 crop -[] allocation -[] problemusing -[] hard -[] and -[] soft -[] constraints / 928250B2BF7802F29B31EE47D2FD9993$[]
+ []
+
+\tf@thm=\write10
+\openout10 = `report.thm'.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 463.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 493.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[18] (report.aux)
+[19
+
+] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5FBADE79726D42D8FBEE0FCC473C5E79;4762.
+(rerunfilecheck)             Checksum: 55E1A9B3721743F84224D9DE10445A75;5197.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49436 strings out of 474486
- 1020168 string characters out of 5743282
- 1941542 words of memory out of 5000000
- 70814 multiletter control sequences out of 15000+600000
+ 49433 strings out of 474486
+ 1020518 string characters out of 5743282
+ 1942542 words of memory out of 5000000
+ 70808 multiletter control sequences out of 15000+600000
  651148 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,18n,120p,2365b,3105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,18n,120p,2365b,1817s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (19 pages, 1229240 bytes).
+Output written on report.pdf (20 pages, 1239158 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

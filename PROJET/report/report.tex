@@ -3,6 +3,8 @@
 % HEADER
 \input{header_report.tex}
 
+\captionsetup{justification=justified, format=hang}
+
 \setcounter{tocdepth}{2}
 
 \begin{document}
@@ -15,7 +17,7 @@
 % ==================================================================================================================================
 % ABSTRACT (RÉSUMÉ)
 
-\newpage
+\clearpage
 \thispagestyle{plain}
 \vspace*{\fill}
 
@@ -27,7 +29,7 @@
     resumé à mettre ici
     
     \vspace{0.5cm}
-    \noindent \textbf{Key Words :} Mathematics, Informatics, ..
+    \noindent \textbf{Key Words :} Informatics, Toulbar2, OSAC, VAC, Protein design, AI
 \end{abstract}
 
 \vspace*{\fill}
@@ -35,28 +37,29 @@
 % ==================================================================================================================================
 % TABLES ET LISTES
 
-\newpage
+\clearpage
 % Table des matières
 \tableofcontents
 
-\newpage
+\clearpage
 % \begin{figure}...\caption{}...\end{figure})
 \listoffigures
 
-\newpage
+%\newpage
 % \begin{table}...\caption{}...\end{table})
-\listoftables
+%\listoftables
 
-\newpage
+\clearpage
 \section*{List of Acronyms}
 %\addcontentsline{toc}{section}{List of Acronyms}
 
 % Le mot entre crochets [PLNE] sert à aligner le texte. 
 % Mets ici l'acronyme le plus long de ta liste pour que l'espacement soit parfait.
 \begin{acronym}[MINLP]
-    \acro{WCSP}{Weighted Constraint Satisfaction Problem}
     \acro{CSP}{Constraint Satisfaction Problem}
+    \acro{WCSP}{Weighted Constraint Satisfaction Problem}
     \acro{VCSP}{Valued Constraint Satisfaction Problem}
+
     \acro{CFN}{Cost Function Network}
     \acro{EPT}{Equivalence Preserving Transformations}
     \acro{SAC}{Soft Arc Consistency}
@@ -64,13 +67,16 @@
     \acro{EDAC}{Existential Directional Arc Consistency}
     \acro{VAC}{Virtual Arc Consistency}
     \acro{OSAC}{Optimal Soft Arc Consistency}
-    \acro{MILP}{Mixed-Integer Linear Programming}
-    \acro{ILP}{Integer Linear Programming}
+    
     \acro{CP}{Constraint Programming}
     \acro{LP}{Linear Programming}
-    \acro{MIP}{Mixed Integer Programming}
+    \acro{ILP}{Integer Linear Programming}
+    \acro{MILP}{Mixed-Integer Linear Programming}
     \acro{MINLP}{Mixed Integer Non-Linear Programming}
+    \acro{MIP}{Mixed Integer Programming}
+
     \acro{KPCG}{knapsack problem with a conflict graph}
+    
     \acro{SBF}{Smart Brute-force}
     \acro{ZP}{Zahn's problem}
     \acro{BnB}{Branch-And-Bound}
@@ -82,7 +88,7 @@
 % ==================================================================================================================================
 % Introduction 
 
-\newpage
+\clearpage
 \section*{Introduction}
 %\addcontentsline{toc}{section}{Introduction}
 The \ac{CSP} involves finding an assignment for a set of variables over a finite domain that respects a set of given hard constraints. 
@@ -97,7 +103,7 @@ To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solu
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/bnb.png}
-    \caption{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}%\cite
+    \caption[Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
 \end{figure}
 
 The efficacy of the branch-and-bound depends on the lower bound we have access to. 
@@ -108,7 +114,7 @@ In a Cost Function Network, functions are categorized by their arity: unary func
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/ept.jpg}
-    \caption{Basic Equivalence Preserving Transformations\cite{METTRE WIKIPEDIA}.}
+    \caption[Basic Equivalence Preserving Transformations]{\textbf{Basic Equivalence Preserving Transformations.}\cite{npariscril_ept_2012}}
 \end{figure}
 
 By successive \ac{EPT}, the cost can be shifted and concentrated into the nullary constraint $c$, thus giving a better lower bound for the \ac{VCSP} and allowing to quickly prune subtrees.
@@ -122,29 +128,30 @@ These theoretical findings are used in the solver Toulbar2. It is an open-source
 % ==================================================================================================================================
 % PARTIE 1 : Algorithmic Foundations & Solver Development
 
-\newpage
+\clearpage
 \section{Algorithmic Foundations \& Solver Development}
 
 \subsection{An application to graph theory and the cluster editing problem}
 Zahn's decision problem can be described as the cluster editing problem. Given a graph, what is the minimal number of operations (adding edges, removing edges) needed to create a disjoint union of cliques. The \ac{ZP} is generally an NP-hard problem.
-In a paper titled \underline{A constraint programming approach to the
-Zahn’s decision problem}\cite{noguchi_computational_2019} , the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
+In a paper titled ``A constraint programming approach to the Zahn’s decision problem''\cite{noguchi_computational_2019}, the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
+
 \begin{itemize}
     \item A boolean variable is added for each pair of vertices. When a variable is set to true by the solver, then the decision is to keep or add the edge between the vertices. Else, the decision is to remove or not add an edge between the two vertices.
     \item A unary soft constraint is added for each variable. The cost of assigning $0$ to a variable $x$ is $1$ if the edge exists in the original graph, and 0 otherwise.
     \item A ternary hard constraint is added for each pair of $3$ edges which together creates the subgraph $P3$ described in the figure below. These ternary hard constraints are added to ensure that the resulting graph is a disjoint union of cliques. This result comes from the fact that a disjoint union of cliques cannot contain a subgraph isomorphic to $P3$, as explained in the paper.
 \end{itemize}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/ZP.png}
-    \caption{$P3$ Graph and insertion/deletion possibilities.}
+    \caption[$P3$ Graph and insertion/deletion possibilities.]{\textbf{$P3$ Graph and insertion/deletion possibilities.}}
 \end{figure}
 
 Using Toulbar2 to solve the \ac{VCSP}, the results found were much better than the fixed parameter algorithm for cluster editing presented before. The \ac{VCSP} algorithm performed better on both sparse and dense graphs. These results show the efficacy and utility of the constraint programming paradigm for general graph related problems.
 
 \subsection{Constraint programming for discrete integration in high dimensions}
 
-Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper \underline{Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization}\cite{ermon_taming_2013}, transform the original problem in set of combinatorial problems solved by Toulbar2.
+Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization''\cite{ermon_taming_2013}, transform the original problem in set of combinatorial problems solved by Toulbar2.
 \newline
 
 The problem at hand is described as follows : calculate the total sum over a large set of elements of a partition function $w()$. This problem is considered to be intractable, as the sum of elements over an exponential number of different configurations. By changing the $\#P$ complete counting problem into a series of NP-Hard MAP queries (Maximum a posteriori) optimization queries, the WISH algorithm bypasses the need for exhaustive summations.
@@ -160,21 +167,36 @@ Using Toulbar2, a state-of-the-art combinatorial optimization tool, WISH provide
 
 The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows : given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
 The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex and an edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFN} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
-So and so developed a way to model pseudo boolean linear constraints with \ac{CNF} allowing more problems to be solved using \ac{VSCP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. $6$ classes with $720$ instances each of the problem were tested with different $weights$, $capacities$ and $cost$. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+So and so developed a way to model pseudo boolean linear constraints with \ac{CFN} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. $6$ classes with $720$ instances each of the problem were tested with different $weights$, $capacities$ and $cost$. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
 
 % ==================================================================================================================================
 % PARTIE 2 : Proteine
 
+\clearpage
+\section{Bioinformatics \& Life Sciences}
 
 
+\subsection{nom}
 
+texte
+
+\subsection{nom}
+
+texte
+
+\subsection{nom}
+
+texte
+
+\subsection{Conclusion}
+
+texte
 
 % ==================================================================================================================================
 % PARTIE 3 : Resource Management & Planning
 
+\clearpage
 \section{Resource Management \& Planning}
-
-\subsection{Preamble}
 
 Although the Toulbar2 solver has gained a strong reputation in the field of bioinformatics, 
 the Cost Function Network formalism is proving particularly well-suited to classical operational research problems. 
@@ -185,7 +207,6 @@ enable the resolution of industrial-scale planning problems, whilst highlighting
 of these exact approaches compared to other paradigms such as \ac{MILP}.
 
 \subsection{Spatio-temporal allocation and conflict management}
-
 
 Planning and allocating physical resources often require merging two complex dimensions : space and time. 
 This could mean rotating crops across agricultural land over several years. It could also involve coordinating 
@@ -209,7 +230,7 @@ The model integrates two types of constraints:
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/crop_allocation_explication.png}
-    \caption{Schematic representation of the spatial and temporal aspects of the decision–making problem ($t_i$ : year, $b$ : block, $p_j$ : plot, $k_p$ : preceding effect)\cite{akplogan_solving_2013}.}
+    \caption[Schematic representation of the spatial and temporal aspects of the decision–making problem]{\textbf{Schematic representation of the spatial and temporal aspects of the decision–making problem} ($t_i$ : year, $b$ : block, $p_j$ : plot, $k_p$ : preceding effect).\cite{akplogan_solving_2013}}
 \end{figure}
 
 To solve this problem, the authors compared two approaches. The first is a \ac{WCSP} formulation solved by Toulbar2. The second is a \ac{MILP} reformulation solved by 
@@ -235,7 +256,7 @@ This ensures the conflict is resolved optimally.
 \begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/lumberjack_algo.png}
-    \caption{Lumberjack method steps.\cite{chaboud2020tackling}}
+    \caption[Lumberjack method steps.]{\textbf{Lumberjack method steps.}\cite{chaboud2020tackling}}
 \end{figure}
 
 In this model, each aircraft represents a variable of the problem, and the set of its alternative avoidance trajectories constitutes its domain of values.
@@ -243,7 +264,7 @@ In this model, each aircraft represents a variable of the problem, and the set o
 \begin{figure}[H]
     \centering
     \includegraphics[width=7cm]{images/ex_alternative_fligth.png}
-    \caption{Potential trajectories going from upper left to lower right.\cite{chaboud2020tackling}}
+    \caption[Potential trajectories going from upper left to lower right.]{\textbf{Potential trajectories going from upper left to lower right.}\cite{chaboud2020tackling}}
 \end{figure}
 
 The study compares the performance of the exact solver Toulbar2 with a custom-built ``\ac{SBF}'' algorithm. Analyzing the results highlights a characteristic trait of the \ac{CFN} architecture and Toulbar2. 
@@ -256,22 +277,22 @@ First is the memory cost of representing constraints in extension. Second is the
 \begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{images/performance1_SBF_TB2.png}
-    \caption{Average solving time over $100$ tests of the \ac{SBF} (squares) and Toulbar2 (circles) approaches
+    \caption[Performance of the two solvers on trajectory generation without greedy algorithms.]{\textbf{Performance of the two solvers on trajectory generation without greedy algorithms.} Average solving time over $100$ tests of the \ac{SBF} (squares) and Toulbar2 (circles) approaches
 for instances of a Roundabout with $3$ aircraft, function of the number of generated trajectories
 per aircraft. Crosses represent the average cost of the optimal solution.\cite{chaboud2020tackling}}
 \end{figure}
 
-To overcome these limitations, the authors highlight a pruning method using a "greedy" MinCostMaxClique$^{\ref{algo:mcmc}}$ algorithm. Before launching the exact search, they use a fast, non-optimal greedy heuristic to find an initial valid solution. 
+To overcome these limitations, the authors highlight a pruning method using a ``greedy'' MinCostMaxClique$^{\ref{algo:mcmc}}$ algorithm. Before launching the exact search, they use a fast, non-optimal greedy heuristic to find an initial valid solution. 
 The cost calculated from this solution is then injected into Toulbar2 as an initial ``upper bound''. This trick allows the solver to prune the search tree much faster. 
 It removes a considerable number of bad solutions and significantly accelerates the proof of optimality.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{images/performance2_SBF_TB2.png}
-    \caption{Average solving time over $100$ tests with statistical noise, of \ac{SBF} (squares) and Toulbar2
+    \caption[Performance of the two solvers on trajectory generation with greedy algorithms.]{\textbf{Performance of the two solvers on trajectory generation with greedy algorithms.} Average solving time over $100$ tests with statistical noise, of \ac{SBF} (squares) and Toulbar2
 (circles) approaches for instances of a Roundabout with approx. $850$ trajectories per aircraft,
 function of the number of aircraft involved. When a method does not always succeed before the
-$60's$ time-out, its success rate is indicated.\cite{chaboud2020tackling}}
+$60\text{'s}$ time-out, its success rate is indicated.\cite{chaboud2020tackling}}
 \end{figure}
 
 This use case shows that Toulbar2's performance depends heavily on the problem's topology. It also highlights the importance of hybridizing exact methods with fast, non-optimal heuristics. 
@@ -325,6 +346,10 @@ It then becomes necessary to frame the problem using Markov Decision Processes. 
 
 This need to hybridize exact constraint optimization with models that handle uncertainty marks a natural progression. It directly drives the integration of \acp{WCSP} into the broader fields of Artificial Intelligence and Machine Learning.
 
+% ==================================================================================================================================
+% PARTIE 4 : AI \& Machine Learning
+
+\clearpage
 \section{Artificial Intelligence \& Machine Learning}
 
 We have seen that Toulbar2 is a leading exact solver for Cost Function Networks. We will examine how AI integrates with Toulbar2 by combining neural network perception with exact structural constraints. We will also explore research where machine learning improves upon or outperforms Toulbar2.
@@ -338,7 +363,7 @@ At inference, the neural network feeds the predicted Graphical Model directly in
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
-    \caption{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026)\cite{defresne_scaling_2026}.}
+    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives (Defresne et al., 2026)}.\cite{defresne_scaling_2026}}
 \end{figure}
 
 \begin{itemize}
@@ -355,28 +380,35 @@ As established, Toulbar2 explores the whole solution space. This exploration mak
 
 Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
 
-We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} ($SMC^{2}$). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like $\text{KOCO SMC}^{8}$, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like $\text{KOCO SMC}^{8}$\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/smc_example.png}
-    \caption{Example of SMC : Robust Supply Chain with Different Network Size (Li et al., 2025)\cite{li_solving_2025}.}
+    \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size (Li et al., 2025)}.\cite{li_solving_2025}}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/KOCO.png}
-    \caption{Performance of each algorithm \cite{li_solving_2025}}
+    \caption[Performance of each algorithm.]{\textbf{Performance of each algorithm.}\cite{li_solving_2025}}
 \end{figure}
 
 This algorithm is a significant improvement over previous systems like Lingeling-HBFS that rely on Toulbar2.
 
-Artificial intelligence can additionally be utilized to match exact quality with linear scaling instead of exponential scaling Toulbar2 has. NeuroLifting addresses the limitations of Toulbar2 by using Graph Neural Networks to reparameterize decision variables. This transformation allows the optimization of models through standard gradient descent. This method matches the solution quality of Toulbar2 on moderate scales and outperforms it on large problems due to linear computational growth.
+Artificial intelligence can additionally be utilized to match exact quality with linear scaling instead of exponential scaling Toulbar2 has. 
+NeuroLifting addresses the limitations of Toulbar2 by using Graph Neural Networks to reparameterize decision variables. 
+This transformation allows the optimization of models through standard gradient descent. 
+This method matches the solution quality of Toulbar2 on moderate scales and outperforms it on large problems due to linear computational growth.
 
 \subsection{Conclusion}
 
-The integration of artificial intelligence resolves the scaling limitations of the Toulbar2 in some problems. Neural networks can also process the perception of the data to let the solver focus on discrete optimization tasks. Emerging algorithms bypass exhaustive search through the application of gradient descent and dynamic probabilistic tracking. This transition mandates that future solving methods rely on hybrid architectures rather than exact solvers.
+The integration of artificial intelligence resolves the scaling limitations of the Toulbar2 in some problems. 
+Neural networks can also process the perception of the data to let the solver focus on discrete optimization tasks. 
+Emerging algorithms bypass exhaustive search through the application of gradient descent and dynamic probabilistic tracking. 
+This transition mandates that future solving methods rely on hybrid architectures rather than exact solvers.
 
+\clearpage
 \section{Conclusion}
 
 
@@ -407,14 +439,12 @@ The integration of artificial intelligence resolves the scaling limitations of t
 % ==================================================================================
 % ANNEXES
 % ==================================================================================
-\newpage
+\clearpage
 \section{Appendix}
 \appendix
 
 \section{Algorithms and Code Snippets} 
-\label{annexe:algorithms} % Le label pour faire un renvoi vers la section entière
 
-% --- OPTION 1 : DU PSEUDO-CODE ---
 \subsection{MinCostMaxClique algorithm}
 
 \begin{algorithm}[H]
@@ -457,7 +487,7 @@ The integration of artificial intelligence resolves the scaling limitations of t
 % ==================================================================================================================================
 % Biblio
 
-\newpage 
+\clearpage 
 \printbibliography
 
 \end{document}
