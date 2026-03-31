@@ -28,7 +28,7 @@
     The valued constraint satisfaction problem (VCSP) or weighted constraint satisfaction problem (WCSP) is a problem of finding an assignment of minimal cost to a set of variables and is solved using a branch-and-bound search (BnB). By finding a good lower bound to a given instance, subtrees of the BnB can be quickly pruned to efficiently find an optimal solution. The solver Toulbar2 uses many different techniques to find such lower bounds. This paper studies the cross-disciplinary application of the solver Toulbar2, ranging from solving difficult combinatorial problems, to real-world application such as bioinformatics and resource management and finally artificial intelligence. In many cases, when the problem was able to be written using the VCSP framework, Toulbar2 was able to outperform other state-of-the-art solvers.
     
     \vspace{0.5cm}
-    \noindent \textbf{Key Words :} VCSP, WCSP, Toulbar2, OSAC, VAC, Protein design, AI, combinatorics, operations research
+    \noindent \textbf{Key Words :} Toulbar2, Protein design, AI,  operations research, VCSP
 \end{abstract}
 
 \vspace*{\fill}
@@ -361,7 +361,7 @@ Hospital staff scheduling is an optimization problem known for its high combinat
 They must account for strict staff coverage requirements (hard constraints) as well as staff rest preferences (soft constraints).
 \newline
 
-The value of this document for our analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \acp{CFN} were designed around binary constraints. 
+The value of this document for our analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \acp{CFNs} were designed around binary constraints. 
 However, this type of constraint is poorly suited for modeling human rules. It would require creating an exponentially large constraint network. This makes the solution inefficient.
 \newline
 
