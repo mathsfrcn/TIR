@@ -4,11 +4,15 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces $P3$ Graph and insertion/deletion possibilities.}}{7}{figure.caption.20}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Example of a solution for the $N$-queen problem}}{8}{figure.caption.22}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac {KPCG}.}}{9}{figure.caption.24}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Schematic representation of the spatial and temporal aspects of the decision–making problem}}{11}{figure.caption.26}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Lumberjack method steps.}}{12}{figure.caption.30}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Potential trajectories going from upper left to lower right.}}{12}{figure.caption.31}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Performance of the two solvers on trajectory generation without greedy algorithms.}}{13}{figure.caption.33}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Performance of the two solvers on trajectory generation with greedy algorithms.}}{13}{figure.caption.34}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Scaling Neuro-symbolic Problem Solving}}{16}{figure.caption.36}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Example of SMC : Robust Supply Chain with Different Network Size}}{17}{figure.caption.37}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Performance of each algorithm.}}{17}{figure.caption.38}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Flow chart of the CPD framework}}{10}{figure.caption.25}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Local optima network with basin edges for 2ckx and 2gkt in 2D and 3D representations.}}{12}{figure.caption.26}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Designing orthogonal component with the same fold requires explicitly accounting for negative homomeric states}}{13}{figure.caption.27}%
+\contentsline {figure}{\numberline {9}{\ignorespaces BMC-H homohexamer of bacterial microcompartment shell.}}{13}{figure.caption.28}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Schematic representation of the spatial and temporal aspects of the decision–making problem}}{15}{figure.caption.30}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Lumberjack method steps.}}{16}{figure.caption.34}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Potential trajectories going from upper left to lower right.}}{16}{figure.caption.35}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Performance of the two solvers on trajectory generation without greedy algorithms.}}{17}{figure.caption.37}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Performance of the two solvers on trajectory generation with greedy algorithms.}}{17}{figure.caption.38}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Scaling Neuro-symbolic Problem Solving}}{20}{figure.caption.40}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Example of SMC : Robust Supply Chain with Different Network Size}}{21}{figure.caption.41}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Performance of each algorithm.}}{21}{figure.caption.42}%

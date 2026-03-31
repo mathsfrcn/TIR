@@ -5,18 +5,17 @@
 \contentsline {subsection}{\numberline {1.3}Toulbar2 for the weighted $N$-queen and quadratic assignment problems}{8}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}{9}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Bioinformatics \& Life Sciences}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}nom}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}nom}{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}nom}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Conclusion}{10}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Resource Management \& Planning}{11}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Spatio-temporal allocation and conflict management}{11}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Human resources and global constraints}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Routing and networks}{14}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Artificial Intelligence \& Machine Learning}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}AI in the service of Toulbar2}{16}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Yet New Ways Open}{16}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Conclusion}{18}{section.5}%
-\contentsline {section}{\numberline {6}Appendix}{19}{section.6}%
-\contentsline {section}{\numberline {A}Algorithms}{19}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}MinCostMaxClique algorithm}{19}{subsection.A.1}%
+\contentsline {subsection}{\numberline {2.1}Formalization and Classical Methods of Protein Design}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Advanced Exact Approaches and Problem Analysis}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Deep Learning and Hybrid Approaches}{12}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Resource Management \& Planning}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spatio-temporal allocation and conflict management}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Human resources and global constraints}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Routing and networks}{18}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Artificial Intelligence \& Machine Learning}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}AI in the service of Toulbar2}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Yet New Ways Open}{20}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusion}{22}{section.5}%
+\contentsline {section}{\numberline {6}Appendix}{23}{section.6}%
+\contentsline {section}{\numberline {A}Algorithms}{23}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}MinCostMaxClique algorithm}{23}{subsection.A.1}%

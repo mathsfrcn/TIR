@@ -223,27 +223,189 @@ Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way t
 
 This new technique also helped model the protein design problem, which is one of the main applications of the Toulbar2 solver, as it will be shown in the following section.
 % ==================================================================================================================================
-% PARTIE 2 : Proteine
+% PARTIE 2 : Protein
 
 \clearpage
 \section{Bioinformatics \& Life Sciences}
 
+Protein design (computational protein design, CPD) involves creating artificial proteins capable of adopting a given structure and performing a specific function. This field is highly important because it enables the design of more efficient enzymes, biological sensors, or even nanoscale structures.
+\newline
 
-\subsection{nom}
+A central aspect is the control of protein–protein interactions (PPIs). In cells, proteins do not act alone: they assemble into organized complexes. For example, some proteins form regular structures composed of multiple identical copies (homomers), while others combine several different proteins (heteromers). Being able to switch from a homomeric system to a heteromeric one would allow the creation of much more complex and controlled assemblies.
+\newline
 
-texte
+However, designing a protein is very challenging. For a given structure, there is an enormous number of possible sequences. Moreover, each sequence can adopt multiple conformations\footnote{The 3D shape a protein takes when it folds, which determines how it functions.}. This creates a vast search space.
+To simplify, classical methods make two important assumptions:
 
-\subsection{nom}
+\begin{itemize}
+    \item The backbone is rigid (the overall structure does not move).
+    \item Only the side chains change, in the form of rotamers\footnote{A specific orientation of a part of a protein, often a side chain, which can rotate around a bond, giving several possible discrete positions.}.
+\end{itemize}
 
-texte
+With these simplifications, the problem can be seen as an optimization task: finding the combination of rotamers that yields the lowest energy. Nevertheless, the problem remains very complex (NP-hard).
+Over time, different approaches have been developed: physical methods, exact methods, deep learning, and then hybrid approaches. The objective has always been the same: to find a good compromise between accuracy, speed, and control.
 
-\subsection{nom}
 
-texte
+\subsection{Formalization and Classical Methods of Protein Design}%Partie 1
+Computer-aided protein design (CPD) is generally formulated as an optimization problem: the goal is to identify the amino acid sequence that minimizes the protein’s energy, called the GMEC (Global Minimum Energy Conformation). 
+This energy is minimized because, naturally, a protein adopts its most stable conformation, i.e., the one with the lowest energy.
 
-\subsection{Conclusion}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/schema_framework-CPD_partie1.png}
+    \caption[Flow chart of the CPD framework]{\textbf{Flow chart of the CPD framework}\cite{traore_new_2013}}
+\end{figure}
 
-texte
+In this framework, each position of the protein can adopt different rotamers (local conformations of side chains). The total energy of the protein is calculated as the sum of local contributions (energy of a single residue) and pairwise interactions between residues. The problem thus consists of selecting a rotamer for each position in order to minimize this global energy.
+\newline
+
+The problem quickly becomes combinatorial: if each position can take multiple rotamers, the total number of possible combinations grows exponentially with the size of the protein. To address this, two main families of methods have been developed:\\
+\newline
+Heuristic methods:
+
+\begin{itemize}
+    \item Monte Carlo, simulated annealing
+    \item Genetic algorithms
+\end{itemize}
+
+These methods explore the solution space quickly, but they can become trapped in local optima and do not guarantee finding the global solution.\\
+\newline
+Exact methods:
+\begin{itemize}
+    \item Dead-End Elimination (DEE)
+    \item A* search
+    \item Integer Linear Programming (ILP)
+\end{itemize}
+
+
+
+These approaches guarantee finding the optimal solution according to the energy model, but their computational cost is often high, especially for large proteins.
+\newline
+
+A crucial point is that the calculated optimal solution is not necessarily the best in practice, because the energy models used are approximate. For this reason, it is common to also examine solutions that are close to the optimum.\\
+This formalization provides a rigorous framework for protein design, but it relies on significant simplifications, notably the rigidity of rotamers and the approximation of energies. Furthermore, the computational cost grows rapidly with protein size, which limits direct applicability to large structures.
+
+\subsection{Advanced Exact Approaches and Problem Analysis}%Partie 2
+
+To improve the efficiency of exact methods in protein design, the problem has been reformulated in terms of constraints. This allows leveraging more structured and systematic optimization techniques.
+
+Computer-aided protein design can be represented as a Cost Function Network (CFN):
+\begin{itemize}
+    \item Each residue corresponds to a variable.
+    \item Each rotamer represents a possible value for that variable.
+    \item Each interaction between residues is encoded as a cost.
+\end{itemize}
+
+The objective is then to find the combination of values (rotamers) that minimizes the total cost of the system.
+
+In the CFN framework, there is a clear mapping from the protein structure to a constraint graph: residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
+\newline
+The Toulbar2 solver is commonly used to tackle this formulation. It applies techniques such as:
+
+\begin{itemize}
+    \item Branch and bound, which explores the solution space intelligently.
+    \item Pruning, which eliminates infeasible or suboptimal solutions early.
+\end{itemize}
+
+These capabilities allow the solver not only to identify the exact GMEC but also to enumerate multiple near-optimal solutions. Such solutions are particularly useful for analyzing the fitness landscape of the protein:
+
+\begin{itemize}
+    \item Some problems are simple, exhibiting a single global minimum.
+    \item Others are more complex, with many local minima creating a rugged landscape.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm]{images/schema_soft_rought_landscapee_partie2.png}
+    \caption[Local optima network with basin edges for 2ckx and 2gkt in 2D and 3D representations.]{\textbf{Local optima network with basin edges for 2ckx (left side) and 2gkt (right side) in 2D and 3D representations.} The
+size is the log of the basin of attraction size. The color is the fitness: the better, the warmer. The thickness of the edges is
+proportional to the probability of passing from one basin to the other.\cite{simoncini_fitness_2018}}
+\end{figure}
+
+
+Understanding this landscape is crucial, as it explains why certain optimization methods perform well in some cases but struggle in others.
+\newline
+
+To further improve computational performance, techniques like Large Neighborhood Search (LNS) are employed:
+\begin{itemize}
+    \item Only a portion of the protein is modified at a time.
+    \item This subset is then optimized exactly while keeping the rest fixed.
+\end{itemize}
+
+CFN-based approaches with Toulbar2 enable more efficient exact optimization and provide deeper insight into the structure of the problem. Nevertheless, they remain constrained by the size of the protein system and the simplifications inherent in the energy and rotamer models.
+
+\subsection{Deep Learning and Hybrid Approaches}%Partie 3
+
+Deep learning has recently transformed the field of protein design, providing new ways to predict and generate sequences compatible with a given structure.
+Models such as ProteinMPNN learn directly which sequences are compatible with a target structure, enabling the rapid generation of realistic proteins.
+
+However, these models have limitations:
+\begin{itemize}
+    \item They are difficult to control precisely.
+    \item They struggle to handle complex constraints effectively.
+\end{itemize}
+A particularly challenging problem is multi-state design, where the goal is to:
+\begin{itemize}
+    \item Favor a desired interaction (e.g., AB).
+    \item Avoid undesired interactions (e.g., AA or BB).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/schema_positive_negativestate_partie3.png}
+    \caption[Designing orthogonal component with the same fold requires explicitly accounting for negative homomeric states]{\textbf{Designing two orthogonal
+components with the same fold requires explicitly representing the two undesirable homomeric negative states
+on the right.}\cite{dessaux_designing_2024,}}
+\end{figure}
+
+Classical deep learning models often struggle with multi-state design because they must simultaneously satisfy conflicting objectives.
+
+To address this, a hybrid approach has been developed, combining deep learning and exact optimization:
+\begin{itemize}
+    \item Effie: a deep learning model that produces a scoring function for candidate sequences.
+    \item Toulbar2: an exact solver that optimizes this scoring function under explicit constraints.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/schema_bmc_partie3.png}
+    \caption[BMC-H homohexamer of bacterial microcompartment shell.]{\textbf{BMC-H homohexamer of bacterial microcompartment (BMC) shell.}\cite{dessaux_designing_2024}}
+\end{figure}
+
+This combination allows:
+\begin{itemize}
+    \item Better control over specific interactions.
+    \item Simultaneous management of multiple states.
+    \item Generation of sequences with improved overall quality.
+\end{itemize}
+
+Experimental and simulation results demonstrate that this approach:
+\begin{itemize}
+    \item Performs better in computational simulations.
+    \item Has been validated experimentally, showing real interactions and measurable fluorescence.
+\end{itemize}
+
+
+Hybrid approaches leverage the strengths of both deep learning and exact methods. They provide more precise control over protein design and multi-state objectives, although they remain computationally more demanding.
+\newline
+\newline
+
+
+Protein design has undergone significant evolution over the years:
+
+From physical methods to exact approaches, then to deep learning, and finally to hybrid strategies.
+
+Each approach has brought improvements, but also comes with inherent limitations.
+
+The main remaining challenges include:
+
+\begin{itemize}
+    \item Protein flexibility, as rigid backbone approximations remain oversimplified.
+    \item Accuracy of energy or scoring models, which can limit the reliability of predictions.
+    \item Scalability, i.e., the ability to handle large and complex protein systems efficiently.
+\end{itemize}
+
+Hybrid approaches currently appear the most promising, as they combine precision, explicit control, and the ability to manage complex constraints.This is particularly valuable for designing specific interactions and multi-state systems.
 
 % ==================================================================================================================================
 % PARTIE 3 : Resource Management & Planning
