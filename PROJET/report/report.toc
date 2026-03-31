@@ -1,24 +1,24 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Algorithmic Foundations \& Solver Development}{7}{section.1}%
 \contentsline {subsection}{\numberline {1.1}An application to graph theory and the cluster editing problem}{7}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Constraint programming for discrete integration in high dimensions}{7}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Relevance of Toulbar2 today for domain consistency constraint programming and quadratic assignment problem}{8}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}{8}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Bioinformatics \& Life Sciences}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}nom}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}nom}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}nom}{9}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Conclusion}{9}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Resource Management \& Planning}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Spatio-temporal allocation and conflict management}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Human resources and global constraints}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Routing and networks}{14}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Conclusion}{14}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Artificial Intelligence \& Machine Learning}{15}{section.4}%
-\contentsline {subsection}{\numberline {4.1}AI in the service of Toulbar2}{15}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Yet New Ways Open}{15}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Conclusion}{16}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Conclusion}{17}{section.5}%
-\contentsline {section}{\numberline {6}Appendix}{18}{section.6}%
-\contentsline {section}{\numberline {A}Algorithms and Code Snippets}{18}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}MinCostMaxClique algorithm}{18}{subsection.A.1}%
+\contentsline {subsection}{\numberline {1.2}Constraint programming for calculating partition functions and discrete integration in high dimensions}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Toulbar2 for the weighted N-queen and quadratic assignment problems}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}{9}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Bioinformatics \& Life Sciences}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}nom}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}nom}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}nom}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Conclusion}{11}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Resource Management \& Planning}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spatio-temporal allocation and conflict management}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Human resources and global constraints}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Routing and networks}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Conclusion}{16}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Artificial Intelligence \& Machine Learning}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}AI in the service of Toulbar2}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Yet New Ways Open}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Conclusion}{18}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Conclusion}{19}{section.5}%
+\contentsline {section}{\numberline {6}Appendix}{20}{section.6}%
+\contentsline {section}{\numberline {A}Algorithms and Code Snippets}{20}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}MinCostMaxClique algorithm}{20}{subsection.A.1}%

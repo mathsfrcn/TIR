@@ -60,8 +60,8 @@
     \acro{WCSP}{Weighted Constraint Satisfaction Problem}
     \acro{VCSP}{Valued Constraint Satisfaction Problem}
 
-    \acro{CFN}{Cost Function Network}
-    \acro{EPT}{Equivalence Preserving Transformations}
+    \acro{CFNs}{Cost Function Networks}
+    \acro{EPTs}{Equivalence Preserving Transformations}
     \acro{SAC}{Soft Arc Consistency}
     \acro{FDAC}{Full Directional Arc Consistency}
     \acro{EDAC}{Existential Directional Arc Consistency}
@@ -96,7 +96,7 @@ To find a solution to a \ac{CSP} problem, backtracking search is used. This stra
 \newline
 
 The \ac{VCSP} or \ac{WCSP} is considered a generalization of the classic \ac{CSP}. 
-In a \ac{VCSP}, a \ac{CFN} framework is used. A \ac{CFN} is a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft constraint $C$, and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
+In a \ac{VCSP}, a \ac{CFNs} framework is used. \ac{CFNs} are a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft constraint $C$, and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
 \newline
 
 To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ‘\textit{branching}’ : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
@@ -110,17 +110,17 @@ The efficacy of the branch-and-bound depends on the lower bound we have access t
 In a Cost Function Network, functions are categorized by their arity: unary functions (arity 1) assign costs to individual variable assignments, binary functions (arity 2) assign costs to pairs of variables, and the nullary constant (arity 0), denoted as $c_{\emptyset}$, represents a global lower bound on the cost of any complete assignment.
 \newline
 
-\ac{EPT} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPT} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
+\ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/ept.jpg}
     \caption[Basic Equivalence Preserving Transformations]{\textbf{Basic Equivalence Preserving Transformations.}\cite{npariscril_ept_2012}}
 \end{figure}
 
-By successive \ac{EPT}, the cost can be shifted and concentrated into the nullary constraint $c$, thus giving a better lower bound for the \ac{VCSP} and allowing to quickly prune subtrees.
+By successive \ac{EPTs}, the cost can be shifted and concentrated into the nullary constraint $c$, thus giving a better lower bound for the \ac{VCSP} and allowing to quickly prune subtrees.
 \newline
 
-This process of applying successive \acp{EPT} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
+This process of applying successive \acp{EPTs} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
 \newline
 
 These theoretical findings are used in the solver Toulbar2. It is an open-source \textit{C++} solver for discrete optimization problems within the cost function network framework. The solver integrates \ac{SAC} operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classical operations research and finally discuss their recent integration into neuro-symbolic Artificial Intelligence networks.
@@ -133,7 +133,7 @@ These theoretical findings are used in the solver Toulbar2. It is an open-source
 
 \subsection{An application to graph theory and the cluster editing problem}
 Zahn's decision problem can be described as the cluster editing problem. Given a graph, what is the minimal number of operations (adding edges, removing edges) needed to create a disjoint union of cliques. The \ac{ZP} is generally an NP-hard problem.
-In a paper titled ``A constraint programming approach to the Zahn’s decision problem''\cite{noguchi_computational_2019}, the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
+In a paper titled ``A constraint programming approach to the Zahn’s decision problem''\cite{amel_constraint_2014}, the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
 
 \begin{itemize}
     \item A boolean variable is added for each pair of vertices. When a variable is set to true by the solver, then the decision is to keep or add the edge between the vertices. Else, the decision is to remove or not add an edge between the two vertices.
@@ -144,31 +144,72 @@ In a paper titled ``A constraint programming approach to the Zahn’s decision p
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/ZP.png}
-    \caption[$P3$ Graph and insertion/deletion possibilities.]{\textbf{$P3$ Graph and insertion/deletion possibilities.}}
+    \caption[$P3$ Graph and insertion/deletion possibilities.]{\textbf{$P3$ Graph and insertion/deletion possibilities.}\cite{amel_constraint_2014}}
 \end{figure}
 
 Using Toulbar2 to solve the \ac{VCSP}, the results found were much better than the fixed parameter algorithm for cluster editing presented before. The \ac{VCSP} algorithm performed better on both sparse and dense graphs. These results show the efficacy and utility of the constraint programming paradigm for general graph related problems.
 
-\subsection{Constraint programming for discrete integration in high dimensions}
+\subsection{Constraint programming for calculating partition functions and discrete integration in high dimensions}
 
-Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization''\cite{ermon_taming_2013}, transform the original problem in set of combinatorial problems solved by Toulbar2.
+Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem, is typically \#P-Hard and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization``\cite{ermon_taming_2013}, reduces the task of discrete integration into a collection of Maximum a Posteriori (MAP) sub-problems, which are NP-Hard instead.
 \newline
 
-The problem at hand is described as follows : calculate the total sum over a large set of elements of a partition function $w()$. This problem is considered to be intractable, as the sum of elements over an exponential number of different configurations. By changing the $\#P$ complete counting problem into a series of NP-Hard MAP queries (Maximum a posteriori) optimization queries, the WISH algorithm bypasses the need for exhaustive summations.
+The main challenge involves calculating the partition function. A partition function is a sum of all possible configurations of a set X where $w(x)$ is a weight function assigning a weight to a configuration.
+\begin{equation}
+Z = \sum_{x \in \mathcal{X}} w(x)
+\end{equation}
+A commonly known example in physics is the Boltzmann distribution, a probability distribution that describes the likelihood of a system being in a specific configuration. The corresponding partition is as follows:
+\begin{equation}
+    w(x) = e^{-\frac{E(x)}{k_B T}} 
+    \qquad \text{and} \qquad 
+    Z = \sum_{x \in \mathcal{X}} e^{-\frac{E(x)}{k_B T}}
+\end{equation}
+\begin{itemize}
+    \item $E(x)$: The total energy of the configuration $x$.
+    \item $k_B$: The Boltzmann constant.
+    \item $T$: The absolute temperature.
+\end{itemize}
+A partition function can also be understood as a discrete integral, and is a computational task that is intractable due to the exponential number of configurations. WISH is a randomized algorithm which bypasses this challenging problem by solving, like said above, a collection of NP-Hard problems instead.
 \newline
 
-Instead of attempting to enumerate an exponential number of configurations, the authors use randomized parity constraints linear equations over the field $F2$ to act as a hash function that ``thins out'' the configuration space. By solving a small, polynomial number of these constrained optimization instances, the solver Toulbar2 identifies the heaviest surviving configuration (the mode) at different levels of hashing. These specific maximum weights act as statistical proxies for the quantiles of the original weight distribution, allowing the total partition function to be reconstructed as a weighted sum of these median values with high-probability approximation guarantees (À VOIR)
+Using the state-of-the-art combinatorial tool Toulbar2 to solve the MAP queries, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically. Another significant advantage of this approach is that these independent optimization instances can be solved in parallel. 
 \newline
 
-Using Toulbar2, a state-of-the-art combinatorial optimization tool, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically.
-\subsection{Relevance of Toulbar2 today for domain consistency constraint programming and quadratic assignment problem}
+These results show the impact of Toulbar2 when a difficult \#P problem is reduced to a combinatorial problem that can be solved with constraint programming. The wide applications of discrete integrations demonstrate the utility of the VCSP solver.
+\subsection{Toulbar2 for the weighted N-queen and quadratic assignment problems}
+The N-Queen problem is a non-trivial mathematical problem that looks for a placement of N queens on board of chess of size N by N where no two queens are threatening each other. The figure below shows an example of a solution where n = 8.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/nqueens.png}
+    \caption[]{Example of a solution for the N-queen problem with n=8 \cite{nquennsproblem}}
+\end{figure}
+The weighted N-Queen problem is a difficult optimization problem where every queen placement incurs a cost, and the goal is to find the lowest cost solution. 
+\newline
 
+A key advancement by Sewa et al. (2022)\cite{traore_new_2013} improved the Toulbar2 performance by integrating a more powerful way to propagate ALLDIFFERENT constraints for SAC. An ALLDIFFERENT constraint is a constraint where no two variables can have the same value. By modeling the cost as a unary constraint and using three ALLDIFFERENT constraints for the column, diagonal and anti-diagonal uniqueness, the upgraded version of Toulbar2 significantly outperformed other state-of-the-art solvers for the N-Queen problem.
+\newline
+
+Furthermore, with this new improved version of Toulbar2, the authors also tested its performance for the quadratic assignment problem (QAP). The QAP is a difficult NP-Hard problem where we seek to assign n facilities to n locations so as to minimize the total cost which is determined by the flow between facilities and the distance between locations. The results found that toulbar2 returned the highest quality solution with a gap of 3.9% to the best known decision.
+\newline
+
+These examples show the relevance of Toulbar2 when paired with a new propagator against state-of-the-art solvers for difficult NP-Hard combinatorial problems.
 \subsection{Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}
 
 The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows : given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
-The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex and an edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFN} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
-So and so developed a way to model pseudo boolean linear constraints with \ac{CFN} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. $6$ classes with $720$ instances each of the problem were tested with different $weights$, $capacities$ and $cost$. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+\newline
 
+The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex. An edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFNs} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
+\newline
+
+Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \ac{CFNs} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+\newline
+\begin{table}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/resultat_knapsack.png}
+    \caption[]{\textbf{Number of solved instances (left) and number of times a solver found the
+best solution within the time limit (right) for six different classes of KPCG.} Cplex was tested with two different encodings: tuples (t) and direct (d).\cite{montalbano_multiple-choice_2022}}
+\end{table}
+This new technique also helped model the protein design problem, which is one of the main applications of the Toulbar2 solver, as it will be shown in the following section.
 % ==================================================================================================================================
 % PARTIE 2 : Proteine
 
@@ -267,7 +308,7 @@ In this model, each aircraft represents a variable of the problem, and the set o
     \caption[Potential trajectories going from upper left to lower right.]{\textbf{Potential trajectories going from upper left to lower right.}\cite{chaboud2020tackling}}
 \end{figure}
 
-The study compares the performance of the exact solver Toulbar2 with a custom-built ``\ac{SBF}'' algorithm. Analyzing the results highlights a characteristic trait of the \ac{CFN} architecture and Toulbar2. 
+The study compares the performance of the exact solver Toulbar2 with a custom-built ``\ac{SBF}'' algorithm. Analyzing the results highlights a characteristic trait of the \ac{CFNs} architecture and Toulbar2. 
 The solver handles scaling the number of variables perfectly well. It efficiently resolves conflicts involving a relatively high number of aircraft ($6$ to $8$ planes). 
 In contrast, the \ac{SBF} approach collapses under these conditions.
 
@@ -304,7 +345,7 @@ Managing space and time is a major challenge. However, human resources planning 
 This subsection highlights how \ac{WCSP} research has had to evolve. It demonstrates the adaptation required to meet the expressivity needed to generate schedules.
 \newline
 
-Hospital staff scheduling is an optimization problem known for its high combinatorial complexity. In their study, Métivier et al. (2009)\cite{nurse_rostering_problems} apply the \ac{CFN} formalism and the Toulbar2 solver to generate optimal schedules for nurses. 
+Hospital staff scheduling is an optimization problem known for its high combinatorial complexity. In their study, Métivier et al. (2009)\cite{nurse_rostering_problems} apply the \ac{CFNs} formalism and the Toulbar2 solver to generate optimal schedules for nurses. 
 They must account for strict staff coverage requirements (hard constraints) as well as staff rest preferences (soft constraints).
 \newline
 
