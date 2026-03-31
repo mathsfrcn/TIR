@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Algorithmic Foundations \& Solver Development}{7}{section.1}%
+\contentsline {section}{\numberline {1}Combinatorial problem solving}{7}{section.1}%
 \contentsline {subsection}{\numberline {1.1}An application to graph theory and the cluster editing problem}{7}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Constraint programming for calculating partition functions and discrete integration in high dimensions}{7}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Toulbar2 for the weighted N-queen and quadratic assignment problems}{8}{subsection.1.3}%
