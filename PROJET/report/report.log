@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  31 MAR 2026 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  3 APR 2026 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1550,11 +1550,18 @@ Overfull \hbox (20.6769pt too wide) in paragraph at lines 10--14
 [1
 
 {C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./images/logo_UT.png (PNG copy)> <./images/logo_irit.png>])
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 23.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 \clearpage
+l.23 \clearpage
                 [1
+
+] [2
 
 ] (report.toc)
 \tf@toc=\write8
@@ -1562,9 +1569,9 @@ l.39 \clearpage
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 43.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 46.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [2
+ [3
 
 {C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] (report.lof
 Package acronym Info: Label `acro:BnB' newly defined as it shall be overridden
@@ -1579,511 +1586,539 @@ although it is yet undefined on input line 7.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 51.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 54.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [3
+ [4
 
 {C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 97.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 100.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [4
+ [5
+
+]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 103.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [6
 
 ]
 Package acronym Info: Label `acro:CSP' newly defined as it shall be overridden
-although it is yet undefined on input line 101.
+although it is yet undefined on input line 107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
 Package acronym Info: Label `acro:VCSP' newly defined as it shall be overridden
-although it is yet undefined on input line 105.
+although it is yet undefined on input line 111.
 Package acronym Info: Label `acro:WCSP' newly defined as it shall be overridden
-although it is yet undefined on input line 105.
+although it is yet undefined on input line 111.
 Package acronym Info: Label `acro:CFN' newly defined as it shall be overridden
-although it is yet undefined on input line 106.
+although it is yet undefined on input line 112.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
-<images/bnb.png, id=308, 453.19313pt x 167.62625pt>
+<images/bnb.png, id=317, 453.19313pt x 167.62625pt>
 File: images/bnb.png Graphic file (type png)
 <use images/bnb.png>
-Package pdftex.def Info: images/bnb.png  used on input line 112.
+Package pdftex.def Info: images/bnb.png  used on input line 118.
 (pdftex.def)             Requested size: 284.52756pt x 105.23932pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 Package acronym Info: Label `acro:EPTs' newly defined as it shall be overridden
-although it is yet undefined on input line 120.
-<images/ept.jpg, id=316, 1284.8pt x 391.4625pt>
+although it is yet undefined on input line 126.
+<images/ept.jpg, id=325, 1284.8pt x 391.4625pt>
 File: images/ept.jpg Graphic file (type jpg)
 <use images/ept.jpg>
-Package pdftex.def Info: images/ept.jpg  used on input line 123.
+Package pdftex.def Info: images/ept.jpg  used on input line 129.
 (pdftex.def)             Requested size: 341.43306pt x 104.02975pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 126.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 132.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[5
+[7
 
 {C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./images/bnb.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 Package acronym Info: Label `acro:SAC' newly defined as it shall be overridden
-although it is yet undefined on input line 130.
+although it is yet undefined on input line 136.
 Package acronym Info: Label `acro:FDAC' newly defined as it shall be overridden
-although it is yet undefined on input line 130.
+although it is yet undefined on input line 136.
 Package acronym Info: Label `acro:EDAC' newly defined as it shall be overridden
-although it is yet undefined on input line 130.
+although it is yet undefined on input line 136.
 Package acronym Info: Label `acro:VAC' newly defined as it shall be overridden
-although it is yet undefined on input line 130.
+although it is yet undefined on input line 136.
 Package acronym Info: Label `acro:OSAC' newly defined as it shall be overridden
-although it is yet undefined on input line 130.
+although it is yet undefined on input line 136.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 138.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 144.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[6 <./images/ept.jpg>]
+[8 <./images/ept.jpg>]
 Package acronym Info: Label `acro:ZP' newly defined as it shall be overridden
-although it is yet undefined on input line 145.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 149.
+although it is yet undefined on input line 151.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 155.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/ZP.png, id=351, 299.61937pt x 179.67125pt>
+<images/ZP.png, id=359, 299.61937pt x 179.67125pt>
 File: images/ZP.png Graphic file (type png)
 <use images/ZP.png>
-Package pdftex.def Info: images/ZP.png  used on input line 156.
+Package pdftex.def Info: images/ZP.png  used on input line 162.
 (pdftex.def)             Requested size: 199.1693pt x 119.436pt.
 Package acronym Info: Label `acro:MAP' newly defined as it shall be overridden
-although it is yet undefined on input line 164.
+although it is yet undefined on input line 170.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 169.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 175.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[7
+[9
 
 {C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./images/ZP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 194.
+(Font)              <12> on input line 201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 194.
+(Font)              <8> on input line 201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 194.
+(Font)              <6> on input line 201.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
+(hyperref)                removing `math shift' on input line 201.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
+(hyperref)                removing `math shift' on input line 201.
 
-<images/nqueens.png, id=367, 181.17688pt x 185.69376pt>
+<images/nqueens.png, id=375, 181.17688pt x 185.69376pt>
 File: images/nqueens.png Graphic file (type png)
 <use images/nqueens.png>
-Package pdftex.def Info: images/nqueens.png  used on input line 199.
+Package pdftex.def Info: images/nqueens.png  used on input line 206.
 (pdftex.def)             Requested size: 113.81102pt x 116.6505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 208.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 215.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[8{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./images/nqueens.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+[10{C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./images/nqueens.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 Package acronym Info: Label `acro:ILP' newly defined as it shall be overridden
-although it is yet undefined on input line 221.
+although it is yet undefined on input line 228.
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-<images/resultat_knapsack.png, id=392, 260.975pt x 75.28125pt>
+<images/resultat_knapsack.png, id=400, 260.975pt x 75.28125pt>
 File: images/resultat_knapsack.png Graphic file (type png)
 <use images/resultat_knapsack.png>
-Package pdftex.def Info: images/resultat_knapsack.png  used on input line 226.
+Package pdftex.def Info: images/resultat_knapsack.png  used on input line 233.
 (pdftex.def)             Requested size: 239.00558pt x 68.94482pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 237.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 244.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[9 <./images/resultat_knapsack.png>]
-Package acronym Info: Label `acro:CMD' newly defined as it shall be overridden
-although it is yet undefined on input line 240.
+[11 <./images/resultat_knapsack.png>]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 247.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [12
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--242
+]
+Package acronym Info: Label `acro:CMD' newly defined as it shall be overridden
+although it is yet undefined on input line 250.
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
 Package acronym Info: Label `acro:PPI' newly defined as it shall be overridden
-although it is yet undefined on input line 243.
+although it is yet undefined on input line 253.
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
 Package acronym Info: Label `acro:GMEC' newly defined as it shall be overridden
-although it is yet undefined on input line 259.
-<images/schema_framework-CPD_partie1.png, id=410, 519.44063pt x 393.72093pt>
+although it is yet undefined on input line 269.
+<images/schema_framework-CPD_partie1.png, id=423, 519.44063pt x 393.72093pt>
 File: images/schema_framework-CPD_partie1.png Graphic file (type png)
 <use images/schema_framework-CPD_partie1.png>
-Package pdftex.def Info: images/schema_framework-CPD_partie1.png  used on input line 264.
+Package pdftex.def Info: images/schema_framework-CPD_partie1.png  used on input line 274.
 (pdftex.def)             Requested size: 239.00558pt x 181.15587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 270.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 280.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[10
+[13
 
  <./images/schema_framework-CPD_partie1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 271--274
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--313
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 322.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 332.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[11]
-<images/schema_soft_rought_landscapee_partie2.png, id=434, 804.75656pt x 225.84375pt>
+[14]
+<images/schema_soft_rought_landscapee_partie2.png, id=447, 804.75656pt x 225.84375pt>
 File: images/schema_soft_rought_landscapee_partie2.png Graphic file (type png)
 <use images/schema_soft_rought_landscapee_partie2.png>
-Package pdftex.def Info: images/schema_soft_rought_landscapee_partie2.png  used on input line 330.
+Package pdftex.def Info: images/schema_soft_rought_landscapee_partie2.png  used on input line 340.
 (pdftex.def)             Requested size: 341.43306pt x 95.81862pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
 Package acronym Info: Label `acro:LNS' newly defined as it shall be overridden
-although it is yet undefined on input line 340.
-<images/schema_positive_negativestate_partie3.png, id=439, 192.72pt x 158.09062pt>
+although it is yet undefined on input line 350.
+<images/schema_positive_negativestate_partie3.png, id=452, 192.72pt x 158.09062pt>
 File: images/schema_positive_negativestate_partie3.png Graphic file (type png)
 <use images/schema_positive_negativestate_partie3.png>
-Package pdftex.def Info: images/schema_positive_negativestate_partie3.png  used on input line 369.
+Package pdftex.def Info: images/schema_positive_negativestate_partie3.png  used on input line 379.
 (pdftex.def)             Requested size: 159.333pt x 130.70135pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 374.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 384.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[12 <./images/schema_soft_rought_landscapee_partie2.png>]
-<images/schema_bmc_partie3.png, id=449, 389.95688pt x 222.07968pt>
+[15 <./images/schema_soft_rought_landscapee_partie2.png>]
+<images/schema_bmc_partie3.png, id=461, 389.95688pt x 222.07968pt>
 File: images/schema_bmc_partie3.png Graphic file (type png)
 <use images/schema_bmc_partie3.png>
-Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 386.
+Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 396.
 (pdftex.def)             Requested size: 199.1693pt x 113.42517pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--409
+Underfull \hbox (badness 10000) in paragraph at lines 415--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--409
+Underfull \hbox (badness 10000) in paragraph at lines 415--418
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 415.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 423.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[13 <./images/schema_positive_negativestate_partie3.png> <./images/schema_bmc_partie3.png>]
+[16 <./images/schema_positive_negativestate_partie3.png> <./images/schema_bmc_partie3.png>]
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 430.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 438.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [14]
+ [17]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 441.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [18
+
+]
 Package acronym Info: Label `acro:MILP' newly defined as it shall be overridden
-although it is yet undefined on input line 439.
+although it is yet undefined on input line 450.
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 458--461
 
  []
 
-<images/crop_allocation_explication.png, id=468, 755.82375pt x 421.575pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--465
+
+ []
+
+<images/crop_allocation_explication.png, id=485, 755.82375pt x 421.575pt>
 File: images/crop_allocation_explication.png Graphic file (type png)
 <use images/crop_allocation_explication.png>
-Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 464.
+Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 475.
 (pdftex.def)             Requested size: 256.0748pt x 142.83185pt.
 Package acronym Info: Label `acro:MIP' newly defined as it shall be overridden
-although it is yet undefined on input line 470.
+although it is yet undefined on input line 481.
 Package acronym Info: Label `acro:MINLP' newly defined as it shall be overridden
-although it is yet undefined on input line 470.
+although it is yet undefined on input line 481.
 Package acronym Info: Label `acro:LP' newly defined as it shall be overridden
-although it is yet undefined on input line 472.
+although it is yet undefined on input line 483.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 474.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 485.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[15
+[19
 
  <./images/crop_allocation_explication.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 475--478
+Underfull \hbox (badness 10000) in paragraph at lines 486--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--483
+Underfull \hbox (badness 10000) in paragraph at lines 490--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--483
+Underfull \hbox (badness 10000) in paragraph at lines 490--494
 
  []
 
-<images/lumberjack_algo.png, id=490, 785.18344pt x 157.33781pt>
+<images/lumberjack_algo.png, id=507, 785.18344pt x 157.33781pt>
 File: images/lumberjack_algo.png Graphic file (type png)
 <use images/lumberjack_algo.png>
-Package pdftex.def Info: images/lumberjack_algo.png  used on input line 490.
+Package pdftex.def Info: images/lumberjack_algo.png  used on input line 501.
 (pdftex.def)             Requested size: 284.52756pt x 57.01608pt.
-<images/ex_alternative_fligth.png, id=493, 377.91188pt x 265.74281pt>
+<images/ex_alternative_fligth.png, id=510, 377.91188pt x 265.74281pt>
 File: images/ex_alternative_fligth.png Graphic file (type png)
 <use images/ex_alternative_fligth.png>
-Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 498.
+Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 509.
 (pdftex.def)             Requested size: 170.71652pt x 120.04541pt.
 Package acronym Info: Label `acro:SBF' newly defined as it shall be overridden
-although it is yet undefined on input line 502.
+although it is yet undefined on input line 513.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 508.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 519.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[16 <./images/lumberjack_algo.png> <./images/ex_alternative_fligth.png>]
-<images/performance1_SBF_TB2.png, id=506, 517.18219pt x 344.78813pt>
+[20 <./images/lumberjack_algo.png> <./images/ex_alternative_fligth.png>]
+<images/performance1_SBF_TB2.png, id=523, 517.18219pt x 344.78813pt>
 File: images/performance1_SBF_TB2.png Graphic file (type png)
 <use images/performance1_SBF_TB2.png>
-Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 511.
+Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 522.
 (pdftex.def)             Requested size: 227.62204pt x 151.74933pt.
-<images/performance2_SBF_TB2.png, id=512, 513.41812pt x 321.45094pt>
+<images/performance2_SBF_TB2.png, id=529, 513.41812pt x 321.45094pt>
 File: images/performance2_SBF_TB2.png Graphic file (type png)
 <use images/performance2_SBF_TB2.png>
-Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 523.
+Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 534.
 (pdftex.def)             Requested size: 227.62204pt x 142.51303pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--538
+Underfull \hbox (badness 10000) in paragraph at lines 546--549
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 538.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 549.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[17 <./images/performance1_SBF_TB2.png> <./images/performance2_SBF_TB2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 539--542
+[21 <./images/performance1_SBF_TB2.png> <./images/performance2_SBF_TB2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 550--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--546
+Underfull \hbox (badness 10000) in paragraph at lines 554--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--551
+Underfull \hbox (badness 10000) in paragraph at lines 558--562
 
  []
 
 Package acronym Info: Label `acro:CP' newly defined as it shall be overridden
-although it is yet undefined on input line 553.
+although it is yet undefined on input line 564.
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--559
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--564
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--568
+Underfull \hbox (badness 10000) in paragraph at lines 571--575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--573
+Underfull \hbox (badness 10000) in paragraph at lines 576--579
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--573
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 574.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 585.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[18]
+[22]
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 584.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 595.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [19]
-<images/neuro_symbolic_architecture.png, id=555, 749.04843pt x 182.18062pt>
+ [23]
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 598.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+ [24
+
+]
+<images/neuro_symbolic_architecture.png, id=576, 749.04843pt x 182.18062pt>
 File: images/neuro_symbolic_architecture.png Graphic file (type png)
 <use images/neuro_symbolic_architecture.png>
-Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 597.
+Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 611.
 (pdftex.def)             Requested size: 398.3386pt x 96.88327pt.
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 616.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 630.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [20
+ [25
 
  <./images/neuro_symbolic_architecture.png>]
-<images/smc_example.png, id=567, 1090.0725pt x 331.2375pt>
+<images/smc_example.png, id=588, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
-Package pdftex.def Info: images/smc_example.png  used on input line 619.
+Package pdftex.def Info: images/smc_example.png  used on input line 633.
 (pdftex.def)             Requested size: 341.43306pt x 103.74901pt.
-<images/KOCO.png, id=570, 642.90187pt x 250.68657pt>
+<images/KOCO.png, id=591, 642.90187pt x 250.68657pt>
 File: images/KOCO.png Graphic file (type png)
 <use images/KOCO.png>
-Package pdftex.def Info: images/KOCO.png  used on input line 625.
+Package pdftex.def Info: images/KOCO.png  used on input line 639.
 (pdftex.def)             Requested size: 341.43306pt x 133.13864pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--636
+Underfull \hbox (badness 10000) in paragraph at lines 645--650
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--636
-
- []
-
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 642.
-(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[21 <./images/smc_example.png> <./images/KOCO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--647
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--652
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--655
+Underfull \hbox (badness 10000) in paragraph at lines 645--650
 
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 683.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 656.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[22
+[26 <./images/smc_example.png> <./images/KOCO.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 659--661
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--669
+
+ []
+
+File: ./images/logo_UT.png Graphic file (type png)
+<use ./images/logo_UT.png>
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 675.
+(pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
+[27
 
 ]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 700--701
+Overfull \hbox (15.0pt too wide) in paragraph at lines 692--693
 [][]|[]$[]$  
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 731.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 723.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[23
+[28
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 732.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 724.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (5.13766pt too wide) in paragraph at lines 733--733
+Overfull \hbox (5.13766pt too wide) in paragraph at lines 725--725
 \T1/lmr/m/sc/10 issn\T1/lmr/m/n/10 : 0399-0559, 1290-3868. \T1/lmr/m/sc/10 doi\T1/lmr/m/n/10 : []$\T1/lmtt/m/n/10 10 . 1051 / ro / 2013032$[]\T1/lmr/m/n/10 . \T1/lmr/m/sc/10 url\T1/lmr/m/n/10 : []$\T1/lmtt/m/n/10 https : / / www . cambridge .
  []
 
 
-Overfull \hbox (86.96559pt too wide) in paragraph at lines 733--733
+Overfull \hbox (86.96559pt too wide) in paragraph at lines 725--725
 \T1/lmtt/m/n/10 crop -[] allocation -[] problemusing -[] hard -[] and -[] soft -[] constraints / 928250B2BF7802F29B31EE47D2FD9993$[]
  []
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 732.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 724.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
-[24
+[29
 
 ]
 \tf@thm=\write10
@@ -2091,9 +2126,9 @@ Package pdftex.def Info: ./images/logo_UT.png  used on input line 732.
 
 File: ./images/logo_UT.png Graphic file (type png)
 <use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 734.
+Package pdftex.def Info: ./images/logo_UT.png  used on input line 726.
 (pdftex.def)             Requested size: 56.9055pt x 18.25664pt.
- [25] (report.aux)
+ [30] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -2105,17 +2140,17 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49579 strings out of 474486
- 1024356 string characters out of 5743282
+ 49584 strings out of 474486
+ 1024391 string characters out of 5743282
  1947542 words of memory out of 5000000
  70921 multiletter control sequences out of 15000+600000
  655534 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,18n,120p,2365b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (26 pages, 2045269 bytes).
+Output written on report.pdf (31 pages, 2049417 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
+ 819 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,7 +15,10 @@
 \input{titlepage_report.tex}
 
 % ==================================================================================================================================
-% ABSTRACT (RÉSUMÉ)
+% ABSTRACT
+
+\clearpage
+a
 
 \clearpage
 \thispagestyle{plain}
@@ -93,6 +96,9 @@
 
 % ==================================================================================================================================
 % Introduction 
+
+\clearpage
+a
 
 \clearpage
 \section*{Introduction}
@@ -191,6 +197,7 @@ Using the state-of-the-art combinatorial tool Toulbar2 to solve the \ac{MAP} que
 \newline
 
 These results show the impact of Toulbar2 when a difficult \#P problem is reduced to a combinatorial problem that can be solved with constraint programming. The wide applications of discrete integrations demonstrate the utility of the VCSP solver.
+
 \subsection{Toulbar2 for the weighted $N$-queen and quadratic assignment problems}
 The $N$-Queen problem is a non-trivial mathematical problem that looks for a placement of $N$ queens on board of chess of size $N$ by $N$ where no two queens are threatening each other. The figure below shows an example of a solution where $n = 8$.
 
@@ -235,6 +242,9 @@ This new technique also helped model the protein design problem, which is one of
 % PARTIE 2 : Protein
 
 \clearpage
+a
+
+\clearpage
 \section{Bioinformatics \& Life Sciences}
 
 Protein design \ac{CMD} involves creating artificial proteins capable of adopting a given structure and performing a specific function. This field is highly important because it enables the design of more efficient enzymes, biological sensors, or even nanoscale structures.
@@ -254,7 +264,7 @@ To simplify, classical methods make two important assumptions :
 With these simplifications, the problem can be seen as an optimization task : finding the combination of rotamers that yields the lowest energy. Nevertheless, the problem remains very complex (NP-hard).
 Over time, different approaches have been developed : physical methods, exact methods, deep learning, and then hybrid approaches. The objective has always been the same: to find a good compromise between accuracy, speed, and control.
 
-\subsection{Formalization and Classical Methods of Protein Design}%Partie 1
+\subsection{Formalization and Classical Methods of Protein Design}
 
 \ac{CPD} is generally formulated as an optimization problem : the goal is to identify the amino acid sequence that minimizes the protein’s energy, called the \ac{GMEC}. 
 This energy is minimized because, naturally, a protein adopts its most stable conformation, i.e., the one with the lowest energy.
@@ -295,7 +305,7 @@ These approaches guarantee finding the optimal solution according to the energy 
 A crucial point is that the calculated optimal solution is not necessarily the best in practice, because the energy models used are approximate. For this reason, it is common to also examine solutions that are close to the optimum.\\
 This formalization provides a rigorous framework for protein design, but it relies on significant simplifications, notably the rigidity of rotamers and the approximation of energies. Furthermore, the computational cost grows rapidly with protein size, which limits direct applicability to large structures.
 
-\subsection{Advanced Exact Approaches and Problem Analysis}%Partie 2
+\subsection{Advanced Exact Approaches and Problem Analysis}
 
 To improve the efficiency of exact methods in protein design, the problem has been reformulated in terms of constraints. This allows leveraging more structured and systematic optimization techniques.
 
@@ -345,7 +355,7 @@ To further improve computational performance, techniques like \ac{LNS} are emplo
 
 \ac{CFN}-based approaches with Toulbar2 enable more efficient exact optimization and provide deeper insight into the structure of the problem. Nevertheless, they remain constrained by the size of the protein system and the simplifications inherent in the energy and rotamer models.
 
-\subsection{Deep Learning and Hybrid Approaches}%Partie 3
+\subsection{Deep Learning and Hybrid Approaches}
 
 Deep learning has recently transformed the field of protein design, providing new ways to predict and generate sequences compatible with a given structure.
 Models such as \textit{ProteinMPNN} learn directly which sequences are compatible with a target structure, enabling the rapid generation of realistic proteins.
@@ -402,11 +412,9 @@ Experimental and simulation results demonstrate that this approach :
     \item Has been validated experimentally, showing real interactions and measurable fluorescence.
 \end{itemize}
 
-
 Hybrid approaches leverage the strengths of both deep learning and exact methods. They provide more precise control over protein design and multi-state objectives, although they remain computationally more demanding.
 \newline
 \newline
-
 
 Protein design has undergone significant evolution over the years :
 
@@ -426,6 +434,9 @@ Hybrid approaches currently appear the most promising, as they combine precision
 
 % ==================================================================================================================================
 % PARTIE 3 : Resource Management & Planning
+
+\clearpage
+a
 
 \clearpage
 \section{Resource Management \& Planning}
@@ -582,6 +593,9 @@ This need to hybridize exact constraint optimization with models that handle unc
 % PARTIE 4 : AI \& Machine Learning
 
 \clearpage
+a
+
+\clearpage
 \section{Artificial Intelligence \& Machine Learning}
 
 We have seen that Toulbar2 is a leading exact solver for Cost Function Networks. We will examine how AI integrates with Toulbar2 by combining neural network perception with exact structural constraints. We will also explore research where machine learning improves upon or outperforms Toulbar2.
@@ -647,35 +661,13 @@ The objective of this state-of-the-art review was to understand how a solver bas
 
 The formalism can jointly model strict rules and preferences. Meanwhile, the algorithms efficiently prune complex combinatorial spaces.
 
-Our cross-analysis demonstrates that Toulbar2 has continuously evolved to adapt to the topology of these different problems. It first became essential in bioinformatics for processing dense molecular networks. It then proved its competitiveness in resource planning (both physical and human) by integrating sophisticated global constraints.
+This cross-analysis demonstrates that Toulbar2 has continuously evolved to adapt to the topology of these different problems. It first became essential in bioinformatics for processing dense molecular networks. It then proved its competitiveness in resource planning (both physical and human) by integrating sophisticated global constraints.
 \newline
 
 Today, facing the complexity of dynamic and uncertain environments, its role is transforming. It is no longer just a standalone tool. Instead, it hybridizes with probabilistic models to act as an exact inference engine within broader architectures. This natural evolution toward neuro-symbolic artificial intelligence redefines the role of exact methods.
 \newline 
 
 It also raises new questions for future research. To what extent can constraint solvers like Toulbar2 be natively integrated into deep learning model training (Decision-Focused Learning) to correct their logical errors ? In the longer term, will we witness the emergence of a standardized hybrid AI ? In such a system, the lightning speed of neural perception and the mathematical optimality of \acp{CFN} would become entirely inseparable.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 % ==================================================================================
 % ANNEXES
