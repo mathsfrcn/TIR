@@ -1,0 +1,143 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{akplogan_solving_2013}
+Akplogan, M., Givry, S.d., Métivier, J.P., Quesnel, G., Joannon, A., Garcia,
+  F.: Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft}
+  {Constraints}. RAIRO - Operations Research  \textbf{47}(2),  151--172 (Apr
+  2013). \doi{10.1051/ro/2013032},
+  \url{https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993}
+
+\bibitem{amel_constraint_2014}
+Amel, M., Wady, N.: A {Constraint} {Programming} {Approach} to the {Zahn}’s
+  {Decision} {Problem}. In: Omatu, S., Bersini, H., Corchado, J.M., Rodríguez,
+  S., Pawlewski, P., Bucciarelli, E. (eds.) Distributed {Computing} and
+  {Artificial} {Intelligence}, 11th {International} {Conference}. pp. 511--518.
+  Springer International Publishing, Cham (2014).
+  \doi{10.1007/978-3-319-07593-8_59}
+
+\bibitem{ieee_transactions_on_mobile_computing}
+Biason, A., Dey, S., Zorzi, M.: A decentralized optimization framework for
+  energy harvesting devices. IEEE Transactions on Mobile Computing
+  \textbf{17}(11),  2483--2496 (Nov 2018). \doi{10.1109/TMC.2018.2810269}
+
+\bibitem{mobile_robot_localisation_mapping_extensive_outdoor_environments}
+Centre, A., Robotics, F., Bailey, T.: Mobile robot localisation and mapping in
+  extensive outdoor environments  (10 2003)
+
+\bibitem{chaboud2020tackling}
+Chaboud, T., Pralet, C., Schmidt, N.: Tackling air traffic conflicts as a
+  weighted csp: Experiments with the lumberjack method. arXiv preprint
+  arXiv:2001.11390  (2020)
+
+\bibitem{charpentier_variable_2019}
+Charpentier, A., Mignon, D., Barbe, S., Cortes, J., Schiex, T., Simonson, T.,
+  Allouche, D.: Variable {Neighborhood} {Search} with {Cost} {Function}
+  {Networks} {To} {Solve} {Large} {Computational} {Protein} {Design}
+  {Problems}. Journal of Chemical Information and Modeling  \textbf{59}(1),
+  127--136 (Jan 2019). \doi{10.1021/acs.jcim.8b00510},
+  \url{https://doi.org/10.1021/acs.jcim.8b00510}
+
+\bibitem{defresne_scaling_2026}
+Defresne, M., Gambardella, R., Barbe, S., Schiex, T.: Scaling {Neuro}-symbolic
+  {Problem} {Solving}: {Solver}-{Free} {Learning} of {Constraints} and
+  {Objectives}. Journal of Artificial Intelligence Research  \textbf{85} (Jan
+  2026). \doi{10.1613/jair.1.21105},
+  \url{https://www.jair.org/index.php/jair/article/view/21105}
+
+\bibitem{deng2022deep}
+Deng, Y., Kong, S., Liu, C., An, B.: Deep attentive belief propagation:
+  Integrating reasoning and learning for solving constraint optimization
+  problems. Advances in Neural Information Processing Systems  \textbf{35},
+  25436--25449 (2022)
+
+\bibitem{dessaux_designing_2024}
+Dessaux, D., Buchet, S., Barthe, L., Defresne, M., Cioci, G., Givry, S.d.,
+  Garcia-Alles, L.F., Schiex, T., Barbe, S.: Designing symmetrical
+  multi-component proteins using a hybrid generative {AI} approach (Jun 2024).
+  \doi{10.1101/2024.06.13.598662},
+  \url{https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1}, pages:
+  2024.06.13.598662 Section: New Results
+
+\bibitem{ermon_taming_2013}
+Ermon, S., Gomes, C., Sabharwal, A., Selman, B.: Taming the {Curse} of
+  {Dimensionality}: {Discrete} {Integration} by {Hashing} and {Optimization}.
+  In: Proceedings of the 30th {International} {Conference} on {Machine}
+  {Learning}. pp. 334--342. PMLR (May 2013),
+  \url{https://proceedings.mlr.press/v28/ermon13.html}
+
+\bibitem{lesaint2014developing}
+Lesaint, D., Mehta, D., O'Sullivan, B., Quesada, L., Wilson, N.: Developing
+  approaches for solving a telecommunications feature subscription problem.
+  arXiv e-prints pp. arXiv--1401 (2014)
+
+\bibitem{li_solving_2025}
+Li, J., Jiang, N., Xue, Y.: Solving {Satisfiability} {Modulo} {Counting}
+  {Exactly} with {Probabilistic} {Circuits} (2025).
+  \doi{10.48550/arXiv.2503.01009}, \url{http://arxiv.org/abs/2503.01009},
+  arXiv:2503.01009 [cs]
+
+\bibitem{montalbano_multiple-choice_2022}
+Montalbano, P., de~Givry, S., Katsirelos, G.: Multiple-choice {Knapsack}
+  {Constraint} in {Graphical} {Models}. In: Schaus, P. (ed.) Integration of
+  {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations}
+  {Research}. pp. 282--299. Springer International Publishing, Cham (2022).
+  \doi{10.1007/978-3-031-08011-1_19}
+
+\bibitem{nurse_rostering_problems}
+Métivier, J.P., Boizumault, P., Loudni, S.: Solving nurse rostering problems
+  using soft global constraints. pp. 73--87 (09 2009).
+  \doi{10.1007/978-3-642-04244-7_9}
+
+\bibitem{noguchi_computational_2019}
+Noguchi, H., Addy, C., Simoncini, D., Wouters, S., Mylemans, B., Van~Meervelt,
+  L., Schiex, T., Zhang, K.Y.J., Tame, J.R.H., Voet, A.R.D.: Computational
+  design of symmetrical eight-bladed -propeller proteins. IUCrJ  \textbf{6}(1),
+   46--55 (Jan 2019). \doi{10.1107/S205225251801480X},
+  \url{https://journals.iucr.org/m/issues/2019/01/00/jt5028/}
+
+\bibitem{npariscril_ept_2012}
+NparisCRIL: Basic equivalence preserving transformations (2012),
+  \url{https://en.wikipedia.org/wiki/File:TransfertsWCSP.pdf}, wikipedia, The
+  Free Encyclopedia
+
+\bibitem{sewa_assignment_nodate}
+Sewa, G., Allouche, D., de~Givry, S., Katsirelos, G., Montalbano, P., Schiex,
+  T.: Assignment problems in cost function networks
+
+\bibitem{simoncini_fitness_2018}
+Simoncini, D., Barbe, S., Schiex, T., Verel, S.: Fitness landscape analysis
+  around the optimum in computational protein design. In: Proceedings of the
+  {Genetic} and {Evolutionary} {Computation} {Conference}. pp. 355--362.
+  {GECCO} '18, Association for Computing Machinery, New York, NY, USA (Jul
+  2018). \doi{10.1145/3205455.3205626},
+  \url{https://dl.acm.org/doi/10.1145/3205455.3205626}
+
+\bibitem{traore_new_2013}
+Traoré, S., Allouche, D., André, I., de~Givry, S., Katsirelos, G., Schiex,
+  T., Barbe, S.: A new framework for computational protein design through cost
+  function network optimization. Bioinformatics  \textbf{29}(17),  2129--2136
+  (Sep 2013). \doi{10.1093/bioinformatics/btt374},
+  \url{https://doi.org/10.1093/bioinformatics/btt374}
+
+\bibitem{ugarte_vaccination_2022}
+Ugarte, W.: Vaccination {Planning} in {Peru} using {Constraint} {Programming}:.
+  In: Proceedings of the 14th {International} {Conference} on {Agents} and
+  {Artificial} {Intelligence}. pp. 757--764. SCITEPRESS - Science and
+  Technology Publications, Online Streaming, --- Select a Country --- (2022).
+  \doi{10.5220/0010899700003116},
+  \url{https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010899700003116}
+
+\bibitem{wang2026neuroliftingneuralinferencemarkov}
+Wang, Y., Ying, C., Luo, X., Yu, T.: Neurolifting: Neural inference on markov
+  random fields at scale (2026), \url{https://arxiv.org/abs/2411.18954}
+
+\bibitem{nquennsproblem}
+{Wikipedia contributors}: Eight queens puzzle --- {Wikipedia}{,} the free
+  encyclopedia (2026),
+  \url{https://en.wikipedia.org/w/index.php?title=Eight_queens_puzzle&oldid=1344792764},
+  [Online; accessed 31-March-2026]
+
+\end{thebibliography}
