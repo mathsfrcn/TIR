@@ -94,6 +94,86 @@
       \endverb
       \keyw{Weighted constraint satisfaction problem,crop allocation problem,integer linear programming}
     \endentry
+    \entry{amel_constraint_2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=2e9a42226227991d989ae082d8f4892a}{%
+           family={Amel},
+           familyi={A\bibinitperiod},
+           given={Mhamdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d12f1931922537133141555c5a83167f}{%
+           family={Wady},
+           familyi={W\bibinitperiod},
+           given={Naanaa},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=a0ec0cf6f73a46a08f516dd4f17b2329}{%
+           family={Omatu},
+           familyi={O\bibinitperiod},
+           given={Sigeru},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4ec968e337f283bf7de712e62e49aaf1}{%
+           family={Bersini},
+           familyi={B\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a26c4e30aa7bec779ec4aca3b017243a}{%
+           family={Corchado},
+           familyi={C\bibinitperiod},
+           given={Juan\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=da184646007a737dffa21baf6a96a7fd}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a4c60b69bf5a4a25d92528838a51bc0b}{%
+           family={Pawlewski},
+           familyi={P\bibinitperiod},
+           given={Paweł},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f2f166f9040150f31597c57cb25179ac}{%
+           family={Bucciarelli},
+           familyi={B\bibinitperiod},
+           given={Edgardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{fullhash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{bibnamehash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{authorbibnamehash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{authornamehash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{authorfullhash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{editorbibnamehash}{843cccad28f5ee359d95e9da6d7f6c68}
+      \strng{editornamehash}{843cccad28f5ee359d95e9da6d7f6c68}
+      \strng{editorfullhash}{ad8971a06cb2b69de169472dee1e7c7c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given a graph G = (S,E), the problem dealt with in this paper consists in partitioning S into a disjoint union of cliques by adding or removing a minimum number z(G) of edges. The problem, which is refered to by the Zahn Problem (ZP), is NP-hard in general.}
+      \field{annotation}{Overview: Zahn's decision problem can be described as the problem of partitioning a graph G=(S,E) into a subset of disjoint cliques by either removing or adding the minimum amount of edges. This problem is known to be NP-hard in general. This paper provides a constraint programming approach to Zahn's decision problem, by converting the graph into a set of boolean variables and soft constraints . The WSCP is then solved using the toulbar2 solver. Review: This paper provides the first CSP approach to Zahn’s graph clustering problem. The results found in the paper are promising: the results found are competitive, especially on large problems. This shows that the soft arc consistency method used in toulbar2 can be applied to improve graph clustering. The model is also flexible, as new constraints can be added for different variations of the ZP.}
+      \field{booktitle}{Distributed {Computing} and {Artificial} {Intelligence}, 11th {International} {Conference}}
+      \field{isbn}{978-3-319-07593-8}
+      \field{title}{A {Constraint} {Programming} {Approach} to the {Zahn}’s {Decision} {Problem}}
+      \field{year}{2014}
+      \field{pages}{511\bibrangedash 518}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-07593-8_59
+      \endverb
+      \keyw{Cliques,Cluster editing,Constraint programming,Fixed parameter tractable problems,Zahn’s problem}
+    \endentry
     \entry{ieee_transactions_on_mobile_computing}{article}{}
       \name{author}{3}{}{%
         {{hash=bab6f50e8018a37e48fd722489f2af88}{%
@@ -140,28 +220,28 @@
     \endentry
     \entry{mobile_robot_localisation_mapping_extensive_outdoor_environments}{article}{}
       \name{author}{3}{}{%
-        {{hash=0190a12cbf6215ca3ed49c60892b1962}{%
-           family={Centre\},
+        {{hash=65fb5efcf6d04f136d84c39f1d3e2374}{%
+           family={Centre},
            familyi={C\bibinitperiod},
            given={Australian},
            giveni={A\bibinitperiod}}}%
-        {{hash=0344229868db38d304ee935cfc62d851}{%
-           family={Robotics\},
+        {{hash=012d9d962c4e48e3c5a62172a4fa90e6}{%
+           family={Robotics},
            familyi={R\bibinitperiod},
            given={Field},
            giveni={F\bibinitperiod}}}%
-        {{hash=4f8dbafe70d66ccc5d34582887bed8be}{%
-           family={Bailey\},
+        {{hash=a37c63e1fc8eaedec4ea9e27569c27d3}{%
+           family={Bailey},
            familyi={B\bibinitperiod},
            given={Tim},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{1fd55a41fa54b836d20246bab93ede58}
-      \strng{fullhash}{1fd55a41fa54b836d20246bab93ede58}
-      \strng{bibnamehash}{1fd55a41fa54b836d20246bab93ede58}
-      \strng{authorbibnamehash}{1fd55a41fa54b836d20246bab93ede58}
-      \strng{authornamehash}{1fd55a41fa54b836d20246bab93ede58}
-      \strng{authorfullhash}{1fd55a41fa54b836d20246bab93ede58}
+      \strng{namehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{fullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{bibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authorbibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authornamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authorfullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -265,6 +345,93 @@
       \verb https://www.jair.org/index.php/jair/article/view/21105
       \endverb
       \keyw{constraint programming,machine learning}
+    \endentry
+    \entry{dessaux_designing_2024}{misc}{}
+      \name{author}{9}{}{%
+        {{hash=60b516f1bf231440293629112789079e}{%
+           family={Dessaux},
+           familyi={D\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=499fc2f8344fd5a380e2278248be8b7e}{%
+           family={Buchet},
+           familyi={B\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=55eb8d279f08f6436b0b7e3e6feae943}{%
+           family={Barthe},
+           familyi={B\bibinitperiod},
+           given={Lucie},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7eba647e5ff60245c180a17b39a7ad9}{%
+           family={Defresne},
+           familyi={D\bibinitperiod},
+           given={Marianne},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ec95c220205f0e98763458538628df6e}{%
+           family={Cioci},
+           familyi={C\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon\bibnamedelima de},
+           giveni={S\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=e10fb2286b936cee75c4a91677c0583a}{%
+           family={Garcia-Alles},
+           familyi={G\bibinithyphendelim A\bibinitperiod},
+           given={Luis\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=68b2219045c7dae116377fa03b0769f6}{%
+           family={Schiex},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3bad082d2b65520985a507aeb35aabef}{%
+           family={Barbe},
+           familyi={B\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {bioRxiv}%
+      }
+      \strng{namehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{fullhash}{e4c0d12cd603244bd9c02ce02f1d9429}
+      \strng{bibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authorbibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authornamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authorfullhash}{e4c0d12cd603244bd9c02ce02f1d9429}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Proteins, the fundamental building blocks of biological function, orchestrate complex cellular processes by assembling into intricate structures through meticulous interactions. The design of specific protein-protein interfaces to create customized protein assemblies holds immense potential for various biotechnological applications. To address the current limitations in designing heteromeric interactions for multi-component assemblies, we developed a hybrid generative AI design approach. This method combines deep learning and automated reasoning, explicitly considering both positive and negative interaction states to favor heteromeric desired over undesired interactions. The approach leverages Effie, a deep-learned pairwise decomposable scoring function, and an advanced reasoning tool extended for multicriteria optimization of this function. Here, we tested the ability of this hybrid AI method to redesign homomeric interfaces of bacterial microcompartment components (BMC-H) into heteromeric assemblies. We benchmarked its performance against ProteinMPNN, a sequence design autoregressive model. Our in silico assessment, complemented by experimental validation, highlights the outperformance of the hybrid AI generative design approach, and its potential to unlock the engineering of complex multi-component self-assembling protein entities.}
+      \field{annotation}{Overview : This paper presents a hybrid AI framework for computational protein design that combines a deep learning scoring function (Effie) with the toulbar2 optimization solver. The goal is to redesign homomeric protein assemblies into heteromeric ones by explicitly considering both desired (positive) and undesired (negative) interactions. The method is applied to BMC-H proteins and compared to ProteinMPNN. Results show that the hybrid approach better captures interaction specificity and produces higher-quality designs. Experimental validation confirms improved binding, solubility, and correct assembly for several designs. This approach highlights the benefit of combining deep learning with exact optimization for multi-state protein design. Review : The approach is computationally more expensive than autoregressive models. It still relies on simplified structural assumptions (e.g., rigid backbone). The method depends on the quality of the learned scoring function (Effie), which may introduce bias. Benchmarking is limited to a specific protein system (BMC-H), reducing generality.}
+      \field{month}{6}
+      \field{note}{Pages: 2024.06.13.598662 Section: New Results}
+      \field{title}{Designing symmetrical multi-component proteins using a hybrid generative {AI} approach}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1101/2024.06.13.598662
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\4YH8G6P7\\Dessaux et al. - 2024 - Designing symmetrical multi-component proteins using a hybrid generative AI approach.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1
+      \endverb
     \endentry
     \entry{ermon_taming_2013}{inproceedings}{}
       \name{author}{4}{}{%
@@ -464,102 +631,67 @@
       \verb 10.1007/978-3-642-04244-7_9
       \endverb
     \endentry
-    \entry{noguchi_computational_2019}{article}{}
-      \name{author}{10}{}{%
-        {{hash=576bb36b8d9f8c80573ed0bbe280b2fd}{%
-           family={Noguchi},
-           familyi={N\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=bf545abde3d6d94fb35b92254618c9e4}{%
-           family={Addy},
-           familyi={A\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=9715217ae77eace354e07b335b8da6bd}{%
-           family={Simoncini},
-           familyi={S\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5b32f60b5d8a5f826a499f1d3cc6588f}{%
-           family={Wouters},
-           familyi={W\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=18ef3a704b80221801e251d03581df41}{%
-           family={Mylemans},
+    \entry{montalbano_multiple-choice_2022}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=54a76691e24ff38690aa01e0572d4a84}{%
+           family={Montalbano},
            familyi={M\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=42208efaed91c689464b73eacf5c94c8}{%
-           family={Van\bibnamedelima Meervelt},
-           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=cb4d67e11e3fc0cd88cbb0147bc0724a}{%
-           family={Schiex},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=02053fef5a82223abac1996e33d71e79}{%
+           family={Katsirelos},
+           familyi={K\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=04b25dbc630118068c55c54cd179207d}{%
+           family={Schaus},
            familyi={S\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=84648ddd3fa8e2778cacf9df20bb5165}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={K.\bibnamedelimi Y.\bibnamedelimi J.},
-           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=32161a2afb5c023ae8709fff295cb9e0}{%
-           family={Tame},
-           familyi={T\bibinitperiod},
-           given={J.\bibnamedelimi R.\bibnamedelimi H.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=9dc3eb769183b54de9e939eeb2fc6d7a}{%
-           family={Voet},
-           familyi={V\bibinitperiod},
-           given={A.\bibnamedelimi R.\bibnamedelimi D.},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {en}%
       }
-      \list{publisher}{1}{%
-        {International Union of Crystallography}%
+      \list{location}{1}{%
+        {Cham}%
       }
-      \strng{namehash}{adcbc4fcbee03c5a32753f58659497fb}
-      \strng{fullhash}{609c0e0cda2627f12da6409950ee9505}
-      \strng{bibnamehash}{adcbc4fcbee03c5a32753f58659497fb}
-      \strng{authorbibnamehash}{adcbc4fcbee03c5a32753f58659497fb}
-      \strng{authornamehash}{adcbc4fcbee03c5a32753f58659497fb}
-      \strng{authorfullhash}{609c0e0cda2627f12da6409950ee9505}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{fullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{bibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authorbibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authornamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{authorfullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{editorbibnamehash}{04b25dbc630118068c55c54cd179207d}
+      \strng{editornamehash}{04b25dbc630118068c55c54cd179207d}
+      \strng{editorfullhash}{04b25dbc630118068c55c54cd179207d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{β-Propeller proteins form one of the largest families of protein structures, with a pseudo-symmetrical fold made up of subdomains called blades. They are not only abundant but are also involved in a wide variety of cellular processes, often by acting as a platform for the assembly of protein complexes. WD40 proteins are a subfamily of propeller proteins with no intrinsic enzymatic activity, but their stable, modular architecture and versatile surface have allowed evolution to adapt them to many vital roles. By computationally reverse-engineering the duplication, fusion and diversification events in the evolutionary history of a WD40 protein, a perfectly symmetrical homologue called Tako8 was made. If two or four blades of Tako8 are expressed as single polypeptides, they do not self-assemble to complete the eight-bladed architecture, which may be owing to the closely spaced negative charges inside the ring. A different computational approach was employed to redesign Tako8 to create Ika8, a fourfold-symmetrical protein in which neighbouring blades carry compensating charges. Ika2 and Ika4, carrying two or four blades per subunit, respectively, were found to assemble spontaneously into a complete eight-bladed ring in solution. These artificial eight-bladed rings may find applications in bionanotechnology and as models to study the folding and evolution of WD40 proteins.}
-      \field{annotation}{Overview : This paper proposes an exact approach for computational protein design (CPD) using cost function networks (CFN). The method models the sequence–conformation problem as a combinatorial optimization task and solves it with the toulbar2 solver. It focuses on efficiently finding the global minimum energy conformation (GMEC) while handling large search spaces. The approach improves pruning and search efficiency through advanced constraint propagation techniques. Results show that CFN-based solving can outperform traditional methods in both speed and scalability for certain CPD instances. Review : The approach still relies on simplified assumptions such as rigid backbone and discrete rotamers. Scalability to very large or highly flexible systems remains uncertain. The evaluation mainly focuses on computational efficiency rather than biological validation. Dependence on precomputed energy functions may introduce bias. Finally, comparisons with alternative modern optimization strategies are limited.}
-      \field{issn}{2052-2525}
-      \field{journaltitle}{IUCrJ}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{Computational design of symmetrical eight-bladed -propeller proteins}
-      \field{urlday}{4}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{volume}{6}
-      \field{year}{2019}
-      \field{urldateera}{ce}
-      \field{pages}{46\bibrangedash 55}
-      \range{pages}{10}
+      \field{abstract}{Graphical models, such as cost function networks (CFNs), can compactly express large decomposable functions, which leads to efficient inference algorithms. Most methods for computing lower bounds in Branch-and-Bound minimization compute feasible dual solutions of a specific linear relaxation. These methods are more effective than solving the linear relaxation exactly, with better worst-case time complexity and better performance in practice. However, these algorithms are specialized to the structure of the linear relaxation of a CFN and cannot, for example, deal with constraints that cannot be expressed in extension, such as linear constraints of large arity.}
+      \field{annotation}{Overview: The paper introduces a method to integrate linear constraints, specifically the Multiple-Choice Knapsack Constraint (MCKC), into Cost Function Networks (CFNs). This algorithm is implemented within toulbar2 and allows toulbar2 to solve problems that combine traditional graphical model costs with global linear constraints more efficiently than before. The algorithm is competitive for solving problems such as the knapsack problem with conflict graph and protein design problem. Review: The paper demonstrates that toulbar2 can now compete with or outperform Integer Linear Programming (ILP) solvers on knapsack problems with conflict graphs. This expansion broadens the scope of toulbar2 to domains like resource allocation and image analysis where linear budget or distance constraints are common.}
+      \field{booktitle}{Integration of {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations} {Research}}
+      \field{isbn}{978-3-031-08011-1}
+      \field{title}{Multiple-choice {Knapsack} {Constraint} in {Graphical} {Models}}
+      \field{year}{2022}
+      \field{pages}{282\bibrangedash 299}
+      \range{pages}{18}
       \verb{doi}
-      \verb 10.1107/S205225251801480X
+      \verb 10.1007/978-3-031-08011-1_19
       \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\TTU58R9N\\Noguchi et al. - 2019 - Computational design of symmetrical eight-bladed β-propeller proteins.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://journals.iucr.org/m/issues/2019/01/00/jt5028/
-      \endverb
-      \verb{url}
-      \verb https://journals.iucr.org/m/issues/2019/01/00/jt5028/
-      \endverb
+      \keyw{cost function network,graphical model,knapsack problem}
     \endentry
     \entry{npariscril_ept_2012}{online}{}
       \name{author}{1}{}{%
@@ -592,6 +724,176 @@
       \endverb
       \verb{url}
       \verb https://en.wikipedia.org/wiki/File:TransfertsWCSP.pdf
+      \endverb
+    \endentry
+    \entry{simoncini_fitness_2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=1a305c99884dcb920eb3740c11387544}{%
+           family={Simoncini},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3bad082d2b65520985a507aeb35aabef}{%
+           family={Barbe},
+           familyi={B\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=68b2219045c7dae116377fa03b0769f6}{%
+           family={Schiex},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88c4dedefad87067c1756ddeaa1b2396}{%
+           family={Verel},
+           familyi={V\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{486559060f528231a3fb6eb3808d3277}
+      \strng{fullhash}{68744fea84a8af09d3f50f771f6bdd10}
+      \strng{bibnamehash}{486559060f528231a3fb6eb3808d3277}
+      \strng{authorbibnamehash}{486559060f528231a3fb6eb3808d3277}
+      \strng{authornamehash}{486559060f528231a3fb6eb3808d3277}
+      \strng{authorfullhash}{68744fea84a8af09d3f50f771f6bdd10}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The geometry and properties of the fitness landscapes of Computational Protein Design (CPD) are not well understood, due to the difficulty for sampling methods to access the NP-hard optima and explore their neighborhoods. In this paper, we enumerate all solutions within a 2 kcal/mol energy interval of the optimum of two CPD problems. We compute the number of local minima, the size of the attraction basins, and the local optima network. We provide various features in order to characterize the fitness landscapes, in particular the multimodality, and the ruggedness of the fitness landscape. Results show some key differences in the fitness landscapes and help to understand the successes and failures of metaheuristics on CPD problems. Our analysis gives some previously inaccessible and valuable information on the problem structure related to the optima of the CPD instances (multi-funnel structure), and could lead to the development of more efficient metaheuristic methods.}
+      \field{annotation}{Overview : This paper analyzes the fitness landscape of computational protein design (CPD) near the global optimum. Using a CFN-based approach and the solver toulbar2, the authors compute the GMEC and enumerate near-optimal solutions within a small energy range. They study properties such as ruggedness, multimodality, and basin structure for two CPD instances. Results show that some landscapes are smooth and easy to explore, while others are highly rugged with many local optima, making optimization difficult. These differences explain the varying performance of metaheuristics like simulated annealing. Review : The study is limited to only two instances, which weakens generalization. The modeling assumptions (rigid backbone, rotamers) simplify biological reality. The analysis focuses on landscape metrics without experimental validation. The enumeration is restricted to a small energy window, possibly missing global structure. Finally, no new optimization strategy is directly validated despite the insights provided.}
+      \field{booktitle}{Proceedings of the {Genetic} and {Evolutionary} {Computation} {Conference}}
+      \field{isbn}{978-1-4503-5618-3}
+      \field{month}{7}
+      \field{series}{{GECCO} '18}
+      \field{title}{Fitness landscape analysis around the optimum in computational protein design}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{355\bibrangedash 362}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3205455.3205626
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\3IVI6YBF\\Simoncini et al. - 2018 - Fitness landscape analysis around the optimum in computational protein design.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3205455.3205626
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3205455.3205626
+      \endverb
+    \endentry
+    \entry{traore_new_2013}{article}{}
+      \name{author}{7}{}{%
+        {{hash=c0dcb1a20d8aa301240aa6f845302858}{%
+           family={Traoré},
+           familyi={T\bibinitperiod},
+           given={Seydou},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9fd156f33e8a7195e0cc8f293a7a9057}{%
+           family={Allouche},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b01142ddcbb7204ef7e7eafb37875fbc}{%
+           family={André},
+           familyi={A\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=02053fef5a82223abac1996e33d71e79}{%
+           family={Katsirelos},
+           familyi={K\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=68b2219045c7dae116377fa03b0769f6}{%
+           family={Schiex},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3bad082d2b65520985a507aeb35aabef}{%
+           family={Barbe},
+           familyi={B\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{83635056f0af4002852aefd89082e013}
+      \strng{fullhash}{ec317237fc572490ecca84661ae92070}
+      \strng{bibnamehash}{83635056f0af4002852aefd89082e013}
+      \strng{authorbibnamehash}{83635056f0af4002852aefd89082e013}
+      \strng{authornamehash}{83635056f0af4002852aefd89082e013}
+      \strng{authorfullhash}{ec317237fc572490ecca84661ae92070}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Motivation: The main challenge for structure-based computational protein design (CPD) remains the combinatorial nature of the search space. Even in its simplest fixed-backbone formulation, CPD encompasses a computationally difficult NP-hard problem that prevents the exact exploration of complex systems defining large sequence-conformation spaces.Results: We present here a CPD framework, based on cost function network (CFN) solving, a recent exact combinatorial optimization technique, to efficiently handle highly complex combinatorial spaces encountered in various protein design problems. We show that the CFN-based approach is able to solve optimality a variety of complex designs that could often not be solved using a usual CPD-dedicated tool or state-of-the-art exact operations research tools. Beyond the identification of the optimal solution, the global minimum-energy conformation, the CFN-based method is also able to quickly enumerate large ensembles of suboptimal solutions of interest to rationally build experimental enzyme mutant libraries.Availability: The combined pipeline used to generate energetic models (based on a patched version of the open source solver Osprey 2.0), the conversion to CFN models (based on Perl scripts) and CFN solving (based on the open source solver toulbar2) are all available at http://genoweb.toulouse.inra.fr/∼tschiex/CPDContacts: thomas.schiex@toulouse.inra.fr or sophie.barbe@insa-toulouse.frSupplementary information: Supplementary data are available at Bioinformatics online.}
+      \field{annotation}{Overview : This article addresses computational protein design (CPD), focusing on the challenge of identifying amino acid sequences that minimize energy (GMEC) within vast sequence–conformation spaces. Traditional approaches include heuristic methods (fast but approximate) and exact methods (accurate but computationally expensive). The authors reformulate CPD as a cost function network (CFN) problem and compare it to integer linear programming (ILP) and DEE/A*. Their pipeline includes structure preparation, energy computation, and combinatorial optimization. Results show that the CFN approach (toulbar2) significantly outperforms others in both speed and ability to enumerate low-energy solutions. The framework enables efficient exploration of large design spaces. Review : The study relies on a rigid backbone assumption, limiting biological realism. Energy models (force fields, implicit solvent) remain approximate, which can affect prediction accuracy. The evaluation focuses mainly on computational performance rather than functional validation of designed proteins. The discretization into rotamers may overlook relevant conformations. Finally, the lack of experimental validation reduces confidence in the practical applicability of the method.}
+      \field{issn}{1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{9}
+      \field{number}{17}
+      \field{title}{A new framework for computational protein design through cost function network optimization}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{2129\bibrangedash 2136}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btt374
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\DLJ6YIHM\\Traoré et al. - 2013 - A new framework for computational protein design through cost function network optimization.pdf:application/pdf;Snapshot:C\:\\Users\\phili\\Zotero\\storage\\REEKVAXY\\btt374.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/bioinformatics/btt374
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/bioinformatics/btt374
+      \endverb
+    \endentry
+    \entry{nquennsproblem}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 31-March-2026]}
+      \field{title}{Eight queens puzzle --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Eight_queens_puzzle&oldid=1344792764
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Eight_queens_puzzle&oldid=1344792764
       \endverb
     \endentry
   \enddatalist
