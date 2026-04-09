@@ -9,7 +9,6 @@ Warning--string name "juin" is undefined
 --line 679 of file biblio.bib
 Warning--entry type for "npariscril_ept_2012" isn't style-file defined
 --line 731 of file biblio.bib
-Warning--I didn't find a database entry for ""
 Warning--empty journal in mobile_robot_localisation_mapping_extensive_outdoor_environments
 Warning--empty booktitle in nurse_rostering_problems
 Warning--empty journal in sewa_assignment_nodate
@@ -55,4 +54,4 @@ warning$ -- 4
 while$ -- 104
 width$ -- 24
 write$ -- 250
-(There were 7 warnings)
+(There were 6 warnings)
