@@ -99,40 +99,40 @@ Toulouse Institute of Computer Science Research, Cr Rose Dieng-Kuntz 31400 Toulo
 \section{Introduction}
 
 The \ac{CSP} involves finding an assignment for a set of variables over a finite domain that respects a set of given hard constraints. 
-To find a solution to a \ac{CSP} problem, backtracking search is used. This strategy will create a new subtree every time a value is assigned to a variable. Once the current instance is infeasible, the algorithm will backtrack and continue with a different assignment until a solution to the original problem is found. However, many real-world problems require optimization rather than mere satisfaction.
+To find a solution for a \ac{CSP}, backtracking search is used which will assign values to variables and create a new subtree at each step. Once the current instance is infeasible, the algorithm will backtrack and continue with a different assignment until a solution to the original problem is found. However, many real-world problems require optimization rather than mere satisfaction.
 
 The \ac{VCSP} or \ac{WCSP} is considered a generalization of the classic \ac{CSP}. 
-In a \ac{VCSP}, a \acp{CFN} framework is used. \acp{CFN} are a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft constraint $C$, and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
+In a \ac{VCSP}, a \ac{CFNs} framework is used. \ac{CFNs} are a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft or hard constraints $C$ and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
 
-To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ``\textit{branching}'' : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
+To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ``\textit{branching}'' : like for CSP, it assigns a value to a variable and creates a new subtree each time. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
 \begin{figure}[H]
     \centering
     \includegraphics[width=9cm]{images/bnb.png}
     \caption[Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
 \end{figure}
 
-The efficacy of the branch-and-bound depends on the lower bound we have access to. 
-In a Cost Function Network, functions are categorized by their arity : unary functions (arity 1) assign costs to individual variable assignments, binary functions (arity 2) assign costs to pairs of variables, and the nullary constant (arity 0), denoted as $c_{\emptyset}$, represents a global lower bound on the cost of any complete assignment.
+The efficacy of the branch-and-bound algorithm depends on the lower bound available. 
+In a Cost Function Network, functions are categorized by their arity : unary functions (arity 1) assign a cost to individual variable assignments, binary functions (arity 2) assign a cost to pairs of variables and the nullary constant (arity 0), denoted as $c_{\emptyset}$, is the starting cost of the problem. Therefore, the nullary constant also represents a global lower bound on the cost of any complete assignment.
 
-\ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
+\ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \ac{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments and the nullary constant is shown above.
 \begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{images/ept.jpg}
     \caption[Basic Equivalence Preserving Transformations]{\textbf{Basic Equivalence Preserving Transformations.}\cite{npariscril_ept_2012}}
 \end{figure}
 
-By successive \ac{EPTs}, the cost can be shifted and concentrated into the nullary constraint $c$, thus giving a better lower bound for the \ac{VCSP} and allowing to quickly prune subtrees.
+By successive \ac{EPTs}, the cost can be shifted and concentrated into the nullary constraint $c_{\emptyset}$, thus giving a better lower bound for the \ac{VCSP}. This new lower bound allows the solver to quickly prune subtrees.
 
-This process of applying successive \acp{EPTs} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
+This process of applying successive \ac{EPTs} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
 
-These theoretical findings are used in the solver Toulbar2. It is an open-source \textit{C++} solver for discrete optimization problems within the cost function network framework. The solver integrates \ac{SAC} operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classical operations research and finally discuss their recent integration into neuro-symbolic Artificial Intelligence networks.
+These theoretical findings are used in the solver Toulbar2. Toulbar2 is an open-source \textit{C++} solver for discrete optimization problems within the cost function network framework. The solver integrates \ac{SAC} operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classic operations research problems and finally discuss their recent integration into neuro-symbolic artificial intelligence networks.
 
 % ==================================================================================================================================
 % PARTIE 2 : Algorithmic Foundations & Solver Development
 
 \section{Combinatorial problem solving}
 
-Toulbar2 has been tested for solving many challenging combinatorial problems using a \ac{CFN} framework and often outperformed other powerful state-of-the-art solvers.
+Toulbar2 has been tested for solving many challenging combinatorial problems using a \ac{CFNs} framework and often outperformed other powerful state-of-the-art solvers.
 Below will be some examples of such problems.
 
 \subsection{An application to graph theory and the cluster editing problem}
@@ -181,7 +181,7 @@ A partition function can also be understood as a discrete integral, and is a com
 
 Using the state-of-the-art combinatorial tool Toulbar2 to solve the \ac{MAP} queries, WISH provided a constant-factor approximation of discrete integrals with high probability, that could since then only be handled heuristically. Another significant advantage of this approach is that these independent optimization instances can be solved in parallel. 
 
-These results show the impact of Toulbar2 when a difficult \#P problem is reduced to a combinatorial problem that can be solved with constraint programming. The wide applications of discrete integrations demonstrate the utility of the VCSP solver.
+These results show the impact of Toulbar2 when a difficult \#P problem is reduced to a combinatorial problem that can be solved with constraint programming. The wide applications of discrete integrations demonstrate the utility of the \ac{VCSP} solver.
 
 \subsection{Toulbar2 for the weighted $N$-queen and quadratic assignment problems}
 
@@ -195,7 +195,7 @@ The $N$-Queen problem is a non-trivial mathematical problem that looks for a pla
 
 The weighted $N$-Queen problem is a difficult optimization problem where every queen placement incurs a cost, and the goal is to find the lowest cost solution. 
 
-A key advancement by Sewa et al. (2022)\cite{traore_new_2013} improved the Toulbar2 performance by integrating a more powerful way to propagate ALLDIFFERENT constraints for SAC. An ALLDIFFERENT constraint is a constraint where no two variables can have the same value. By modeling the cost as a unary constraint and using three ALLDIFFERENT constraints for the column, diagonal and anti-diagonal uniqueness, the upgraded version of Toulbar2 significantly outperformed other state-of-the-art solvers for the $N$-Queen problem.
+A key advancement by Sewa et al. (2022)\cite{traore_new_2013} improved the Toulbar2 performance by integrating a more powerful way to propagate ALLDIFFERENT constraints for \ac{SAC}. An ALLDIFFERENT constraint is a constraint where no two variables can have the same value. By modeling the cost as a unary constraint and using three ALLDIFFERENT constraints for the column, diagonal and anti-diagonal uniqueness, the upgraded version of Toulbar2 significantly outperformed other state-of-the-art solvers for the $N$-Queen problem.
 
 Furthermore, with this new improved version of Toulbar2, the authors also tested its performance for the quadratic assignment problem (QAP). The QAP is a difficult NP-Hard problem where we seek to assign $n$ facilities to $n$ locations so as to minimize the total cost which is determined by the flow between facilities and the distance between locations. The results found that toulbar2 returned the highest quality solution with a gap of $3.9\%$ to the best known decision.
 
@@ -205,9 +205,9 @@ These examples show the relevance of Toulbar2 when paired with a new propagator 
 
 The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows : given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
 
-The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex. An edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \acp{CFN} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
+The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex. An edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFNs} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
 
-Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \acp{CFN} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \ac{CFNs} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the \ac{KPCG}, each having $720$ instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
 
 \begin{figure}[H]
     \centering
@@ -280,7 +280,7 @@ This formalization provides a rigorous framework for protein design, but it reli
 
 To improve the efficiency of exact methods in protein design, the problem has been reformulated in terms of constraints. This allows leveraging more structured and systematic optimization techniques.
 
-Computer-aided protein design can be represented as a \ac{CFN} :
+Computer-aided protein design can be represented as a \ac{CFNs} :
 
 \begin{itemize}
     \item Each residue corresponds to a variable ;
@@ -290,7 +290,7 @@ Computer-aided protein design can be represented as a \ac{CFN} :
 
 The objective is then to find the combination of values (rotamers) that minimizes the total cost of the system.
 
-In the \ac{CFN} framework, there is a clear mapping from the protein structure to a constraint graph : residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
+In the \ac{CFNs} framework, there is a clear mapping from the protein structure to a constraint graph : residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
 
 The Toulbar2 solver is commonly used to tackle this formulation. It applies techniques such as Branch and bound, which explores the solution space intelligently or Pruning, which eliminates infeasible or suboptimal solutions early.
 
@@ -308,7 +308,7 @@ Understanding this landscape is crucial, as it explains why certain optimization
 
 To further improve computational performance, techniques like \ac{LNS} are employed: only a portion of the protein is modified at a time. This subset is then optimized exactly while keeping the rest fixed.
 
-\ac{CFN}-based approaches with Toulbar2 enable more efficient exact optimization and provide deeper insight into the structure of the problem. Nevertheless, they remain constrained by the size of the protein system and the simplifications inherent in the energy and rotamer models.
+\ac{CFNs}-based approaches with Toulbar2 enable more efficient exact optimization and provide deeper insight into the structure of the problem. Nevertheless, they remain constrained by the size of the protein system and the simplifications inherent in the energy and rotamer models.
 
 \subsection{Deep Learning and Hybrid Approaches}
 
@@ -381,7 +381,7 @@ Hybrid approaches currently appear the most promising, as they combine precision
 \section{Resource Management \& Planning}
 
 Although the Toulbar2 solver has gained a strong reputation in the field of bioinformatics, 
-the Cost Function Network formalism is proving particularly well-suited to classical operational research problems. 
+the Cost Function Networks formalism is proving particularly well-suited to classical operational research problems. 
 The management and allocation of resources generally involve satisfying strict rules (hard constraints) 
 whilst optimising quality criteria or preferences (soft constraints). 
 This section illustrates how soft local consistency algorithms (such \ac{OSAC} \& \ac{EDAC}) implemented in Toulbar2 
@@ -425,7 +425,8 @@ proved nearly three times faster than Toulbar2. Furthermore, it consumed signifi
 
 This study demonstrates a clear conclusion. WCSPs offer excellent flexibility for modeling complex spatio-temporal constraint networks. However, on large-scale, pure scheduling problems, 
 the Toulbar2 solver faces real competition from classic \ac{MILP} solvers.
-
+\newline
+\newline
 
 In a much more dynamic spatio-temporal context, Schmidt et al. (2020)\cite{chaboud2020tackling} apply the \ac{WCSP} formalism to air traffic conflict resolution. A collision risk may be detected between several aircraft. 
 When this happens, a generation method called ``Lumberjack'' produces a vast set of discretized alternative trajectories for each plane. The combinatorial challenge is then to select the best combination of compatible flight paths. 
@@ -445,7 +446,7 @@ In this model, each aircraft represents a variable of the problem, and the set o
     \caption[Potential trajectories going from upper left to lower right.]{\textbf{Potential trajectories going from upper left to lower right.}\cite{chaboud2020tackling}}
 \end{figure}
 
-The study compares the performance of the exact solver Toulbar2 with a custom-built ``\ac{SBF}'' algorithm. Analyzing the results highlights a characteristic trait of the \acp{CFN} architecture and Toulbar2. 
+The study compares the performance of the exact solver Toulbar2 with a custom-built ``\ac{SBF}'' algorithm. Analyzing the results highlights a characteristic trait of the \ac{CFNs} architecture and Toulbar2. 
 The solver handles scaling the number of variables perfectly well. It efficiently resolves conflicts involving a relatively high number of aircraft ($6$ to $8$ planes). 
 In contrast, the \ac{SBF} approach collapses under these conditions.
 
@@ -481,10 +482,10 @@ This combination guarantees response times that meet real-world industrial requi
 Managing space and time is a major challenge. However, human resources planning introduces a different complexity. It requires modeling legal rules and individual preferences.
 This subsection highlights how \ac{WCSP} research has had to evolve. It demonstrates the adaptation required to meet the expressivity needed to generate schedules.
 
-Hospital staff scheduling is an optimization problem known for its high combinatorial complexity. In their study, Métivier et al. (2009)\cite{nurse_rostering_problems} apply the \acp{CFN} formalism and the Toulbar2 solver to generate optimal schedules for nurses. 
+Hospital staff scheduling is an optimization problem known for its high combinatorial complexity. In their study, Métivier et al. (2009)\cite{nurse_rostering_problems} apply the \ac{CFNs} formalism and the Toulbar2 solver to generate optimal schedules for nurses. 
 They must account for strict staff coverage requirements (hard constraints) as well as staff rest preferences (soft constraints).
 
-The value of this document for our analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \acp{CFN} were designed around binary constraints. 
+The value of this document for our analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \ac{CFNs} were designed around binary constraints. 
 However, this type of constraint is poorly suited for modeling human rules. It would require creating an exponentially large constraint network. This makes the solution inefficient.
 
 To overcome this issue, research around Toulbar2 focused on implementing soft global constraints. Unlike a binary constraint, a global constraint simultaneously evaluates a large sequence of assignments. 
@@ -560,7 +561,7 @@ We can also reduce communication overhead when integrating Toulbar2 with SAT sol
 \begin{figure}[H]
     \centering
     \includegraphics[width=11cm]{images/KOCO.png}
-    \caption[Performance of each algorithm.]{\textbf{Performance of each algorithm.} From\cite{li_solving_2025}}
+    \caption[Performance of each algorithm.]{\textbf{Performance of each algorithm.} Source \cite{li_solving_2025}}
 \end{figure}
 
 This algorithm is a significant improvement over previous systems like Lingeling-HBFS that rely on Toulbar2.
@@ -577,7 +578,7 @@ This transition mandates that future solving methods rely on hybrid architecture
 
 \section{Conclusion}
 
-The objective of this state-of-the-art review was to understand how a solver based on \acp{CFN}, such as Toulbar2, established itself across such diverse disciplines. These fields range from structural biology to operations research and artificial intelligence. The answer lies in combining the expressiveness of the \ac{WCSP} formalism with the power of its local consistency algorithms (EDAC, VAC, OSAC).
+The objective of this state-of-the-art review was to understand how a solver based on \ac{CFNs}, such as Toulbar2, established itself across such diverse disciplines. These fields range from structural biology to operations research and artificial intelligence. The answer lies in combining the expressiveness of the \ac{WCSP} formalism with the power of its local consistency algorithms (EDAC, VAC, OSAC).
 
 The formalism can jointly model strict rules and preferences. Meanwhile, the algorithms efficiently prune complex combinatorial spaces.
 
@@ -585,7 +586,7 @@ This cross-analysis demonstrates that Toulbar2 has continuously evolved to adapt
 
 Today, facing the complexity of dynamic and uncertain environments, its role is transforming. It is no longer just a standalone tool. Instead, it hybridizes with probabilistic models to act as an exact inference engine within broader architectures. This natural evolution toward neuro-symbolic artificial intelligence redefines the role of exact methods.
 
-It also raises new questions for future research. To what extent can constraint solvers like Toulbar2 be natively integrated into deep learning model training (Decision-Focused Learning) to correct their logical errors ? In the longer term, will we witness the emergence of a standardized hybrid AI ? In such a system, the lightning speed of neural perception and the mathematical optimality of \acp{CFN} would become entirely inseparable.
+It also raises new questions for future research. To what extent can constraint solvers like Toulbar2 be natively integrated into deep learning model training (Decision-Focused Learning) to correct their logical errors ? In the longer term, will we witness the emergence of a standardized hybrid AI ? In such a system, the lightning speed of neural perception and the mathematical optimality of \ac{CFNs} would become entirely inseparable.
 
 \subsubsection*{Acknowledgements}
 The authors would like to thank their research director, Martin Cooper, for his valuable guidance and support throughout this project.
@@ -601,7 +602,7 @@ The authors would like to thank their research director, Martin Cooper, for his 
     \acro{WCSP}{Weighted Constraint Satisfaction Problem}
     \acro{VCSP}{Valued Constraint Satisfaction Problem}
 
-    \acro{CFN}{Cost Function Networks}
+    \acro{CFNs}{Cost Function Networks}
     \acro{EPTs}{Equivalence Preserving Transformations}
     \acro{SAC}{Soft Arc Consistency}
     \acro{FDAC}{Full Directional Arc Consistency}
