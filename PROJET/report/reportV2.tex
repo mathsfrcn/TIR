@@ -107,7 +107,7 @@ In a \ac{VCSP}, a \acp{CFN} framework is used. \acp{CFN} are a tuplet consisting
 To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by ``\textit{branching}'' : it assigns a value to a variable and creates a new subtree. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{images/bnb.png}
+    \includegraphics[width=9cm]{images/bnb.png}
     \caption[Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
 \end{figure}
 
@@ -147,7 +147,7 @@ In a paper titled ``A constraint programming approach to the Zahn’s decision p
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/ZP.png}
+    \includegraphics[width=0.4\textwidth]{images/ZP.png}
     \caption[$P3$ Graph and insertion/deletion possibilities.]{\textbf{$P3$ Graph and insertion/deletion possibilities.}\cite{amel_constraint_2014}}
 \end{figure}
 
@@ -211,7 +211,7 @@ Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{images/resultat_knapsack.png}
+    \includegraphics[width=0.5\textwidth]{images/resultat_knapsack.png}
     \caption[Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac{KPCG}.]
         {\textbf{Number of solved instances (left) and number of times a solver found the
         best solution within the time limit (right) for six different classes of \ac{KPCG}.} Cplex was tested with two different encodings : tuples ($t$) and direct ($d$).\cite{montalbano_multiple-choice_2022}}
@@ -267,7 +267,7 @@ Exact methods :
 
 \begin{itemize}
     \item Dead-End Elimination (DEE) ;
-    \item A* search ;
+    \item $A^*$ search ;
     \item Integer Linear Programming (ILP).
 \end{itemize}
 
@@ -292,23 +292,13 @@ The objective is then to find the combination of values (rotamers) that minimize
 
 In the \ac{CFN} framework, there is a clear mapping from the protein structure to a constraint graph : residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
 
-The Toulbar2 solver is commonly used to tackle this formulation. It applies techniques such as :
+The Toulbar2 solver is commonly used to tackle this formulation. It applies techniques such as Branch and bound, which explores the solution space intelligently or Pruning, which eliminates infeasible or suboptimal solutions early.
 
-\begin{itemize}
-    \item Branch and bound, which explores the solution space intelligently ;
-    \item Pruning, which eliminates infeasible or suboptimal solutions early.
-\end{itemize}
-
-These capabilities allow the solver not only to identify the exact \ac{GMEC} but also to enumerate multiple near-optimal solutions. Such solutions are particularly useful for analyzing the fitness landscape of the protein :
-
-\begin{itemize}
-    \item Some problems are simple, exhibiting a single global minimum ;
-    \item Others are more complex, with many local minima creating a rugged landscape.
-\end{itemize}
+These capabilities allow the solver not only to identify the exact \ac{GMEC} but also to enumerate multiple near-optimal solutions. Such solutions are particularly useful for analyzing the fitness landscape of the protein: some problems are simple, exhibiting a single global minimum, others are more complex, with many local minima creating a rugged landscape.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{images/schema_soft_rought_landscapee_partie2.png}
+    \includegraphics[width=11cm]{images/schema_soft_rought_landscapee_partie2.png}
     \caption[Local optima network with basin edges for $2ckx$ and $2gkt$ in $2D$ and $3D$ representations.]{\textbf{Local optima network with basin edges for $2ckx$ (left side) and $2gkt$ (right side) in $2D$ and $3D$ representations.} The
 size is the log of the basin of attraction size. The color is the fitness : the better, the warmer. The thickness of the edges is
 proportional to the probability of passing from one basin to the other.\cite{simoncini_fitness_2018}}
@@ -316,12 +306,7 @@ proportional to the probability of passing from one basin to the other.\cite{sim
 
 Understanding this landscape is crucial, as it explains why certain optimization methods perform well in some cases but struggle in others.
 
-To further improve computational performance, techniques like \ac{LNS} are employed :
-
-\begin{itemize}
-    \item Only a portion of the protein is modified at a time ;
-    \item This subset is then optimized exactly while keeping the rest fixed.
-\end{itemize}
+To further improve computational performance, techniques like \ac{LNS} are employed: only a portion of the protein is modified at a time. This subset is then optimized exactly while keeping the rest fixed.
 
 \ac{CFN}-based approaches with Toulbar2 enable more efficient exact optimization and provide deeper insight into the structure of the problem. Nevertheless, they remain constrained by the size of the protein system and the simplifications inherent in the energy and rotamer models.
 
@@ -340,13 +325,13 @@ However, these models have limitations :
 A particularly challenging problem is multi-state design, where the goal is to :
 
 \begin{itemize}
-    \item Favor a desired interaction (e.g., AB) ;
-    \item Avoid undesired interactions (e.g., AA or BB).
+    \item Favor a desired interaction (e.g., $AB$) ;
+    \item Avoid undesired interactions (e.g., $AA$ or $BB$).
 \end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/schema_positive_negativestate_partie3.png}
+    \includegraphics[width=0.35\textwidth]{images/schema_positive_negativestate_partie3.png}
     \caption[Designing orthogonal component with the same fold requires explicitly accounting for negative homomeric states]{\textbf{Designing two orthogonal
 components with the same fold requires explicitly representing the two undesirable homomeric negative states
 on the right.}\cite{dessaux_designing_2024}}
@@ -367,20 +352,9 @@ To address this, a hybrid approach has been developed, combining deep learning a
     \caption[BMC-H homohexamer of bacterial microcompartment shell.]{\textbf{BMC-H homohexamer of bacterial microcompartment (BMC) shell.}\cite{dessaux_designing_2024}}
 \end{figure}
 
-This combination allows :
+This combination allows better control over specific interactions, simultaneous management of multiple states, and generation of sequences with improved overall quality.
 
-\begin{itemize}
-    \item Better control over specific interactions ;
-    \item Simultaneous management of multiple states ;
-    \item Generation of sequences with improved overall quality.
-\end{itemize}
-
-Experimental and simulation results demonstrate that this approach :
-
-\begin{itemize}
-    \item Performs better in computational simulations ;
-    \item Has been validated experimentally, showing real interactions and measurable fluorescence.
-\end{itemize}
+Experimental and simulation results demonstrate that this approach performs better in computational simulations and has been validated experimentally, showing real interactions and measurable fluorescence.
 
 Hybrid approaches leverage the strengths of both deep learning and exact methods. They provide more precise control over protein design and multi-state objectives, although they remain computationally more demanding.
 
@@ -459,7 +433,7 @@ This ensures the conflict is resolved optimally.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{images/lumberjack_algo.png}
+    \includegraphics[width=9cm]{images/lumberjack_algo.png}
     \caption[Lumberjack method steps.]{\textbf{Lumberjack method steps.}\cite{chaboud2020tackling}}
 \end{figure}
 
@@ -557,7 +531,7 @@ At inference, the neural network feeds the predicted Graphical Model directly in
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/neuro_symbolic_architecture.png}
+    \includegraphics[width=11cm]{images/neuro_symbolic_architecture.png}
     \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives}.\cite{defresne_scaling_2026}}
 \end{figure}
 
@@ -579,13 +553,13 @@ We can also reduce communication overhead when integrating Toulbar2 with SAT sol
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{images/smc_example.png}
+    \includegraphics[width=11cm]{images/smc_example.png}
     \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size}.\cite{li_solving_2025}}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{images/KOCO.png}
+    \includegraphics[width=11cm]{images/KOCO.png}
     \caption[Performance of each algorithm.]{\textbf{Performance of each algorithm.} From\cite{li_solving_2025}}
 \end{figure}
 
