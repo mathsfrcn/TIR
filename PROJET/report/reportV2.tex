@@ -425,8 +425,8 @@ proved nearly three times faster than Toulbar2. Furthermore, it consumed signifi
 
 This study demonstrates a clear conclusion. WCSPs offer excellent flexibility for modeling complex spatio-temporal constraint networks. However, on large-scale, pure scheduling problems, 
 the Toulbar2 solver faces real competition from classic \ac{MILP} solvers.
-\newline
-\newline
+\medskip{10cm}
+
 
 In a much more dynamic spatio-temporal context, Schmidt et al. (2020)\cite{chaboud2020tackling} apply the \ac{WCSP} formalism to air traffic conflict resolution. A collision risk may be detected between several aircraft. 
 When this happens, a generation method called ``Lumberjack'' produces a vast set of discretized alternative trajectories for each plane. The combinatorial challenge is then to select the best combination of compatible flight paths. 
@@ -483,17 +483,17 @@ Managing space and time is a major challenge. However, human resources planning 
 This subsection highlights how \ac{WCSP} research has had to evolve. It demonstrates the adaptation required to meet the expressivity needed to generate schedules.
 
 Hospital staff scheduling is an optimization problem known for its high combinatorial complexity. In their study, Métivier et al. (2009)\cite{nurse_rostering_problems} apply the \ac{CFNs} formalism and the Toulbar2 solver to generate optimal schedules for nurses. 
-They must account for strict staff coverage requirements (hard constraints) as well as staff rest preferences (soft constraints).
+Researchers must account for strict staff coverage requirements (hard constraints) as well as staff rest preferences (soft constraints).
 
-The value of this document for our analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \ac{CFNs} were designed around binary constraints. 
+The value of this document for this analysis lies in demonstrating the historical limitations of \acp{WCSP} for this type of problem. Historically, \ac{CFNs} were designed around binary constraints. 
 However, this type of constraint is poorly suited for modeling human rules. It would require creating an exponentially large constraint network. This makes the solution inefficient.
 
 To overcome this issue, research around Toulbar2 focused on implementing soft global constraints. Unlike a binary constraint, a global constraint simultaneously evaluates a large sequence of assignments. 
-For example, it can encompass a nurse's entire week or month in a single evaluation.
+For example, a single global constraint can encompass a nurse's entire week or month in a single evaluation.
 Métivier et al. (2009) explain how specific algorithms, based on dynamic programming or flow networks, were integrated directly into Toulbar2. This integration allows the application of local consistencies (such as \ac{EDAC}).
 
 This article demonstrates a significant evolution. The \ac{WCSP} paradigm is often associated with structural or biological problems. However, it has now achieved a much richer expressivity.
-Integrating soft global constraints into Toulbar2 proves its true capability. It can now successfully compete with traditional \ac{CP} solvers in the field of human scheduling.
+Integrating soft global constraints into Toulbar2 proves its true capability. This paradigm can now successfully compete with traditional \ac{CP} solvers in the field of human scheduling.
 
 \subsection{Routing and networks}
 
@@ -503,7 +503,7 @@ In their study, Lesaint et al. (2014)\cite{lesaint2014developing} examine a comp
 When this happens, the provider must find the best compromise. This involves downgrading the service or ignoring certain requested options. The goal is to minimize the overall penalty corresponding to customer dissatisfaction.
 This NP-hard decision problem was modeled as a \ac{WCSP}.
 
-The value of this article lies in its comparative analysis. Instead of isolating Toulbar2, the authors systematically compared the \ac{WCSP} formulation against competing models. These included \ac{MILP} and Partial Weighted Max-SAT. 
+Instead of isolating Toulbar2, the authors systematically compared the \ac{WCSP} formulation against competing models. These included \ac{MILP} and Partial Weighted Max-SAT. 
 The results demonstrate the strength of the \ac{WCSP} approach. By leveraging constraint propagation, it proves highly competitive for dynamically resolving these allocation conflicts.
 
 This operations research use case provides empirical proof. \ac{WCSP} modeling can compete with historically undisputed paradigms like \ac{MILP} or Max-SAT for allocating abstract resources. 
@@ -515,7 +515,7 @@ A prime example is IoT sensors, whose energy relies on random environmental cond
 
 It then becomes necessary to frame the problem using Markov Decision Processes. Here, Toulbar2 is no longer used as a standalone tool. Instead, it serves as an ``internal computing engine'' powering a probabilistic algorithm.
 
-This need to hybridize exact constraint optimization with models that handle uncertainty marks a natural progression. It directly drives the integration of \acp{WCSP} into the broader fields of Artificial Intelligence and Machine Learning.
+This need to hybridize exact constraint optimization with models that handle uncertainty marks a natural progression. This question directly drives the integration of \acp{WCSP} into the broader fields of Artificial Intelligence and Machine Learning.
 
 % ==================================================================================================================================
 % PARTIE 5 : AI \& Machine Learning
