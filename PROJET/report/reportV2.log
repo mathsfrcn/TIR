@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  10 APR 2026 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  10 APR 2026 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1485,10 +1485,10 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 672--673
 [][]|[]$[]$  
  []
 
-(reportV2.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [18] [19] (reportV2.bbl
 Underfull \hbox (badness 2302) in paragraph at lines 7--12
 []\T1/lmr/m/n/9 Akplogan, M., Givry, S.d., Mé-tivier, J.P., Ques-nel, G., Joan-non, A., Gar-cia, F.: Solv-
  []
@@ -1513,7 +1513,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--12
 \T1/lmtt/m/n/9 abs / solving-[]the-[]crop-[]allocation-[]problemusing-[]hard-[]and-[]soft-[]constraints /
  []
 
-[19]
+[20
+
+]
 Underfull \hbox (badness 2012) in paragraph at lines 126--132
 []\T1/lmr/m/n/9 Ugarte, W.: Vac-ci-na-tion Plan-ning in Peru us-ing Con-straint Pro-gram-ming:. In: Pro-ceed-
  []
@@ -1532,7 +1534,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 126--132
 \tf@thm=\write7
 \openout7 = `reportV2.thm'.
 
- [20] (reportV2.aux)
+ [21] (reportV2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1545,17 +1547,17 @@ Package rerunfilecheck Info: File `reportV2.out' has not changed.
 (rerunfilecheck)             Checksum: 07AC074513F87BF3B3EF58EAF5328963;328.
  ) 
 Here is how much of TeX's memory you used:
- 37253 strings out of 474486
- 713760 string characters out of 5743282
- 1945542 words of memory out of 5000000
+ 37254 strings out of 474486
+ 713767 string characters out of 5743282
+ 1946542 words of memory out of 5000000
  58676 multiletter control sequences out of 15000+600000
  641613 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,18n,117p,969b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,18n,117p,969b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on reportV2.pdf (20 pages, 1913028 bytes).
+Output written on reportV2.pdf (21 pages, 1913570 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
+ 729 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
