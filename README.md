@@ -50,7 +50,7 @@ Ce projet a été réalisé dans le cadre du M1 IMA/RO en UE Simulation aléatoi
 
 -  GARCIA Hugo.
   hugo.garcia@univ-tlse3.fr
--  GAUTHIER Philippe
+-  GAUTHIER Philippe.
   philippe.gauthier@univ-tlse3.fr 
 -  SANFILIPPO Marco.
   marco.sanfilippo@univ-tlse3.fr
