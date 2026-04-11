@@ -1,5 +1,9 @@
 # État de l'Art : Applications Interdisciplinaires du Solveur Toulbar2
 
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Termin%C3%A9-brightgreen)
+![Version](https://img.shields.io/badge/Version-v12.5-blue)
+
 ## 📖 Présentation du Projet
 Ce projet présente une revue de l'état de l'art du solveur Toulbar2 et de son impact interdisciplinaire. Toulbar2 est un solveur C++ open-source spécialisé dans les problèmes d'optimisation discrète utilisant le formalisme des réseaux de fonctions de coût (Cost Function Networks - CFN). 
 
@@ -40,3 +44,15 @@ Le solveur exploite diverses transformations préservant l'équivalence (EPT) po
 * OSAC (Optimal Soft Arc Consistency).
 
 De plus, l'utilisation d'algorithmes heuristiques gloutons (comme MinCost MaxClique) en amont permet d'accélérer significativement l'élagage de l'arbre de recherche sur des problèmes massifs.
+
+## 👥 Auteurs
+Ce projet a été réalisé dans le cadre du M1 IMA/RO en UE Simulation aléatoire :
+
+-  GARCIA Hugo.
+  hugo.garcia@univ-tlse3.fr
+-  GAUTHIER Philippe.
+  philippe.gauthier@univ-tlse3.fr 
+-  SANFILIPPO Marco.
+  marco.sanfilippo@univ-tlse3.fr
+-  FRANCINE-HABAS Mathis.
+  mathis.francine-habas@univ-tlse3.fr
