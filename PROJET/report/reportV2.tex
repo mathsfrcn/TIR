@@ -339,12 +339,7 @@ on the right.}\cite{dessaux_designing_2024}}
 
 Classical deep learning models often struggle with multi-state design because they must simultaneously satisfy conflicting objectives.
 
-To address this, a hybrid approach has been developed, combining deep learning and exact optimization :
-
-\begin{itemize}
-    \item Effie : a deep learning model that produces a scoring function for candidate sequences ;
-    \item Toulbar2 : an exact solver that optimizes this scoring function under explicit constraints.
-\end{itemize}
+To address this, a hybrid approach combining deep learning and exact optimization has been developed. In this framework, a deep learning model named Effie produces a scoring function for candidate sequences, which is subsequently optimized under explicit constraints by the exact solver Toulbar2.
 
 \begin{figure}[H]
     \centering
@@ -358,11 +353,22 @@ Experimental and simulation results demonstrate that this approach performs bett
 
 Hybrid approaches leverage the strengths of both deep learning and exact methods. They provide more precise control over protein design and multi-state objectives, although they remain computationally more demanding.
 
+Protein design has undergone significant evolution over the years :
+From physical methods to exact approaches, then to deep learning, and finally to hybrid strategies.
+Each approach has brought improvements, but also comes with inherent limitations.
+
+The main remaining challenges include :
+
+\begin{itemize}
+    \item Protein flexibility, as rigid backbone approximations remain oversimplified.
+    \item Accuracy of energy or scoring models, which can limit the reliability of predictions.
+    \item Scalability, i.e., the ability to handle large and complex protein systems efficiently.
+\end{itemize}
+
+Hybrid approaches currently appear the most promising, as they combine precision, explicit control, and the ability to manage complex constraints.This is particularly valuable for designing specific interactions and multi-state systems.
 
 Protein design has undergone significant evolution over the years :
-
 From physical methods to exact approaches, then to deep learning, and finally to hybrid strategies.
-
 Each approach has brought improvements, but also comes with inherent limitations.
 
 The main remaining challenges include :

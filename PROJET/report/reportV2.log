@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  11 APR 2026 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  11 APR 2026 21:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1413,55 +1413,52 @@ Package pdftex.def Info: images/schema_positive_negativestate_partie3.png  used 
 <images/schema_bmc_partie3.png, id=255, 389.95688pt x 222.07968pt>
 File: images/schema_bmc_partie3.png Graphic file (type png)
 <use images/schema_bmc_partie3.png>
-Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 351.
+Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 346.
 (pdftex.def)             Requested size: 207.56285pt x 118.20657pt.
  [9 <./images/schema_positive_negativestate_partie3.png> <./images/schema_bmc_partie3.png>]
 Package acronym Info: Label `acro:MILP' newly defined as it shall be overridden
-although it is yet undefined on input line 389.
+although it is yet undefined on input line 395.
 <images/crop_allocation_explication.png, id=275, 755.82375pt x 421.575pt>
 File: images/crop_allocation_explication.png Graphic file (type png)
 <use images/crop_allocation_explication.png>
-Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 412.
+Package pdftex.def Info: images/crop_allocation_explication.png  used on input line 418.
 (pdftex.def)             Requested size: 256.0748pt x 142.83185pt.
-
-Underfull \vbox (badness 2229) has occurred while \output is active []
-
  [10]
 Package acronym Info: Label `acro:MIP' newly defined as it shall be overridden
-although it is yet undefined on input line 418.
+although it is yet undefined on input line 424.
 Package acronym Info: Label `acro:MINLP' newly defined as it shall be overridden
-although it is yet undefined on input line 418.
+although it is yet undefined on input line 424.
 Package acronym Info: Label `acro:LP' newly defined as it shall be overridden
-although it is yet undefined on input line 420.
+although it is yet undefined on input line 426.
 <images/lumberjack_algo.png, id=302, 785.18344pt x 157.33781pt>
 File: images/lumberjack_algo.png Graphic file (type png)
 <use images/lumberjack_algo.png>
-Package pdftex.def Info: images/lumberjack_algo.png  used on input line 437.
+Package pdftex.def Info: images/lumberjack_algo.png  used on input line 443.
 (pdftex.def)             Requested size: 256.0748pt x 51.31422pt.
 <images/ex_alternative_fligth.png, id=307, 377.91188pt x 265.74281pt>
 File: images/ex_alternative_fligth.png Graphic file (type png)
 <use images/ex_alternative_fligth.png>
-Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 445.
+Package pdftex.def Info: images/ex_alternative_fligth.png  used on input line 451.
 (pdftex.def)             Requested size: 170.71652pt x 120.04541pt.
  [11 <./images/crop_allocation_explication.png> <./images/lumberjack_algo.png>]
 Package acronym Info: Label `acro:SBF' newly defined as it shall be overridden
-although it is yet undefined on input line 449.
+although it is yet undefined on input line 455.
 <images/performance1_SBF_TB2.png, id=331, 517.18219pt x 344.78813pt>
 File: images/performance1_SBF_TB2.png Graphic file (type png)
 <use images/performance1_SBF_TB2.png>
-Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 458.
+Package pdftex.def Info: images/performance1_SBF_TB2.png  used on input line 464.
 (pdftex.def)             Requested size: 227.62204pt x 151.74933pt.
 <images/performance2_SBF_TB2.png, id=339, 513.41812pt x 321.45094pt>
 File: images/performance2_SBF_TB2.png Graphic file (type png)
 <use images/performance2_SBF_TB2.png>
-Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 470.
+Package pdftex.def Info: images/performance2_SBF_TB2.png  used on input line 476.
 (pdftex.def)             Requested size: 227.62204pt x 142.51303pt.
 
 Underfull \vbox (badness 1308) has occurred while \output is active []
 
  [12 <./images/ex_alternative_fligth.png> <./images/performance1_SBF_TB2.png>]
 Package acronym Info: Label `acro:CP' newly defined as it shall be overridden
-although it is yet undefined on input line 496.
+although it is yet undefined on input line 502.
 
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
@@ -1469,21 +1466,21 @@ Underfull \vbox (badness 1199) has occurred while \output is active []
 <images/neuro_symbolic_architecture.png, id=389, 749.04843pt x 182.18062pt>
 File: images/neuro_symbolic_architecture.png Graphic file (type png)
 <use images/neuro_symbolic_architecture.png>
-Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 536.
+Package pdftex.def Info: images/neuro_symbolic_architecture.png  used on input line 542.
 (pdftex.def)             Requested size: 312.9803pt x 76.12337pt.
  [14]
 <images/smc_example.png, id=405, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
-Package pdftex.def Info: images/smc_example.png  used on input line 558.
+Package pdftex.def Info: images/smc_example.png  used on input line 564.
 (pdftex.def)             Requested size: 312.9803pt x 95.10115pt.
 <images/KOCO.png, id=410, 642.90187pt x 250.68657pt>
 File: images/KOCO.png Graphic file (type png)
 <use images/KOCO.png>
-Package pdftex.def Info: images/KOCO.png  used on input line 564.
+Package pdftex.def Info: images/KOCO.png  used on input line 570.
 (pdftex.def)             Requested size: 256.0748pt x 99.85207pt.
  [15 <./images/neuro_symbolic_architecture.png> <./images/smc_example.png>] [16 <./images/KOCO.png>]
-Overfull \hbox (30.0pt too wide) in paragraph at lines 649--650
+Overfull \hbox (30.0pt too wide) in paragraph at lines 655--656
 [][]|[]$[]$  
  []
 
@@ -1557,7 +1554,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  88i,18n,117p,981b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on reportV2.pdf (20 pages, 1914218 bytes).
+Output written on reportV2.pdf (20 pages, 1914471 bytes).
 PDF statistics:
  728 PDF objects out of 1000 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)
