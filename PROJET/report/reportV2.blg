@@ -6,24 +6,24 @@ The style file: splncs04.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Database file #1: biblio.bib
 Warning--string name "juin" is undefined
---line 679 of file biblio.bib
+--line 675 of file biblio.bib
 Warning--entry type for "npariscril_ept_2012" isn't style-file defined
---line 731 of file biblio.bib
+--line 727 of file biblio.bib
 Warning--empty journal in mobile_robot_localisation_mapping_extensive_outdoor_environments
 Warning--empty booktitle in nurse_rostering_problems
 Warning--empty journal in sewa_assignment_nodate
 Warning--empty year in sewa_assignment_nodate
 You've used 22 entries,
             2850 wiz_defined-function locations,
-            755 strings with 11088 characters,
-and the built_in function-call counts, 14418 in all, are:
-= -- 1175
+            753 strings with 10996 characters,
+and the built_in function-call counts, 14406 in all, are:
+= -- 1173
 > -- 532
 < -- 20
 + -- 218
 - -- 193
-* -- 1012
-:= -- 1835
+* -- 1006
+:= -- 1833
 add.period$ -- 38
 call.type$ -- 22
 change.case$ -- 173
@@ -32,13 +32,13 @@ cite$ -- 26
 duplicate$ -- 1230
 empty$ -- 1226
 format.name$ -- 213
-if$ -- 3105
+if$ -- 3103
 int.to.chr$ -- 0
 int.to.str$ -- 22
 missing$ -- 255
 newline$ -- 72
 num.names$ -- 48
-pop$ -- 495
+pop$ -- 497
 preamble$ -- 1
 purify$ -- 137
 quote$ -- 0
@@ -53,5 +53,5 @@ type$ -- 88
 warning$ -- 4
 while$ -- 104
 width$ -- 24
-write$ -- 250
+write$ -- 248
 (There were 6 warnings)

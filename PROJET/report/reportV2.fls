@@ -624,9 +624,6 @@ INPUT .\images\KOCO.png
 INPUT .\images\KOCO.png
 INPUT .\images\KOCO.png
 INPUT .\images\KOCO.png
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx7.tfm
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri7.tfm
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri7.tfm
 INPUT .\reportV2.bbl
 INPUT .\reportV2.bbl
 INPUT reportV2.bbl
@@ -638,8 +635,6 @@ INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx7.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx7.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb
@@ -668,8 +663,6 @@ INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr9.p
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr9.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt9.pfb

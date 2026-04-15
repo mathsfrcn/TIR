@@ -29,7 +29,7 @@ Centre, A., Robotics, F., Bailey, T.: Mobile robot localisation and mapping in
 
 \bibitem{chaboud2020tackling}
 Chaboud, T., Pralet, C., Schmidt, N.: Tackling air traffic conflicts as a
-  weighted csp: Experiments with the lumberjack method. arXiv preprint
+  weighted {CSP}: Experiments with the lumberjack method. arXiv preprint
   arXiv:2001.11390  (2020)
 
 \bibitem{charpentier_variable_2019}
@@ -80,7 +80,7 @@ Li, J., Jiang, N., Xue, Y.: Solving {Satisfiability} {Modulo} {Counting}
   arXiv:2503.01009 [cs]
 
 \bibitem{montalbano_multiple-choice_2022}
-Montalbano, P., de~Givry, S., Katsirelos, G.: Multiple-choice {Knapsack}
+Montalbano, P., Givry, S., Katsirelos, G.: Multiple-choice {Knapsack}
   {Constraint} in {Graphical} {Models}. In: Schaus, P. (ed.) Integration of
   {Constraint} {Programming}, {Artificial} {Intelligence}, and {Operations}
   {Research}. pp. 282--299. Springer International Publishing, Cham (2022).
@@ -112,15 +112,13 @@ Simoncini, D., Barbe, S., Schiex, T., Verel, S.: Fitness landscape analysis
   around the optimum in computational protein design. In: Proceedings of the
   {Genetic} and {Evolutionary} {Computation} {Conference}. pp. 355--362.
   {GECCO} '18, Association for Computing Machinery, New York, NY, USA (Jul
-  2018). \doi{10.1145/3205455.3205626},
-  \url{https://dl.acm.org/doi/10.1145/3205455.3205626}
+  2018). \doi{10.1145/3205455.3205626}
 
 \bibitem{traore_new_2013}
 Traoré, S., Allouche, D., André, I., de~Givry, S., Katsirelos, G., Schiex,
   T., Barbe, S.: A new framework for computational protein design through cost
   function network optimization. Bioinformatics  \textbf{29}(17),  2129--2136
-  (Sep 2013). \doi{10.1093/bioinformatics/btt374},
-  \url{https://doi.org/10.1093/bioinformatics/btt374}
+  (Sep 2013). \doi{10.1093/bioinformatics/btt374}
 
 \bibitem{ugarte_vaccination_2022}
 Ugarte, W.: Vaccination {Planning} in {Peru} using {Constraint} {Programming}:.
