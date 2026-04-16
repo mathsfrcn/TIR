@@ -533,7 +533,13 @@ We have seen that Toulbar2 is a leading exact solver for Cost Function Networks.
 
 \subsection{Neural Network Perception for Exact Solvers}
 
-There are instances where we have to face NP-hard combinatorial reasoning problems directly from natural inputs like images or unmapped protein structures. Traditional exact solvers cannot process raw sensory data and pure deep learning models struggle to perform exact logical reasoning. To resolve, a neural network processes the natural inputs and predicts pairwise cost matrices, the architecture presented on the paper trains using a dedicated loss function called the Emmental Pseudo-LogLikelihood, gaining time since this approach pushes the combinatorial solver out of the training loop entirely unlike other predecessors. 
+There are instances where we have to face NP-hard combinatorial reasoning problems 
+directly from natural inputs like images or unmapped protein structures. 
+Traditional exact solvers cannot process raw sensory data and pure deep learning models
+ struggle to perform exact logical reasoning. To resolve, a neural network processes the natural inputs
+ and predicts pairwise cost matrices,
+ trains using a method that randomly hides input data to force the system to learn every logical rule,
+ gaining time since this approach pushes the combinatorial solver out of the training loop entirely unlike other predecessors.
 
 At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. It enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages :
 
