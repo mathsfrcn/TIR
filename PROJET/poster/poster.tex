@@ -135,13 +135,28 @@ the Toulbar2 solver}
     % --------------------------------------------------------------------------
     \column{0.33}
     
-    \block{Identified Limitations \& Open Problems}{
-        Based on your review, what is missing in the current literature?
-        \begin{itemize}
-            \item Scalability issues for large datasets.
-            \item Lack of theoretical bounds for algorithm $Y$.
-        \end{itemize}
-    }
+\block{Artificial Intelligence & Machine Learning}{
+Toulbar2 struggles with real world applications since 
+exhaustive search creates computational bottlenecks on large instances. 
+We can integrate machine learning, introducing new ways to improve the 
+solution quality. For example, algorithms like KOCO SMC 
+handle large instances by tracking probability bounds during the inference process. 
+This early evaluation prevents the solver from performing exhaustive enumerations.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=11cm]{images/smc_example.png}
+\caption[Example of SMC : Robust Supply Chain with Different Network Size]{Example of SMC : Robust Supply Chain with Different Network Size.\cite{li_solving_2025}}
+\end{figure}
+
+Deep learning models can also transform raw sensory data directly 
+into Graphical Models. This integration merges the perception of neural networks 
+with the exact reasoning of constraint solvers to increase overall flexibility.
+For example, a neural network can translate unmapped protein 
+structures or raw images into cost matrices, allowing Toulbar2 to 
+focus exclusively on executing the exact discrete optimization.
+}
+
     
     \block{Conclusion}{
         Brief summary of the main takeaway from your literature review.
