@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber poster"] 1774636227.55576 "poster.bcf" "poster.bbl" "poster" 1774636252.4637 0
-  "biblio.bib" 1774127998 47988 a3e4070046ab1576623916ac4db8e8d5 ""
-  "poster.bcf" 1774636250 107783 d78bd3a69dbc46bd23d93091daacb409 "pdflatex"
+["biber poster"] 0 "poster.bcf" "poster.bbl" "poster" 1776378337.76976 -1
+  "biblio.bib" 1776376817 49055 dcb85b0d773ad695287c03cb9aa11a60 ""
+  "poster.bcf" 1776378337 107783 d78bd3a69dbc46bd23d93091daacb409 "pdflatex"
   (generated)
   "poster.bbl"
   "poster.blg"
   (rewritten before read)
-["pdflatex"] 1774636245.31296 "c:/Users/Mathis/OneDrive/Documents/MASTER/M1/S7/TIR/TIR/PROJET/poster/poster.tex" "poster.pdf" "poster" 1774636252.46785 0
-  "C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774635634 81245 e934491651270ee8e50db9289c70f8a4 ""
+["pdflatex"] 1776378331.3898 "c:/Users/Mathis/OneDrive/Documents/MASTER/M1/S7/TIR/TIR/PROJET/poster/poster.tex" "poster.pdf" "poster" 1776378337.77052 0
+  "C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775241413 81245 e934491651270ee8e50db9289c70f8a4 ""
   "C:/Users/Mathis/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm2986.pk" 1774635640 39956 751a02a86f7bee497040c2fe643978ad ""
   "C:/Users/Mathis/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1763134003 24225519 94dd656aabc5674bee5c5155b089043a ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
@@ -169,6 +169,9 @@
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/numeric.cbx" 1679055682 4629 cda468e8a0b1cfa0f61872e171037a4b ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/english.lbx" 1679055682 39965 48ce9ce3350aba9457f1020b1deba5cf ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
+  "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.cfg" 1712234901 7068 06f8d141725d114847527a66439066b6 ""
+  "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.def" 1712234901 22135 0975a49eeaed232aa861e9425ffb2e7c ""
+  "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.sty" 1712234901 62767 e79d6d7a989e7da62dcf3d0a65c1faee ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/extsizes/extarticle.cls" 947706120 20602 3112294ba237d94ce4a1502cfef3594f ""
@@ -218,13 +221,12 @@
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Mathis/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/Users/Mathis/OneDrive/Documents/MASTER/M1/S7/TIR/TIR/PROJET/poster/poster.tex" 1774636222 7194 fb093c077bbbcd17600080bddda6553a ""
-  "images/logo_UT.png" 1767883962 28404 c24e6a22e0986968efedab518ecd5bea ""
-  "images/logo_irit.png" 1769431442 4801 d3a193cf01a693838d65de81f2f7cdcc ""
-  "poster.aux" 1774636250 436 463ed64df2102ecbd5a66ef77d4e27aa "pdflatex"
-  "poster.bbl" 1774636232 4500 8184ae7718d1f47ea8fc04dfe81ac06a "biber poster"
-  "poster.run.xml" 1774636250 2315 ec10752c103f176af88450ca58f1d8ae "pdflatex"
-  "poster.tex" 1774636222 7194 fb093c077bbbcd17600080bddda6553a ""
+  "c:/Users/Mathis/OneDrive/Documents/MASTER/M1/S7/TIR/TIR/PROJET/poster/poster.tex" 1776378328 6985 3bb755caae6d4eb196cc106ecd796d8b ""
+  "images/crop_alloc.png" 1776378163 3955837 c46e3563566e2da4eeee305360b15e9a ""
+  "poster.aux" 1776378337 436 b2b2ef278c72b3e2c68e974524e1e914 "pdflatex"
+  "poster.bbl" 1776377056 4436 cdd96cee956a2a5d4d3d841ebe95cf57 "biber poster"
+  "poster.run.xml" 1776378337 2315 ec10752c103f176af88450ca58f1d8ae "pdflatex"
+  "poster.tex" 1776378328 6985 3bb755caae6d4eb196cc106ecd796d8b ""
   (generated)
   "poster.aux"
   "poster.bcf"

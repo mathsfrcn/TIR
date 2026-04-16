@@ -4,8 +4,8 @@
 \providecommand{\doi}[1]{https://doi.org/#1}
 
 \bibitem{akplogan_solving_2013}
-Akplogan, M., Givry, S.d., Métivier, J.P., Quesnel, G., Joannon, A., Garcia,
-  F.: Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft}
+Akplogan, M., Givry, S., Métivier, J.P., Quesnel, G., Joannon, A., Garcia, F.:
+  Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft}
   {Constraints}. RAIRO - Operations Research  \textbf{47}(2),  151--172 (Apr
   2013). \doi{10.1051/ro/2013032},
   \url{https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993}
@@ -54,7 +54,7 @@ Deng, Y., Kong, S., Liu, C., An, B.: Deep attentive belief propagation:
   25436--25449 (2022)
 
 \bibitem{dessaux_designing_2024}
-Dessaux, D., Buchet, S., Barthe, L., Defresne, M., Cioci, G., Givry, S.d.,
+Dessaux, D., Buchet, S., Barthe, L., Defresne, M., Cioci, G., Givry, S.,
   Garcia-Alles, L.F., Schiex, T., Barbe, S.: Designing symmetrical
   multi-component proteins using a hybrid generative {AI} approach (Jun 2024).
   \doi{10.1101/2024.06.13.598662},

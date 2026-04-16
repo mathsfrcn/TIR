@@ -72,8 +72,7 @@
 \author{Hugo Garcia\inst{1} \and
 Philippe Gauthier\inst{1} \and
 Marco Sanfilippo\inst{1} \and
-Mathis Francine-Habas\inst{1} \and
-Martin Cooper\inst{2}\thanks{Research director}\orcidID{0000-0003-4853-053X}}
+Mathis Francine-Habas\inst{1}}
 
 \authorrunning{H. Garcia et al.}
 
@@ -85,7 +84,7 @@ Toulouse Institute of Computer Science Research, Cr Rose Dieng-Kuntz 31400 Toulo
 \maketitle
 
 % ==================================================================================================================================
-% PARTIE 0 : Abstract
+% PARTIE 0: Abstract
 
 \begin{abstract}
     The valued constraint satisfaction problem (VCSP) or weighted constraint satisfaction problem (WCSP) is a problem of finding an assignment of minimal cost to a set of variables given soft and hard constraints and is solved using a branch-and-bound search (BnB). By finding a good lower bound to a given instance, subtrees of the BnB can be quickly pruned to efficiently find an optimal solution. The solver Toulbar2 uses many different techniques to find such lower bounds. This paper studies the cross-disciplinary application of the solver Toulbar2, ranging from solving difficult combinatorial problems, to real-world application such as bioinformatics and resource management and finally artificial intelligence. In many cases where the problem was able to be written using the VCSP framework, Toulbar2 was able to outperform other state-of-the-art solvers.
@@ -94,7 +93,7 @@ Toulouse Institute of Computer Science Research, Cr Rose Dieng-Kuntz 31400 Toulo
 \end{abstract}
 
 % ==================================================================================================================================
-% PARTIE 1 : Introduction
+% PARTIE 1: Introduction
 
 \section{Introduction}
 
@@ -104,15 +103,15 @@ To find a solution for a \ac{CSP}, backtracking search is used which will assign
 The \ac{VCSP} or \ac{WCSP} is considered a generalization of the classic \ac{CSP}. 
 In a \ac{VCSP}, a \ac{CFNs} framework is used. \ac{CFNs} are a tuplet consisting of a finite set of discrete variables $X$, a finite domain $D$, a finite set of soft or hard constraints $C$ and a maximum cost $k$. Soft constraints assign a cost to a specific assignment of a subset of variables. The NP-Hard problem of the \ac{VCSP} is to find the instantiation of minimal cost. 
 
-To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by \textit{branching} : like for CSP, it assigns a value to a variable and creates a new subtree each time. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
+To solve a \ac{VCSP}, the \ac{BnB} algorithm is used. \ac{BnB} explores the solution space by \textit{branching}: like for CSP, it assigns a value to a variable and creates a new subtree each time. At any node, if the current instance has cost higher than maximum cost k or its cost is higher than the cost of the best solution found so far, the branch is pruned and the search backtracks. This process continues until all branches have been pruned, and the best global solution is found.
 \begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{images/bnb.png}
-    \caption[Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB} : Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
+    \caption[Example of \ac{BnB}: Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.]{\textbf{Example of \ac{BnB}: Mobile Robot Localisation and Mapping in Extensive Outdoor Environments.}\cite{mobile_robot_localisation_mapping_extensive_outdoor_environments}}
 \end{figure}
 
 The efficacy of the branch-and-bound algorithm depends on the lower bound available. 
-In a Cost Function Network, functions are categorized by their arity : unary functions (arity 1) assign a cost to individual variable assignments, binary functions (arity 2) assign a cost to pairs of variables and the nullary constant (arity 0), denoted as $c_{\emptyset}$, is the starting cost of the problem. Therefore, the nullary constant also represents a global lower bound on the cost of any complete assignment.
+In a Cost Function Network, functions are categorized by their arity: unary functions (arity 1) assign a cost to individual variable assignments, binary functions (arity 2) assign a cost to pairs of variables and the nullary constant (arity 0), denoted as $c_{\emptyset}$, is the starting cost of the problem. Therefore, the nullary constant also represents a global lower bound on the cost of any complete assignment.
 
 \ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \ac{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments and the nullary constant is shown above.
 \begin{figure}[H]
@@ -123,12 +122,12 @@ In a Cost Function Network, functions are categorized by their arity : unary fun
 
 By successive \ac{EPTs}, the cost can be shifted and concentrated into the nullary constraint $c_{\emptyset}$, thus giving a better lower bound for the \ac{VCSP}. This new lower bound allows the solver to quickly prune subtrees.
 
-This process of applying successive \ac{EPTs} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following : \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
+This process of applying successive \ac{EPTs} to obtain a better lower bound is known as \ac{SAC}. Different inference techniques to obtain a good lower bound exist, and those include the following: \ac{FDAC}, \ac{EDAC}, \ac{VAC} and \ac{OSAC}. Those inference techniques vary in relative strength vs relative computational cost, but generally the better the lower bound found, the higher the computational cost becomes. \ac{OSAC} provides the best lower bound, followed by \ac{VAC}, then \ac{EDAC} and finally \ac{FDAC}.
 
 These theoretical findings are used in the solver Toulbar2. Toulbar2 is an open-source \textit{C++} solver for discrete optimization problems within the cost function network framework. The solver integrates \ac{SAC} operations, dynamically switching and choosing the best inference technique at a given node, and uses a branch-and-bound search to quickly explore the solution space and find the optimum. This document provides a state-of-the-art review of the solver’s cross-disciplinary impact. We begin by examining the solver’s ability to solve difficult combinatorial computer science problems against other state-of-the-art solvers, then explore their real world applications ranging from structural bioinformatics to classic operations research problems and finally discuss their recent integration into neuro-symbolic artificial intelligence networks.
 
 % ==================================================================================================================================
-% PARTIE 2 : Algorithmic Foundations & Solver Development
+% PARTIE 2: Algorithmic Foundations & Solver Development
 
 \section{Combinatorial problem solving}
 
@@ -137,7 +136,7 @@ Below will be some examples of such problems.
 
 \subsection{An application to graph theory and the cluster editing problem}
 Zahn's decision problem can be described as the cluster editing problem. Given a graph, what is the minimal number of operations (adding edges, removing edges) needed to create a disjoint union of cliques. The \ac{ZP} is generally an NP-hard problem.
-In a paper titled ``A constraint programming approach to the Zahn’s decision problem''\cite{amel_constraint_2014}, the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows : 
+In a paper titled ``A constraint programming approach to the Zahn’s decision problem''\cite{amel_constraint_2014}, the \ac{ZP} was transformed into a valued constraint satisfaction problem. This transformation is done as follows: 
 
 \begin{itemize}
     \item A boolean variable is added for each pair of vertices. When a variable is set to true by the solver, then the decision is to keep or add the edge between the vertices. Else, the decision is to remove or not add an edge between the two vertices.
@@ -155,7 +154,7 @@ Using Toulbar2 to solve the \ac{VCSP}, the results found were much better than t
 
 \subsection{Constraint programming for calculating partition functions and discrete integration in high dimensions}
 
-Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem, is typically \#P-Hard and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality : Discrete Integration by Hashing and Optimization``\cite{ermon_taming_2013}, reduces the task of discrete integration into a collection of \ac{MAP} sub-problems, which are NP-Hard instead.
+Discrete integration in high dimensions is considered to be a generally unsolved and difficult problem, is typically \#P-Hard and has applications to a wide variety of fields. This difficulty arises from the phenomenon known as the curse of dimensionality. In the paper ``Taming the Curse of Dimensionality: Discrete Integration by Hashing and Optimization``\cite{ermon_taming_2013}, reduces the task of discrete integration into a collection of \ac{MAP} sub-problems, which are NP-Hard instead.
 
 The main challenge involves calculating the partition function. A partition function is a sum of all possible configurations of a set $X$ where $w(x)$ is a weight function assigning a weight to a configuration.
 
@@ -163,7 +162,7 @@ The main challenge involves calculating the partition function. A partition func
     Z = \sum_{x \in \mathcal{X}} w(x)
 \end{equation}
 
-A commonly known example in physics is the Boltzmann distribution, a probability distribution that describes the likelihood of a system being in a specific configuration. The corresponding partition is as follows :
+A commonly known example in physics is the Boltzmann distribution, a probability distribution that describes the likelihood of a system being in a specific configuration. The corresponding partition is as follows:
 
 \begin{equation}
     w(x) = e^{-\frac{E(x)}{k_B T}} 
@@ -172,9 +171,9 @@ A commonly known example in physics is the Boltzmann distribution, a probability
 \end{equation}
 
 \begin{itemize}
-    \item $E(x)$ : The total energy of the configuration $x$.
-    \item $k_B$ : The Boltzmann constant.
-    \item $T$ : The absolute temperature.
+    \item $E(x)$: The total energy of the configuration $x$.
+    \item $k_B$: The Boltzmann constant.
+    \item $T$: The absolute temperature.
 \end{itemize}
 
 A partition function can also be understood as a discrete integral, and is a computational task that is intractable due to the exponential number of configurations. WISH is a randomized algorithm which bypasses this challenging problem by solving, like said above, a collection of NP-Hard problems instead.
@@ -203,7 +202,7 @@ These examples show the relevance of Toulbar2 when paired with a new propagator 
 
 \subsection{Toulbar2 application for the knapsack problem with a conflict graph and computational protein design}
 
-The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows : given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
+The knapsack problem is a classic NP-hard problem in combinatorics and computer science goes as follows: given a maximum weight capacity $C$, a set of objects each an assigned $weight$ and $value$, what is the set of objects that maximize the value while respecting the weight capacity.
 
 The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex. An edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \ac{CFNs} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
 
@@ -214,13 +213,13 @@ Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way t
     \includegraphics[width=0.5\textwidth]{images/resultat_knapsack.png}
     \caption[Number of solved instances and number of times a solver found the best solution within the time limit for six different classes of \ac{KPCG}.]
         {\textbf{Number of solved instances (left) and number of times a solver found the
-        best solution within the time limit (right) for six different classes of \ac{KPCG}.} Cplex was tested with two different encodings : tuples ($t$) and direct ($d$).\cite{montalbano_multiple-choice_2022}}
+        best solution within the time limit (right) for six different classes of \ac{KPCG}.} Cplex was tested with two different encodings: tuples ($t$) and direct ($d$).\cite{montalbano_multiple-choice_2022}}
 \end{figure}
 
 This new technique also helped model the protein design problem, which is one of the main applications of the Toulbar2 solver, as it will be shown in the following section.
 
 % ==================================================================================================================================
-% PARTIE 3 : Protein
+% PARTIE 3: Protein
 
 \section{Bioinformatics \& Life Sciences}
 
@@ -229,19 +228,19 @@ Protein design \ac{CMD} involves creating artificial proteins capable of adoptin
 A central aspect is the control of \acp{PPI}. In cells, proteins do not act alone: they assemble into organized complexes. For example, some proteins form regular structures composed of multiple identical copies (homomers), while others combine several different proteins (heteromers). Being able to switch from a homomeric system to a heteromeric one would allow the creation of much more complex and controlled assemblies.
 
 However, designing a protein is very challenging. For a given structure, there is an enormous number of possible sequences. Moreover, each sequence can adopt multiple conformations\footnote{The $3D$ shape a protein takes when it folds, which determines how it functions.}. This creates a vast search space.
-To simplify, classical methods make two important assumptions :
+To simplify, classical methods make two important assumptions:
 
 \begin{itemize}
-    \item The backbone is rigid (the overall structure does not move) ;
+    \item The backbone is rigid (the overall structure does not move);
     \item Only the side chains change, in the form of rotamers\footnote{A specific orientation of a part of a protein, often a side chain, which can rotate around a bond, giving several possible discrete positions.}.
 \end{itemize}
 
-With these simplifications, the problem can be seen as an optimization task : finding the combination of rotamers that yields the lowest energy. Nevertheless, the problem remains very complex (NP-hard).
-Over time, different approaches have been developed : physical methods, exact methods, deep learning, and then hybrid approaches. The objective has always been the same: to find a good compromise between accuracy, speed, and control.
+With these simplifications, the problem can be seen as an optimization task: finding the combination of rotamers that yields the lowest energy. Nevertheless, the problem remains very complex (NP-hard).
+Over time, different approaches have been developed: physical methods, exact methods, deep learning, and then hybrid approaches. The objective has always been the same: to find a good compromise between accuracy, speed, and control.
 
 \subsection{Formalization and Classical Methods of Protein Design}
 
-\ac{CPD} is generally formulated as an optimization problem : the goal is to identify the amino acid sequence that minimizes the protein’s energy, called the \ac{GMEC}. 
+\ac{CPD} is generally formulated as an optimization problem: the goal is to identify the amino acid sequence that minimizes the protein’s energy, called the \ac{GMEC}. 
 This energy is minimized because, naturally, a protein adopts its most stable conformation, i.e., the one with the lowest energy.
 
 \begin{figure}[H]
@@ -252,22 +251,22 @@ This energy is minimized because, naturally, a protein adopts its most stable co
 
 In this framework, each position of the protein can adopt different rotamers (local conformations of side chains). The total energy of the protein is calculated as the sum of local contributions (energy of a single residue) and pairwise interactions between residues. The problem thus consists of selecting a rotamer for each position in order to minimize this global energy.
 
-The problem quickly becomes combinatorial : if each position can take multiple rotamers, the total number of possible combinations grows exponentially with the size of the protein. To address this, two main families of methods have been developed :
+The problem quickly becomes combinatorial: if each position can take multiple rotamers, the total number of possible combinations grows exponentially with the size of the protein. To address this, two main families of methods have been developed:
 
-Heuristic methods :
+Heuristic methods:
 
 \begin{itemize}
-    \item Monte Carlo, simulated annealing ;
+    \item Monte Carlo, simulated annealing;
     \item Genetic algorithms.
 \end{itemize}
 
 These methods explore the solution space quickly, but they can become trapped in local optima and do not guarantee finding the global solution.
 
-Exact methods :
+Exact methods:
 
 \begin{itemize}
-    \item Dead-End Elimination (DEE) ;
-    \item $A^*$ search ;
+    \item Dead-End Elimination (DEE);
+    \item $A^*$ search;
     \item Integer Linear Programming (ILP).
 \end{itemize}
 
@@ -280,17 +279,17 @@ This formalization provides a rigorous framework for protein design, but it reli
 
 To improve the efficiency of exact methods in protein design, the problem has been reformulated in terms of constraints. This allows leveraging more structured and systematic optimization techniques.
 
-Computer-aided protein design can be represented as a \ac{CFNs} :
+Computer-aided protein design can be represented as a \ac{CFNs}:
 
 \begin{itemize}
-    \item Each residue corresponds to a variable ;
-    \item Each rotamer represents a possible value for that variable ;
+    \item Each residue corresponds to a variable;
+    \item Each rotamer represents a possible value for that variable;
     \item Each interaction between residues is encoded as a cost.
 \end{itemize}
 
 The objective is then to find the combination of values (rotamers) that minimizes the total cost of the system.
 
-In the CFN framework, there is a clear mapping from the protein structure to a constraint graph : residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
+In the CFN framework, there is a clear mapping from the protein structure to a constraint graph: residues become nodes, interactions define edges with associated costs. This mapping highlights how structural information is transformed into a formal optimization problem.
 
 The Toulbar2 solver is commonly used to tackle this formulation. It applies techniques such as Branch and bound, which explores the solution space intelligently or Pruning, which eliminates infeasible or suboptimal solutions early.
 
@@ -300,7 +299,7 @@ These capabilities allow the solver not only to identify the exact \ac{GMEC} but
     \centering
     \includegraphics[width=11cm]{images/schema_soft_rought_landscapee_partie2.png}
     \caption[Local optima network with basin edges for $2ckx$ and $2gkt$ in $2D$ and $3D$ representations.]{\textbf{Local optima network with basin edges for $2ckx$ (left side) and $2gkt$ (right side) in $2D$ and $3D$ representations.} The
-size is the log of the basin of attraction size. The color is the fitness : the better, the warmer. The thickness of the edges is
+size is the log of the basin of attraction size. The color is the fitness: the better, the warmer. The thickness of the edges is
 proportional to the probability of passing from one basin to the other.\cite{simoncini_fitness_2018}}
 \end{figure}
 
@@ -315,17 +314,17 @@ To further improve computational performance, techniques like \ac{LNS} are emplo
 Deep learning has recently transformed the field of protein design, providing new ways to predict and generate sequences compatible with a given structure.
 Models such as \textit{ProteinMPNN} learn directly which sequences are compatible with a target structure, enabling the rapid generation of realistic proteins.
 
-However, these models have limitations :
+However, these models have limitations:
 
 \begin{itemize}
-    \item They are difficult to control precisely ;
+    \item They are difficult to control precisely;
     \item They struggle to handle complex constraints effectively.
 \end{itemize}
 
-A particularly challenging problem is multi-state design, where the goal is to :
+A particularly challenging problem is multi-state design, where the goal is to:
 
 \begin{itemize}
-    \item Favor a desired interaction (e.g., $AB$) ;
+    \item Favor a desired interaction (e.g., $AB$);
     \item Avoid undesired interactions (e.g., $AA$ or $BB$).
 \end{itemize}
 
@@ -353,11 +352,11 @@ Experimental and simulation results demonstrate that this approach performs bett
 
 Hybrid approaches leverage the strengths of both deep learning and exact methods. They provide more precise control over protein design and multi-state objectives, although they remain computationally more demanding.
 
-Protein design has undergone significant evolution over the years :
+Protein design has undergone significant evolution over the years:
 From physical methods to exact approaches, then to deep learning, and finally to hybrid strategies.
 Each approach has brought improvements, but also comes with inherent limitations.
 
-The main remaining challenges include :
+The main remaining challenges include:
 
 \begin{itemize}
     \item Protein flexibility, as rigid backbone approximations remain oversimplified.
@@ -367,11 +366,11 @@ The main remaining challenges include :
 
 Hybrid approaches currently appear the most promising, as they combine precision, explicit control, and the ability to manage complex constraints.This is particularly valuable for designing specific interactions and multi-state systems.
 
-Protein design has undergone significant evolution over the years :
+Protein design has undergone significant evolution over the years:
 From physical methods to exact approaches, then to deep learning, and finally to hybrid strategies.
 Each approach has brought improvements, but also comes with inherent limitations.
 
-The main remaining challenges include :
+The main remaining challenges include:
 
 \begin{itemize}
     \item Protein flexibility, as rigid backbone approximations remain oversimplified.
@@ -382,7 +381,7 @@ The main remaining challenges include :
 Hybrid approaches currently appear the most promising, as they combine precision, explicit control, and the ability to manage complex constraints.This is particularly valuable for designing specific interactions and multi-state systems.
 
 % ==================================================================================================================================
-% PARTIE 4 : Resource Management & Planning
+% PARTIE 4: Resource Management & Planning
 
 \section{Resource Management \& Planning}
 
@@ -416,7 +415,7 @@ The model integrates two types of constraints:
 \begin{figure}[H]
     \centering
     \includegraphics[width=9cm]{images/crop_allocation_explication.png}
-    \caption[Schematic representation of the spatial and temporal aspects of the decision–making problem]{\textbf{Schematic representation of the spatial and temporal aspects of the decision–making problem} ($t_i$ : year, $b$ : block, $p_j$ : plot, $k_p$ : preceding effect).\cite{akplogan_solving_2013}}
+    \caption[Schematic representation of the spatial and temporal aspects of the decision–making problem]{\textbf{Schematic representation of the spatial and temporal aspects of the decision–making problem} ($t_i$: year, $b$: block, $p_j$: plot, $k_p$: preceding effect).\cite{akplogan_solving_2013}}
 \end{figure}
 
 To solve this problem, the authors compared two approaches. The first is a \ac{WCSP} formulation solved by Toulbar2. The second is a \ac{MILP} reformulation solved by 
@@ -525,7 +524,7 @@ It then becomes necessary to frame the problem using Markov Decision Processes. 
 This need to hybridize exact constraint optimization with models that handle uncertainty marks a natural progression. This question directly drives the integration of \acp{WCSP} into the broader fields of Artificial Intelligence and Machine Learning.
 
 % ==================================================================================================================================
-% PARTIE 5 : AI \& Machine Learning
+% PARTIE 5: AI \& Machine Learning
 
 \section{Artificial Intelligence \& Machine Learning}
 
@@ -535,12 +534,12 @@ We have seen that Toulbar2 is a leading exact solver for Cost Function Networks.
 
 There are instances where we have to face NP-hard combinatorial reasoning problems directly from natural inputs like images or unmapped protein structures. Traditional exact solvers cannot process raw sensory data and pure deep learning models struggle to perform exact logical reasoning. To resolve, a neural network processes the natural inputs and predicts pairwise cost matrices, the architecture presented on the paper trains using a dedicated loss function called the Emmental Pseudo-LogLikelihood, gaining time since this approach pushes the combinatorial solver out of the training loop entirely unlike other predecessors. 
 
-At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. It enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages :
+At inference, the neural network feeds the predicted Graphical Model directly into Toulbar2. It enforces the structural constraints and finds the exact optimal solution. The data flows through specific stages:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=11cm]{images/neuro_symbolic_architecture.png}
-    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving : Solver-Free Learning of Constraints and Objectives}.\cite{defresne_scaling_2026}}
+    \caption[Scaling Neuro-symbolic Problem Solving]{\textbf{Scaling Neuro-symbolic Problem Solving: Solver-Free Learning of Constraints and Objectives}.\cite{defresne_scaling_2026}}
 \end{figure}
 
 \begin{itemize}
@@ -557,12 +556,12 @@ As established, Toulbar2 explores the whole solution space. This exploration mak
 
 Since Toulbar2 is too slow to generate optimal training labels for large instances, researchers have bypassed this limitation by utilizing self-supervised models like Deep Attentive Belief Propagation. This method infers optimal parameters dynamically without needing Toulbar2 to provide exact solutions.
 
-We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting) : combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO SMC\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
+We can also reduce communication overhead when integrating Toulbar2 with SAT solvers for \textit{Satisfiability Modulo Counting} (SMC\footnote{SMC (Satisfiability Modulo Counting): combines logic rules with probability. It’s used in order to find answers that meet strict logical conditions and achieve a specific probability target.}). Traditional integrated systems run slowly due to continuous communication between the separate logic and probabilistic solvers, this problem is solved with integrated solvers like KOCO SMC\footnote{KOCO-SMC  is a SMC solver by tracking lower and upper bounds in the probabilistic inference process.}, they improve this by tracking lower and upper bounds during probabilistic inference. They also evaluate partial variable assignments early in order to help to prevent exhaustive enumerations.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=11cm]{images/smc_example.png}
-    \caption[Example of SMC : Robust Supply Chain with Different Network Size]{\textbf{Example of SMC : Robust Supply Chain with Different Network Size}.\cite{li_solving_2025}}
+    \caption[Example of SMC: Robust Supply Chain with Different Network Size]{\textbf{Example of SMC: Robust Supply Chain with Different Network Size}.\cite{li_solving_2025}}
 \end{figure}
 
 \begin{figure}[H]
@@ -594,7 +593,7 @@ This cross-analysis demonstrates that Toulbar2 has continuously evolved to adapt
 
 Today, facing the complexity of dynamic and uncertain environments, its role is transforming. It is no longer just a standalone tool. Instead, it hybridizes with probabilistic models to act as an exact inference engine within broader architectures. This natural evolution toward neuro-symbolic artificial intelligence redefines the role of exact methods.
 
-It also raises new questions for future research. To what extent can constraint solvers like Toulbar2 be natively integrated into deep learning model training (Decision-Focused Learning) to correct their logical errors ? In the longer term, will we witness the emergence of a standardized hybrid AI ? In such a system, the lightning speed of neural perception and the mathematical optimality of \ac{CFNs} would become entirely inseparable.
+It also raises new questions for future research. To what extent can constraint solvers like Toulbar2 be natively integrated into deep learning model training (Decision-Focused Learning) to correct their logical errors? In the longer term, will we witness the emergence of a standardized hybrid AI? In such a system, the lightning speed of neural perception and the mathematical optimality of \ac{CFNs} would become entirely inseparable.
 
 \subsubsection*{Acknowledgements}
 The authors would like to thank their research director, Martin Cooper, for his valuable guidance and support throughout this project.

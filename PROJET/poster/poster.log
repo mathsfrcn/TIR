@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  27 MAR 2026 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  17 APR 2026 00:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,43 +855,57 @@ Package biblatex Info: ... and expl3
 Package: xparse 2023-10-10 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+)) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count443
+\csq@gtype=\count444
+\csq@glevel=\count445
+\csq@qlevel=\count446
+\csq@maxlvl=\count447
+\csq@tshold=\count448
+\csq@ltx@everypar=\toks41
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
 ))
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count443
-\@quotereset=\count444
-(poster.aux)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+ (poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count445
+\scratchcounter=\count449
 \scratchdimen=\dimen373
 \scratchbox=\box100
-\nofMPsegments=\count446
-\nofMParguments=\count447
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count448
+\nofMPsegments=\count450
+\nofMParguments=\count451
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count452
 \MPscratchDim=\dimen374
-\MPnumerator=\count449
-\makeMPintoPDFobject=\count450
-\everyMPtoPDFconversion=\toks42
+\MPnumerator=\count453
+\makeMPintoPDFobject=\count454
+\everyMPtoPDFconversion=\toks43
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -932,24 +946,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./images/logo_UT.png, id=28, 1563.8425pt x 501.875pt>
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 56.
-(pdftex.def)             Requested size: 443.28966pt x 142.26378pt.
-<./images/logo_irit.png, id=29, 289.08pt x 175.65625pt>
-File: ./images/logo_irit.png Graphic file (type png)
-<use ./images/logo_irit.png>
-Package pdftex.def Info: ./images/logo_irit.png  used on input line 56.
-(pdftex.def)             Requested size: 234.14468pt x 142.26378pt.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -967,41 +971,40 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ] in font nullfont!
 )
-Package biblatex Info: Reference section=0 on input line 56.
-Package biblatex Info: Reference segment=0 on input line 56.
+Package biblatex Info: Reference section=0 on input line 58.
+Package biblatex Info: Reference segment=0 on input line 58.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 59.
-(pdftex.def)             Requested size: 443.28966pt x 142.26378pt.
-File: ./images/logo_irit.png Graphic file (type png)
-<use ./images/logo_irit.png>
-Package pdftex.def Info: ./images/logo_irit.png  used on input line 59.
-(pdftex.def)             Requested size: 234.14468pt x 142.26378pt.
-File: ./images/logo_UT.png Graphic file (type png)
-<use ./images/logo_UT.png>
-Package pdftex.def Info: ./images/logo_UT.png  used on input line 59.
-(pdftex.def)             Requested size: 443.28966pt x 142.26378pt.
-File: ./images/logo_irit.png Graphic file (type png)
-<use ./images/logo_irit.png>
-Package pdftex.def Info: ./images/logo_irit.png  used on input line 59.
-(pdftex.def)             Requested size: 234.14468pt x 142.26378pt.
-LaTeX Font Info:    Trying to load font information for TS1+aer on input line 75.
-LaTeX Font Info:    No file TS1aer.fd. on input line 75.
+
+Overfull \hbox (120.07016pt too wide) in paragraph at lines 61--61
+ [][] 
+ []
+
+
+Overfull \hbox (120.07016pt too wide) in paragraph at lines 61--61
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+aer on input line 77.
+LaTeX Font Info:    No file TS1aer.fd. on input line 77.
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 75.
+(Font)              for symbol `textbullet' on input line 77.
 
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 163.
+<./images/crop_alloc.png, id=28, 2071.74pt x 1043.39813pt>
+File: ./images/crop_alloc.png Graphic file (type png)
+<use ./images/crop_alloc.png>
+Package pdftex.def Info: ./images/crop_alloc.png  used on input line 131.
+(pdftex.def)             Requested size: 1024.74243pt x 516.10953pt.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 160.
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [1
 
-{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/logo_UT.png (PNG copy)> <./images/logo_irit.png>] (poster.aux)
+{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/crop_alloc.png>] (poster.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1015,17 +1018,17 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28181 strings out of 474486
- 599895 string characters out of 5743282
- 1964542 words of memory out of 5000000
- 49914 multiletter control sequences out of 15000+600000
- 619538 words of font info for 159 fonts, out of 8000000 for 9000
+ 28692 strings out of 474486
+ 608392 string characters out of 5743282
+ 1957542 words of memory out of 5000000
+ 50423 multiletter control sequences out of 15000+600000
+ 616170 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,15n,121p,1201b,3063s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,1201b,3109s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Mathis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm2986.pk><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on poster.pdf (1 page, 146824 bytes).
+Output written on poster.pdf (1 page, 3649939 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

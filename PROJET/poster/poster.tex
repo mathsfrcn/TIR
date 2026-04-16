@@ -13,6 +13,8 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{biblatex}
+\usepackage{csquotes}
+
 \addbibresource{biblio.bib}
 
 \renewcommand*{\bibfont}{\small} % ou \footnotesize si tu as vraiment beaucoup de sources
@@ -22,11 +24,11 @@
 % ==============================================================================
 % Tikzposter propose plusieurs thèmes de base : 
 % Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
-\usetheme{Rays}
+\usetheme{Default}
 
 % Tu peux aussi changer la palette de couleurs indépendamment du thème :
 % Default, Australia, Britain, Sweden, Spain, Russia, Denmark, Germany
-\usecolorstyle{Britain}
+\usecolorstyle{Default}
 
 % Pour personnaliser la couleur globale du fond si le thème ne te plaît pas
 % \colorlet{backgroundcolor}{blue!10!white}
@@ -34,21 +36,21 @@
 % ==============================================================================
 % EN-TÊTE (TITRE, AUTEURS, LOGOS)
 % ==============================================================================
-\title{State of the Art: [Your Research Topic]}
+\title{Cross-disciplinary applications of 
+the Toulbar2 solver}
 
 \author{
-    Hugo Garcia, Philippe Gauthier, Marco Sanfilippo, Mathis Francine-Habas\\
-    \Large Supervisor : Martin Cooper
+    Hugo Garcia, Philippe Gauthier, Marco Sanfilippo, Mathis Francine-Habas
 }
 
 \institute{University of Toulouse \& IRIT Laboratory}
 
-\titlegraphic{
-    \begin{tabular}{@{}c@{\hspace{15cm}}c@{}}
-        \includegraphics[height=5cm]{./images/logo_UT.png} & 
-        \includegraphics[height=5cm]{./images/logo_irit.png}
-    \end{tabular}
-}
+%\titlegraphic{
+%    \begin{tabular}{@{}c@{\hspace{15cm}}c@{}}
+%        \includegraphics[height=5cm]{./images/logo_UT.png} & 
+%        \includegraphics[height=5cm]{./images/logo_irit.png}
+%    \end{tabular}
+%}
 
 % ==============================================================================
 % DÉBUT DU POSTER
@@ -79,7 +81,7 @@
         For example, a formal definition:
         
         \vspace{1cm}
-        Let $X$ be a topological space and $f: X \rightarrow \mathbb{R}$ a function. We define...
+        Let $X$ be a topological space and $f: X \rightarrow \mathbb{R}$ a function. We define
         
         \vspace{1cm}
         You can include an image to illustrate the concept:
@@ -116,20 +118,15 @@
     
     % Remettre la couleur par défaut pour les blocs suivants
     \colorlet{blocktitlebgcolor}{black!80} 
-    \block{Comparative Analysis}{
-        A table is highly recommended in a state-of-the-art poster to compare literature!
+    \block{Recherche Opérationnelle \& Planification}{
+        Le formalisme $WCSP$ performe dans la modélisation d'environnements complexes en combinant des règles strictes (contraintes dures) 
+        et l'optimisation de critères de qualité (contraintes souples).
         
         \vspace{1cm}
         \begin{center}
-        \begin{tabularx}{0.9\linewidth}{l X c c}
-            \toprule
-            \textbf{Reference} & \textbf{Methodology} & \textbf{Accuracy} & \textbf{Speed} \\
-            \midrule
-            Smith et al. (2020) & Graph Neural Networks & High & Slow \\
-            Doe et al. (2021) & Linear Programming & Exact & V. Slow \\
-            Cooper et al. (2023) & Novel Heuristic & Good & Fast \\
-            \bottomrule
-        \end{tabularx}
+        \includegraphics[width=\linewidth]{./images/crop_alloc.png}
+        
+        
         \end{center}
     }
 

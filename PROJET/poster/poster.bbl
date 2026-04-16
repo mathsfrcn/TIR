@@ -26,13 +26,11 @@
            familyi={M\bibinitperiod},
            given={Pierre},
            giveni={P\bibinitperiod}}}%
-        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
            family={Givry},
            familyi={G\bibinitperiod},
            given={Simon},
-           giveni={S\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=02053fef5a82223abac1996e33d71e79}{%
            family={Katsirelos},
            familyi={K\bibinitperiod},
@@ -55,12 +53,12 @@
       \list{publisher}{1}{%
         {Springer International Publishing}%
       }
-      \strng{namehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{fullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{bibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorbibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authornamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorfullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{namehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{fullhash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{bibnamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authorbibnamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authornamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authorfullhash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
       \strng{editorbibnamehash}{04b25dbc630118068c55c54cd179207d}
       \strng{editornamehash}{04b25dbc630118068c55c54cd179207d}
       \strng{editorfullhash}{04b25dbc630118068c55c54cd179207d}

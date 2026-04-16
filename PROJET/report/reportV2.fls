@@ -458,7 +458,6 @@ INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -478,7 +477,6 @@ INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary9.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary6.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx9.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -498,8 +496,8 @@ INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx1
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT .\images\ept.jpg
 INPUT .\images\ept.jpg
 INPUT .\images\ept.jpg
@@ -515,6 +513,7 @@ INPUT .\images\ZP.png
 INPUT .\images\ZP.png
 INPUT .\images\ZP.png
 INPUT .\images\ZP.png
+INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx7.tfm
@@ -540,6 +539,7 @@ INPUT .\images\resultat_knapsack.png
 INPUT .\images\resultat_knapsack.png
 INPUT .\images\resultat_knapsack.png
 INPUT .\images\resultat_knapsack.png
+INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT .\images\schema_framework-CPD_partie1.png
 INPUT .\images\schema_framework-CPD_partie1.png
 INPUT .\images\schema_framework-CPD_partie1.png
@@ -643,8 +643,6 @@ INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi5.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi5.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi9.pfb
