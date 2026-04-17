@@ -70,7 +70,19 @@ the Toulbar2 solver}
     % --------------------------------------------------------------------------
     \column{0.33} % Prend 33% de la largeur
     
-    \block{Abstract / Introduction}{
+    \block{Abstractz}{
+        The valued constraint satisfaction problem (VCSP) or weighted constraint
+satisfaction problem (WCSP) is  a generalization of the classic CSP. We try to find 
+an assignment of minimal cost to a
+set of variables given soft and hard constraints. It is usually solved using a branch-and-bound
+search (BnB). 
+
+By finding a good lower bound to a given instance, subtrees of the BnB can
+be quickly pruned to efficiently find an optimal solution. This paper studies the cross-disciplinary
+application of the solver Toulbar2, ranging from solving difficult combinatorial problems,
+to real-world application such as bioinformatics and resource management and finally
+artificial intelligence. In many cases where the problem was able to be written using the
+VCSP framework, Toulbar2 was able to outperform other state-of-the-art solvers.
         
     }
     
@@ -143,7 +155,7 @@ the Toulbar2 solver}
         handle large instances by tracking probability bounds during the inference process. 
         This early evaluation prevents the solver from performing exhaustive enumerations.
 
-        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.]
+        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.[cite: 1072]]
         \includegraphics[width=\linewidth]{images/smc_example.png}
         \end{tikzfigure}
 
@@ -156,8 +168,21 @@ the Toulbar2 solver}
     }
     
     \block{Conclusion}{
-        Brief summary of the main takeaway from your literature review.
-        What is the logical next step for your introductory research project?
+The was to understand how a solver based on CFNs, such
+as Toulbar2, established itself across such diverse disciplines. 
+The answer lies in combining the expressiveness 
+of the WCSP formalism with the power of its local consistency algorithms 
+(EDAC,VAC, OSAC).
+
+This  demonstrates that Toulbar2 has continuously evolved to adapt to different 
+problems. It first became essential in bioinformatics for processing
+dense molecular networks. Then proved its competitiveness in resource 
+planning by integrating sophisticated global constraints.
+
+We've also seen that to what extent can constraint solvers like Toulbar2 be 
+integrated into the training of deep learning model
+to correct their logical errors. In the longer term, we may witness the 
+emergence of a standardized hybrid AI.
     }
 
     {
@@ -173,12 +198,11 @@ the Toulbar2 solver}
 
     \note[targetoffsetx=0cm, targetoffsety=-5cm, width=0.3\textwidth]{
         \textbf{Key References:} \\
-    %    \small
-    %    [1] A. Smith, \textit{Journal of Math}, 2020. \\
-    Li, J., Jiang, N., Xue, Y.: Solving Satisfiability Modulo Counting Exactly 
-    with Probabilistic Circuits (2025)
-    %    [2] J. Doe, \textit{Computer Science Review}, 2021. \\
-    %    [3] M. Cooper, \textit{IRIT Proceedings}, 2023.
+        \small
+    Li, J., Jiang, N., Xue, Y. (2025). 
+    Solving Satisfiability Modulo Counting Exactly with 
+    Probabilistic Circuits. arXiv:2503.01009. [cite: 1072]
+
     }
 \end{columns}
 
