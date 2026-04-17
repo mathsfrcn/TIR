@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,19 +18,19 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{akplogan_solving_2013}{article}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{akplogan_solving_2013}{article}{}{}
       \name{author}{6}{}{%
         {{hash=dd7cce7def0a190a86fde6ff1c103371}{%
            family={Akplogan},
            familyi={A\bibinitperiod},
            given={Mahuna},
            giveni={M\bibinitperiod}}}%
-        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
            family={Givry},
            familyi={G\bibinitperiod},
-           given={Simon\bibnamedelima de},
-           giveni={S\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
         {{hash=d6d78fe0f86f977c49ae2e562894d5b7}{%
            family={Métivier},
            familyi={M\bibinitperiod},
@@ -56,11 +56,13 @@
         {en}%
       }
       \strng{namehash}{da6ddd5c0cc0fde346c8e62e9767b205}
-      \strng{fullhash}{fc321b4bcb7cba1d576a3f2d8feeb04a}
+      \strng{fullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \strng{fullhashraw}{05bf4db2b69fedbb0be9ea6c90bb53fd}
       \strng{bibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{authorbibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
       \strng{authornamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
-      \strng{authorfullhash}{fc321b4bcb7cba1d576a3f2d8feeb04a}
+      \strng{authorfullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \strng{authorfullhashraw}{05bf4db2b69fedbb0be9ea6c90bb53fd}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -94,7 +96,7 @@
       \endverb
       \keyw{Weighted constraint satisfaction problem,crop allocation problem,integer linear programming}
     \endentry
-    \entry{amel_constraint_2014}{inproceedings}{}
+    \entry{amel_constraint_2014}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=2e9a42226227991d989ae082d8f4892a}{%
            family={Amel},
@@ -150,13 +152,16 @@
       }
       \strng{namehash}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{fullhash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{fullhashraw}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{bibnamehash}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{authorbibnamehash}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{authornamehash}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{authorfullhash}{1317f8216128fced460e69a1fd6ce5ac}
+      \strng{authorfullhashraw}{1317f8216128fced460e69a1fd6ce5ac}
       \strng{editorbibnamehash}{843cccad28f5ee359d95e9da6d7f6c68}
       \strng{editornamehash}{843cccad28f5ee359d95e9da6d7f6c68}
       \strng{editorfullhash}{ad8971a06cb2b69de169472dee1e7c7c}
+      \strng{editorfullhashraw}{ad8971a06cb2b69de169472dee1e7c7c}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -174,7 +179,7 @@
       \endverb
       \keyw{Cliques,Cluster editing,Constraint programming,Fixed parameter tractable problems,Zahn’s problem}
     \endentry
-    \entry{ieee_transactions_on_mobile_computing}{article}{}
+    \entry{ieee_transactions_on_mobile_computing}{article}{}{}
       \name{author}{3}{}{%
         {{hash=bab6f50e8018a37e48fd722489f2af88}{%
            family={Biason},
@@ -194,10 +199,12 @@
       }
       \strng{namehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{fullhash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
+      \strng{fullhashraw}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{bibnamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authorbibnamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authornamehash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \strng{authorfullhash}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
+      \strng{authorfullhashraw}{e72c8e0cdd6e2ef1f77f3fc9b7d9fd3d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -218,7 +225,7 @@
       \endverb
       \keyw{Synchronization;Energy harvesting;Markov processes;Wireless sensor networks;Batteries;Computational modeling;Optimization;Admission control;energy consumption;energy harvesting;energy management;Internet of Things;optimal scheduling;power control;telecommunications networks;wireless sensor networks}
     \endentry
-    \entry{mobile_robot_localisation_mapping_extensive_outdoor_environments}{article}{}
+    \entry{mobile_robot_localisation_mapping_extensive_outdoor_environments}{article}{}{}
       \name{author}{3}{}{%
         {{hash=65fb5efcf6d04f136d84c39f1d3e2374}{%
            family={Centre},
@@ -238,10 +245,12 @@
       }
       \strng{namehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \strng{fullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{fullhashraw}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \strng{bibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \strng{authorbibnamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \strng{authornamehash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \strng{authorfullhash}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
+      \strng{authorfullhashraw}{7cf7b7a6ef2ad4d80ed4d956793dd88b}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -250,7 +259,7 @@
       \field{title}{Mobile Robot Localisation and Mapping in Extensive Outdoor Environments}
       \field{year}{2003}
     \endentry
-    \entry{chaboud2020tackling}{article}{}
+    \entry{chaboud2020tackling}{article}{}{}
       \name{author}{3}{}{%
         {{hash=29f8c43bfc0a09188105852fac0c3146}{%
            family={Chaboud},
@@ -270,20 +279,22 @@
       }
       \strng{namehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{fullhash}{0ac8c7ad6effbd06f7b4c1fffc174553}
+      \strng{fullhashraw}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{bibnamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authorbibnamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authornamehash}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \strng{authorfullhash}{0ac8c7ad6effbd06f7b4c1fffc174553}
+      \strng{authorfullhashraw}{0ac8c7ad6effbd06f7b4c1fffc174553}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{REVIEW : This paper presents a multi-maneuver extension of the "Lumberjack" method for resolving air traffic conflicts. The Lumberjack approach consists of generating a large set of alternative discretized trajectories for conflicting aircraft, computing their compatibilities, and then selecting the optimal combination. The problem of finding the best trajectory combination is framed as a Weighted Constraint Satisfaction Problem (WCSP) or a minimum-cost maximum clique problem. To solve this, the authors compare two main exact solvers: the ToulBar2 WCSP solver and an original 'Smart Brute-Force' (SBF) algorithm. Experimental results highlight a clear dichotomy based on the problem's structure : SBF is highly efficient for instances involving a small number of aircraft (up to 5), allowing it to explore a massive number of trajectories per aircraft. This is highly relevant as real-world ATC operations mostly involve 2 to 3 aircraft. ToulBar2 suffers from memory overflow when the number of trajectories per aircraft is too large (due to the exhaustive constraint generation). However, it outperforms SBF on instances with more aircraft (6 to 8), provided the number of trajectories is kept small. Additionally, a fast non-optimal greedy algorithm is introduced to quickly provide ToulBar2 with a tight initial upper bound (which improves its solving time), or to tackle massive instances (e.g., 20 aircraft) where exact methods fail. OVERVIEW : Il apporte plusieurs éléments importants : L'analyse des limites de ToulBar2 face à un problème spécifique. L'article montre bien que ToulBar2 excelle sur des graphes avec beaucoup de variables (avions) mais des petits domaines, alors qu'il s'effondre en mémoire si les domaines (nombre de trajectoires) deviennent immenses. L'utilisation des Upper Bounds : L'article souligne une pratique très courante avec ToulBar2, qui consiste à utiliser un algorithme heuristique (un greedy algo) pour trouver rapidement une solution sous-optimale, qu'on donne ensuite à ToulBar2 comme borne supérieure initiale pour accélérer sa recherche de l'optimum.}
       \field{journaltitle}{arXiv preprint arXiv:2001.11390}
-      \field{title}{Tackling Air Traffic Conflicts as a Weighted CSP: Experiments with the Lumberjack Method}
+      \field{title}{Tackling Air Traffic Conflicts as a Weighted {CSP}: Experiments with the Lumberjack Method}
       \field{year}{2020}
     \endentry
-    \entry{defresne_scaling_2026}{article}{}
+    \entry{defresne_scaling_2026}{article}{}{}
       \name{author}{4}{}{%
         {{hash=b7eba647e5ff60245c180a17b39a7ad9}{%
            family={Defresne},
@@ -311,10 +322,12 @@
       }
       \strng{namehash}{c7d643c1b9c73443a6b76461b408ba8a}
       \strng{fullhash}{e4eaf6099fb3f0b43c6fd314c4db5bf9}
+      \strng{fullhashraw}{e4eaf6099fb3f0b43c6fd314c4db5bf9}
       \strng{bibnamehash}{c7d643c1b9c73443a6b76461b408ba8a}
       \strng{authorbibnamehash}{c7d643c1b9c73443a6b76461b408ba8a}
       \strng{authornamehash}{c7d643c1b9c73443a6b76461b408ba8a}
       \strng{authorfullhash}{e4eaf6099fb3f0b43c6fd314c4db5bf9}
+      \strng{authorfullhashraw}{e4eaf6099fb3f0b43c6fd314c4db5bf9}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -346,7 +359,7 @@
       \endverb
       \keyw{constraint programming,machine learning}
     \endentry
-    \entry{dessaux_designing_2024}{misc}{}
+    \entry{dessaux_designing_2024}{misc}{}{}
       \name{author}{9}{}{%
         {{hash=60b516f1bf231440293629112789079e}{%
            family={Dessaux},
@@ -373,11 +386,11 @@
            familyi={C\bibinitperiod},
            given={Gianluca},
            giveni={G\bibinitperiod}}}%
-        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
            family={Givry},
            familyi={G\bibinitperiod},
-           given={Simon\bibnamedelima de},
-           giveni={S\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
         {{hash=e10fb2286b936cee75c4a91677c0583a}{%
            family={Garcia-Alles},
            familyi={G\bibinithyphendelim A\bibinitperiod},
@@ -401,11 +414,13 @@
         {bioRxiv}%
       }
       \strng{namehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
-      \strng{fullhash}{e4c0d12cd603244bd9c02ce02f1d9429}
+      \strng{fullhash}{b1f07543fd9c73609a38468c6d5f19de}
+      \strng{fullhashraw}{b1f07543fd9c73609a38468c6d5f19de}
       \strng{bibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
       \strng{authorbibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
       \strng{authornamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
-      \strng{authorfullhash}{e4c0d12cd603244bd9c02ce02f1d9429}
+      \strng{authorfullhash}{b1f07543fd9c73609a38468c6d5f19de}
+      \strng{authorfullhashraw}{b1f07543fd9c73609a38468c6d5f19de}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -433,7 +448,7 @@
       \verb https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1
       \endverb
     \endentry
-    \entry{ermon_taming_2013}{inproceedings}{}
+    \entry{ermon_taming_2013}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
            family={Ermon},
@@ -464,10 +479,12 @@
       }
       \strng{namehash}{2387582838b1dbb60d04baaf16845938}
       \strng{fullhash}{10cb82bf6aea2ad8d55bf669b0a78377}
+      \strng{fullhashraw}{10cb82bf6aea2ad8d55bf669b0a78377}
       \strng{bibnamehash}{2387582838b1dbb60d04baaf16845938}
       \strng{authorbibnamehash}{2387582838b1dbb60d04baaf16845938}
       \strng{authornamehash}{2387582838b1dbb60d04baaf16845938}
       \strng{authorfullhash}{10cb82bf6aea2ad8d55bf669b0a78377}
+      \strng{authorfullhashraw}{10cb82bf6aea2ad8d55bf669b0a78377}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -496,7 +513,7 @@
       \verb https://proceedings.mlr.press/v28/ermon13.html
       \endverb
     \endentry
-    \entry{lesaint2014developing}{article}{}
+    \entry{lesaint2014developing}{article}{}{}
       \name{author}{5}{}{%
         {{hash=71b4a9237683e521fe98f95cab8dfd29}{%
            family={Lesaint},
@@ -526,10 +543,12 @@
       }
       \strng{namehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{fullhash}{d2570ec20d975e9349348c52056df7f5}
+      \strng{fullhashraw}{d2570ec20d975e9349348c52056df7f5}
       \strng{bibnamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authorbibnamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authornamehash}{27c83cecda18846aa26873e73733bfc0}
       \strng{authorfullhash}{d2570ec20d975e9349348c52056df7f5}
+      \strng{authorfullhashraw}{d2570ec20d975e9349348c52056df7f5}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -540,7 +559,7 @@
       \field{pages}{arXiv\bibrangedash 1401}
       \range{pages}{-1}
     \endentry
-    \entry{li_solving_2025}{misc}{}
+    \entry{li_solving_2025}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=c28202b578c4845dca8f2d05f5c26322}{%
            family={Li},
@@ -563,10 +582,12 @@
       }
       \strng{namehash}{57a5536132e90cf08ebd6832d97e8a86}
       \strng{fullhash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{fullhashraw}{57a5536132e90cf08ebd6832d97e8a86}
       \strng{bibnamehash}{57a5536132e90cf08ebd6832d97e8a86}
       \strng{authorbibnamehash}{57a5536132e90cf08ebd6832d97e8a86}
       \strng{authornamehash}{57a5536132e90cf08ebd6832d97e8a86}
       \strng{authorfullhash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{authorfullhashraw}{57a5536132e90cf08ebd6832d97e8a86}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -591,7 +612,7 @@
       \endverb
       \keyw{Computer Science - Artificial Intelligence,Computer Science - Logic in Computer Science}
     \endentry
-    \entry{nurse_rostering_problems}{inproceedings}{}
+    \entry{nurse_rostering_problems}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=d6d78fe0f86f977c49ae2e562894d5b7}{%
            family={Métivier},
@@ -611,10 +632,12 @@
       }
       \strng{namehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{fullhash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
+      \strng{fullhashraw}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{bibnamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authorbibnamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authornamehash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \strng{authorfullhash}{7f4bc938efc97a9e1ce9e6ae008c79cc}
+      \strng{authorfullhashraw}{7f4bc938efc97a9e1ce9e6ae008c79cc}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -631,20 +654,18 @@
       \verb 10.1007/978-3-642-04244-7_9
       \endverb
     \endentry
-    \entry{montalbano_multiple-choice_2022}{inproceedings}{}
+    \entry{montalbano_multiple-choice_2022}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=54a76691e24ff38690aa01e0572d4a84}{%
            family={Montalbano},
            familyi={M\bibinitperiod},
            given={Pierre},
            giveni={P\bibinitperiod}}}%
-        {{hash=2c24acb22bb3442e58fccdbe53902f98}{%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
            family={Givry},
            familyi={G\bibinitperiod},
            given={Simon},
-           giveni={S\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=02053fef5a82223abac1996e33d71e79}{%
            family={Katsirelos},
            familyi={K\bibinitperiod},
@@ -667,15 +688,18 @@
       \list{publisher}{1}{%
         {Springer International Publishing}%
       }
-      \strng{namehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{fullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{bibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorbibnamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authornamehash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
-      \strng{authorfullhash}{648d0de7e1cfca8e4d54e0b32b69c0cc}
+      \strng{namehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{fullhash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{fullhashraw}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{bibnamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authorbibnamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authornamehash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authorfullhash}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
+      \strng{authorfullhashraw}{c3ebdf067cc7350dee0e0a0bf8d30f0b}
       \strng{editorbibnamehash}{04b25dbc630118068c55c54cd179207d}
       \strng{editornamehash}{04b25dbc630118068c55c54cd179207d}
       \strng{editorfullhash}{04b25dbc630118068c55c54cd179207d}
+      \strng{editorfullhashraw}{04b25dbc630118068c55c54cd179207d}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -693,7 +717,7 @@
       \endverb
       \keyw{cost function network,graphical model,knapsack problem}
     \endentry
-    \entry{npariscril_ept_2012}{online}{}
+    \entry{npariscril_ept_2012}{online}{}{}
       \name{author}{1}{}{%
         {{hash=110b8ed6da8e2e8c0752a665f1998d85}{%
            family={NparisCRIL},
@@ -704,10 +728,12 @@
       }
       \strng{namehash}{110b8ed6da8e2e8c0752a665f1998d85}
       \strng{fullhash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{fullhashraw}{110b8ed6da8e2e8c0752a665f1998d85}
       \strng{bibnamehash}{110b8ed6da8e2e8c0752a665f1998d85}
       \strng{authorbibnamehash}{110b8ed6da8e2e8c0752a665f1998d85}
       \strng{authornamehash}{110b8ed6da8e2e8c0752a665f1998d85}
       \strng{authorfullhash}{110b8ed6da8e2e8c0752a665f1998d85}
+      \strng{authorfullhashraw}{110b8ed6da8e2e8c0752a665f1998d85}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
@@ -726,7 +752,7 @@
       \verb https://en.wikipedia.org/wiki/File:TransfertsWCSP.pdf
       \endverb
     \endentry
-    \entry{simoncini_fitness_2018}{inproceedings}{}
+    \entry{simoncini_fitness_2018}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{hash=1a305c99884dcb920eb3740c11387544}{%
            family={Simoncini},
@@ -757,10 +783,12 @@
       }
       \strng{namehash}{486559060f528231a3fb6eb3808d3277}
       \strng{fullhash}{68744fea84a8af09d3f50f771f6bdd10}
+      \strng{fullhashraw}{68744fea84a8af09d3f50f771f6bdd10}
       \strng{bibnamehash}{486559060f528231a3fb6eb3808d3277}
       \strng{authorbibnamehash}{486559060f528231a3fb6eb3808d3277}
       \strng{authornamehash}{486559060f528231a3fb6eb3808d3277}
       \strng{authorfullhash}{68744fea84a8af09d3f50f771f6bdd10}
+      \strng{authorfullhashraw}{68744fea84a8af09d3f50f771f6bdd10}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -785,14 +813,8 @@
       \verb{file}
       \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\3IVI6YBF\\Simoncini et al. - 2018 - Fitness landscape analysis around the optimum in computational protein design.pdf:application/pdf
       \endverb
-      \verb{urlraw}
-      \verb https://dl.acm.org/doi/10.1145/3205455.3205626
-      \endverb
-      \verb{url}
-      \verb https://dl.acm.org/doi/10.1145/3205455.3205626
-      \endverb
     \endentry
-    \entry{traore_new_2013}{article}{}
+    \entry{traore_new_2013}{article}{}{}
       \name{author}{7}{}{%
         {{hash=c0dcb1a20d8aa301240aa6f845302858}{%
            family={Traoré},
@@ -834,10 +856,12 @@
       }
       \strng{namehash}{83635056f0af4002852aefd89082e013}
       \strng{fullhash}{ec317237fc572490ecca84661ae92070}
+      \strng{fullhashraw}{ec317237fc572490ecca84661ae92070}
       \strng{bibnamehash}{83635056f0af4002852aefd89082e013}
       \strng{authorbibnamehash}{83635056f0af4002852aefd89082e013}
       \strng{authornamehash}{83635056f0af4002852aefd89082e013}
       \strng{authorfullhash}{ec317237fc572490ecca84661ae92070}
+      \strng{authorfullhashraw}{ec317237fc572490ecca84661ae92070}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -863,14 +887,8 @@
       \verb{file}
       \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\DLJ6YIHM\\Traoré et al. - 2013 - A new framework for computational protein design through cost function network optimization.pdf:application/pdf;Snapshot:C\:\\Users\\phili\\Zotero\\storage\\REEKVAXY\\btt374.html:text/html
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/bioinformatics/btt374
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/bioinformatics/btt374
-      \endverb
     \endentry
-    \entry{nquennsproblem}{misc}{}
+    \entry{nquennsproblem}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
            family={{Wikipedia contributors}},
@@ -878,10 +896,12 @@
       }
       \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}

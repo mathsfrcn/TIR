@@ -1,0 +1,17 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'report.blg'
+[162] biber-MSWIN64:342> INFO - === 
+[223] Biber.pm:421> INFO - Reading 'report.bcf'
+[401] Biber.pm:1002> INFO - Found 16 citekeys in bib section 0
+[424] Biber.pm:4487> INFO - Processing section 0
+[441] Biber.pm:4678> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[557] bibtex.pm:1713> INFO - LaTeX decoding ...
+[653] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[919] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[920] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[947] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[947] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[980] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[1006] bbl.pm:779> INFO - Output to report.bbl
+[1007] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\phili\AppData\Local\Temp\biber_tmp_b82N\a9e03cb3043b9e2c02591da84105bb68_20628.utf8, line 338, warning: undefined macro "juin"
+[1007] Biber.pm:134> INFO - WARNINGS: 1

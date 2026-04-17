@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {3.2}Human resources and global constraints}{18}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Routing and networks}{18}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Artificial Intelligence \& Machine Learning}{20}{section.4}%
-\contentsline {subsection}{\numberline {4.1}AI in the service of Toulbar2}{20}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Yet New Ways Open}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.1}Neural Network Perception for Exact Solvers}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Machine Learning Alternatives for Large Scale Optimization}{20}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Conclusion}{22}{section.5}%
 \contentsline {section}{\numberline {6}Appendix}{23}{section.6}%
 \contentsline {section}{\numberline {A}Algorithms}{23}{appendix.A}%
