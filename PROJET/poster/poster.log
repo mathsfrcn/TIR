@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  17 APR 2026 09:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  17 APR 2026 10:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -405,8 +405,8 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \notelinewidth=\dimen331
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size20.clo
+File: size20.clo 1999/11/11 NON-Standard LaTeX file (size option)
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
@@ -446,15 +446,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen340
 \Gm@layoutvoffset=\dimen341
 \Gm@dimlist=\toks31
- (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/a0poster\a0size.sty
-File: a0size.sty 2004/01/31 v1.22b a0poster class (GK, MW)
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 229.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 229.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 229.
-\big@size=\dimen342
-)
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 \pgf@layerbox@backgroundlayer=\box91
 \pgf@layerboxsaved@backgroundlayer=\box92
 \pgf@layerbox@notelayer=\box93
@@ -464,7 +456,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count294
-\U@D=\dimen343
+\U@D=\dimen342
 \l@unhyphenated=\language79
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
@@ -505,10 +497,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
-\ex@=\dimen344
+\ex@=\dimen343
 )) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen345
+\pmbraise@=\dimen344
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -529,7 +521,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen346
+\big@size=\dimen345
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count301
@@ -547,12 +539,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count306
 \maxfields@=\count307
 \andhelp@=\toks36
-\eqnshift@=\dimen347
-\alignsep@=\dimen348
-\tagshift@=\dimen349
-\tagwidth@=\dimen350
-\totwidth@=\dimen351
-\lineht@=\dimen352
+\eqnshift@=\dimen346
+\alignsep@=\dimen347
+\tagshift@=\dimen348
+\tagwidth@=\dimen349
+\totwidth@=\dimen350
+\lineht@=\dimen351
 \@envbody=\toks37
 \multlinegap=\skip54
 \multlinetaggap=\skip55
@@ -585,40 +577,40 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen353
+\col@sep=\dimen352
 \ar@mcellbox=\box98
-\extrarowheight=\dimen354
+\extrarowheight=\dimen353
 \NC@list=\toks39
 \extratabsurround=\skip56
 \backup@length=\skip57
 \ar@cellbox=\box99
 )
-\TX@col@width=\dimen355
-\TX@old@table=\dimen356
-\TX@old@col=\dimen357
-\TX@target=\dimen358
-\TX@delta=\dimen359
+\TX@col@width=\dimen354
+\TX@old@table=\dimen355
+\TX@old@col=\dimen356
+\TX@target=\dimen357
+\TX@delta=\dimen358
 \TX@cols=\count312
 \TX@ftn=\toks40
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen360
-\lightrulewidth=\dimen361
-\cmidrulewidth=\dimen362
-\belowrulesep=\dimen363
-\belowbottomsep=\dimen364
-\aboverulesep=\dimen365
-\abovetopsep=\dimen366
-\cmidrulesep=\dimen367
-\cmidrulekern=\dimen368
-\defaultaddspace=\dimen369
+\heavyrulewidth=\dimen359
+\lightrulewidth=\dimen360
+\cmidrulewidth=\dimen361
+\belowrulesep=\dimen362
+\belowbottomsep=\dimen363
+\aboverulesep=\dimen364
+\abovetopsep=\dimen365
+\cmidrulesep=\dimen366
+\cmidrulekern=\dimen367
+\defaultaddspace=\dimen368
 \@cmidla=\count313
 \@cmidlb=\count314
-\@aboverulesep=\dimen370
-\@belowrulesep=\dimen371
+\@aboverulesep=\dimen369
+\@belowrulesep=\dimen370
 \@thisruleclass=\count315
 \@lastruleclass=\count316
-\@thisrulewidth=\dimen372
+\@thisrulewidth=\dimen371
 ) (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
@@ -876,33 +868,38 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (poster.aux)
+
+
+LaTeX Warning: Unused global option(s):
+    [margin=1.5cm,colspace=1.5cm,blockverticalspace=1.5cm].
+
+(poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
  (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count449
-\scratchdimen=\dimen373
+\scratchdimen=\dimen372
 \scratchbox=\box100
 \nofMPsegments=\count450
 \nofMParguments=\count451
 \everyMPshowfont=\toks42
 \MPscratchCnt=\count452
-\MPscratchDim=\dimen374
+\MPscratchDim=\dimen373
 \MPnumerator=\count453
 \makeMPintoPDFobject=\count454
 \everyMPtoPDFconversion=\toks43
@@ -920,23 +917,23 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
-* h-part:(L,W,R)=(0.0pt, 3383.03267pt, 0.0pt)
-* v-part:(T,H,B)=(0.0pt, 2392.87677pt, 0.0pt)
+* h-part:(L,W,R)=(42.67912pt, 3297.67442pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 2307.51852pt, 42.67912pt)
 * \paperwidth=3383.03267pt
 * \paperheight=2392.87677pt
-* \textwidth=3383.03267pt
-* \textheight=2392.87677pt
-* \oddsidemargin=-72.26999pt
-* \evensidemargin=-72.26999pt
-* \topmargin=-109.26999pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \textwidth=3297.67442pt
+* \textheight=2307.51852pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-79.59087pt
+* \headheight=20.0pt
+* \headsep=30.0pt
+* \topskip=20.0pt
+* \footskip=35.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=15.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=16.0pt plus 6.0pt minus 3.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -946,17 +943,9 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
-(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
- (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -967,34 +956,33 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'poster.bbl' found.
  (poster.bbl)
-Package biblatex Info: Reference section=0 on input line 58.
-Package biblatex Info: Reference segment=0 on input line 58.
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
-
-Overfull \hbox (120.07016pt too wide) in paragraph at lines 61--61
- [][] 
- []
-
-
-Overfull \hbox (120.07016pt too wide) in paragraph at lines 61--61
- [][] 
- []
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+ (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 <./images/crop_alloc.png, id=28, 2071.74pt x 1043.39813pt>
 File: ./images/crop_alloc.png Graphic file (type png)
 <use ./images/crop_alloc.png>
-Package pdftex.def Info: ./images/crop_alloc.png  used on input line 100.
-(pdftex.def)             Requested size: 1024.74243pt x 516.10953pt.
+Package pdftex.def Info: ./images/crop_alloc.png  used on input line 103.
+(pdftex.def)             Requested size: 995.72095pt x 501.47818pt.
 <images/smc_example.png, id=30, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
-Package pdftex.def Info: images/smc_example.png  used on input line 125.
-(pdftex.def)             Requested size: 991.35724pt x 301.23958pt.
+Package pdftex.def Info: images/smc_example.png  used on input line 128.
+(pdftex.def)             Requested size: 963.18886pt x 292.6827pt.
 
-LaTeX Warning: Empty bibliography on input line 140.
+
+LaTeX Warning: Empty bibliography on input line 143.
 
 [1
 
@@ -1008,17 +996,17 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28428 strings out of 474486
- 603339 string characters out of 5743282
- 1953542 words of memory out of 5000000
- 50179 multiletter control sequences out of 15000+600000
- 603842 words of font info for 131 fonts, out of 8000000 for 9000
+ 28339 strings out of 474486
+ 599481 string characters out of 5743282
+ 1952542 words of memory out of 5000000
+ 50109 multiletter control sequences out of 15000+600000
+ 591019 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,1201b,2019s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on poster.pdf (1 page, 3826069 bytes).
+ 117i,8n,121p,1201b,2043s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on poster.pdf (1 page, 3816515 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
