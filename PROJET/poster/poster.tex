@@ -76,7 +76,7 @@ the Toulbar2 solver}
     
     \block{Combinatorial problem solving}{
         \textbf{Cluster editing for graphs}
-        
+
         Zahn’s decision problem can be described as the cluster editing problem. Given a graph,
         what is the minimal number of operations (adding edges, removing edges) needed to create
         a disjoint union of cliques. Below an exemple of the cluster editing problem:
@@ -89,15 +89,16 @@ the Toulbar2 solver}
 
         \textbf{A complicated chess problem}
 
-        \begin{wrapfigure}{l}{0.35\linewidth} % {l} for left, 35% of width
+        \begin{wrapfigure}{l}{0.3\linewidth} % {l} for left, 35% of width
             \centering
             \includegraphics[width=\linewidth]{images/nqueens.png}
             \captionof{figure}{8-Queens example} % Optional caption
         \end{wrapfigure}
 
         The $N$-Queen problem is a non-trivial mathematical problem that looks for a placement of $N$ queens on a chessboard of size $N$ by $N$ where no two queens are threatening each other. The figure to the left shows an example of a solution where $n = 8$.
-
         The weighted $N$-Queen problem is the difficult optimization problem of minimizing the cost of the $N$-Queen if every tile incurs a cost. By modeling the weighted $N$-Queen problem as a VCSP, Sewa et al. (2022) demonstrated that Toulbar2 significantly outperforms other state-of-the-art solvers.
+        \newline
+        \newline
         \newline
 
         Other problems such as the quadratic assignement problem, the knapsack problem with conflict graph and discrete integrations were also solved using the VCSP framework and showed
