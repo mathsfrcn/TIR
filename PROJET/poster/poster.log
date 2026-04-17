@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  17 APR 2026 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  17 APR 2026 09:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -966,11 +966,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'poster.bbl' found.
- (poster.bbl
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ] in font nullfont!
-)
+ (poster.bbl)
 Package biblatex Info: Reference section=0 on input line 58.
 Package biblatex Info: Reference segment=0 on input line 58.
 
@@ -987,48 +983,42 @@ Overfull \hbox (120.07016pt too wide) in paragraph at lines 61--61
  [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+aer on input line 77.
-LaTeX Font Info:    No file TS1aer.fd. on input line 77.
-
-LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 77.
-
 <./images/crop_alloc.png, id=28, 2071.74pt x 1043.39813pt>
 File: ./images/crop_alloc.png Graphic file (type png)
 <use ./images/crop_alloc.png>
-Package pdftex.def Info: ./images/crop_alloc.png  used on input line 131.
+Package pdftex.def Info: ./images/crop_alloc.png  used on input line 100.
 (pdftex.def)             Requested size: 1024.74243pt x 516.10953pt.
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 160.
-(C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [1
+<images/smc_example.png, id=30, 1090.0725pt x 331.2375pt>
+File: images/smc_example.png Graphic file (type png)
+<use images/smc_example.png>
+Package pdftex.def Info: images/smc_example.png  used on input line 125.
+(pdftex.def)             Requested size: 991.35724pt x 301.23958pt.
 
-{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/crop_alloc.png>] (poster.aux)
+LaTeX Warning: Empty bibliography on input line 140.
+
+[1
+
+{C:/Users/Mathis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/crop_alloc.png> <./images/smc_example.png>] (poster.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package logreq Info: Writing requests to 'poster.run.xml'.
 \openout1 = `poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28692 strings out of 474486
- 608392 string characters out of 5743282
- 1957542 words of memory out of 5000000
- 50423 multiletter control sequences out of 15000+600000
- 616170 words of font info for 152 fonts, out of 8000000 for 9000
+ 28428 strings out of 474486
+ 603339 string characters out of 5743282
+ 1953542 words of memory out of 5000000
+ 50179 multiletter control sequences out of 15000+600000
+ 603842 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,1201b,3109s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Mathis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm2986.pk><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on poster.pdf (1 page, 3649939 bytes).
+ 117i,8n,121p,1201b,2019s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on poster.pdf (1 page, 3826069 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

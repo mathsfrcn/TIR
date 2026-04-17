@@ -22,11 +22,11 @@
 % ==============================================================================
 % THEME ET COULEURS (C'est ici que tu rends le poster "joli")
 % ==============================================================================
-% Tikzposter propose plusieurs thèmes de base : 
+% Tikzposter propose plusieurs thèmes de base: 
 % Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
 \usetheme{Default}
 
-% Tu peux aussi changer la palette de couleurs indépendamment du thème :
+% Tu peux aussi changer la palette de couleurs indépendamment du thème:
 % Default, Australia, Britain, Sweden, Spain, Russia, Denmark, Germany
 \usecolorstyle{Default}
 
@@ -62,33 +62,27 @@ the Toulbar2 solver}
 \begin{columns}
 
     % --------------------------------------------------------------------------
-    % COLONNE 1 (Gauche) : Intro & Contexte
+    % COLONNE 1 (Gauche): Intro & Contexte
     % --------------------------------------------------------------------------
     \column{0.33} % Prend 33% de la largeur
     
     \block{Abstract / Introduction}{
-        This section introduces the\cite{montalbano_multiple-choice_2022} context of your research.
-        Keep it brief. Use bullet points for readability:
-        \begin{itemize}
-            \item First important point of context.
-            \item The main problem you are addressing.
-            \item The goal of this state-of-the-art review.
-        \end{itemize}
+        
     }
     
     \block{Combinatorial problem solving}{
-Philippe
+        Philippe
     }
 
     % --------------------------------------------------------------------------
-    % COLONNE 2 (Milieu) : L'État de l'art (Le cœur)
+    % COLONNE 2 (Milieu): L'État de l'art (Le cœur)
     % --------------------------------------------------------------------------
     \column{0.34} % Légèrement plus large pour le cœur du sujet
     
     % Tu peux forcer une couleur spécifique pour UN bloc important
     \colorlet{blocktitlebgcolor}{blue!80!black} % Change la couleur du titre du bloc
-    \block{Bioinformatics & Life Sciences}{
-        mathis
+    \block{Bioinformatics \& Life Sciences}{
+        marco
     }
     
     % Remettre la couleur par défaut pour les blocs suivants
@@ -106,43 +100,39 @@ Philippe
     }
 
     % --------------------------------------------------------------------------
-    % COLONNE 3 (Droite) : Limites, Futures pistes & Biblio
+    % COLONNE 3 (Droite): Limites, Futures pistes & Biblio
     % --------------------------------------------------------------------------
     \column{0.33}
     
-\block{Artificial Intelligence & Machine Learning}{
-Toulbar2 struggles with real world applications since 
-exhaustive search creates computational bottlenecks on large instances. 
-We can integrate machine learning, introducing new ways to improve the 
-solution quality. For example, algorithms like KOCO SMC 
-handle large instances by tracking probability bounds during the inference process. 
-This early evaluation prevents the solver from performing exhaustive enumerations.
+    \block{Artificial Intelligence \& Machine Learning}{
+        Toulbar2 struggles with real world applications since 
+        exhaustive search creates computational bottlenecks on large instances. 
+        We can integrate machine learning, introducing new ways to improve the 
+        solution quality. For example, algorithms like KOCO SMC 
+        handle large instances by tracking probability bounds during the inference process. 
+        This early evaluation prevents the solver from performing exhaustive enumerations.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=11cm]{images/smc_example.png}
-\caption[Example of SMC : Robust Supply Chain with Different Network Size]{Example of SMC : Robust Supply Chain with Different Network Size.\cite{li_solving_2025}}
-\end{figure}
+        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.]
+        \includegraphics[width=\linewidth]{images/smc_example.png}
+        \end{tikzfigure}
 
-Deep learning models can also transform raw sensory data directly 
-into Graphical Models. This integration merges the perception of neural networks 
-with the exact reasoning of constraint solvers to increase overall flexibility.
-For example, a neural network can translate unmapped protein 
-structures or raw images into cost matrices, allowing Toulbar2 to 
-focus exclusively on executing the exact discrete optimization.
-}
-
+        Deep learning models can also transform raw sensory data directly 
+        into Graphical Models. This integration merges the perception of neural networks 
+        with the exact reasoning of constraint solvers to increase overall flexibility.
+        For example, a neural network can translate unmapped protein 
+        structures or raw images into cost matrices, allowing Toulbar2 to 
+        focus exclusively on executing the exact discrete optimization.
+    }
     
     \block{Conclusion}{
         Brief summary of the main takeaway from your literature review.
         What is the logical next step for your introductory research project?
     }
-    % Ouverture d'un "groupe" avec une accolade pour limiter le changement de couleur à ce bloc
+
     {
         \colorlet{blocktitlebgcolor}{black!80}       % Fond du titre (gris très foncé)
         \colorlet{blocktitlefgcolor}{white}          % Texte du titre (blanc)
         \colorlet{blockbodybgcolor}{yellow!10!white} % Fond du bloc (jaune très pâle)
-        \colorlet{blockbodyfgcolor}{black}           % Texte du bloc (noir)
 
         \block{References}{
             \vspace{-1cm}            
