@@ -101,7 +101,7 @@ the Toulbar2 solver}
 
         \vspace{0.5cm}
         \begin{minipage}{0.35\linewidth}
-            \begin{tikzfigure}[8-Queens example]
+            \begin{tikzfigure}[8-Queens example \cite{nquennsproblem}]
                 \includegraphics[width=\linewidth]{images/nqueens.png}
             \end{tikzfigure}
         \end{minipage}
@@ -223,21 +223,16 @@ the Toulbar2 solver}
     
     \colorlet{blocktitlebgcolor}{couleurpardefaut}
     \block{Conclusion}{
-        The way to understand how a solver based on CFNs, such
-        as Toulbar2, established itself across such diverse disciplines. 
-        The answer lies in \textbf{combining the expressiveness} 
-        of the WCSP formalism with the power of its \textbf{local consistency algorithms} 
-        (EDAC,VAC, OSAC).
+        The objective of this state-of-the-art review was to understand how a solver based on CFNs, such as Toulbar2, established itself across such diverse disciplines.
+        Toulbar2 was shown to be a highly pratical and versatile solver, capable of tackling a wide
+        variety of real-world and theoritcal problems within the cost function network (CFN) framework. By leveraging CFNs, it is able to model complex systems ranging from biological structures to scheduling and combinatorial optimization.
+        Furthermore, Toulbar2 is able to obtain optimal solutions within competitive computational times, often outperforming other state-of-the-art solvers.
+        Toulbar2 clearly demonstrates the strenght of the cost functio network (CFN) framework. 
+        \newline
 
-        This  demonstrates that Toulbar2 has \textbf{continuously evolved} to adapt to different 
-        problems. It first became essential in bioinformatics for processing
-        dense molecular networks. Then proved its competitiveness in resource 
-        planning by integrating sophisticated global constraints.
-
-        We've also seen that to what extent can constraint solvers like Toulbar2 be 
-        integrated into the training of deep learning model
-        to correct their logical errors. In the longer term, we may witness the 
-        emergence of a \textbf{standardized hybrid AI}.
+        However, its limitations on very large-scale instances hightlight the inherent cost of exact optimization. In this context, hybrid approaches that combine exact solving with learning-based methods or heuristics emerge as a promising solution.
+        Overall, even though the solver Toulbar2 has its limitation, it has shown to be a relevant and good solver today, especially when paired with other algorithms.
+        
     }
 
     {

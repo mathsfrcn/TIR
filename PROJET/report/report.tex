@@ -117,7 +117,7 @@ The efficacy of the branch-and-bound depends on the lower bound we have access t
 In a Cost Function Network, functions are categorized by their arity : unary functions (arity 1) assign costs to individual variable assignments, binary functions (arity 2) assign costs to pairs of variables, and the nullary constant (arity 0), denoted as $c_{\emptyset}$, represents a global lower bound on the cost of any complete assignment.
 \newline
 
-\ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments.
+\ac{EPTs} transfer costs from one constraint to another while preserving the same optimal solution for the problem. Below, three different \acp{EPTs} are presented for an example with three variables $(x, y, z)$ with two possible assignments $(a, b)$. A line joining two values represents a cost of $1$ for this assignment in the corresponding binary cost function. Unary costs are represented as numbers inside the different assignments. Figure 2 shows the application of several \ac{EPTs}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{images/ept.jpg}
@@ -148,7 +148,7 @@ In a paper titled ``A constraint programming approach to the Zahn’s decision p
 \begin{itemize}
     \item A boolean variable is added for each pair of vertices. When a variable is set to true by the solver, then the decision is to keep or add the edge between the vertices. Else, the decision is to remove or not add an edge between the two vertices.
     \item A unary soft constraint is added for each variable. The cost of assigning $0$ to a variable $x$ is $1$ if the edge exists in the original graph, and 0 otherwise.
-    \item A ternary hard constraint is added for each pair of $3$ edges which together creates the subgraph $P3$ described in the figure below. These ternary hard constraints are added to ensure that the resulting graph is a disjoint union of cliques. This result comes from the fact that a disjoint union of cliques cannot contain a subgraph isomorphic to $P3$, as explained in the paper.
+    \item A ternary hard constraint is added for each pair of $3$ edges which together creates the subgraph $P3$ described in figure 3. These ternary hard constraints are added to ensure that the resulting graph is a disjoint union of cliques. This result comes from the fact that a disjoint union of cliques cannot contain a subgraph isomorphic to $P3$, as explained in the paper.
 \end{itemize}
 
 \begin{figure}[H]
@@ -218,7 +218,7 @@ The knapsack problem is a classic NP-hard problem in combinatorics and computer 
 The \ac{KPCG} is a variant of the knapsack problem where conflict between objects is added. For a given graph $G$, each object is assigned to a vertex. An edge between vertex $i$ and $j$ implies that object $i$ and $j$ cannot be in a solution together. The \ac{KPCG} is difficult to solve with constraint programming as \acp{CFN} do not allow the modeling of linear constraint without a non-trivial performance penalty, especially those with large coefficients.
 \newline
 
-Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \acp{CFN} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
+Montalbano et al. (2022)\cite{montalbano_multiple-choice_2022} developed a way to model pseudo boolean linear constraints with \acp{CFN} allowing more problems to be solved using \ac{VCSP}. When toulbar2 was compared with the state-of-the-art \ac{ILP} solver \textit{CPLEX 20.1} for solving the \ac{KPCG}. The approach was evaluated across six distinct classes of the Knapsack Problems with Conflict Graphs (KPCG), each having 720 instances with varying capacities, weight distributions, and profit correlations. The results found in figure 5 showed that Toulbar2 was more efficient than \textit{CPLEX} in $4$ out $6$ classes. Furthermore, Toulbar2 found the best solutions for the largest number of instances in every class.
 \newline
 
 \begin{figure}[H]
