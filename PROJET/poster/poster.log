@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  18 APR 2026 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  18 APR 2026 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1012,54 +1012,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./images/cluster_editing.png, id=39, 687.56876pt x 351.3125pt>
 File: ./images/cluster_editing.png Graphic file (type png)
 <use ./images/cluster_editing.png>
-Package pdftex.def Info: ./images/cluster_editing.png  used on input line 121.
+Package pdftex.def Info: ./images/cluster_editing.png  used on input line 122.
 (pdftex.def)             Requested size: 682.19586pt x 348.567pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 <images/nqueens.png, id=40, 181.17688pt x 185.69376pt>
 File: images/nqueens.png Graphic file (type png)
 <use images/nqueens.png>
-Package pdftex.def Info: images/nqueens.png  used on input line 121.
+Package pdftex.def Info: images/nqueens.png  used on input line 122.
 (pdftex.def)             Requested size: 341.10536pt x 349.6455pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 <images/schema_bmc_partie3.png, id=42, 389.95688pt x 222.07968pt>
 File: images/schema_bmc_partie3.png Graphic file (type png)
 <use images/schema_bmc_partie3.png>
-Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 156.
+Package pdftex.def Info: images/schema_bmc_partie3.png  used on input line 157.
 (pdftex.def)             Requested size: 452.47276pt x 257.69392pt.
 <images/crop_alloc.png, id=45, 2071.74pt x 952.30782pt>
 File: images/crop_alloc.png Graphic file (type png)
 <use images/crop_alloc.png>
-Package pdftex.def Info: images/crop_alloc.png  used on input line 195.
+Package pdftex.def Info: images/crop_alloc.png  used on input line 196.
 (pdftex.def)             Requested size: 603.30725pt x 277.32468pt.
 
-Underfull \hbox (badness 1742) in paragraph at lines 195--195
+Underfull \hbox (badness 1742) in paragraph at lines 196--196
 \T1/aer/m/n/24.88 farmer pref-er-ences and soil bal-
  []
 
 <images/smc_example.png, id=46, 1090.0725pt x 331.2375pt>
 File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
-Package pdftex.def Info: images/smc_example.png  used on input line 221.
+Package pdftex.def Info: images/smc_example.png  used on input line 222.
 (pdftex.def)             Requested size: 972.96977pt x 295.6546pt.
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 251.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 252.
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [1
@@ -1076,13 +1076,13 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 Here is how much of TeX's memory you used:
  30122 strings out of 474486
  634913 string characters out of 5743282
- 1978542 words of memory out of 5000000
+ 1977542 words of memory out of 5000000
  51865 multiletter control sequences out of 15000+600000
  600579 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,10n,121p,1737b,3261s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on poster.pdf (1 page, 3930286 bytes).
+Output written on poster.pdf (1 page, 3930282 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
