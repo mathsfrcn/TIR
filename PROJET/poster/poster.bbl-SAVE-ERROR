@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{akplogan_solving_2013}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dd7cce7def0a190a86fde6ff1c103371}{%
+           family={Akplogan},
+           familyi={A\bibinitperiod},
+           given={Mahuna},
+           giveni={M\bibinitperiod}}}%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d6d78fe0f86f977c49ae2e562894d5b7}{%
+           family={Métivier},
+           familyi={M\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=25013b1aa69622ccf2861abff89641ba}{%
+           family={Quesnel},
+           familyi={Q\bibinitperiod},
+           given={Gauthier},
+           giveni={G\bibinitperiod}}}%
+        {{hash=83779e8b0bab9adde18f7ff894b85c5d}{%
+           family={Joannon},
+           familyi={J\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=060c8d5ec4531dbf7a51484e1f52f407}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Frédérick},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{fullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \strng{bibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authorbibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authornamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authorfullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Application tools for the crop allocation problem (CAP) are required for agricultural advisors to design more efficient farming systems. Despite the extensive treatment of this issue by agronomists in the past, few methods tackle the crop allocation problem considering both the spatial and the temporal aspects of the CAP. In this paper, we precisely propose an original formulation addressing the crop allocation planning problem while taking farmers’ management choices into account. These choices are naturally represented by hard and soft constraints in the Weighted CSP formalism. We illustrate our proposition by solving a medium–size virtual farm using either a WCSP solver (toulbar2) or an ILP solver (NumberJack/SCIP). This preliminary work foreshadows the development of a decision–aid tool for supporting farmers in their crop allocation strategies.}
+      \field{annotation}{REVIEW : This paper addresses the Crop Allocation Problem (CAP) by modeling it as a Weighted Constraint Satisfaction Problem (WCSP) to capture both spatial and temporal constraints. The authors evaluate three approaches : a direct WCSP formulation, a decomposed WCSP formulation, and an Integer Linear Programming (ILP) reformulation. Interestingly, the continuous relaxation of the ILP model represents the dual of the LP problem encoded by Optimal Soft Arc Consistency (OSAC). He notes that while OSAC is theoretically stronger than the Existential Directional Arc Consistency (EDAC) used by default in TOULBAR2 when the upper bound is infinite , OSAC and EDAC become incomparable when the upper bound decreases to a finite value. In the experimental phase, instances were solved using TOULBAR2 and compared against the ILP solver SCIP. Results showed that while the decomposed WCSP formulation was vastly superior to the direct WCSP formulation, it did not scale as well as ILP. On the largest instance, SCIP was more than three times faster and consumed significantly less memory than TOULBAR2. OVERVIEW : Il est intéressant car il montre les limites temporelles et spatiales (cad la mémoire) de TOULBAR2 face à un solveur ILP (type SCIP) sur un problème de planification précis. Il permet de nuancer nos propos : TOULBAR2 est très flexible concernant la modélisation grâce aux fonctions de coût globales, mais n'est pas toujours le plus rapide face à des approches ILP pures sur des problèmes fortement combinatoires à grande échelle.}
+      \field{issn}{0399-0559, 1290-3868}
+      \field{journaltitle}{RAIRO - Operations Research}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft} {Constraints}}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{47}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{151\bibrangedash 172}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1051/ro/2013032
+      \endverb
+      \verb{file}
+      \verb Version soumise:C\:\\Users\\phili\\Zotero\\storage\\V958398H\\Akplogan et al. - 2013 - Solving the Crop Allocation Problemusing Hard and Soft Constraints.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993
+      \endverb
+      \keyw{Weighted constraint satisfaction problem,crop allocation problem,integer linear programming}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

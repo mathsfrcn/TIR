@@ -49,13 +49,6 @@ the Toulbar2 solver}
 
 \institute{University of Toulouse \& IRIT Laboratory}
 
-%\titlegraphic{
-%    \begin{tabular}{@{}c@{\hspace{15cm}}c@{}}
-%        \includegraphics[height=5cm]{./images/logo_UT.png} & 
-%        \includegraphics[height=5cm]{./images/logo_irit.png}
-%    \end{tabular}
-%}
-
 % ==============================================================================
 % DÉBUT DU POSTER
 % ==============================================================================
@@ -70,51 +63,59 @@ the Toulbar2 solver}
     % --------------------------------------------------------------------------
     \column{0.33} % Prend 33% de la largeur
     
-    \block{Abstractz}{
-        The valued constraint satisfaction problem (VCSP) or weighted constraint
-satisfaction problem (WCSP) is  a generalization of the classic CSP. We try to find 
-an assignment of minimal cost to a
-set of variables given soft and hard constraints. It is usually solved using a branch-and-bound
-search (BnB). 
+    \block{Abstract}{
+        The \textbf{valued constraint satisfaction problem} (VCSP) or \textbf{weighted constraint
+        satisfaction problem} (WCSP) is  a generalization of the classic \textbf{CSP}. We try to find 
+        an assignment of minimal cost to a
+        set of variables given \textbf{soft} and \textbf{hard constraints}. It is usually solved using a \textbf{branch-and-bound
+        search} (BnB). 
 
-By finding a good lower bound to a given instance, subtrees of the BnB can
-be quickly pruned to efficiently find an optimal solution. This paper studies the cross-disciplinary
-application of the solver Toulbar2, ranging from solving difficult combinatorial problems,
-to real-world application such as bioinformatics and resource management and finally
-artificial intelligence. In many cases where the problem was able to be written using the
-VCSP framework, Toulbar2 was able to outperform other state-of-the-art solvers.
-        
+        By finding a good \textbf{lower bound} to a given instance, subtrees of the BnB can
+        be quickly pruned to efficiently find an optimal solution. This paper studies the cross-disciplinary
+        application of the solver \textbf{Toulbar2}, ranging from solving difficult combinatorial problems,
+        to real-world application such as bioinformatics and resource management and finally
+        artificial intelligence. In many cases where the problem was able to be written using the
+        VCSP framework, \textbf{Toulbar2 was able to outperform} other state-of-the-art solvers.
     }
     
     \block{Combinatorial problem solving}{
-        \textbf{Cluster editing for graphs}
+        \textbf{Cluster Editing for Graphs}
 
-        Zahn’s decision problem can be described as the cluster editing problem. Given a graph,
+        \textbf{Zahn’s decision problem} can be described as the cluster editing problem. Given a graph,
         what is the minimal number of operations (adding edges, removing edges) needed to create
-        a disjoint union of cliques. Below an exemple of the cluster editing problem:
-        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.]
+        a \textbf{disjoint union of cliques}. Below an exemple of the cluster editing problem:
+        
+        \vspace{0.5cm}
+        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.\cite{Levin2022OnTC}]
         \includegraphics[width=0.7\linewidth]{./images/cluster_editing.png}
         \end{tikzfigure}
-        By transforming the cluster editing problem into a VCSP and solving it using Toulbar2, Mhamdi and Naanaa (2014) obtained results much better than the fixed
+        \vspace{0.5cm}
+
+        By transforming the cluster editing problem into a \textbf{VCSP} and solving it using Toulbar2, Mhamdi and Naanaa (2014) obtained \textbf{results much better} than the fixed
         parameter algorithm for both sparse and dense graphs.
         \newline
 
-        \textbf{A complicated chess problem}
+        \textbf{A Complicated Chess Problem}
 
-        \begin{wrapfigure}{l}{0.3\linewidth} % {l} for left, 35% of width
-            \centering
-            \includegraphics[width=\linewidth]{images/nqueens.png}
-            \captionof{figure}{8-Queens example} % Optional caption
-        \end{wrapfigure}
-
-        The $N$-Queen problem is a non-trivial mathematical problem that looks for a placement of $N$ queens on a chessboard of size $N$ by $N$ where no two queens are threatening each other. The figure to the left shows an example of a solution where $n = 8$.
-        The weighted $N$-Queen problem is the difficult optimization problem of minimizing the cost of the $N$-Queen if every tile incurs a cost. By modeling the weighted $N$-Queen problem as a VCSP, Sewa et al. (2022) demonstrated that Toulbar2 significantly outperforms other state-of-the-art solvers.
+        \vspace{0.5cm}
+        \begin{minipage}{0.35\linewidth}
+            \begin{tikzfigure}[8-Queens example]
+                \includegraphics[width=\linewidth]{images/nqueens.png}
+            \end{tikzfigure}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.6\linewidth}            
+            The $N$-Queen problem is a \textbf{non-trivial mathematical problem} that looks for a placement of $N$ queens on a chessboard of size $N$ by $N$ where no two queens are threatening each other. 
+            The figure to the left shows an example of a solution where $n = 8$.
+            The weighted $N$-Queen problem is the difficult optimization problem of minimizing the cost of the $N$-Queen if every tile incurs a cost. 
+            By modeling the \textbf{weighted $N$-Queen problem} as a VCSP, Sewa et al. (2022) demonstrated that \textbf{Toulbar2 significantly outperforms} other state-of-the-art solvers.
+        \end{minipage}
         \newline
         \newline
         \newline
 
-        Other problems such as the quadratic assignement problem, the knapsack problem with conflict graph and discrete integrations were also solved using the VCSP framework and showed
-        good performance of the Toulbar2 solver.
+        Other problems such as the quadratic assignement problem, the \textbf{knapsack problem with conflict graph and discrete integrations} were also solved using the VCSP framework and showed
+        \textbf{good performance of the Toulbar2} solver.
         }
 
     % --------------------------------------------------------------------------
@@ -128,78 +129,110 @@ VCSP framework, Toulbar2 was able to outperform other state-of-the-art solvers.
 
         \textbf{Computational Protein Design (CPD)}
 
-        CPD aims to create artificial proteins by identifying the amino acid sequence that minimizes the protein's energy, known as the Global Minimum Energy Conformation (GMEC). This is an NP-hard optimization problem due to the vast search space created by the numerous possible side-chain conformations, called rotamers.
+            CPD aims to create \textbf{artificial proteins} by identifying the amino acid sequence that minimizes the protein's energy, known as the \textbf{Global Minimum Energy Conformation} (GMEC). 
+            This is an NP-hard optimization problem due to the vast search space created by the numerous possible side-chain conformations, called rotamers.
+            \vspace{0.5cm}
 
         \textbf{Modeling with CFNs and Toulbar2}
 
-        To solve this, the protein structure is mapped into a Cost Function Network (CFN): residues become variables, rotamers become values, and physical interactions are encoded as costs. Toulbar2 uses advanced branch-and-bound and pruning techniques not only to find the exact GMEC, but also to enumerate near-optimal solutions to analyze the complex fitness landscape of the protein.
-
-        \vspace{0.5cm}
-        \begin{tikzfigure}[BMC-H homohexamer of bacterial microcompartment (BMC) shell.]
-        \includegraphics[width=0.7\linewidth]{./images/schema_bmc_partie3.png} 
-        \end{tikzfigure}
-        \vspace{0.5cm}
+            \vspace{0.5cm}
+            \begin{minipage}{0.45\linewidth}
+                \begin{tikzfigure}[BMC-H homohexamer of bacterial microcompartment (BMC) shell.\cite{dessaux_designing_2024}]
+                    \includegraphics[width=\linewidth]{images/schema_bmc_partie3.png}
+                \end{tikzfigure}
+            \end{minipage}
+            \hfill
+            \begin{minipage}{0.45\linewidth}            
+                To solve this, the protein structure is mapped into a \textbf{CFN}: residues become variables, rotamers become values, and physical interactions are encoded as costs. 
+                Toulbar2 uses advanced \textbf{branch-and-bound and pruning techniques} not only to find the exact \textbf{GMEC}, but also to enumerate near-optimal solutions to analyze the complex fitness landscape of the protein.
+            \end{minipage}
+            \vspace{0.5cm}
 
         \textbf{Hybrid Deep Learning Approaches}
 
-        Recently, hybrid approaches have emerged to tackle multi-state design. By combining deep learning models (which produce scoring functions) with Toulbar2's exact optimization under explicit constraints, researchers can successfully design complex, symmetrical multi-component proteins—like the homohexamer shown above—while simultaneously avoiding undesirable negative states.
+            Recently, hybrid approaches have emerged to tackle multi-state design. By combining \textbf{deep learning models} (which produce scoring functions) with \textbf{Toulbar2's} exact optimization under explicit constraints, researchers can successfully design complex, symmetrical multi-component proteins—like the homohexamer shown above while simultaneously avoiding undesirable negative states.
     }
     
     % Remettre la couleur par défaut pour les blocs suivants
     \colorlet{blocktitlebgcolor}{black!80} 
-    \block{Recherche Opérationnelle \& Planification}{
-        Le formalisme $WCSP$ performe dans la modélisation d'environnements complexes en combinant des règles strictes (contraintes dures) 
-        et l'optimisation de critères de qualité (contraintes souples).
-        
-        \vspace{1cm}
-        \begin{center}
-        \includegraphics[width=\linewidth]{./images/crop_alloc.png}
-        
-        
-        \end{center}
+    \block{Operational Research \& Planning}{
+        \textbf{Spatio-Temporal Allocation Problem}
+
+           \begin{minipage}{0.60\linewidth} % Réduit à 60%
+                \begin{tikzfigure}[Spatio-temporal crop rotation (Inspired by \cite{akplogan_solving_2013}).]
+                    \includegraphics[width=\linewidth]{images/crop_alloc.png}
+                \end{tikzfigure}
+            \end{minipage}
+            \hfill % Va maintenant occuper les 5% d'espace restant
+            \begin{minipage}{0.35\linewidth}            
+                The \textbf{crop allocation problem} requires assigning crop types to agricultural plots over time.
+
+                It utilizes the \textbf{WCSP} framework to balance \textbf{hard constraints} (e.g., agronomic feasibility and soil properties) with \textbf{soft constraints} (e.g., farmer preferences and soil balance).
+            \end{minipage}
+
+            \vspace{0.5cm}
+
+            While \textbf{WCSP} offers excellent modeling flexibility, \textbf{Toulbar2} faces \textbf{strong competition} from traditional \textbf{Mixed-Integer Linear Programming} (MILP) solvers when scaling up to very large farms.
+
+            \vspace{0.5cm}
+            
+        \textbf{Human Resources \& Global Constraints}
+
+            \textbf{Hospital staff scheduling} presents a different combinatorial challenge: balancing \textbf{strict coverage requirements with individual nurse rest preferences}.
+            
+            Historically, \textbf{WCSPs} struggled here because modeling human rules required \textbf{exponentially large networks} of binary constraints. To solve this, \textbf{Toulbar2} integrated soft global constraints, allowing the solver to \textbf{evaluate a nurse's entire weekly schedule} as a single evaluation.
+
+            This leap in expressivity allows \textbf{Toulbar2} to \textbf{successfully compete} with traditional Constraint Programming solvers in human scheduling.
+        \vspace{0.5cm}
+
+        \textbf{Hybridization for Dynamic Problems}
+
+        \textbf{Toulbar2 excels in deterministic planning}, but its efficiency depends heavily on the \textbf{problem's topology}. 
+        For example, in \textbf{dynamic air traffic conflict} resolution, \textbf{Toulbar2} handles multiple variables well but struggles when the domain size (possible trajectories) grows too large. 
+        In such complex industrial applications, Toulbar2 achieves the \textbf{best response times} when hybridized with fast, non-optimal greedy heuristics to prune bad solutions early.
     }
 
     % --------------------------------------------------------------------------
     % COLONNE 3 (Droite): Limites, Futures pistes & Biblio
     % --------------------------------------------------------------------------
     \column{0.33}
-    
+
     \block{Artificial Intelligence \& Machine Learning}{
-        Toulbar2 struggles with real world applications since 
+        \textbf{Toulbar2} struggles with real world applications since 
         exhaustive search creates computational bottlenecks on large instances. 
-        We can integrate machine learning, introducing new ways to improve the 
-        solution quality. For example, algorithms like KOCO SMC 
-        handle large instances by tracking probability bounds during the inference process. 
+        We can integrate \textbf{machine learning}, introducing new ways to improve the 
+        solution quality. For example, algorithms like \textbf{KOCO SMC} 
+        handle large instances by \textbf{tracking probability bounds} during the inference process. 
         This early evaluation prevents the solver from performing exhaustive enumerations.
 
-        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.[cite: 1072]]
+        \begin{tikzfigure}[Example of SMC: Robust Supply Chain with Different Network Size.\cite{li_solving_2025}]
         \includegraphics[width=\linewidth]{images/smc_example.png}
         \end{tikzfigure}
 
-        Deep learning models can also transform raw sensory data directly 
+        \textbf{Deep learning} models can also transform raw sensory data directly 
         into Graphical Models. This integration merges the perception of neural networks 
-        with the exact reasoning of constraint solvers to increase overall flexibility.
+        with the exact reasoning of constraint solvers to \textbf{increase overall flexibility}.
         For example, a neural network can translate unmapped protein 
         structures or raw images into cost matrices, allowing Toulbar2 to 
-        focus exclusively on executing the exact discrete optimization.
+        focus exclusively on executing the \textbf{exact discrete optimization}.
     }
     
     \block{Conclusion}{
-The was to understand how a solver based on CFNs, such
-as Toulbar2, established itself across such diverse disciplines. 
-The answer lies in combining the expressiveness 
-of the WCSP formalism with the power of its local consistency algorithms 
-(EDAC,VAC, OSAC).
+        The way to understand how a solver based on CFNs, such
+        as Toulbar2, established itself across such diverse disciplines. 
+        The answer lies in \textbf{combining the expressiveness} 
+        of the WCSP formalism with the power of its \textbf{local consistency algorithms} 
+        (EDAC,VAC, OSAC).
 
-This  demonstrates that Toulbar2 has continuously evolved to adapt to different 
-problems. It first became essential in bioinformatics for processing
-dense molecular networks. Then proved its competitiveness in resource 
-planning by integrating sophisticated global constraints.
+        This  demonstrates that Toulbar2 has \textbf{continuously evolved} to adapt to different 
+        problems. It first became essential in bioinformatics for processing
+        dense molecular networks. Then proved its competitiveness in resource 
+        planning by integrating sophisticated global constraints.
 
-We've also seen that to what extent can constraint solvers like Toulbar2 be 
-integrated into the training of deep learning model
-to correct their logical errors. In the longer term, we may witness the 
-emergence of a standardized hybrid AI.
+        We've also seen that to what extent can constraint solvers like Toulbar2 be 
+        integrated into the training of deep learning model
+        to correct their logical errors. In the longer term, we may witness the 
+        emergence of a \textbf{standardized hybrid AI}.
     }
 
     {
@@ -211,9 +244,6 @@ emergence of a standardized hybrid AI.
             \vspace{-1cm}            
             \printbibliography[heading=none] 
         }
-            Li, J., Jiang, N., Xue, Y. (2025). 
-    Solving Satisfiability Modulo Counting Exactly with 
-    Probabilistic Circuits. arXiv:2503.01009. [cite: 1072]
     }
 \end{columns}
 

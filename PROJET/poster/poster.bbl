@@ -16,5 +16,255 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{akplogan_solving_2013}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dd7cce7def0a190a86fde6ff1c103371}{%
+           family={Akplogan},
+           familyi={A\bibinitperiod},
+           given={Mahuna},
+           giveni={M\bibinitperiod}}}%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d6d78fe0f86f977c49ae2e562894d5b7}{%
+           family={Métivier},
+           familyi={M\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=25013b1aa69622ccf2861abff89641ba}{%
+           family={Quesnel},
+           familyi={Q\bibinitperiod},
+           given={Gauthier},
+           giveni={G\bibinitperiod}}}%
+        {{hash=83779e8b0bab9adde18f7ff894b85c5d}{%
+           family={Joannon},
+           familyi={J\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=060c8d5ec4531dbf7a51484e1f52f407}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Frédérick},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{fullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \strng{bibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authorbibnamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authornamehash}{da6ddd5c0cc0fde346c8e62e9767b205}
+      \strng{authorfullhash}{05bf4db2b69fedbb0be9ea6c90bb53fd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Application tools for the crop allocation problem (CAP) are required for agricultural advisors to design more efficient farming systems. Despite the extensive treatment of this issue by agronomists in the past, few methods tackle the crop allocation problem considering both the spatial and the temporal aspects of the CAP. In this paper, we precisely propose an original formulation addressing the crop allocation planning problem while taking farmers’ management choices into account. These choices are naturally represented by hard and soft constraints in the Weighted CSP formalism. We illustrate our proposition by solving a medium–size virtual farm using either a WCSP solver (toulbar2) or an ILP solver (NumberJack/SCIP). This preliminary work foreshadows the development of a decision–aid tool for supporting farmers in their crop allocation strategies.}
+      \field{annotation}{REVIEW : This paper addresses the Crop Allocation Problem (CAP) by modeling it as a Weighted Constraint Satisfaction Problem (WCSP) to capture both spatial and temporal constraints. The authors evaluate three approaches : a direct WCSP formulation, a decomposed WCSP formulation, and an Integer Linear Programming (ILP) reformulation. Interestingly, the continuous relaxation of the ILP model represents the dual of the LP problem encoded by Optimal Soft Arc Consistency (OSAC). He notes that while OSAC is theoretically stronger than the Existential Directional Arc Consistency (EDAC) used by default in TOULBAR2 when the upper bound is infinite , OSAC and EDAC become incomparable when the upper bound decreases to a finite value. In the experimental phase, instances were solved using TOULBAR2 and compared against the ILP solver SCIP. Results showed that while the decomposed WCSP formulation was vastly superior to the direct WCSP formulation, it did not scale as well as ILP. On the largest instance, SCIP was more than three times faster and consumed significantly less memory than TOULBAR2. OVERVIEW : Il est intéressant car il montre les limites temporelles et spatiales (cad la mémoire) de TOULBAR2 face à un solveur ILP (type SCIP) sur un problème de planification précis. Il permet de nuancer nos propos : TOULBAR2 est très flexible concernant la modélisation grâce aux fonctions de coût globales, mais n'est pas toujours le plus rapide face à des approches ILP pures sur des problèmes fortement combinatoires à grande échelle.}
+      \field{issn}{0399-0559, 1290-3868}
+      \field{journaltitle}{RAIRO - Operations Research}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Solving the {Crop} {Allocation} {Problemusing} {Hard} and {Soft} {Constraints}}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{47}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{151\bibrangedash 172}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1051/ro/2013032
+      \endverb
+      \verb{file}
+      \verb Version soumise:C\:\\Users\\phili\\Zotero\\storage\\V958398H\\Akplogan et al. - 2013 - Solving the Crop Allocation Problemusing Hard and Soft Constraints.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/rairo-operations-research/article/abs/solving-the-crop-allocation-problemusing-hard-and-soft-constraints/928250B2BF7802F29B31EE47D2FD9993
+      \endverb
+      \keyw{Weighted constraint satisfaction problem,crop allocation problem,integer linear programming}
+    \endentry
+    \entry{dessaux_designing_2024}{misc}{}
+      \name{author}{9}{}{%
+        {{hash=60b516f1bf231440293629112789079e}{%
+           family={Dessaux},
+           familyi={D\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=499fc2f8344fd5a380e2278248be8b7e}{%
+           family={Buchet},
+           familyi={B\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=55eb8d279f08f6436b0b7e3e6feae943}{%
+           family={Barthe},
+           familyi={B\bibinitperiod},
+           given={Lucie},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7eba647e5ff60245c180a17b39a7ad9}{%
+           family={Defresne},
+           familyi={D\bibinitperiod},
+           given={Marianne},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ec95c220205f0e98763458538628df6e}{%
+           family={Cioci},
+           familyi={C\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=40d3c367d56e192f83da940d9c81d135}{%
+           family={Givry},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e10fb2286b936cee75c4a91677c0583a}{%
+           family={Garcia-Alles},
+           familyi={G\bibinithyphendelim A\bibinitperiod},
+           given={Luis\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=68b2219045c7dae116377fa03b0769f6}{%
+           family={Schiex},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3bad082d2b65520985a507aeb35aabef}{%
+           family={Barbe},
+           familyi={B\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {bioRxiv}%
+      }
+      \strng{namehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{fullhash}{b1f07543fd9c73609a38468c6d5f19de}
+      \strng{bibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authorbibnamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authornamehash}{4bfe8d6da9a1ed57b0a3219ad3e1eb4c}
+      \strng{authorfullhash}{b1f07543fd9c73609a38468c6d5f19de}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Proteins, the fundamental building blocks of biological function, orchestrate complex cellular processes by assembling into intricate structures through meticulous interactions. The design of specific protein-protein interfaces to create customized protein assemblies holds immense potential for various biotechnological applications. To address the current limitations in designing heteromeric interactions for multi-component assemblies, we developed a hybrid generative AI design approach. This method combines deep learning and automated reasoning, explicitly considering both positive and negative interaction states to favor heteromeric desired over undesired interactions. The approach leverages Effie, a deep-learned pairwise decomposable scoring function, and an advanced reasoning tool extended for multicriteria optimization of this function. Here, we tested the ability of this hybrid AI method to redesign homomeric interfaces of bacterial microcompartment components (BMC-H) into heteromeric assemblies. We benchmarked its performance against ProteinMPNN, a sequence design autoregressive model. Our in silico assessment, complemented by experimental validation, highlights the outperformance of the hybrid AI generative design approach, and its potential to unlock the engineering of complex multi-component self-assembling protein entities.}
+      \field{annotation}{Overview : This paper presents a hybrid AI framework for computational protein design that combines a deep learning scoring function (Effie) with the toulbar2 optimization solver. The goal is to redesign homomeric protein assemblies into heteromeric ones by explicitly considering both desired (positive) and undesired (negative) interactions. The method is applied to BMC-H proteins and compared to ProteinMPNN. Results show that the hybrid approach better captures interaction specificity and produces higher-quality designs. Experimental validation confirms improved binding, solubility, and correct assembly for several designs. This approach highlights the benefit of combining deep learning with exact optimization for multi-state protein design. Review : The approach is computationally more expensive than autoregressive models. It still relies on simplified structural assumptions (e.g., rigid backbone). The method depends on the quality of the learned scoring function (Effie), which may introduce bias. Benchmarking is limited to a specific protein system (BMC-H), reducing generality.}
+      \field{month}{6}
+      \field{note}{Pages: 2024.06.13.598662 Section: New Results}
+      \field{title}{Designing symmetrical multi-component proteins using a hybrid generative {AI} approach}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1101/2024.06.13.598662
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\phili\\Zotero\\storage\\4YH8G6P7\\Dessaux et al. - 2024 - Designing symmetrical multi-component proteins using a hybrid generative AI approach.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/10.1101/2024.06.13.598662v1
+      \endverb
+    \endentry
+    \entry{Levin2022OnTC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9213557347666095900aca658d90fc6a}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Mark\bibnamedelima Sh},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9213557347666095900aca658d90fc6a}
+      \strng{fullhash}{9213557347666095900aca658d90fc6a}
+      \strng{bibnamehash}{9213557347666095900aca658d90fc6a}
+      \strng{authorbibnamehash}{9213557347666095900aca658d90fc6a}
+      \strng{authornamehash}{9213557347666095900aca658d90fc6a}
+      \strng{authorfullhash}{9213557347666095900aca658d90fc6a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Communications Technology and Electronics}
+      \field{title}{On the Clique Partitioning of a Graph}
+      \field{volume}{67}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1134/S1064226922140042
+      \endverb
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:257641437
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:257641437
+      \endverb
+    \endentry
+    \entry{li_solving_2025}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=c28202b578c4845dca8f2d05f5c26322}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jinzhao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7468fad9969f4d0241aaf0ab47f42591}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06048b7e0480e31d883efbbd0d4a9fea}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Yexiang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{fullhash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{bibnamehash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{authorbibnamehash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{authornamehash}{57a5536132e90cf08ebd6832d97e8a86}
+      \strng{authorfullhash}{57a5536132e90cf08ebd6832d97e8a86}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Satisfiability Modulo Counting (SMC) is a recently proposed general language to reason about problems integrating statistical and symbolic Artificial Intelligence. An SMC problem is an extended SAT problem in which the truth values of a few Boolean variables are determined by probabilistic inference. Approximate solvers may return solutions that violate constraints. Directly integrating available SAT solvers and probabilistic inference solvers gives exact solutions but results in slow performance because of many back-and-forth invocations of both solvers. We propose KOCO-SMC, an integrated exact SMC solver that efficiently tracks lower and upper bounds in the probabilistic inference process. It enhances computational efficiency by enabling early estimation of probabilistic inference using only partial variable assignments, whereas existing methods require full variable assignments. In the experiment, we compare KOCO-SMC with currently available approximate and exact SMC solvers on large-scale datasets and real-world applications. The proposed KOCO-SMC finds exact solutions with much less time.}
+      \field{annotation}{Koco-SMC solves complex problems that combine logic and probability. Researchers compared it against a baseline using the Toulbar2 solver. This baseline, called Lingeling-HBFS, uses Toulbar2 to calculate exact probabilities. It works by finding a logic solution first and then using Toulbar2 to check if the probability fits. This back and forth process makes the Toulbar2 much slower than Koco-SMC. They solve problems like supply chain routes during natural disasters or the best delivery paths by picking roads with the lowest chance of heavy traffic.}
+      \field{note}{arXiv:2503.01009 [cs]}
+      \field{title}{Solving {Satisfiability} {Modulo} {Counting} {Exactly} with {Probabilistic} {Circuits}}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2503.01009
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2503.01009
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2503.01009
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Logic in Computer Science}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
