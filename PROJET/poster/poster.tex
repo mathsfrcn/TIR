@@ -28,11 +28,11 @@
 % ==============================================================================
 % Tikzposter propose plusieurs thèmes de base: 
 % Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
-\usetheme{Default}
+\usetheme{Envelope}
 
 % Tu peux aussi changer la palette de couleurs indépendamment du thème:
 % Default, Australia, Britain, Sweden, Spain, Russia, Denmark, Germany
-\usecolorstyle{Default}
+\usecolorstyle{Spain}
 
 % Pour personnaliser la couleur globale du fond si le thème ne te plaît pas
 % \colorlet{backgroundcolor}{blue!10!white}
@@ -63,6 +63,7 @@ the Toulbar2 solver}
     % --------------------------------------------------------------------------
     \column{0.33} % Prend 33% de la largeur
     
+    \colorlet{couleurpardefaut}{blocktitlebgcolor}
     \block{Abstract}{
         The \textbf{valued constraint satisfaction problem} (VCSP) or \textbf{weighted constraint
         satisfaction problem} (WCSP) is  a generalization of the classic \textbf{CSP}. We try to find 
@@ -78,6 +79,7 @@ the Toulbar2 solver}
         VCSP framework, \textbf{Toulbar2 was able to outperform} other state-of-the-art solvers.
     }
     
+    \colorlet{couleurpardefaut}{blocktitlebgcolor}
     \block{Combinatorial problem solving}{
         \textbf{Cluster Editing for Graphs}
 
@@ -154,7 +156,7 @@ the Toulbar2 solver}
     }
     
     % Remettre la couleur par défaut pour les blocs suivants
-    \colorlet{blocktitlebgcolor}{black!80} 
+    \colorlet{blocktitlebgcolor}{couleurpardefaut}
     \block{Operational Research \& Planning}{
         \textbf{Spatio-Temporal Allocation Problem}
 
@@ -196,7 +198,8 @@ the Toulbar2 solver}
     % COLONNE 3 (Droite): Limites, Futures pistes & Biblio
     % --------------------------------------------------------------------------
     \column{0.33}
-
+    
+    \colorlet{blocktitlebgcolor}{couleurpardefaut}
     \block{Artificial Intelligence \& Machine Learning}{
         \textbf{Toulbar2} struggles with real world applications since 
         exhaustive search creates computational bottlenecks on large instances. 
@@ -217,6 +220,7 @@ the Toulbar2 solver}
         focus exclusively on executing the \textbf{exact discrete optimization}.
     }
     
+    \colorlet{blocktitlebgcolor}{couleurpardefaut}
     \block{Conclusion}{
         The way to understand how a solver based on CFNs, such
         as Toulbar2, established itself across such diverse disciplines. 
@@ -240,6 +244,7 @@ the Toulbar2 solver}
         \colorlet{blocktitlefgcolor}{white}          % Texte du titre (blanc)
         \colorlet{blockbodybgcolor}{yellow!10!white} % Fond du bloc (jaune très pâle)
 
+        \colorlet{blocktitlebgcolor}{couleurpardefaut}
         \block{References}{
             \vspace{-1cm}            
             \printbibliography[heading=none] 
