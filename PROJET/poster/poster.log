@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  18 APR 2026 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.14)  18 APR 2026 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1062,7 +1062,12 @@ File: images/smc_example.png Graphic file (type png)
 <use images/smc_example.png>
 Package pdftex.def Info: images/smc_example.png  used on input line 222.
 (pdftex.def)             Requested size: 972.96977pt x 295.6546pt.
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 252.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 248.
 (C:\Users\Mathis\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [1
@@ -1079,13 +1084,13 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 Here is how much of TeX's memory you used:
  30125 strings out of 474486
  635052 string characters out of 5743282
- 1979542 words of memory out of 5000000
+ 1980542 words of memory out of 5000000
  51868 multiletter control sequences out of 15000+600000
  600579 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,10n,121p,1737b,3261s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Mathis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on poster.pdf (1 page, 3933353 bytes).
+Output written on poster.pdf (1 page, 3933646 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
