@@ -481,7 +481,6 @@ INPUT .\images\bnb.png
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Users\Mathis\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT .\images\ept.jpg
@@ -492,6 +491,7 @@ INPUT .\images\ept.jpg
 INPUT .\images\ept.jpg
 INPUT .\images\ept.jpg
 INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\Mathis\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT .\images\ZP.png
 INPUT .\images\ZP.png
 INPUT .\images\ZP.png
