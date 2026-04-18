@@ -264,6 +264,32 @@
       \endverb
       \keyw{Computer Science - Artificial Intelligence,Computer Science - Logic in Computer Science}
     \endentry
+    \entry{nquennsproblem}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 31-March-2026]}
+      \field{title}{Eight queens puzzle --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Eight_queens_puzzle&oldid=1344792764
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Eight_queens_puzzle&oldid=1344792764
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
